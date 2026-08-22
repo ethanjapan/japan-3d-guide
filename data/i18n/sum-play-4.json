@@ -1,32 +1,212 @@
 {
-"とっとり花回廊":{"ja":"大山を背に一年中花が咲く。屋根付き回廊で雨でも歩ける。","zh":"以大山為背景全年有花，有頂的迴廊讓雨天也能走。","cn":"以大山为背景全年有花，有顶的回廊让雨天也能走。","en":"Flowers all year under Mount Daisen, on a covered walkway that works in rain.","ko":"다이센을 등지고 일 년 내내 꽃이 핀다. 지붕 있는 회랑이라 비 와도 걷는다."},
-"大山まきばみるくの里":{"ja":"牛が放たれた牧場と濃いソフトクリーム。大山が正面。","zh":"放牧的牧場與濃郁霜淇淋，大山就在正前方。","cn":"放牧的牧场与浓郁冰淇淋，大山就在正前方。","en":"Grazing cattle and thick soft-serve, with Mount Daisen straight ahead.","ko":"소가 풀린 목장과 진한 소프트아이스크림. 다이센이 정면에 있다."},
-"鳥取砂丘こどもの国":{"ja":"砂丘のとなりの巨大遊具。滑り台と手作り体験。","zh":"沙丘旁的巨型遊具，有溜滑梯與手作體驗。","cn":"沙丘旁的巨型游具，有滑梯与手作体验。","en":"Giant play structures next to the dunes, with slides and craft workshops.","ko":"사구 옆의 거대 놀이기구. 미끄럼틀과 만들기 체험."},
-"しまね海洋館アクアス":{"ja":"シロイルカのバブルリング。中国地方最大の水族館。","zh":"白鯨的泡泡圈表演，中國地方最大的水族館。","cn":"白鲸的泡泡圈表演，中国地方最大的水族馆。","en":"Beluga bubble rings, at the largest aquarium in the Chūgoku region.","ko":"흰돌고래의 버블 링. 주고쿠 지방 최대의 수족관."},
-"玉造温泉":{"ja":"美肌の湯として1300年。川沿いに足湯が続く。","zh":"以美肌之湯聞名一千三百年，沿河都是足湯。","cn":"以美肌之汤闻名一千三百年，沿河都是足汤。","en":"Thirteen centuries of water said to be good for the skin, with foot baths along the river.","ko":"미인탕으로 1300년. 강가를 따라 족욕탕이 이어진다."},
-"江島大橋":{"ja":"写真では壁のように立つ坂道橋。実際の勾配は6.1%。","zh":"照片裡像牆壁一樣直立的坡道橋，實際坡度只有6.1%。","cn":"照片里像墙壁一样直立的坡道桥，实际坡度只有6.1%。","en":"A bridge that looks like a wall in photos; the real gradient is only 6.1%.","ko":"사진에선 벽처럼 서 보이는 경사교. 실제 경사는 6.1%."},
-"渋川マリン水族館":{"ja":"瀬戸内の魚を中心に。目の前が海水浴場。","zh":"以瀨戶內的魚為主，門前就是海水浴場。","cn":"以濑户内的鱼为主，门前就是海水浴场。","en":"Focused on Inland Sea fish, with a swimming beach right outside.","ko":"세토내의 물고기 중심. 바로 앞이 해수욕장이다."},
-"おもちゃ王国":{"ja":"屋内のおもちゃ部屋と屋外の乗り物。小さい子の天国。","zh":"室內玩具房加上戶外遊樂設施，是小小孩的天堂。","cn":"室内玩具房加上户外游乐设施，是小小孩的天堂。","en":"Indoor toy rooms plus outdoor rides — heaven for the very young.","ko":"실내 장난감 방과 야외 놀이기구. 어린아이의 천국."},
-"備中松山城":{"ja":"現存天守で唯一の山城。秋の朝は雲海に浮かぶ。","zh":"現存天守中唯一的山城，秋天早晨會浮在雲海上。","cn":"现存天守中唯一的山城，秋天早晨会浮在云海上。","en":"The only surviving mountaintop keep; on autumn mornings it floats on cloud.","ko":"현존 천수각 중 유일한 산성. 가을 아침엔 운해에 뜬다."},
-"宮島水族館":{"ja":"厳島神社から歩いて数分。カキいかだの展示がある。","zh":"從嚴島神社走幾分鐘就到，有牡蠣筏的展示。","cn":"从严岛神社走几分钟就到，有牡蛎筏的展示。","en":"A few minutes' walk from Itsukushima Shrine, with an oyster-raft display.","ko":"이쓰쿠시마 신사에서 걸어서 몇 분. 굴 양식 뗏목 전시가 있다."},
-"三段峡":{"ja":"16キロの峡谷を渡し舟で進む。黒淵の水が濃い。","zh":"十六公里的峽谷靠渡船前進，黑淵的水色極濃。","cn":"十六公里的峡谷靠渡船前进，黑渊的水色极浓。","en":"Sixteen kilometres of gorge, crossed by ferry punt; the water at Kurobuchi is deep green.","ko":"16킬로미터 협곡을 나룻배로 나아간다. 구로부치의 물빛이 짙다."},
-"大久野島":{"ja":"野生のうさぎが数百羽。フェリーで15分の島。","zh":"島上有數百隻野生兔子，搭渡輪十五分鐘。","cn":"岛上有数百只野生兔子，搭渡轮十五分钟。","en":"Hundreds of wild rabbits on an island fifteen minutes by ferry.","ko":"야생 토끼가 수백 마리. 페리로 15분 거리의 섬."},
-"海響館":{"ja":"フグの展示種数世界一。関門海峡を望む大水槽。","zh":"河豚展示種類世界第一，還有能望見關門海峽的大水槽。","cn":"河豚展示种类世界第一，还有能望见关门海峡的大水槽。","en":"More pufferfish species than anywhere, and a big tank facing the Kanmon Strait.","ko":"복어 전시 종 수 세계 1위. 간몬해협을 바라보는 대수조."},
-"秋吉台":{"ja":"日本最大のカルスト台地。石灰岩が羊のように点在する。","zh":"日本最大的喀斯特台地，石灰岩像羊群般散布。","cn":"日本最大的喀斯特台地，石灰岩像羊群般散布。","en":"Japan's largest karst plateau, with limestone scattered like sheep.","ko":"일본 최대의 카르스트 대지. 석회암이 양처럼 흩어져 있다."},
-"別府弁天池":{"ja":"コバルトブルーの湧水池。水温は一年中14度。","zh":"鈷藍色的湧泉池，水溫全年維持十四度。","cn":"钴蓝色的涌泉池，水温全年维持十四度。","en":"A cobalt-blue spring pool, 14°C all year round.","ko":"코발트블루의 용천 연못. 수온은 일 년 내내 14도."},
-"渦の道":{"ja":"大鳴門橋の桁下45メートル。ガラス床の真下で渦が回る。","zh":"大鳴門橋下方四十五公尺處，玻璃地板正下方就是漩渦。","cn":"大鸣门桥下方四十五米处，玻璃地板正下方就是漩涡。","en":"Forty-five metres under the Ōnaruto bridge — the whirlpools turn beneath a glass floor.","ko":"오나루토 대교 아래 45미터. 유리 바닥 바로 밑에서 소용돌이가 돈다."},
-"とくしま動物園":{"ja":"気候帯ごとに分けた展示。となりに遊園地もある。","zh":"依氣候帶分區的展示，隔壁還有遊樂園。","cn":"依气候带分区的展示，隔壁还有游乐园。","en":"Exhibits arranged by climate zone, with a small fairground next door.","ko":"기후대별로 나눈 전시. 옆에 놀이공원도 있다."},
-"眉山":{"ja":"徳島市街のすぐ背後。ロープウェイ6分で夜景。","zh":"就在德島市區背後，纜車六分鐘就能看夜景。","cn":"就在德岛市区背后，缆车六分钟就能看夜景。","en":"Right behind the city — six minutes by ropeway to the night view.","ko":"도쿠시마 시가지 바로 뒤. 로프웨이 6분이면 야경."},
-"四国水族館":{"ja":"2020年開館。夕景と重なる水槽で瀬戸内を見せる。","zh":"二〇二〇年開館，用與夕景重疊的水槽展現瀨戶內。","cn":"二〇二〇年开馆，用与夕景重叠的水槽展现濑户内。","en":"Opened in 2020, showing the Inland Sea through a tank that merges with the sunset.","ko":"2020년 개관. 노을과 겹치는 수조로 세토내를 보여준다."},
-"ニューレオマワールド":{"ja":"四国最大級の遊園地。冬は光の王国になる。","zh":"四國規模數一數二的遊樂園，冬天化為光之王國。","cn":"四国规模数一数二的游乐园，冬天化为光之王国。","en":"One of Shikoku's largest fairgrounds, which becomes a kingdom of lights in winter.","ko":"시코쿠 최대급 놀이공원. 겨울엔 빛의 왕국이 된다."},
-"屋島":{"ja":"平家滅亡の古戦場が今は展望台。瀬戸内が一望。","zh":"平家覆滅的古戰場如今是展望台，瀨戶內一覽無遺。","cn":"平家覆灭的古战场如今是展望台，濑户内一览无遗。","en":"The battlefield where the Taira fell is now a lookout over the whole Inland Sea.","ko":"헤이케 멸망의 옛 전장이 지금은 전망대. 세토내가 한눈에."},
-"とべ動物園":{"ja":"西日本有数の規模。ホッキョクグマのピースで知られる。","zh":"西日本數一數二的規模，以北極熊「Peace」聞名。","cn":"西日本数一数二的规模，以北极熊「Peace」闻名。","en":"One of western Japan's biggest zoos, known for the polar bear Peace.","ko":"서일본 유수의 규모. 북극곰 피스로 알려져 있다."},
-"面河渓":{"ja":"石鎚山の南麓。青い淵と白い岩が交互に続く。","zh":"石鎚山南麓，藍色深潭與白色岩石交錯延伸。","cn":"石锤山南麓，蓝色深潭与白色岩石交错延伸。","en":"On the south flank of Mount Ishizuchi — blue pools alternating with white rock.","ko":"이시즈치산 남쪽 기슭. 푸른 소와 흰 바위가 번갈아 이어진다."},
-"マイントピア別子":{"ja":"銅山の坑道を鉱山鉄道で入る。夏は砂金採り。","zh":"搭礦山鐵道進入銅礦坑道，夏天還能淘金。","cn":"搭矿山铁道进入铜矿坑道，夏天还能淘金。","en":"Ride a mine railway into the old copper tunnels; pan for gold in summer.","ko":"광산 철도로 구리광 갱도에 들어간다. 여름엔 사금 채취."},
-"桂浜水族館":{"ja":"砂浜のすぐ横。手作り感のある展示が愛される。","zh":"就在沙灘旁邊，手作感十足的展示反而受人喜愛。","cn":"就在沙滩旁边，手作感十足的展示反而受人喜爱。","en":"Right beside the beach, loved for its unmistakably hand-made displays.","ko":"모래사장 바로 옆. 손수 만든 느낌의 전시가 사랑받는다."},
-"アンパンマンミュージアム":{"ja":"作者の故郷に立つ。原画とキャラクターに会える。","zh":"立於作者故鄉，能看到原畫並見到角色。","cn":"立于作者故乡，能看到原画并见到角色。","en":"In the author's home town — original artwork and the characters themselves.","ko":"작가의 고향에 서 있다. 원화와 캐릭터를 만날 수 있다."},
-"龍河洞":{"ja":"1キロの鍾乳洞。弥生時代の土器が石灰に包まれている。","zh":"一公里長的鐘乳洞，彌生時代的陶器被石灰包住。","cn":"一公里长的钟乳洞，弥生时代的陶器被石灰包住。","en":"A kilometre of limestone cave, with Yayoi-period pottery encased in calcite.","ko":"1킬로미터의 종유동. 야요이 시대 토기가 석회에 싸여 있다."},
-"マリンワールド海の中道":{"ja":"博多湾を背景にイルカが跳ぶ。九州の海を一館で。","zh":"以博多灣為背景的海豚跳躍，一館看盡九州的海。","cn":"以博多湾为背景的海豚跳跃，一馆看尽九州的海。","en":"Dolphins leaping against Hakata Bay — the seas of Kyūshū in one building.","ko":"하카타만을 배경으로 돌고래가 뛴다. 규슈의 바다를 한 관에."},
-"福岡タワー":{"ja":"海浜タワーとして日本一の高さ。夜は季節で光が変わる。","zh":"海濱塔中日本最高，夜間燈光隨季節變化。","cn":"海滨塔中日本最高，夜间灯光随季节变化。","en":"Japan's tallest seaside tower, lit differently with each season.","ko":"해변 타워로는 일본에서 가장 높다. 밤 조명은 계절마다 바뀐다."},
-"糸島":{"ja":"海沿いのカフェとヤシの木ブランコ。福岡から車で40分。","zh":"海邊咖啡店與椰子樹鞦韆，從福岡開車四十分鐘。","cn":"海边咖啡店与椰子树秋千，从福冈开车四十分钟。","en":"Coast-road cafés and a palm-tree swing, forty minutes' drive from Fukuoka.","ko":"바닷가 카페와 야자수 그네. 후쿠오카에서 차로 40분."}
+ "とっとり花回廊": {
+  "ja": "大山を背に一年中花が咲く。屋根付き回廊で雨でも歩ける。",
+  "zh": "以大山為背景全年有花，有頂的迴廊讓雨天也能走。",
+  "cn": "以大山为背景全年有花，有顶的回廊让雨天也能走。",
+  "en": "Flowers all year under Mount Daisen, on a covered walkway that works in rain.",
+  "ko": "다이센을 등지고 일 년 내내 꽃이 핀다. 지붕 있는 회랑이라 비 와도 걷는다."
+ },
+ "大山まきばみるくの里": {
+  "ja": "牛が放たれた牧場と濃いソフトクリーム。大山が正面。",
+  "zh": "放牧的牧場與濃郁霜淇淋，大山就在正前方。",
+  "cn": "放牧的牧场与浓郁冰淇淋，大山就在正前方。",
+  "en": "Grazing cattle and thick soft-serve, with Mount Daisen straight ahead.",
+  "ko": "소가 풀린 목장과 진한 소프트아이스크림. 다이센이 정면에 있다."
+ },
+ "しまね海洋館アクアス": {
+  "ja": "シロイルカのバブルリング。中国地方最大の水族館。",
+  "zh": "白鯨的泡泡圈表演，中國地方最大的水族館。",
+  "cn": "白鲸的泡泡圈表演，中国地方最大的水族馆。",
+  "en": "Beluga bubble rings, at the largest aquarium in the Chūgoku region.",
+  "ko": "흰돌고래의 버블 링. 주고쿠 지방 최대의 수족관."
+ },
+ "玉造温泉": {
+  "ja": "美肌の湯として1300年。川沿いに足湯が続く。",
+  "zh": "以美肌之湯聞名一千三百年，沿河都是足湯。",
+  "cn": "以美肌之汤闻名一千三百年，沿河都是足汤。",
+  "en": "Thirteen centuries of water said to be good for the skin, with foot baths along the river.",
+  "ko": "미인탕으로 1300년. 강가를 따라 족욕탕이 이어진다."
+ },
+ "江島大橋": {
+  "ja": "写真では壁のように立つ坂道橋。実際の勾配は6.1%。",
+  "zh": "照片裡像牆壁一樣直立的坡道橋，實際坡度只有6.1%。",
+  "cn": "照片里像墙壁一样直立的坡道桥，实际坡度只有6.1%。",
+  "en": "A bridge that looks like a wall in photos; the real gradient is only 6.1%.",
+  "ko": "사진에선 벽처럼 서 보이는 경사교. 실제 경사는 6.1%."
+ },
+ "渋川マリン水族館": {
+  "ja": "瀬戸内の魚を中心に。目の前が海水浴場。",
+  "zh": "以瀨戶內的魚為主，門前就是海水浴場。",
+  "cn": "以濑户内的鱼为主，门前就是海水浴场。",
+  "en": "Focused on Inland Sea fish, with a swimming beach right outside.",
+  "ko": "세토내의 물고기 중심. 바로 앞이 해수욕장이다."
+ },
+ "備中松山城": {
+  "ja": "現存天守で唯一の山城。秋の朝は雲海に浮かぶ。",
+  "zh": "現存天守中唯一的山城，秋天早晨會浮在雲海上。",
+  "cn": "现存天守中唯一的山城，秋天早晨会浮在云海上。",
+  "en": "The only surviving mountaintop keep; on autumn mornings it floats on cloud.",
+  "ko": "현존 천수각 중 유일한 산성. 가을 아침엔 운해에 뜬다."
+ },
+ "宮島水族館": {
+  "ja": "厳島神社から歩いて数分。カキいかだの展示がある。",
+  "zh": "從嚴島神社走幾分鐘就到，有牡蠣筏的展示。",
+  "cn": "从严岛神社走几分钟就到，有牡蛎筏的展示。",
+  "en": "A few minutes' walk from Itsukushima Shrine, with an oyster-raft display.",
+  "ko": "이쓰쿠시마 신사에서 걸어서 몇 분. 굴 양식 뗏목 전시가 있다."
+ },
+ "三段峡": {
+  "ja": "16キロの峡谷を渡し舟で進む。黒淵の水が濃い。",
+  "zh": "十六公里的峽谷靠渡船前進，黑淵的水色極濃。",
+  "cn": "十六公里的峡谷靠渡船前进，黑渊的水色极浓。",
+  "en": "Sixteen kilometres of gorge, crossed by ferry punt; the water at Kurobuchi is deep green.",
+  "ko": "16킬로미터 협곡을 나룻배로 나아간다. 구로부치의 물빛이 짙다."
+ },
+ "大久野島": {
+  "ja": "野生のうさぎが数百羽。フェリーで15分の島。",
+  "zh": "島上有數百隻野生兔子，搭渡輪十五分鐘。",
+  "cn": "岛上有数百只野生兔子，搭渡轮十五分钟。",
+  "en": "Hundreds of wild rabbits on an island fifteen minutes by ferry.",
+  "ko": "야생 토끼가 수백 마리. 페리로 15분 거리의 섬."
+ },
+ "海響館": {
+  "ja": "フグの展示種数世界一。関門海峡を望む大水槽。",
+  "zh": "河豚展示種類世界第一，還有能望見關門海峽的大水槽。",
+  "cn": "河豚展示种类世界第一，还有能望见关门海峡的大水槽。",
+  "en": "More pufferfish species than anywhere, and a big tank facing the Kanmon Strait.",
+  "ko": "복어 전시 종 수 세계 1위. 간몬해협을 바라보는 대수조."
+ },
+ "秋吉台": {
+  "ja": "日本最大のカルスト台地。石灰岩が羊のように点在する。",
+  "zh": "日本最大的喀斯特台地，石灰岩像羊群般散布。",
+  "cn": "日本最大的喀斯特台地，石灰岩像羊群般散布。",
+  "en": "Japan's largest karst plateau, with limestone scattered like sheep.",
+  "ko": "일본 최대의 카르스트 대지. 석회암이 양처럼 흩어져 있다."
+ },
+ "別府弁天池": {
+  "ja": "コバルトブルーの湧水池。水温は一年中14度。",
+  "zh": "鈷藍色的湧泉池，水溫全年維持十四度。",
+  "cn": "钴蓝色的涌泉池，水温全年维持十四度。",
+  "en": "A cobalt-blue spring pool, 14°C all year round.",
+  "ko": "코발트블루의 용천 연못. 수온은 일 년 내내 14도."
+ },
+ "渦の道": {
+  "ja": "大鳴門橋の桁下45メートル。ガラス床の真下で渦が回る。",
+  "zh": "大鳴門橋下方四十五公尺處，玻璃地板正下方就是漩渦。",
+  "cn": "大鸣门桥下方四十五米处，玻璃地板正下方就是漩涡。",
+  "en": "Forty-five metres under the Ōnaruto bridge — the whirlpools turn beneath a glass floor.",
+  "ko": "오나루토 대교 아래 45미터. 유리 바닥 바로 밑에서 소용돌이가 돈다."
+ },
+ "とくしま動物園": {
+  "ja": "気候帯ごとに分けた展示。となりに遊園地もある。",
+  "zh": "依氣候帶分區的展示，隔壁還有遊樂園。",
+  "cn": "依气候带分区的展示，隔壁还有游乐园。",
+  "en": "Exhibits arranged by climate zone, with a small fairground next door.",
+  "ko": "기후대별로 나눈 전시. 옆에 놀이공원도 있다."
+ },
+ "眉山": {
+  "ja": "徳島市街のすぐ背後。ロープウェイ6分で夜景。",
+  "zh": "就在德島市區背後，纜車六分鐘就能看夜景。",
+  "cn": "就在德岛市区背后，缆车六分钟就能看夜景。",
+  "en": "Right behind the city — six minutes by ropeway to the night view.",
+  "ko": "도쿠시마 시가지 바로 뒤. 로프웨이 6분이면 야경."
+ },
+ "四国水族館": {
+  "ja": "2020年開館。夕景と重なる水槽で瀬戸内を見せる。",
+  "zh": "二〇二〇年開館，用與夕景重疊的水槽展現瀨戶內。",
+  "cn": "二〇二〇年开馆，用与夕景重叠的水槽展现濑户内。",
+  "en": "Opened in 2020, showing the Inland Sea through a tank that merges with the sunset.",
+  "ko": "2020년 개관. 노을과 겹치는 수조로 세토내를 보여준다."
+ },
+ "ニューレオマワールド": {
+  "ja": "四国最大級の遊園地。冬は光の王国になる。",
+  "zh": "四國規模數一數二的遊樂園，冬天化為光之王國。",
+  "cn": "四国规模数一数二的游乐园，冬天化为光之王国。",
+  "en": "One of Shikoku's largest fairgrounds, which becomes a kingdom of lights in winter.",
+  "ko": "시코쿠 최대급 놀이공원. 겨울엔 빛의 왕국이 된다."
+ },
+ "屋島": {
+  "ja": "平家滅亡の古戦場が今は展望台。瀬戸内が一望。",
+  "zh": "平家覆滅的古戰場如今是展望台，瀨戶內一覽無遺。",
+  "cn": "平家覆灭的古战场如今是展望台，濑户内一览无遗。",
+  "en": "The battlefield where the Taira fell is now a lookout over the whole Inland Sea.",
+  "ko": "헤이케 멸망의 옛 전장이 지금은 전망대. 세토내가 한눈에."
+ },
+ "とべ動物園": {
+  "ja": "西日本有数の規模。ホッキョクグマのピースで知られる。",
+  "zh": "西日本數一數二的規模，以北極熊「Peace」聞名。",
+  "cn": "西日本数一数二的规模，以北极熊「Peace」闻名。",
+  "en": "One of western Japan's biggest zoos, known for the polar bear Peace.",
+  "ko": "서일본 유수의 규모. 북극곰 피스로 알려져 있다."
+ },
+ "面河渓": {
+  "ja": "石鎚山の南麓。青い淵と白い岩が交互に続く。",
+  "zh": "石鎚山南麓，藍色深潭與白色岩石交錯延伸。",
+  "cn": "石锤山南麓，蓝色深潭与白色岩石交错延伸。",
+  "en": "On the south flank of Mount Ishizuchi — blue pools alternating with white rock.",
+  "ko": "이시즈치산 남쪽 기슭. 푸른 소와 흰 바위가 번갈아 이어진다."
+ },
+ "マイントピア別子": {
+  "ja": "銅山の坑道を鉱山鉄道で入る。夏は砂金採り。",
+  "zh": "搭礦山鐵道進入銅礦坑道，夏天還能淘金。",
+  "cn": "搭矿山铁道进入铜矿坑道，夏天还能淘金。",
+  "en": "Ride a mine railway into the old copper tunnels; pan for gold in summer.",
+  "ko": "광산 철도로 구리광 갱도에 들어간다. 여름엔 사금 채취."
+ },
+ "桂浜水族館": {
+  "ja": "砂浜のすぐ横。手作り感のある展示が愛される。",
+  "zh": "就在沙灘旁邊，手作感十足的展示反而受人喜愛。",
+  "cn": "就在沙滩旁边，手作感十足的展示反而受人喜爱。",
+  "en": "Right beside the beach, loved for its unmistakably hand-made displays.",
+  "ko": "모래사장 바로 옆. 손수 만든 느낌의 전시가 사랑받는다."
+ },
+ "アンパンマンミュージアム": {
+  "ja": "作者の故郷に立つ。原画とキャラクターに会える。",
+  "zh": "立於作者故鄉，能看到原畫並見到角色。",
+  "cn": "立于作者故乡，能看到原画并见到角色。",
+  "en": "In the author's home town — original artwork and the characters themselves.",
+  "ko": "작가의 고향에 서 있다. 원화와 캐릭터를 만날 수 있다."
+ },
+ "龍河洞": {
+  "ja": "1キロの鍾乳洞。弥生時代の土器が石灰に包まれている。",
+  "zh": "一公里長的鐘乳洞，彌生時代的陶器被石灰包住。",
+  "cn": "一公里长的钟乳洞，弥生时代的陶器被石灰包住。",
+  "en": "A kilometre of limestone cave, with Yayoi-period pottery encased in calcite.",
+  "ko": "1킬로미터의 종유동. 야요이 시대 토기가 석회에 싸여 있다."
+ },
+ "マリンワールド海の中道": {
+  "ja": "博多湾を背景にイルカが跳ぶ。九州の海を一館で。",
+  "zh": "以博多灣為背景的海豚跳躍，一館看盡九州的海。",
+  "cn": "以博多湾为背景的海豚跳跃，一馆看尽九州的海。",
+  "en": "Dolphins leaping against Hakata Bay — the seas of Kyūshū in one building.",
+  "ko": "하카타만을 배경으로 돌고래가 뛴다. 규슈의 바다를 한 관에."
+ },
+ "福岡タワー": {
+  "ja": "海浜タワーとして日本一の高さ。夜は季節で光が変わる。",
+  "zh": "海濱塔中日本最高，夜間燈光隨季節變化。",
+  "cn": "海滨塔中日本最高，夜间灯光随季节变化。",
+  "en": "Japan's tallest seaside tower, lit differently with each season.",
+  "ko": "해변 타워로는 일본에서 가장 높다. 밤 조명은 계절마다 바뀐다."
+ },
+ "糸島": {
+  "ja": "海沿いのカフェとヤシの木ブランコ。福岡から車で40分。",
+  "zh": "海邊咖啡店與椰子樹鞦韆，從福岡開車四十分鐘。",
+  "cn": "海边咖啡店与椰子树秋千，从福冈开车四十分钟。",
+  "en": "Coast-road cafés and a palm-tree swing, forty minutes' drive from Fukuoka.",
+  "ko": "바닷가 카페와 야자수 그네. 후쿠오카에서 차로 40분."
+ },
+ "わらべ館": {
+  "ja": "童謡とおもちゃの博物館。木のおもちゃで実際に遊べる。",
+  "zh": "童謠與玩具的博物館，木製玩具可以實際玩。",
+  "cn": "童谣与玩具的博物馆，木制玩具可以实际玩。",
+  "en": "A museum of nursery songs and toys, with wooden toys you can actually play with.",
+  "ko": "동요와 장난감의 박물관. 나무 장난감으로 실제로 놀 수 있다."
+ },
+ "鷲羽山ハイランド": {
+  "ja": "瀬戸大橋を見下ろす遊園地。スカイサイクルが名物。",
+  "zh": "俯瞰瀨戶大橋的遊樂園，空中自行車是招牌。",
+  "cn": "俯瞰濑户大桥的游乐园，空中自行车是招牌。",
+  "en": "An amusement park above the Great Seto Bridge, famous for its sky cycle.",
+  "ko": "세토 대교를 내려다보는 놀이공원. 스카이 사이클이 명물."
+ }
 }

@@ -1441,19 +1441,19 @@
    "image": null
   },
   {
-   "name_ja": "鳥取砂丘こどもの国",
-   "kana": "とっとりさきゅうこどものくに",
-   "wp": null,
-   "qid": null,
-   "en": "Tottori Sakyu Children's Land",
-   "zh": "鳥取砂丘兒童王國",
-   "cn": "鸟取砂丘儿童王国",
-   "ko": "돗토리 사구 어린이 나라",
+   "name_ja": "わらべ館",
+   "kana": "わらべかん",
+   "wp": "わらべ館",
+   "qid": "Q11281939",
+   "en": "Warabekan Toy Museum",
+   "zh": "童謠玩具博物館 童館",
+   "cn": "童谣玩具博物馆 童馆",
+   "ko": "와라베칸(동요·장난감 박물관)",
    "coord": [
-    35.52,
-    134.213
+    35.5043,
+    134.23346
    ],
-   "image": null
+   "image": "Warabekan Toy Museum Tottori01n4350.jpg"
   }
  ],
  "JP-32": [
@@ -1520,19 +1520,19 @@
    "image": "Shibukawa Marine Aquarium.jpg"
   },
   {
-   "name_ja": "おもちゃ王国",
-   "kana": "おもちゃおうこく",
-   "wp": "おもちゃ王国",
-   "qid": "Q11262523",
-   "en": "Toy Kingdom",
-   "zh": "玩具王國",
-   "cn": "玩具王国",
-   "ko": "장난감 왕국",
+   "name_ja": "鷲羽山ハイランド",
+   "kana": "わしゅうざんハイランド",
+   "wp": "鷲羽山ハイランド",
+   "qid": "Q10345405",
+   "en": "Washuzan Highland",
+   "zh": "鷲羽山高原樂園",
+   "cn": "鹫羽山高原乐园",
+   "ko": "와슈잔 하이랜드",
    "coord": [
-    34.525,
-    133.926
+    34.44611,
+    133.79792
    ],
-   "image": null
+   "image": "鷲羽山ハイランド - panoramio.jpg"
   },
   {
    "name_ja": "備中松山城",
@@ -1658,7 +1658,7 @@
     34.24,
     134.647
    ],
-   "image": null
+   "image": "Uzu no michi.jpg"
   },
   {
    "name_ja": "とくしま動物園",
