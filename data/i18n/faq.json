@@ -1,0 +1,634 @@
+{
+ "cats": [
+  {
+   "id": "before",
+   "label": {
+    "ja": "入国・準備",
+    "zh": "入境與行前準備",
+    "cn": "入境与行前准备",
+    "en": "Before you go",
+    "ko": "입국·준비"
+   }
+  },
+  {
+   "id": "money",
+   "label": {
+    "ja": "お金と免税",
+    "zh": "金錢與免稅",
+    "cn": "金钱与免税",
+    "en": "Money & tax-free",
+    "ko": "돈과 면세"
+   }
+  },
+  {
+   "id": "transit",
+   "label": {
+    "ja": "移動",
+    "zh": "交通移動",
+    "cn": "交通移动",
+    "en": "Getting around",
+    "ko": "이동"
+   }
+  },
+  {
+   "id": "net",
+   "label": {
+    "ja": "通信とアプリ",
+    "zh": "網路與App",
+    "cn": "网路与App",
+    "en": "Connectivity",
+    "ko": "통신과 앱"
+   }
+  },
+  {
+   "id": "stay",
+   "label": {
+    "ja": "宿と食事",
+    "zh": "住宿與飲食",
+    "cn": "住宿与饮食",
+    "en": "Stay & food",
+    "ko": "숙박과 식사"
+   }
+  },
+  {
+   "id": "manner",
+   "label": {
+    "ja": "マナー",
+    "zh": "禮儀",
+    "cn": "礼仪",
+    "en": "Etiquette",
+    "ko": "매너"
+   }
+  },
+  {
+   "id": "trouble",
+   "label": {
+    "ja": "困ったとき",
+    "zh": "遇到狀況時",
+    "cn": "遇到状况时",
+    "en": "When things go wrong",
+    "ko": "곤란할 때"
+   }
+  }
+ ],
+ "items": [
+  {
+   "id": "visa",
+   "cat": "before",
+   "q": {
+    "ja": "ビザは要りますか / JESTAは？",
+    "zh": "需要簽證嗎？JESTA呢？",
+    "cn": "需要签证吗？JESTA呢？",
+    "en": "Do I need a visa, or JESTA?",
+    "ko": "비자가 필요한가요? JESTA는?"
+   },
+   "a": {
+    "ja": "70以上の国・地域は短期観光ならビザ不要(滞在日数は国により90日など)。よく聞かれるJESTA(電子渡航認証)は2028年開始予定で、2026年の旅行には要りません。国籍ごとの条件は外務省の一覧が正本です。",
+    "zh": "70多個國家地區短期觀光免簽(可停留天數依國籍，如90天)。常被問到的JESTA(電子旅行許可)預計2028年才上路，2026年出發不需要。實際條件以日本外務省清單為準。",
+    "cn": "70多个国家地区短期观光免签(可停留天数依国籍，如90天)。常被问到的JESTA(电子旅行许可)预计2028年才上路，2026年出发不需要。实际条件以日本外务省清单为准。",
+    "en": "Over 70 countries get visa-free short stays (length varies by nationality, e.g. 90 days). JESTA, the electronic travel authorisation people keep asking about, is planned for 2028 and is not required for a 2026 trip. Check the MOFA list for your passport.",
+    "ko": "70개 이상 국가는 단기 관광 시 비자가 면제됩니다(체류 일수는 국적에 따라 90일 등). 자주 묻는 JESTA(전자여행허가)는 2028년 시행 예정이라 2026년 여행에는 필요 없습니다."
+   }
+  },
+  {
+   "id": "season",
+   "cat": "before",
+   "q": {
+    "ja": "いつ行くのがいいですか？",
+    "zh": "什麼時候去最好？",
+    "cn": "什么时候去最好？",
+    "en": "When is the best time to visit?",
+    "ko": "언제 가는 것이 좋나요?"
+   },
+   "a": {
+    "ja": "10〜11月が最も安定します。暑くも寒くもなく、紅葉が北から南へ流れていくので、日付をずらすだけで見頃を追えます。桜は3月下旬〜4月上旬(本州)ですが、宿も人も価格も一年で一番混みます。",
+    "zh": "10〜11月最穩定。不冷不熱，紅葉又從北往南推進，只要挪一下日期就能追到見頃。櫻花是3月下旬〜4月上旬(本州)，但住宿、人潮、價格都是一年最高峰。",
+    "cn": "10〜11月最稳定。不冷不热，红叶又从北往南推进，只要挪一下日期就能追到见顷。樱花是3月下旬〜4月上旬(本州)，但住宿、人潮、价格都是一年最高峰。",
+    "en": "October and November are the safest bet: mild weather, and the autumn colours sweep from north to south, so shifting your dates a week either way still lands you in peak season. Cherry blossom (late March–early April on Honshu) is beautiful but the most crowded and expensive week of the year.",
+    "ko": "10〜11월이 가장 안정적입니다. 덥지도 춥지도 않고 단풍이 북에서 남으로 내려오므로 날짜를 조금만 옮겨도 절정을 맞출 수 있습니다. 벚꽃은 3월 하순〜4월 초순(혼슈)이지만 숙박·인파·가격 모두 연중 최고입니다."
+   }
+  },
+  {
+   "id": "days",
+   "cat": "before",
+   "q": {
+    "ja": "何日あれば足りますか？",
+    "zh": "要幾天才夠？",
+    "cn": "要几天才够？",
+    "en": "How many days do I need?",
+    "ko": "며칠이면 충분한가요?"
+   },
+   "a": {
+    "ja": "初めてなら7〜10日で東京・京都・大阪が回れます。5日以下なら東京圏か関西のどちらか一方に絞ったほうが、移動で1日溶かさずに済みます。日本は縦に長いので、欲張ると新幹線の車内で旅が終わります。",
+    "zh": "第一次來，7〜10天可以走完東京、京都、大阪。5天以內建議只選首都圈或關西其中一邊，才不會一天耗在移動上。日本南北很長，行程太貪心會變成在新幹線上度過。",
+    "cn": "第一次来，7〜10天可以走完东京、京都、大阪。5天以内建议只选首都圈或关西其中一边，才不会一天耗在移动上。日本南北很长，行程太贪心会变成在新干线上度过。",
+    "en": "First trip: 7–10 days covers Tokyo, Kyoto and Osaka comfortably. With 5 days or fewer, pick either the Tokyo area or Kansai — not both — or you will spend a whole day on trains. Japan is long, and an over-packed route turns into a shinkansen tour.",
+    "ko": "처음이라면 7~10일이면 도쿄·교토·오사카를 돌 수 있습니다. 5일 이하라면 수도권이나 간사이 중 한쪽으로 좁히는 편이 이동으로 하루를 버리지 않습니다."
+   }
+  },
+  {
+   "id": "budget",
+   "cat": "before",
+   "q": {
+    "ja": "1日いくらぐらい見ておけば？",
+    "zh": "一天大概要抓多少錢？",
+    "cn": "一天大概要抓多少钱？",
+    "en": "What is a realistic daily budget?",
+    "ko": "하루 예산은 어느 정도인가요?"
+   },
+   "a": {
+    "ja": "食事と交通と入場料で、節約なら1日6,000〜8,000円、ふつうに食べて動くなら12,000〜18,000円が目安(2026年8月時点・宿別)。ラーメンやコンビニは1,000円前後、居酒屋や寿司は一気に上がります。",
+    "zh": "餐費+交通+門票，省一點抓一天6,000〜8,000日圓，正常吃正常玩約12,000〜18,000日圓(2026年8月時點，不含住宿)。拉麵和超商大約1,000日圓，居酒屋和壽司會一口氣拉高。",
+    "cn": "餐费+交通+门票，省一点抓一天6,000〜8,000日圆，正常吃正常玩约12,000〜18,000日圆(2026年8月时点，不含住宿)。拉面和超商大约1,000日圆，居酒屋和寿司会一口气拉高。",
+    "en": "Food, transport and admissions: roughly ¥6,000–8,000 a day if you are careful, ¥12,000–18,000 if you eat and move normally (as of August 2026, lodging excluded). Ramen or a convenience-store meal is around ¥1,000; izakaya and sushi jump well above that.",
+    "ko": "식비·교통·입장료 기준으로 아껴 쓰면 하루 6,000~8,000엔, 평범하게 먹고 다니면 12,000~18,000엔 정도입니다(2026년 8월 기준, 숙박 제외)."
+   }
+  },
+  {
+   "id": "luggage",
+   "cat": "before",
+   "q": {
+    "ja": "大きい荷物はどうすれば？",
+    "zh": "大件行李怎麼辦？",
+    "cn": "大件行李怎么办？",
+    "en": "What do I do with big luggage?",
+    "ko": "큰 짐은 어떻게 하나요?"
+   },
+   "a": {
+    "ja": "宅配便(いわゆる手ぶら観光)でホテル間を送れます。前日夕方までに預ければ翌日着が基本で、スーツケース1個2,000円前後。駅のコインロッカーは朝のうちに埋まるので、当日勝負にしないこと。",
+    "zh": "可以用宅配把行李從飯店送到下一間飯店(所謂「手ぶら観光」)。前一天傍晚前寄出，隔天送達，一個行李箱約2,000日圓。車站置物櫃早上就會被塞滿，別賭當天有位子。",
+    "cn": "可以用宅配把行李从饭店送到下一间饭店(所谓「手ぶら観光」)。前一天傍晚前寄出，隔天送达，一个行李箱约2,000日圆。车站置物柜早上就会被塞满，别赌当天有位子。",
+    "en": "Use takkyubin luggage forwarding between hotels: drop it off by the previous evening for next-day delivery, around ¥2,000 per suitcase. Station coin lockers fill up by mid-morning, so don't build your day around finding one.",
+    "ko": "택큐빈(택배)으로 호텔에서 호텔로 짐을 보낼 수 있습니다. 전날 저녁까지 맡기면 다음 날 도착, 캐리어 1개당 2,000엔 정도입니다. 역 코인로커는 오전 중에 다 차므로 당일에 기대지 마세요."
+   }
+  },
+  {
+   "id": "cash",
+   "cat": "money",
+   "q": {
+    "ja": "現金は必要ですか？",
+    "zh": "還需要帶現金嗎？",
+    "cn": "还需要带现金吗？",
+    "en": "Do I still need cash?",
+    "ko": "현금이 필요한가요?"
+   },
+   "a": {
+    "ja": "都市部はほぼキャッシュレスで回りますが、屋台・小さな寺社の拝観料・地方のバスやタクシー・古い個人店は現金のみが残っています。1万〜2万円を常に財布に入れておけば詰みません。",
+    "zh": "都市裡幾乎都能刷卡或感應支付，但攤販、小神社寺院的參拜費、鄉下的公車計程車、老字號小店還是只收現金。錢包裡常備1〜2萬日圓就不會卡住。",
+    "cn": "都市里几乎都能刷卡或感应支付，但摊贩、小神社寺院的参拜费、乡下的公车计程车、老字号小店还是只收现金。钱包里常备1〜2万日圆就不会卡住。",
+    "en": "Cities run fine cashless, but street stalls, small shrine and temple admissions, rural buses and taxis, and older family-run shops are still cash-only. Keeping ¥10,000–20,000 on you avoids every awkward moment.",
+    "ko": "도시는 대부분 캐시리스로 다닐 수 있지만 노점, 작은 신사·사찰의 배관료, 지방 버스·택시, 오래된 개인 상점은 현금만 받습니다. 1만~2만 엔은 늘 지갑에 넣어 두세요."
+   }
+  },
+  {
+   "id": "atm",
+   "cat": "money",
+   "q": {
+    "ja": "海外のカードでお金を下ろせますか？",
+    "zh": "可以用國外的卡領錢嗎？",
+    "cn": "可以用国外的卡领钱吗？",
+    "en": "Can I withdraw cash with a foreign card?",
+    "ko": "해외 카드로 현금을 뽑을 수 있나요?"
+   },
+   "a": {
+    "ja": "セブン銀行(セブンイレブン)とゆうちょ銀行(郵便局)のATMが海外カードに一番強く、24時間動いているものも多いです。銀行の自前ATMは海外カードを弾くことがあります。",
+    "zh": "7-11的Seven銀行和郵局的ゆうちょ銀行ATM對國外卡最友善，很多還24小時運作。一般銀行自己的ATM有時會直接拒絕國外卡。",
+    "cn": "7-11的Seven银行和邮局的ゆうちょ银行ATM对国外卡最友善，很多还24小时运作。一般银行自己的ATM有时会直接拒绝国外卡。",
+    "en": "Seven Bank ATMs (in 7-Eleven) and Japan Post Bank ATMs accept foreign cards most reliably, and many run 24 hours. Regular bank-branch ATMs often reject overseas cards.",
+    "ko": "세븐은행(세븐일레븐)과 유초은행(우체국) ATM이 해외 카드에 가장 잘 대응하며 24시간 운영되는 곳도 많습니다. 일반 은행 자체 ATM은 해외 카드를 거부하기도 합니다."
+   }
+  },
+  {
+   "id": "taxfree",
+   "cat": "money",
+   "q": {
+    "ja": "免税の買い物はどうやるの？(2026年11月から変わります)",
+    "zh": "免稅怎麼買？(2026年11月起改制)",
+    "cn": "免税怎么买？(2026年11月起改制)",
+    "en": "How does tax-free shopping work? (changing Nov 2026)",
+    "ko": "면세 쇼핑은 어떻게 하나요? (2026년 11월부터 변경)"
+   },
+   "a": {
+    "ja": "同じ店・同じ日に税抜5,000円以上でパスポート提示。2026年10月31日までは店頭でそのまま税抜き価格になります。2026年11月1日からは「いったん税込で払い、出国時に空港で還付を受ける」方式に変わり、消耗品と一般品の区分は無くなります。",
+    "zh": "同一家店、同一天、稅前5,000日圓以上，出示護照即可。2026年10月31日前是在店頭直接扣稅。2026年11月1日起改成「先付含稅價，出境時在機場退稅」，而且消耗品和一般品的區分會取消。",
+    "cn": "同一家店、同一天、税前5,000日圆以上，出示护照即可。2026年10月31日前是在店头直接扣税。2026年11月1日起改成「先付含税价，出境时在机场退税」，而且消耗品和一般品的区分会取消。",
+    "en": "Spend ¥5,000+ (pre-tax) at one shop on one day and show your passport. Until 31 Oct 2026 the tax simply comes off at the register. From 1 Nov 2026 you pay the full price and claim a refund at the airport before departure, and the consumables/general-goods split disappears.",
+    "ko": "같은 가게에서 같은 날 세전 5,000엔 이상 구매 후 여권 제시. 2026년 10월 31일까지는 매장에서 바로 면세됩니다. 2026년 11월 1일부터는 세금을 포함해 결제한 뒤 출국 시 공항에서 환급받는 방식으로 바뀌고, 소모품·일반품 구분은 없어집니다."
+   }
+  },
+  {
+   "id": "tip",
+   "cat": "money",
+   "q": {
+    "ja": "チップは要りますか？",
+    "zh": "需要給小費嗎？",
+    "cn": "需要给小费吗？",
+    "en": "Do I tip?",
+    "ko": "팁을 줘야 하나요?"
+   },
+   "a": {
+    "ja": "要りません。置いていくと「忘れ物です」と追いかけてこられます。支払いはトレイにお金を置くのが作法で、店員に直接手渡しはしません。",
+    "zh": "不用。留在桌上店員會追出來說「你東西忘了」。付款時把錢放在小盤子上，不要直接遞給店員。",
+    "cn": "不用。留在桌上店员会追出来说「你东西忘了」。付款时把钱放在小盘子上，不要直接递给店员。",
+    "en": "No. Leave money on the table and staff will chase you down to return it. Pay by placing cash on the little tray at the register rather than handing it over.",
+    "ko": "필요 없습니다. 두고 가면 \"두고 가셨어요\"라며 쫓아옵니다. 계산은 트레이에 돈을 올려놓는 것이 예의이며 직원에게 직접 건네지 않습니다."
+   }
+  },
+  {
+   "id": "ic",
+   "cat": "transit",
+   "q": {
+    "ja": "交通ICカードはどれを買えばいい？",
+    "zh": "交通IC卡要買哪一張？",
+    "cn": "交通IC卡要买哪一张？",
+    "en": "Which IC card should I get?",
+    "ko": "교통 IC카드는 어떤 것을 사야 하나요?"
+   },
+   "a": {
+    "ja": "iPhone(iOS 17.2以上)かApple Watchなら「Welcome Suica Mobile」が最適解です。無料・デポジット無し・有効180日で、海外発行のVisa/Mastercardをそのままチャージに使えます。海外で買ったAndroid端末はFeliCa非搭載のため使えないので、その場合は駅や空港で実体カードを買います。",
+    "zh": "用iPhone(iOS 17.2以上)或Apple Watch的話，「Welcome Suica Mobile」最方便。免費、免押金、效期180天，還能直接用國外發行的Visa/Mastercard儲值。國外買的Android手機沒有FeliCa所以不能用，那就在車站或機場買實體卡。",
+    "cn": "用iPhone(iOS 17.2以上)或Apple Watch的话，「Welcome Suica Mobile」最方便。免费、免押金、效期180天，还能直接用国外发行的Visa/Mastercard储值。国外买的Android手机没有FeliCa所以不能用，那就在车站或机场买实体卡。",
+    "en": "On an iPhone (iOS 17.2+) or Apple Watch, Welcome Suica Mobile is the answer: free, no deposit, valid 180 days, and it tops up with a foreign-issued Visa or Mastercard. Android phones bought outside Japan lack the FeliCa chip and cannot use it — buy a physical card at a station or airport instead.",
+    "ko": "iPhone(iOS 17.2 이상)이나 Apple Watch라면 'Welcome Suica Mobile'이 최선입니다. 무료·보증금 없음·유효기간 180일이며 해외 발행 Visa/Mastercard로 충전할 수 있습니다. 해외에서 산 안드로이드 폰은 FeliCa가 없어 사용할 수 없으니 역이나 공항에서 실물 카드를 사세요."
+   }
+  },
+  {
+   "id": "jrpass",
+   "cat": "transit",
+   "q": {
+    "ja": "ジャパンレールパスは元が取れますか？",
+    "zh": "JR Pass划算嗎？",
+    "cn": "JR Pass划算吗？",
+    "en": "Is the Japan Rail Pass worth it?",
+    "ko": "재팬레일패스는 본전을 뽑을 수 있나요?"
+   },
+   "a": {
+    "ja": "多くの旅程では取れません。7日間の普通車が50,000円(2026年10月1日購入分から53,000円)なのに対し、東京—大阪の片道が13,000円台。東京と京都・大阪を1往復するだけなら個別に買うほうが安いです。端から端まで走る人か、関西・東日本などの地域パスを検討してください。",
+    "zh": "多數行程並不划算。7天普通車50,000日圓(2026年10月1日起購買為53,000日圓)，但東京—大阪單程才13,000多日圓。只在東京和京阪之間來回一趟的話，單買車票更便宜。除非你要縱貫日本，否則建議看關西、東日本等地區型Pass。",
+    "cn": "多数行程并不划算。7天普通车50,000日圆(2026年10月1日起购买为53,000日圆)，但东京—大阪单程才13,000多日圆。只在东京和京阪之间来回一趟的话，单买车票更便宜。除非你要纵贯日本，否则建议看关西、东日本等地区型Pass。",
+    "en": "For most itineraries, no. The 7-day ordinary pass is ¥50,000 (¥53,000 for purchases from 1 Oct 2026), while Tokyo–Osaka one way is about ¥13,000. A single Tokyo–Kyoto–Osaka round trip is cheaper bought ticket by ticket. It pays off only if you cross the country end to end — otherwise look at regional passes.",
+    "ko": "대부분의 일정에서는 그렇지 않습니다. 7일 보통차 패스가 50,000엔(2026년 10월 1일 구매분부터 53,000엔)인데 도쿄—오사카 편도는 13,000엔대입니다. 도쿄와 교토·오사카를 한 번 왕복하는 정도라면 개별 구매가 저렴합니다."
+   }
+  },
+  {
+   "id": "airport",
+   "cat": "transit",
+   "q": {
+    "ja": "空港から市内へはどう行く？",
+    "zh": "從機場怎麼進市區？",
+    "cn": "从机场怎么进市区？",
+    "en": "How do I get from the airport into the city?",
+    "ko": "공항에서 시내까지 어떻게 가나요?"
+   },
+   "a": {
+    "ja": "成田は成田エクスプレスかスカイライナー(日暮里まで約45分)、羽田は京急かモノレール(20〜30分)、関西は特急はるかかラピート(30〜50分)、新千歳はJR快速(札幌まで37分)。地図の「旅の基本情報」に4空港のルート比較を入れてあります。",
+    "zh": "成田用N'EX或Skyliner(到日暮里約45分)，羽田用京急或單軌(20〜30分)，關西用HARUKA或Rapi:t(30〜50分)，新千歲用JR快速(到札幌37分)。地圖的「旅遊實用資訊」裡有四座機場的路線比較。",
+    "cn": "成田用N'EX或Skyliner(到日暮里约45分)，羽田用京急或单轨(20〜30分)，关西用HARUKA或Rapi:t(30〜50分)，新千岁用JR快速(到札幌37分)。地图的「旅游实用资讯」里有四座机场的路线比较。",
+    "en": "Narita: N'EX or Skyliner (about 45 min to Nippori). Haneda: Keikyu or the Monorail (20–30 min). Kansai: Haruka or Rapi:t (30–50 min). New Chitose: JR rapid service (37 min to Sapporo). The travel-basics panel on this map compares all four.",
+    "ko": "나리타는 N'EX나 스카이라이너(닛포리까지 약 45분), 하네다는 게이큐나 모노레일(20~30분), 간사이는 하루카나 라피트(30~50분), 신치토세는 JR 쾌속(삿포로까지 37분)입니다."
+   }
+  },
+  {
+   "id": "taxi",
+   "cat": "transit",
+   "q": {
+    "ja": "タクシーは高い？アプリは使える？",
+    "zh": "計程車貴嗎？可以用App嗎？",
+    "cn": "计程车贵吗？可以用App吗？",
+    "en": "Are taxis expensive? Can I use an app?",
+    "ko": "택시는 비싼가요? 앱을 쓸 수 있나요?"
+   },
+   "a": {
+    "ja": "初乗り500〜600円台からですが加算が早く、都市内の短距離向けです。GOやUber(日本ではタクシー配車)が使え、後部ドアは自動で開くので自分で触らないこと。深夜は割増になります。",
+    "zh": "起跳500〜600日圓多，但跳表很快，適合市區短程。可以用GO或Uber(在日本是叫計程車)。後車門會自動開，不要自己動手。深夜有加成。",
+    "cn": "起跳500〜600日圆多，但跳表很快，适合市区短程。可以用GO或Uber(在日本是叫计程车)。后车门会自动开，不要自己动手。深夜有加成。",
+    "en": "Fares start around ¥500–600 but climb fast, so they suit short city hops. GO and Uber (which dispatches taxis in Japan) both work. The rear door opens automatically — don't pull it. Late-night rides carry a surcharge.",
+    "ko": "기본요금은 500~600엔대지만 미터가 빨리 올라 시내 단거리에 적합합니다. GO나 Uber(일본에서는 택시 배차)를 쓸 수 있고, 뒷문은 자동으로 열리니 직접 만지지 마세요."
+   }
+  },
+  {
+   "id": "rural",
+   "cat": "transit",
+   "q": {
+    "ja": "田舎に行くとき気をつけることは？",
+    "zh": "去鄉下要注意什麼？",
+    "cn": "去乡下要注意什么？",
+    "en": "Anything to watch out for in the countryside?",
+    "ko": "시골에 갈 때 주의할 점은?"
+   },
+   "a": {
+    "ja": "バスや電車が1〜2時間に1本ということが普通にあります。最終便を先に調べてから出発時刻を決めてください。レンタカーが要る地域も多く、その場合は国際運転免許証(または指定国の翻訳文)が必要です。",
+    "zh": "公車或電車一兩個小時才一班是常態。先查末班車再決定出發時間。很多地方需要租車，那就要準備國際駕照(或指定國家的譯本)。",
+    "cn": "公车或电车一两个小时才一班是常态。先查末班车再决定出发时间。很多地方需要租车，那就要准备国际驾照(或指定国家的译本)。",
+    "en": "Buses and trains can run once every one or two hours. Look up the last departure before you decide when to leave. Many areas effectively need a rental car, which requires an International Driving Permit (or an official translation for certain countries).",
+    "ko": "버스나 전철이 1~2시간에 한 대인 경우가 흔합니다. 막차를 먼저 확인한 뒤 출발 시간을 정하세요. 렌터카가 필요한 지역도 많으며 국제운전면허증이 필요합니다."
+   }
+  },
+  {
+   "id": "esim",
+   "cat": "net",
+   "q": {
+    "ja": "ネットはどうする？eSIM？ポケットWi-Fi？",
+    "zh": "網路怎麼辦？eSIM還是WiFi機？",
+    "cn": "网路怎么办？eSIM还是WiFi机？",
+    "en": "eSIM or pocket Wi-Fi?",
+    "ko": "인터넷은? eSIM? 포켓 와이파이?"
+   },
+   "a": {
+    "ja": "1人ならeSIMが一番早い。出発前にオンラインで買って、着いたら有効化するだけです。複数人で分け合うならポケットWi-Fiのほうが安くつくこともありますが、充電と受け渡しの手間が増えます。",
+    "zh": "一個人的話eSIM最快，出發前線上買好，落地開通就能用。多人共用時WiFi機有時比較便宜，但要多帶一顆電、還要互相等對方。",
+    "cn": "一个人的话eSIM最快，出发前线上买好，落地开通就能用。多人共用时WiFi机有时比较便宜，但要多带一颗电、还要互相等对方。",
+    "en": "Travelling alone, eSIM wins: buy it online before you fly and activate on landing. For a group, a pocket Wi-Fi router can work out cheaper, at the cost of charging it and staying within range of whoever holds it.",
+    "ko": "혼자라면 eSIM이 가장 빠릅니다. 출발 전 온라인으로 구입해 도착 후 활성화하면 됩니다. 여러 명이면 포켓 와이파이가 저렴할 수 있지만 충전과 동선 제약이 생깁니다."
+   }
+  },
+  {
+   "id": "apps",
+   "cat": "net",
+   "q": {
+    "ja": "入れておくと便利なアプリは？",
+    "zh": "有哪些App值得先裝？",
+    "cn": "有哪些App值得先装？",
+    "en": "Which apps are actually useful?",
+    "ko": "미리 깔아두면 좋은 앱은?"
+   },
+   "a": {
+    "ja": "乗換案内(Google マップでも可)、翻訳アプリのカメラ機能(メニューを写すと読める)、天気アプリ、それとタクシー配車。飲食店の予約は食べログやGoogle経由が通りやすいです。",
+    "zh": "轉乘查詢(Google地圖也行)、翻譯App的相機功能(拍菜單就能看懂)、天氣App，還有叫車App。餐廳訂位用食べログ或Google比較容易成功。",
+    "cn": "转乘查询(Google地图也行)、翻译App的相机功能(拍菜单就能看懂)、天气App，还有叫车App。餐厅订位用食べログ或Google比较容易成功。",
+    "en": "A transit router (Google Maps is fine), a translation app with camera mode (point it at a menu), a weather app, and a taxi-hailing app. For restaurant bookings, Tabelog or Google tend to work best from overseas.",
+    "ko": "환승 안내(구글 지도도 가능), 번역 앱의 카메라 기능(메뉴를 비추면 읽힘), 날씨 앱, 그리고 택시 호출 앱. 식당 예약은 타베로그나 구글이 잘 통합니다."
+   }
+  },
+  {
+   "id": "power",
+   "cat": "net",
+   "q": {
+    "ja": "電圧とプラグは？",
+    "zh": "電壓和插頭是？",
+    "cn": "电压和插头是？",
+    "en": "What about plugs and voltage?",
+    "ko": "전압과 플러그는?"
+   },
+   "a": {
+    "ja": "100V・Aタイプ(平たい2本)です。東日本は50Hz、西日本は60Hz。ノートPCやスマホの充電器はほぼそのまま使えますが、ドライヤーなど発熱するものは変圧器が要ることがあります。",
+    "zh": "100V、A型插頭(兩支扁平)。東日本50Hz，西日本60Hz。筆電和手機充電器幾乎都能直接用，但吹風機這類發熱電器可能需要變壓器。",
+    "cn": "100V、A型插头(两支扁平)。东日本50Hz，西日本60Hz。笔电和手机充电器几乎都能直接用，但吹风机这类发热电器可能需要变压器。",
+    "en": "100V, Type A plugs (two flat pins). 50Hz in eastern Japan, 60Hz in the west. Laptop and phone chargers work as-is; heat appliances like hair dryers may need a transformer.",
+    "ko": "100V, A타입 플러그(납작한 2핀). 동일본 50Hz, 서일본 60Hz. 노트북·휴대폰 충전기는 그대로 쓸 수 있지만 드라이어 같은 발열 기기는 변압기가 필요할 수 있습니다."
+   }
+  },
+  {
+   "id": "book",
+   "cat": "stay",
+   "q": {
+    "ja": "宿はいつ予約すべき？",
+    "zh": "住宿要多早訂？",
+    "cn": "住宿要多早订？",
+    "en": "How far ahead should I book?",
+    "ko": "숙소는 언제 예약해야 하나요?"
+   },
+   "a": {
+    "ja": "桜(3月下旬〜4月上旬)、GW(4月末〜5月上旬)、お盆(8月中旬)、紅葉(11月)、年末年始は3〜6か月前が安全です。それ以外の平日なら1か月前でもだいたい取れます。",
+    "zh": "櫻花(3月下旬〜4月上旬)、黃金週(4月底〜5月初)、盂蘭盆(8月中)、紅葉(11月)、跨年這幾段，提前3〜6個月比較保險。其他時候的平日，提前一個月大多訂得到。",
+    "cn": "樱花(3月下旬〜4月上旬)、黄金周(4月底〜5月初)、盂兰盆(8月中)、红叶(11月)、跨年这几段，提前3〜6个月比较保险。其他时候的平日，提前一个月大多订得到。",
+    "en": "For cherry blossom (late March–early April), Golden Week (late April–early May), Obon (mid-August), autumn colours (November) and New Year, book 3–6 months out. Outside those, a month ahead on weekdays is usually fine.",
+    "ko": "벚꽃(3월 하순~4월 초순), 골든위크(4월 말~5월 초), 오봉(8월 중순), 단풍(11월), 연말연시는 3~6개월 전이 안전합니다. 그 외 평일은 한 달 전에도 대체로 잡힙니다."
+   }
+  },
+  {
+   "id": "ryokan",
+   "cat": "stay",
+   "q": {
+    "ja": "旅館とホテル、どっちがいい？",
+    "zh": "旅館和飯店選哪個？",
+    "cn": "旅馆和饭店选哪个？",
+    "en": "Ryokan or hotel?",
+    "ko": "료칸과 호텔 중 어느 쪽?"
+   },
+   "a": {
+    "ja": "1泊だけでも旅館に泊まる価値はあります。夕食朝食つきで、温泉と畳と浴衣が体験そのものになる。ただしチェックイン15時・夕食18時など時間が縛られるので、観光を詰め込む日はビジネスホテルのほうが動けます。",
+    "zh": "至少住一晚旅館很值得，含早晚餐，溫泉、榻榻米、浴衣本身就是體驗。但入住15點、晚餐18點這類時間限制多，行程滿檔的日子住商務飯店比較自由。",
+    "cn": "至少住一晚旅馆很值得，含早晚餐，温泉、榻榻米、浴衣本身就是体验。但入住15点、晚餐18点这类时间限制多，行程满档的日子住商务饭店比较自由。",
+    "en": "One night in a ryokan is worth it: dinner and breakfast included, and the onsen, tatami and yukata are the experience. But the schedule is fixed — check-in at 15:00, dinner at 18:00 — so on packed sightseeing days a business hotel gives you more freedom.",
+    "ko": "하룻밤만이라도 료칸에 묵을 가치가 있습니다. 석식·조식 포함이며 온천과 다다미, 유카타 자체가 경험입니다. 다만 체크인 15시, 석식 18시처럼 시간이 묶이므로 일정이 빡빡한 날은 비즈니스호텔이 편합니다."
+   }
+  },
+  {
+   "id": "food",
+   "cat": "stay",
+   "q": {
+    "ja": "ベジタリアン・ハラル・アレルギーは大丈夫？",
+    "zh": "素食、清真、過敏怎麼辦？",
+    "cn": "素食、清真、过敏怎么办？",
+    "en": "Vegetarian, halal, allergies — will I be OK?",
+    "ko": "채식·할랄·알레르기는 괜찮나요?"
+   },
+   "a": {
+    "ja": "都市部には対応店がありますが、数は多くありません。だしに鰹節が入っていることが多く「野菜料理＝ベジタリアン対応」ではない点に注意。食べられないものを日本語で書いたメモを見せるのが一番確実です。",
+    "zh": "都市裡有對應的店，但數量不多。日式高湯常含柴魚，「蔬菜料理」不等於素食。最保險的做法是準備一張寫著日文的紙條，直接給店家看。",
+    "cn": "都市里有对应的店，但数量不多。日式高汤常含柴鱼，「蔬菜料理」不等于素食。最保险的做法是准备一张写著日文的纸条，直接给店家看。",
+    "en": "Cities have options, but not many. Japanese stock usually contains bonito, so a vegetable dish is not automatically vegetarian. The reliable move is a note in Japanese listing what you cannot eat, shown to staff.",
+    "ko": "도시에는 대응 매장이 있지만 많지는 않습니다. 일본 육수에는 가쓰오부시가 들어가는 경우가 많아 '채소 요리=채식'이 아닙니다. 못 먹는 것을 일본어로 적은 메모를 보여주는 것이 가장 확실합니다."
+   }
+  },
+  {
+   "id": "solo",
+   "cat": "stay",
+   "q": {
+    "ja": "一人でも入りやすい店は？",
+    "zh": "一個人也好進的店有哪些？",
+    "cn": "一个人也好进的店有哪些？",
+    "en": "Where can I eat comfortably alone?",
+    "ko": "혼자서도 편한 가게는?"
+   },
+   "a": {
+    "ja": "ラーメン、立ち食いそば、定食屋、回転寿司、牛丼はカウンター中心で一人客が前提です。券売機の店は言葉が要らないので最初の1軒に向いています。居酒屋も一人で入れますが、コースの店は避けたほうが無難。",
+    "zh": "拉麵、立食蕎麥麵、定食屋、迴轉壽司、牛丼幾乎都是吧台座，本來就給一個人吃。有券售機的店不用開口，很適合當第一家。居酒屋一個人也能進，但套餐制的店建議避開。",
+    "cn": "拉面、立食荞麦面、定食屋、回转寿司、牛丼几乎都是吧台座，本来就给一个人吃。有券售机的店不用开口，很适合当第一家。居酒屋一个人也能进，但套餐制的店建议避开。",
+    "en": "Ramen, standing soba, teishoku diners, conveyor sushi and gyudon are counter-first and built for solo diners. Places with a ticket machine need no conversation at all — ideal for your first meal. Izakaya are fine solo, though course-only ones are best avoided.",
+    "ko": "라멘, 서서 먹는 소바, 정식집, 회전초밥, 규동은 카운터 중심이라 혼자 오는 손님이 기본입니다. 식권 자판기가 있는 가게는 말이 필요 없어 첫 식사로 좋습니다."
+   }
+  },
+  {
+   "id": "shoes",
+   "cat": "manner",
+   "q": {
+    "ja": "靴はどこで脱ぐの？",
+    "zh": "什麼時候要脫鞋？",
+    "cn": "什么时候要脱鞋？",
+    "en": "When do I take my shoes off?",
+    "ko": "신발은 어디서 벗나요?"
+   },
+   "a": {
+    "ja": "床が一段上がっていたり、床材が変わっていたら脱ぐ合図です。旅館・寺社の建物内・一部の飲食店・試着室が該当します。トイレに専用スリッパがある場合は履き替え、出るとき戻すのを忘れずに。",
+    "zh": "地板有一階高低差、或材質變了，就是要脫鞋的信號。旅館、寺社建築內、部分餐廳、試衣間都適用。廁所有專用拖鞋就要換，出來記得換回去。",
+    "cn": "地板有一阶高低差、或材质变了，就是要脱鞋的信号。旅馆、寺社建筑内、部分餐厅、试衣间都适用。厕所有专用拖鞋就要换，出来记得换回去。",
+    "en": "A step up, or a change in flooring, is the signal. It applies in ryokan, inside temple and shrine buildings, some restaurants, and fitting rooms. If the toilet has its own slippers, switch into them — and remember to switch back.",
+    "ko": "바닥이 한 단 올라가거나 재질이 바뀌면 벗으라는 신호입니다. 료칸, 사찰·신사 건물 내부, 일부 음식점, 피팅룸이 해당합니다. 화장실 전용 슬리퍼가 있으면 갈아 신고 나올 때 되돌려 놓으세요."
+   }
+  },
+  {
+   "id": "onsen",
+   "cat": "manner",
+   "q": {
+    "ja": "温泉の入り方は？タトゥーは？",
+    "zh": "溫泉怎麼泡？有刺青可以嗎？",
+    "cn": "温泉怎么泡？有刺青可以吗？",
+    "en": "How do I use an onsen? What about tattoos?",
+    "ko": "온천 이용법은? 문신은?"
+   },
+   "a": {
+    "ja": "先に体を洗ってから湯船へ。水着は着ません。小さいタオルは湯に入れず頭か縁に置きます。タトゥーは施設ごとの判断で、断る所もまだ多い一方、カバーシールを配る所や貸切風呂を用意する所が増えています。行く前に確認を。",
+    "zh": "先洗乾淨再進浴池，不穿泳衣。小毛巾不能放進水裡，放頭上或池邊。刺青由各設施決定，仍有不少會拒絕，但提供遮蓋貼或包場湯屋的越來越多，去之前先確認。",
+    "cn": "先洗干净再进浴池，不穿泳衣。小毛巾不能放进水里，放头上或池边。刺青由各设施决定，仍有不少会拒绝，但提供遮盖贴或包场汤屋的越来越多，去之前先确认。",
+    "en": "Wash thoroughly before entering the bath, and go in naked — no swimsuits. Keep the small towel out of the water, on your head or the rim. Tattoo rules are set per facility: many still refuse, but cover stickers and private baths are increasingly offered. Check before you go.",
+    "ko": "먼저 몸을 씻고 탕에 들어갑니다. 수영복은 입지 않습니다. 작은 수건은 물에 넣지 말고 머리 위나 가장자리에 두세요. 문신은 시설마다 다르며 거절하는 곳도 많지만 커버 스티커나 대절탕을 제공하는 곳이 늘고 있습니다."
+   }
+  },
+  {
+   "id": "trash",
+   "cat": "manner",
+   "q": {
+    "ja": "ゴミ箱が見つかりません",
+    "zh": "找不到垃圾桶",
+    "cn": "找不到垃圾桶",
+    "en": "I can't find a rubbish bin",
+    "ko": "쓰레기통이 안 보여요"
+   },
+   "a": {
+    "ja": "街にはほとんどありません。コンビニの店内、駅、自販機の横(缶とペットボトル用)が主な回収点です。小さな袋を持ち歩いて宿まで持ち帰るのが現実的です。食べ歩きも、買った店の前で食べきるのが本来の作法。",
+    "zh": "街上幾乎沒有。超商店內、車站、自動販賣機旁(收鋁罐寶特瓶)是主要的回收點。帶個小塑膠袋帶回飯店最實際。邊走邊吃其實也不太禮貌，原則上在買的店門口吃完。",
+    "cn": "街上几乎没有。超商店内、车站、自动贩卖机旁(收铝罐宝特瓶)是主要的回收点。带个小塑胶袋带回饭店最实际。边走边吃其实也不太礼貌，原则上在买的店门口吃完。",
+    "en": "There are almost none on the street. Convenience stores, stations and the bins beside vending machines (cans and PET bottles) are the main options. Carrying a small bag and taking rubbish back to your hotel is the practical answer.",
+    "ko": "거리에는 거의 없습니다. 편의점 안, 역, 자판기 옆(캔·페트병용)이 주요 회수 지점입니다. 작은 봉투를 들고 다니다 숙소로 가져가는 것이 현실적입니다."
+   }
+  },
+  {
+   "id": "photo",
+   "cat": "manner",
+   "q": {
+    "ja": "写真を撮っていい場所・ダメな場所は？",
+    "zh": "哪裡可以拍照、哪裡不行？",
+    "cn": "哪里可以拍照、哪里不行？",
+    "en": "Where can I take photos?",
+    "ko": "사진은 어디서 찍어도 되나요?"
+   },
+   "a": {
+    "ja": "寺社の本堂内部、美術館、多くの店内、そして舞妓さんなど人物は基本的に撮らないほうが安全です。京都の祇園など私道での撮影が禁止され罰金の対象になっている場所もあります。掲示があれば必ず従ってください。",
+    "zh": "寺社的正殿內部、美術館、很多店家內部，還有舞妓等人物，基本上不要拍比較安全。京都祇園有些私人道路已明文禁止拍照並可能罰款。看到告示就一定要遵守。",
+    "cn": "寺社的正殿内部、美术馆、很多店家内部，还有舞妓等人物，基本上不要拍比较安全。京都祇园有些私人道路已明文禁止拍照并可能罚款。看到告示就一定要遵守。",
+    "en": "Inside temple and shrine halls, in museums, inside many shops, and of people such as maiko — assume no. Some private lanes in Gion, Kyoto, ban photography outright and fine offenders. Where there is a sign, follow it.",
+    "ko": "사찰·신사 본당 내부, 미술관, 많은 상점 내부, 그리고 마이코 같은 인물은 기본적으로 찍지 않는 편이 안전합니다. 교토 기온 등 사유 도로는 촬영이 금지되고 벌금 대상인 곳도 있습니다."
+   }
+  },
+  {
+   "id": "train",
+   "cat": "manner",
+   "q": {
+    "ja": "電車内でのマナーは？",
+    "zh": "電車上的禮儀？",
+    "cn": "电车上的礼仪？",
+    "en": "Train etiquette?",
+    "ko": "전철 안 매너는?"
+   },
+   "a": {
+    "ja": "通話はしない、リュックは前に抱えるか網棚へ、優先席付近では譲る。飲食は新幹線や特急ならOKですが、通勤電車では避けます。乗る前に降りる人を待つ、が最も守られている習慣です。",
+    "zh": "不要講電話，背包抱在前面或放行李架，博愛座附近要讓位。新幹線和特急上可以吃東西，通勤電車上就別了。上車前先讓下車的人出來，是最被嚴格遵守的習慣。",
+    "cn": "不要讲电话，背包抱在前面或放行李架，博爱座附近要让位。新干线和特急上可以吃东西，通勤电车上就别了。上车前先让下车的人出来，是最被严格遵守的习惯。",
+    "en": "No phone calls; wear your backpack on your front or put it on the rack; give up priority seats. Eating is fine on shinkansen and limited express trains, not on commuter lines. Letting passengers off before boarding is the rule everyone keeps.",
+    "ko": "통화하지 않기, 배낭은 앞으로 메거나 선반에 올리기, 노약자석 근처에서는 양보하기. 신칸센·특급에서는 음식을 먹어도 되지만 통근 전철에서는 피합니다."
+   }
+  },
+  {
+   "id": "quake",
+   "cat": "trouble",
+   "q": {
+    "ja": "地震が来たらどうすれば？",
+    "zh": "地震來了怎麼辦？",
+    "cn": "地震来了怎么办？",
+    "en": "What do I do in an earthquake?",
+    "ko": "지진이 나면 어떻게 하나요?"
+   },
+   "a": {
+    "ja": "屋内ならまず頭を守り、机の下など落ちてこない場所へ。揺れが収まるまで外へ飛び出さない(落下物が一番危険)。携帯の緊急地震速報は日本語ですが、NHK WORLDアプリが英語などで速報を出します。宿の避難経路は着いた日に見ておくと安心です。",
+    "zh": "在室內先護住頭，躲到桌子下等不會有東西掉下來的地方。搖晃停止前不要衝出戶外(掉落物最危險)。手機的緊急地震速報是日文，但NHK WORLD App會用英文等語言發布。抵達當天先看一下住宿的逃生路線比較安心。",
+    "cn": "在室内先护住头，躲到桌子下等不会有东西掉下来的地方。摇晃停止前不要冲出户外(掉落物最危险)。手机的紧急地震速报是日文，但NHK WORLD App会用英文等语言发布。抵达当天先看一下住宿的逃生路线比较安心。",
+    "en": "Indoors: protect your head and get under a desk or somewhere nothing can fall on you. Don't run outside while it's shaking — falling objects are the main danger. Phone alerts are in Japanese, but the NHK WORLD app pushes them in English and other languages. Check your hotel's evacuation route on arrival day.",
+    "ko": "실내라면 우선 머리를 보호하고 책상 밑 등 물건이 떨어지지 않는 곳으로. 흔들림이 멈출 때까지 밖으로 뛰쳐나가지 마세요. 휴대폰 긴급지진속보는 일본어지만 NHK WORLD 앱이 영어 등으로 알려줍니다."
+   }
+  },
+  {
+   "id": "typhoon",
+   "cat": "trouble",
+   "q": {
+    "ja": "台風の時期はどうすれば？",
+    "zh": "颱風季怎麼辦？",
+    "cn": "台风季怎么办？",
+    "en": "What about typhoon season?",
+    "ko": "태풍 시기에는 어떻게 하나요?"
+   },
+   "a": {
+    "ja": "7〜9月は進路を毎日確認します。上陸予報が出ると新幹線も飛行機も前日に計画運休を announce するので、公式サイトを見て日程を前後にずらすのが最も確実。気象庁(jma.go.jp)が多言語で情報を出しています。",
+    "zh": "7〜9月要每天看路徑。一旦發布登陸預報，新幹線和班機前一天就會宣布計畫性停駛，看官網把行程往前或往後挪最保險。氣象廳(jma.go.jp)有多語版資訊。",
+    "cn": "7〜9月要每天看路径。一旦发布登陆预报，新干线和班机前一天就会宣布计划性停驶，看官网把行程往前或往后挪最保险。气象厅(jma.go.jp)有多语版资讯。",
+    "en": "From July to September, check the track daily. When landfall is forecast, shinkansen and airlines announce planned suspensions the day before, so shifting your dates via the official sites is the surest move. The JMA (jma.go.jp) publishes multilingual updates.",
+    "ko": "7~9월은 매일 진로를 확인하세요. 상륙 예보가 나오면 신칸센과 항공편은 전날 계획 운휴를 발표하므로 공식 사이트를 보고 일정을 조정하는 것이 확실합니다."
+   }
+  },
+  {
+   "id": "hospital",
+   "cat": "trouble",
+   "q": {
+    "ja": "体調を崩したら？",
+    "zh": "生病了怎麼辦？",
+    "cn": "生病了怎么办？",
+    "en": "What if I get sick?",
+    "ko": "몸이 아프면?"
+   },
+   "a": {
+    "ja": "JNTOの多言語コールセンター(050-3816-2787・24時間・日英中韓)が医療機関を案内してくれます。薬局で買える市販薬も多いですが、処方薬は医師の診察が要ります。海外旅行保険は必ず入っておくこと(自由診療で高額になります)。",
+    "zh": "JNTO的多語言客服(050-3816-2787，24小時，日英中韓)可以幫忙找醫療機構。藥局有很多成藥，但處方藥一定要看醫生。務必投保旅遊平安險(自費醫療會很貴)。",
+    "cn": "JNTO的多语言客服(050-3816-2787，24小时，日英中韩)可以帮忙找医疗机构。药局有很多成药，但处方药一定要看医生。务必投保旅游平安险(自费医疗会很贵)。",
+    "en": "JNTO's multilingual call centre (050-3816-2787, 24h, JP/EN/ZH/KO) will point you to a clinic. Pharmacies stock plenty of over-the-counter medicine, but prescriptions need a doctor. Travel insurance is essential — uninsured care is expensive.",
+    "ko": "JNTO 다국어 콜센터(050-3816-2787, 24시간, 일·영·중·한)가 의료기관을 안내해 줍니다. 약국에서 살 수 있는 일반의약품도 많지만 처방약은 진료가 필요합니다. 여행자보험은 반드시 드세요."
+   }
+  },
+  {
+   "id": "lost",
+   "cat": "trouble",
+   "q": {
+    "ja": "忘れ物をしました",
+    "zh": "東西掉了",
+    "cn": "东西掉了",
+    "en": "I lost something",
+    "ko": "물건을 잃어버렸어요"
+   },
+   "a": {
+    "ja": "日本は落とし物が戻ってきます。駅なら各社の忘れ物センター、店なら店舗、路上なら最寄りの交番(KOBAN)へ。財布やパスポートは警察の遺失物として届けられていることが多いので、諦める前に必ず問い合わせてください。",
+    "zh": "在日本東西常常找得回來。在車站找各鐵路公司的失物中心，在店裡問店家，在路上就去最近的交番(KOBAN)。錢包和護照經常被送到警察那邊登記，別太早放棄，一定要先問。",
+    "cn": "在日本东西常常找得回来。在车站找各铁路公司的失物中心，在店里问店家，在路上就去最近的交番(KOBAN)。钱包和护照经常被送到警察那边登记，别太早放弃，一定要先问。",
+    "en": "Lost property genuinely comes back in Japan. Ask the railway operator's lost-and-found for stations, the shop itself for shops, or the nearest police box (koban) for the street. Wallets and passports are usually handed in — always ask before giving up.",
+    "ko": "일본에서는 분실물이 돌아오는 경우가 많습니다. 역은 각 철도회사 유실물센터, 가게는 해당 점포, 길에서는 가장 가까운 파출소(코반)에 문의하세요. 지갑과 여권은 대개 경찰에 신고되어 있습니다."
+   }
+  },
+  {
+   "id": "emergency",
+   "cat": "trouble",
+   "q": {
+    "ja": "緊急の電話番号は？",
+    "zh": "緊急電話號碼是？",
+    "cn": "紧急电话号码是？",
+    "en": "Emergency numbers?",
+    "ko": "긴급 전화번호는?"
+   },
+   "a": {
+    "ja": "警察110、消防・救急119(どちらも無料・24時間)。旅行者向けにはJNTOの多言語ホットライン050-3816-2787が24時間、日本語・英語・中国語・韓国語に対応します。",
+    "zh": "警察110，消防與救護車119(都免費、24小時)。旅客可打JNTO的多語言熱線050-3816-2787，24小時提供日英中韓服務。",
+    "cn": "警察110，消防与救护车119(都免费、24小时)。旅客可打JNTO的多语言热线050-3816-2787，24小时提供日英中韩服务。",
+    "en": "Police 110, fire and ambulance 119 — both free and 24 hours. For visitors, JNTO's hotline 050-3816-2787 runs 24/7 in Japanese, English, Chinese and Korean.",
+    "ko": "경찰 110, 소방·구급 119(모두 무료·24시간). 여행자용으로는 JNTO 다국어 핫라인 050-3816-2787이 24시간 일·영·중·한을 지원합니다."
+   }
+  }
+ ]
+}
