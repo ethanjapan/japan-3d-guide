@@ -23,6 +23,25 @@ import OUTFIT from "../data/i18n/outfit.json";
 import COURSES from "../data/courses.json";
 
 
+/**
+ * 画像の読み込み失敗を1か所で受ける。
+ * 素材は生成が追いつく前でも組み込む方針なので、壊れアイコン(枠に破れた紙)が出ると
+ * それだけで安っぽく見える。src を外して落ち着いたプレースホルダに差し替え、
+ * **枠は残す**(名物の3列など、消すとレイアウトが崩れるものがある)。
+ * ★load/error はバブルしないので、capture フェーズで document に付けるしかない。
+ */
+document.addEventListener(
+  "error",
+  (e) => {
+    const el = e.target;
+    if (!(el instanceof HTMLImageElement) || el.dataset.missing) return;
+    el.dataset.missing = "1";
+    el.removeAttribute("src");
+    el.classList.add("img-missing");
+  },
+  true,
+);
+
 const canvas = document.getElementById("stage");
 const panel = document.getElementById("panel");
 const panelName = document.getElementById("panel-name");

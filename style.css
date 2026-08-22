@@ -2027,3 +2027,20 @@ html[data-phase="night"] .festival-name {
   color: var(--ink-glass-soft);
 }
 html[data-phase="night"] .outfit-band { color: #8fd0e4; }
+
+/* ---- 読み込めなかった画像のプレースホルダ ----
+   壊れアイコンを出さない。枠は残す(名物の3列などレイアウトが崩れるため)。 */
+.img-missing {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(210, 228, 236, 0.55));
+  border: 1px dashed rgba(23, 58, 78, 0.14);
+  border-radius: 8px;
+}
+.gourmet-item .img-missing,
+.festival-row .img-missing {
+  border-radius: 10px;
+}
+html[data-phase="night"] .img-missing {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.04));
+  border-color: rgba(255, 255, 255, 0.14);
+}
