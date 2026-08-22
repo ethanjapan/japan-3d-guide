@@ -61,6 +61,8 @@ export const STRINGS = {
     guideLabel: "導遊 RINKA｜MV STUDIO",
     welcomeText: "我是 RINKA！點選都道府縣，帶你看看日本好玩的地方。",
     notices: "開源授權",
+    stampDone: "全部蓋滿了！",
+    stampDoneText: "47 個都道府縣都走過一遍了。RINKA 陪你繞了日本一圈。",
     credit: CREDIT,
   },
   ja: {
@@ -121,6 +123,8 @@ export const STRINGS = {
     guideLabel: "案内人 RINKA｜MV STUDIO",
     welcomeText: "RINKAだよ。都道府県をクリックして、日本の楽しいところを案内するね。",
     notices: "オープンソースライセンス",
+    stampDone: "ぜんぶ集まりました",
+    stampDoneText: "すべての都道府県をひと通り開きました。RINKAと日本一周です。",
     credit: CREDIT,
   },
   cn: {
@@ -181,6 +185,8 @@ export const STRINGS = {
     guideLabel: "导游 RINKA｜MV STUDIO",
     welcomeText: "我是 RINKA！点选都道府县，带你看看日本好玩的地方。",
     notices: "开源授权",
+    stampDone: "全部盖满了！",
+    stampDoneText: "47 个都道府县都走过一遍了。RINKA 陪你绕了日本一圈。",
     credit: CREDIT,
   },
   en: {
@@ -241,6 +247,8 @@ export const STRINGS = {
     guideLabel: "Your guide RINKA | MV STUDIO",
     welcomeText: "I'm RINKA! Click a prefecture and I'll show you around Japan.",
     notices: "Open-source licences",
+    stampDone: "Every stamp collected",
+    stampDoneText: "You have opened every one. A full lap with RINKA.",
     credit: CREDIT,
   },
   ko: {
@@ -301,6 +309,8 @@ export const STRINGS = {
     guideLabel: "가이드 RINKA | MV STUDIO",
     welcomeText: "나는 RINKA! 도도부현을 클릭하면 일본의 재미있는 곳을 안내할게.",
     notices: "오픈소스 라이선스",
+    stampDone: "스탬프를 모두 모았습니다",
+    stampDoneText: "전부 한 번씩 열어봤습니다. RINKA와 함께 한 바퀴 완주.",
     credit: CREDIT,
   },
 };
