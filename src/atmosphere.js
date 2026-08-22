@@ -21,11 +21,17 @@ export const phaseOf = (h) =>
 export const PHASES = ["morning", "day", "dusk", "night"];
 
 // ライト/色のプリセット。dayは createScene の初期値と一致させる
+// sea は海のメッシュの頂点色に「掛ける」値(白=素の色のまま)。
+// ★台湾版は海が青緑(#4EC9BD)前提の値だった。日本版の海は藍寄りの青(#5AA8CF)で、
+//   ここに暖色を掛けると青と橙が補色で打ち消し合い、海が濁ったオリーブになる
+//   (2026-08-22 実測: dusk の sea=#F6D8C2 で海が #4F6B5F 相当に沈んだ)。
+//   時間帯の空気は「ライトの色と量」で作り、海に掛ける色はほぼ白のまま触らない。
+//   夜だけは例外で、青を深くしたいので寒色を掛ける。
 const PRESETS = {
-  morning: { hemi: 1.35, hemiSky: 0xfff4e0, key: 0xffe7c2, keyI: 1.9, sea: 0xfff2e2, body: "#f3efe2" },
+  morning: { hemi: 1.38, hemiSky: 0xfff2dc, key: 0xffe9cb, keyI: 1.95, sea: 0xfffaf3, body: "#f3efe2" },
   day: { hemi: 1.5, hemiSky: 0xffffff, key: 0xfff4e2, keyI: 2.1, sea: 0xffffff, body: "" },
-  dusk: { hemi: 1.15, hemiSky: 0xffdfc4, key: 0xffb98a, keyI: 1.85, sea: 0xf6d8c2, body: "#f2e0d2" },
-  night: { hemi: 0.62, hemiSky: 0xbcd0f0, key: 0xa9bfe8, keyI: 1.0, sea: 0xa8c0d8, body: "#22344a" },
+  dusk: { hemi: 1.34, hemiSky: 0xffe6d0, key: 0xffc79c, keyI: 2.05, sea: 0xfff4ea, body: "#f2e0d2" },
+  night: { hemi: 0.7, hemiSky: 0xc3d6f4, key: 0xaec4ec, keyI: 1.1, sea: 0x9fbcdc, body: "#22344a" },
 };
 
 const loadSprite = (name, scale) => {

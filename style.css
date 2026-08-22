@@ -1334,12 +1334,17 @@ body {
 }
 
 /* 夜・夕方は暗い海の上に乗る素の文字を明るく */
+/* 夕方も海が中間の暗さになるので、夜と同じく白文字にしないとクレジットが読めない
+   (body の背景色は明るいままだが、その上を3Dの海が覆う) */
 html[data-phase="night"] .title,
-html[data-phase="night"] .title span {
+html[data-phase="dusk"] .title,
+html[data-phase="night"] .title span,
+html[data-phase="dusk"] .title span {
   color: #e8f0fb;
 }
 
-html[data-phase="night"] .credit {
+html[data-phase="night"] .credit,
+html[data-phase="dusk"] .credit {
   color: rgba(232, 240, 251, 0.55);
 }
 
