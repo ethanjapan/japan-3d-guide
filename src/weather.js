@@ -56,14 +56,18 @@ export const fetchWeather = async (iso) => {
     const url =
       "https://api.open-meteo.com/v1/forecast" +
       `?latitude=${ll.lat}&longitude=${ll.lon}` +
-      "&current=temperature_2m,weather_code" +
+      "&current=temperature_2m,relative_humidity_2m,weather_code" +
       "&daily=temperature_2m_max,temperature_2m_min,weather_code,precipitation_probability_max" +
       "&timezone=Asia%2FTokyo&forecast_days=3";
     const r = await fetch(url);
     if (!r.ok) return null;
     const j = await r.json();
     const data = {
-      now: { t: Math.round(j.current.temperature_2m), code: j.current.weather_code },
+      now: {
+        t: Math.round(j.current.temperature_2m),
+        rh: Math.round(j.current.relative_humidity_2m ?? 0),
+        code: j.current.weather_code,
+      },
       daily: j.daily.time.map((d, i) => ({
         date: d,
         max: Math.round(j.daily.temperature_2m_max[i]),
@@ -78,3 +82,8 @@ export const fetchWeather = async (iso) => {
     return null;
   }
 };
+
+/** 気温(℃) -> 服装の帯。data/i18n/outfit.json のキーと一致させる。
+ *  境界は「日本で実際に上着が要るかどうか」で切った(気象庁の階級ではない)。 */
+export const outfitBand = (t) =>
+  t >= 28 ? "hot" : t >= 23 ? "warm" : t >= 18 ? "mild" : t >= 13 ? "cool" : t >= 8 ? "chilly" : "cold";

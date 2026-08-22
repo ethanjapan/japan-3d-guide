@@ -15,10 +15,11 @@ import DECORATIONS from "../data/decorations.json";
 import SPOTS from "../data/spots.json";
 import { TRAVEL_INFO, TRANSIT, PROMO_VIDEOS, GENERAL_VIDEOS,
          REGION_VIDEO, PREF_VIDEO, PROMO_CHANNEL } from "./travelinfo.js";
-import { fetchWeather, codeLabel, codeIcon } from "./weather.js";
+import { fetchWeather, codeLabel, codeIcon, outfitBand } from "./weather.js";
 import { rinkaPref, rinkaSpot, RINKA_PROFILE, RINKA_LINKS } from "./rinka.js";
 import PREF_INTRO from "../data/i18n/pref-intro.json";
 import FESTIVALS from "../data/i18n/festivals.json";
+import OUTFIT from "../data/i18n/outfit.json";
 import COURSES from "../data/courses.json";
 
 
@@ -49,6 +50,42 @@ const weatherIcon = (code) => {
   img.loading = "lazy";
   img.addEventListener("error", () => img.remove());
   return img;
+};
+
+/**
+ * 服装の目安カード。選択中の県の「いまの気温」で帯を決め、RINKAの棚から
+ * その気温で実際に着る一着を出す(ユーザー要望 2026-08-22
+ * 「旅行する時は天気・気温・湿度で服装を悩む」)。
+ * 画像は既存カタログの切り出しで、生成し直していない(鉄則0)。
+ */
+const outfitCard = (w) => {
+  const band = outfitBand(w.now.t);
+  const b = OUTFIT.bands[band];
+  if (!b) return null;
+  const c = b[lang] ?? b.ja;
+  const box = document.createElement("div");
+  box.className = "outfit-card";
+  const img = document.createElement("img");
+  img.className = "outfit-photo";
+  img.src = `${import.meta.env.BASE_URL}outfit/${band}.webp`;
+  img.alt = c.o;
+  img.loading = "lazy";
+  img.addEventListener("error", () => img.remove());
+  const txt = document.createElement("div");
+  txt.className = "outfit-text";
+  const head = document.createElement("span");
+  head.className = "outfit-band";
+  head.textContent = `${c.t}｜${b.range}`;
+  const wear = document.createElement("span");
+  wear.className = "outfit-wear";
+  wear.textContent = c.o;
+  const tip = document.createElement("span");
+  tip.className = "outfit-tip";
+  // 湿度70%以上のときだけ蒸し暑さの注記を足す(数字だけ見ても体感が伝わらないため)
+  tip.textContent = c.tip + (w.now.rh >= 70 ? ` ${OUTFIT.humid[lang] ?? OUTFIT.humid.ja}` : "");
+  txt.append(head, wear, tip);
+  box.append(img, txt);
+  return box;
 };
 
 const promoThumb = (id, title) => {
@@ -156,6 +193,17 @@ const renderPanel = () => {
         }),
       );
     }
+    // 服装の目安。天気が取れてから差し込む(気温が決まらないと帯が決まらない)
+    const oslot = document.getElementById("outfit-slot");
+    if (oslot) {
+      const card = outfitCard(w);
+      if (card) {
+        const h = document.createElement("p");
+        h.className = "gourmet-title";
+        h.textContent = STRINGS[lang].outfit;
+        oslot.replaceChildren(h, card);
+      }
+    }
   });
   const spots = SPOTS[pref.id] ?? [];
   const T = STRINGS[lang];
@@ -261,8 +309,10 @@ const renderPanel = () => {
     const wstrip = document.createElement("div");
     wstrip.className = "weather-strip";
     wstrip.id = "weather-strip";
+    const oslot = document.createElement("div");
+    oslot.id = "outfit-slot";
     panelBody.dataset.view = "list";
-    panelBody.replaceChildren(rk, wstrip, intro, gour, fest, ul);
+    panelBody.replaceChildren(rk, wstrip, oslot, intro, gour, fest, ul);
     stagger(panelBody);
     if (IS_MOBILE() && !panel.dataset.sheet) panel.dataset.sheet = "half";
     // 地方のJNTO公式動画(その県が属する地方の回)。click-to-play で埋め込みは押されてから作る
@@ -1326,13 +1376,12 @@ function start() {
       // 島の長軸を画面の対角に少し寝かせて面積を稼ぐ。ただし振りすぎると
       // 日本列島のシルエットが横倒しになって形が分からなくなるので、北はおおむね上に保つ。
       // 日本列島の長軸は南西→北東(ワールドでは概ね45度)。
-      //  横長画面: カメラ方位を長軸の法線に合わせる(x と z を等しく取る)と列島が
-      //    画面の横方向に寝て、左右いっぱいに広がる。
-      //  縦長画面: 同じ方位だと列島が横に寝たまま上下が丸ごと空く(実機375x812で実測)。
-      //    北を上に近づけて、地図帳と同じ「縦に長い日本」の向きに戻すと縦画面が埋まる。
-      const dir = camera.aspect < 1
-        ? new THREE.Vector3(0.24, 1.05, 0.94).normalize()
-        : new THREE.Vector3(0.74, 1.02, 0.74).normalize();
+      //  既定は「北を上」に近い向き。長軸を画面の横に寝かせる案も試したが、
+      //  地図帳と違う向きになって日本と認識しづらく、四隅の海も広く空いた(実測)。
+      //  超横長の画面だけ、横幅を使うために少し寝かせる。
+      const dir = (camera.aspect > 1.6
+        ? new THREE.Vector3(0.55, 1.0, 0.84)
+        : new THREE.Vector3(0.28, 1.03, 0.92)).normalize();
       const dist = frame(dir);
       camera.position.copy(dir.clone().multiplyScalar(dist));
       controls.target.set(0, 0, 0);
