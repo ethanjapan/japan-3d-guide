@@ -2398,6 +2398,50 @@ html[data-phase="night"] .info-sum::after {
   flex: 0 0 auto;
 }
 
+/* イベントの種類(祭り・花火など)。固有名だけでは何のイベントか分からない */
+.event-cat {
+  flex: 0 0 auto;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(47, 127, 160, 0.14);
+  color: #2f7fa0;
+  font-size: 0.58rem;
+  font-weight: 700;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+html[data-phase="night"] .event-cat {
+  background: rgba(143, 208, 228, 0.18);
+  color: #8fd0e4;
+}
+
+/* 地図のピンから来たとき、押したイベントに印を付ける。
+   一覧が出るだけだと「どのピンを押したのか」が伝わらない */
+.event-row[data-picked="true"] {
+  background: rgba(255, 214, 120, 0.24);
+  border-color: rgba(214, 150, 40, 0.5);
+  box-shadow: 0 0 0 1px rgba(255, 214, 120, 0.35);
+}
+.event-row[data-picked="true"] .event-name {
+  font-weight: 700;
+}
+.event-row[data-picked="true"] .event-icon {
+  transform: scale(1.12);
+}
+/* ピンから開いたときはイベント帯そのものも一段立てる */
+.spot-panel [data-picked="true"].event-box,
+div[data-picked="true"] > .gourmet-title {
+  color: #a5701a;
+}
+
+html[data-phase="night"] .event-row[data-picked="true"] {
+  background: rgba(255, 214, 120, 0.16);
+  border-color: rgba(255, 214, 120, 0.42);
+}
+html[data-phase="night"] div[data-picked="true"] > .gourmet-title {
+  color: #ffd77c;
+}
+
 @media (max-width: 640px) {
   .month-bar {
     bottom: calc(112px + env(safe-area-inset-bottom, 0px));
@@ -2567,3 +2611,35 @@ html[data-phase="night"] .faq-q::before {
 html[data-phase="night"] .faq-q::after,
 html[data-phase="night"] .faq-q:hover { border-color: rgba(234, 243, 250, 0.45); }
 html[data-phase="night"] .faq-q:hover { background: rgba(255, 255, 255, 0.07); }
+
+/* ── いま行くなら(月・時間帯で景点を並べ替える) ──
+   黙って順番だけ変えると「なぜこの順?」になるので、理由を語で出す。
+   ★理由は1景点につき1つだけ。2つ以上並べると行が伸びて一覧として読めない */
+.now-tip {
+  margin: 0 0 6px;
+  font-size: 0.64rem;
+  line-height: 1.5;
+  color: var(--ink-glass-soft);
+}
+.spot-season {
+  display: inline-block;
+  margin-top: 3px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(255, 199, 92, 0.26);
+  color: #8a5c12;
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.spot-row[data-season="true"] {
+  border-color: rgba(214, 160, 60, 0.38);
+}
+html[data-phase="night"] .spot-season {
+  background: rgba(255, 214, 120, 0.2);
+  color: #ffd77c;
+}
+html[data-phase="night"] .spot-row[data-season="true"] {
+  border-color: rgba(255, 214, 120, 0.34);
+}

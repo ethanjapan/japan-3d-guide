@@ -554,6 +554,15 @@ export const MONTHS = {
     en: ["Cold", "Cold", "Early spring", "Blossom", "Fresh green", "Rainy", "Hot", "Hot", "Typhoon", "Autumn colour", "Autumn colour", "Early winter"],
     ko: ["한겨울", "한겨울", "이른 봄", "벚꽃", "신록", "장마", "한여름", "한여름", "태풍", "단풍", "단풍", "초겨울"],
   },
+  // 「4月・夜のおすすめ」のような見出しに使う月名。enだけ数字では通じない
+  name: {
+    ja: Array.from({ length: 12 }, (_, i) => `${i + 1}月`),
+    zh: Array.from({ length: 12 }, (_, i) => `${i + 1}月`),
+    cn: Array.from({ length: 12 }, (_, i) => `${i + 1}月`),
+    ko: Array.from({ length: 12 }, (_, i) => `${i + 1}월`),
+    en: ["January", "February", "March", "April", "May", "June",
+         "July", "August", "September", "October", "November", "December"],
+  },
   bestLabel: {
     ja: "旅行しやすい",
     zh: "最好旅行",

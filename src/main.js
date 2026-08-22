@@ -24,6 +24,7 @@ import FESTIVALS from "../data/i18n/festivals.json";
 import OUTFIT from "../data/i18n/outfit.json";
 import EVENTS from "../data/events.json";
 import FAQ from "../data/i18n/faq.json";
+import TIMING from "../data/timing.json";
 import COURSES from "../data/courses.json";
 
 
@@ -524,17 +525,24 @@ const renderPanel = () => {
     // 季節イベント。月バーが出ていればその月のものだけ、出ていなければ全部。
     const evbox = document.createElement("div");
     {
-      const all = EVENTS[pref.id] ?? [];
+      const all = EVENTS.pref[pref.id] ?? [];
       const list = activeMonth ? all.filter((e) => e.m.includes(activeMonth)) : all;
       if (list.length) {
         const eh = document.createElement("p");
         eh.className = "gourmet-title";
         eh.textContent = activeMonth ? `${T.monthEvents}（${activeMonth}）` : T.allEvents;
+        evbox.dataset.picked = pickedEvent?.pref === pref.id ? "true" : "false";
         const ul = document.createElement("div");
         ul.className = "event-list";
+        // 地図のピンから来たときは、押したイベントを先頭に出して印を付ける。
+        // どのピンを押したのか分からないまま一覧だけ出ると、押した意味が伝わらない
+        const hitOf = (e) => pickedEvent && pickedEvent.pref === pref.id
+          && (pickedEvent.key ? e.name.ja === pickedEvent.key : e.cat === pickedEvent.cat);
+        list.sort((a, b) => Number(hitOf(b)) - Number(hitOf(a)));
         for (const e of list) {
           const row = document.createElement("div");
           row.className = "event-row";
+          if (hitOf(e)) row.dataset.picked = "true";
           const ic = document.createElement("img");
           ic.className = "event-icon";
           ic.src = `${import.meta.env.BASE_URL}event/${e.cat}.webp`;
@@ -548,6 +556,16 @@ const renderPanel = () => {
           wh.className = "event-when";
           wh.textContent = e.peak[lang] ?? e.peak.ja;
           row.append(ic, nm, wh);
+          // 祭り・花火・花・イルミは name が固有名(例: 鎌倉まつり)なので、
+          // それだけでは何のイベントか分からない。種類の札を付ける。
+          // 桜・紅葉・雪は name がそのまま種類なので付けない(同じ語が二度出る)
+          const catLabel = EVENTS.cats[e.cat]?.[lang] ?? EVENTS.cats[e.cat]?.ja;
+          if (catLabel && catLabel !== (e.name[lang] ?? e.name.ja)) {
+            const cc = document.createElement("span");
+            cc.className = "event-cat";
+            cc.textContent = catLabel;
+            row.insertBefore(cc, wh);
+          }
           ul.appendChild(row);
         }
         evbox.append(eh, ul);
@@ -555,7 +573,12 @@ const renderPanel = () => {
     }
     const ul = document.createElement("ul");
     ul.className = "spot-list";
-    for (const s of spots) {
+    // ★旬の景点を先頭へ。Array.prototype.sort は安定なので、旬でないものの順は元のまま。
+    //   「4月に桜の名所を下の方に置いたまま」では、月を選んだ意味がない
+    const timed = spots.map((sp) => ({ sp, t: timingOf(sp.id) }));
+    timed.sort((a, b) => Number(!!b.t) - Number(!!a.t));
+    const nowCount = timed.filter((x) => x.t).length;
+    for (const { sp: s, t: tm } of timed) {
       const li = document.createElement("li");
       const btn = document.createElement("button");
       btn.type = "button";
@@ -586,6 +609,14 @@ const renderPanel = () => {
         sub.textContent = ruby;
         label.appendChild(sub);
       }
+      if (tm) {
+        // 理由は1つだけ出す(2つ以上並べると行が伸びて一覧として読めなくなる)
+        const chip = document.createElement("span");
+        chip.className = "spot-season";
+        chip.textContent = TIMING.reasons[tm[0].why][lang] ?? TIMING.reasons[tm[0].why].ja;
+        label.appendChild(chip);
+        btn.dataset.season = "true";
+      }
       btn.appendChild(label);
       btn.addEventListener("click", () => {
         panelState.spotId = s.id;
@@ -594,13 +625,36 @@ const renderPanel = () => {
       li.appendChild(btn);
       ul.appendChild(li);
     }
+    // 並べ替えたことを言葉で出す。黙って順番だけ変えると「なぜこの順?」になる
+    const nowHead = document.createElement("div");
+    if (nowCount) {
+      const T2 = STRINGS[lang];
+      const ctx = [];
+      if (activeMonth) ctx.push(MONTHS.name[lang][activeMonth - 1]);
+      ctx.push({ morning: T2.phaseMorning, day: T2.phaseDay,
+                 dusk: T2.phaseDusk, night: T2.phaseNight }[getPhase()]);
+      const h = document.createElement("p");
+      h.className = "gourmet-title";
+      h.textContent = `${T2.nowPick}（${ctx.join("・")}）`;
+      const tip = document.createElement("p");
+      tip.className = "now-tip";
+      tip.textContent = T2.nowPickTip;
+      nowHead.append(h, tip);
+    }
+
     const wstrip = document.createElement("div");
     wstrip.className = "weather-strip";
     wstrip.id = "weather-strip";
     const oslot = document.createElement("div");
     oslot.id = "outfit-slot";
     panelBody.dataset.view = "list";
-    panelBody.replaceChildren(rk, wstrip, oslot, intro, gour, fest, evbox, ul);
+    // ピンから来たときはイベント帯を最初に出す。下まで巻かないと見えないのでは、
+    // 「押したのに何も起きない」のと同じ
+    panelBody.replaceChildren(
+      ...(pickedEvent?.pref === pref.id
+        ? [rk, evbox, wstrip, oslot, intro, gour, fest, nowHead, ul]
+        : [rk, wstrip, oslot, intro, gour, fest, evbox, nowHead, ul]),
+    );
     stagger(panelBody);
     if (IS_MOBILE() && !panel.dataset.sheet) panel.dataset.sheet = "half";
     // 地方のJNTO公式動画(その県が属する地方の回)。click-to-play で埋め込みは押されてから作る
@@ -811,6 +865,31 @@ let updatePhaseButton = null; // start()が差し込む。言語切替時にラ�
 let updateSeasonButton = null;
 let updateMonthBar = null;
 let activeMonth = 0;   // 0=イベント表示なし
+// 地図のイベントピンを押したときだけ入る {pref, cat, key}。
+// パネル側で「押したのはこれ」を示すために使う(押していない間は null)
+let pickedEvent = null;
+// 時間帯("morning"|"day"|"dusk"|"night")。auto のときは日本の実時間で解決済みの値が返る
+let getPhase = () => "day";
+
+/**
+ * その景点が「いま」旬かどうか。理由の配列(なければ null)。
+ * ★月だけの理由(桜・紅葉・雪)は、月スライダーが出ているときだけ効かせる。
+ *   常に効かせると、8月に「桜が見頃」と出て嘘になる。
+ * ★時間帯だけの理由(夜景・夕景・朝)は常に効かせる。時間帯は auto でも必ず今の値がある。
+ */
+const timingOf = (spotId) => {
+  const list = TIMING.spot[spotId];
+  if (!list) return null;
+  const ph = getPhase();
+  const hits = list.filter((e) => {
+    const mOk = e.m.length === 0 || (activeMonth > 0 && e.m.includes(activeMonth));
+    const pOk = e.ph.length === 0 || e.ph.includes(ph);
+    if (e.m.length && !e.ph.length) return activeMonth > 0 && e.m.includes(activeMonth);
+    if (!e.m.length && e.ph.length) return e.ph.includes(ph);
+    return mOk && pOk;
+  });
+  return hits.length ? hits : null;
+};
 
 // ---- 旅のしおり(スタンプラリー)。訪問=県市パネルを開いた県市。localStorageで永続 ----
 const stamps = new Set(JSON.parse(localStorage.getItem("stamps") ?? "[]"));
@@ -1503,12 +1582,24 @@ function start() {
   /** mode: "idle"(常設・小) | "peek"(ホバー・中) | "full"(選択=名物も時間差で湧く) */
   const setBundle = (group, mode) => {
     const b = bundleFor(group);
-    b.landmark.userData.target = mode === "full" ? 1 : mode === "peek" ? PEEK : IDLE;
+    // ★イベント表示中はランドマークを伏せる。ピンもランドマークも県の重心に立つので、
+    //   両方出すと重なって「どれがイベントか」が読めない(2026-08-22 ユーザー指摘)。
+    //   選択中の県だけは出す(その県を見に来ているので、伏せると手掛かりが消える)。
+    const hideLandmark = activeMonth > 0 && mode !== "full";
+    b.landmark.userData.target =
+      hideLandmark ? 0 : mode === "full" ? 1 : mode === "peek" ? PEEK : IDLE;
     b.landmark.userData.delay = 0;
     b.minis.forEach((m, i) => {
       m.userData.target = mode === "full" ? 1 : 0;
       m.userData.delay = mode === "full" ? 0.16 * (i + 1) : 0;
     });
+  };
+
+  /** イベント表示のON/OFFでランドマークの出し入れが変わるので、全県に掛け直す */
+  const refreshBundles = () => {
+    for (const g of groups) {
+      setBundle(g, g === selected ? "full" : g === hovered ? "peek" : "idle");
+    }
   };
 
   // 起動時: 全県市のランドマークを北から順に小さく立てていく(初回のさざ波)
@@ -1610,7 +1701,9 @@ function start() {
     }
   });
 
-  const pick = (event) => {
+  /** commit=true(クリック時)のときだけ「どのイベントを押したか」を記録する。
+   *  ホバーでも書くと、マウスが通り過ぎただけでパネルの並びが変わってしまう */
+  const pick = (event, commit = false) => {
     const rect = renderer.domElement.getBoundingClientRect();
     pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
     pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
@@ -1620,9 +1713,17 @@ function start() {
     if (activeMonth) {
       const ph = raycaster.intersectObjects(eventLayer.pins, false);
       if (ph.length) {
-        const iso = ph[0].object.userData.pref;
-        return groups.find((g) => g.userData.pref.id === iso) ?? null;
+        const ud = ph[0].object.userData;
+        if (commit) {
+          pickedEvent = { pref: ud.pref, cat: ud.cat, key: ud.ev?.name?.ja ?? null };
+          eventLayer.select(ud.pref);
+        }
+        return groups.find((g) => g.userData.pref.id === ud.pref) ?? null;
       }
+    }
+    if (commit) {
+      pickedEvent = null;
+      eventLayer.select(null);
     }
     const hits = raycaster.intersectObjects(groups, true);
     if (hits.length === 0) return null;
@@ -1646,7 +1747,7 @@ function start() {
     const dist = Math.hypot(e.clientX - downAt.x, e.clientY - downAt.y);
     downAt = null;
     if (dist > 8) return; // ドラッグ扱い(タップ判定は8px以内)
-    select(pick(e));
+    select(pick(e, true));
   });
 
   let framed = false;
@@ -1703,6 +1804,8 @@ function start() {
   const ambient = createAmbient(scene, prefectures.bounds, reduceMotion);
   const atmosphere = createAtmosphere(stage, reduceMotion);
 
+  getPhase = () => atmosphere.phase;   // auto でも必ず解決済みの値が返る
+
   // 時間帯切替ボタン(ユーザー要望 2026-08-21「切り替えの操作がわからない」)
   {
     const CYCLE = ["auto", "morning", "day", "dusk", "night"];
@@ -1728,6 +1831,8 @@ function start() {
       localStorage.setItem("phase", sel);
       atmosphere.setPhase(sel);
       render();
+      // 時間帯で景点の並びが変わるので、開いていれば作り直す
+      if (!panel.hidden && panel.dataset.pref) renderPanel();
     });
     updatePhaseButton = render;
   }
@@ -1788,8 +1893,11 @@ function start() {
     };
 
     const apply = (m) => {
+      const wasOn = activeMonth > 0;
       activeMonth = m;
       eventLayer.setMonth(m);
+      if (wasOn !== (m > 0)) refreshBundles();   // ランドマークの出し入れ
+      if (!m) { pickedEvent = null; eventLayer.select(null); }
       bar.hidden = m === 0 && bar.dataset.forced !== "1";
       render();
       // パネルが開いていれば、その月のイベントに差し替える
