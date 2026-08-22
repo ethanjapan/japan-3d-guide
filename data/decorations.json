@@ -1,29 +1,485 @@
 {
-  "_comment": "地面デコ・動物の配置。pref指定=都道府県グループの子(選択で一緒に隆起)。sea:true=海上(scene直下)。dx/dyは都道府県中心からのオフセット(データ座標)。根拠は実在の名所・産地・生息地。台湾版(22県市)よりポリゴンが小さいので、オフセットとsizeは台湾版の半分程度に取る。",
-  "items": [
-    { "file": "crane", "pref": "JP-01", "dx": 14, "dy": -6, "size": 7, "note": "釧路湿原=タンチョウ" },
-    { "file": "apple", "pref": "JP-02", "dx": -3, "dy": 3, "size": 5.5, "note": "青森=りんご生産量全国一" },
-    { "file": "sakura", "pref": "JP-02", "dx": 3, "dy": -2, "size": 6, "note": "弘前城の桜" },
-    { "file": "kamakura-snow", "pref": "JP-05", "dx": 2, "dy": 2, "size": 5.5, "note": "横手のかまくら" },
-    { "file": "thatched-house", "pref": "JP-07", "dx": -3, "dy": -2, "size": 5.5, "note": "大内宿の茅葺き" },
-    { "file": "lighthouse", "pref": "JP-12", "dx": 5, "dy": 1, "size": 5.5, "note": "犬吠埼灯台" },
-    { "file": "tower", "pref": "JP-13", "dx": 2, "dy": 1.5, "size": 6.5, "note": "東京スカイツリー" },
-    { "file": "rice-terrace", "pref": "JP-15", "dx": -3, "dy": -3, "size": 6, "note": "星峠の棚田" },
-    { "file": "gassho", "pref": "JP-21", "dx": -4, "dy": 4, "size": 6, "note": "白川郷の合掌造り" },
-    { "file": "tea-field", "pref": "JP-22", "dx": -3, "dy": 1, "size": 6, "note": "牧之原の茶畑" },
-    { "file": "snow-monkey", "pref": "JP-20", "dx": 4, "dy": 5, "size": 5.5, "note": "地獄谷野猿公苑" },
-    { "file": "torii", "pref": "JP-26", "dx": -1, "dy": -3, "size": 6, "note": "伏見稲荷の千本鳥居" },
-    { "file": "deer", "pref": "JP-29", "dx": 1, "dy": 1, "size": 5, "note": "奈良公園の鹿" },
-    { "file": "castle", "pref": "JP-28", "dx": 1, "dy": -2, "size": 6, "note": "姫路城" },
-    { "file": "sand-dune", "pref": "JP-31", "dx": 2, "dy": 2, "size": 5.5, "note": "鳥取砂丘" },
-    { "file": "sea-torii", "pref": "JP-34", "dx": -2, "dy": -2, "size": 6, "note": "厳島神社の大鳥居" },
-    { "file": "udon", "pref": "JP-37", "dx": 0, "dy": 1, "size": 5, "note": "讃岐うどん" },
-    { "file": "yatai", "pref": "JP-40", "dx": 2, "dy": -2, "size": 5.5, "note": "中洲の屋台" },
-    { "file": "volcano", "pref": "JP-46", "dx": 4, "dy": 1, "size": 6.5, "note": "桜島" },
-    { "file": "shisa", "pref": "JP-47", "dx": 5, "dy": 4, "size": 5.5, "note": "沖縄のシーサー" },
-    { "file": "fishing-boat", "sea": true, "x": 60, "y": 60, "size": 7, "note": "三陸沖の漁船" },
-    { "file": "whale", "sea": true, "x": 8, "y": -60, "size": 8, "note": "高知沖のクジラ" },
-    { "file": "ferry", "sea": true, "x": -50, "y": -30, "size": 7, "note": "瀬戸内のフェリー" },
-    { "file": "seagull", "sea": true, "x": 40, "y": 95, "size": 5, "note": "津軽海峡のカモメ" }
-  ]
+ "_comment": "地面デコ・動物の配置。pref指定=都道府県グループの子(選択で一緒に隆起)。sea:true=海上(scene直下)。dx/dyは都道府県中心からのオフセット(データ座標)。根拠は実在の名所・産地・生息地。台湾版(22県市)よりポリゴンが小さいので、オフセットとsizeは台湾版の半分程度に取る。 2026-08-22 拡充: 47都道府県すべてに1つ以上置いた(以前は20県のみ)。 season-* は固定配置せず、季節レイヤー(src/season.js)が動的に散らす。",
+ "items": [
+  {
+   "file": "crane",
+   "pref": "JP-01",
+   "dx": 14,
+   "dy": -6,
+   "size": 7,
+   "note": "釧路湿原=タンチョウ"
+  },
+  {
+   "file": "apple",
+   "pref": "JP-02",
+   "dx": -3,
+   "dy": 3,
+   "size": 5.5,
+   "note": "青森=りんご生産量全国一"
+  },
+  {
+   "file": "sakura",
+   "pref": "JP-02",
+   "dx": 3,
+   "dy": -2,
+   "size": 6,
+   "note": "弘前城の桜"
+  },
+  {
+   "file": "kamakura-snow",
+   "pref": "JP-05",
+   "dx": 2,
+   "dy": 2,
+   "size": 5.5,
+   "note": "横手のかまくら"
+  },
+  {
+   "file": "thatched-house",
+   "pref": "JP-07",
+   "dx": -3,
+   "dy": -2,
+   "size": 5.5,
+   "note": "大内宿の茅葺き"
+  },
+  {
+   "file": "lighthouse",
+   "pref": "JP-12",
+   "dx": 5,
+   "dy": 1,
+   "size": 5.5,
+   "note": "犬吠埼灯台"
+  },
+  {
+   "file": "tower",
+   "pref": "JP-13",
+   "dx": 2,
+   "dy": 1.5,
+   "size": 6.5,
+   "note": "東京スカイツリー"
+  },
+  {
+   "file": "rice-terrace",
+   "pref": "JP-15",
+   "dx": -3,
+   "dy": -3,
+   "size": 6,
+   "note": "星峠の棚田"
+  },
+  {
+   "file": "gassho",
+   "pref": "JP-21",
+   "dx": -4,
+   "dy": 4,
+   "size": 6,
+   "note": "白川郷の合掌造り"
+  },
+  {
+   "file": "tea-field",
+   "pref": "JP-22",
+   "dx": -3,
+   "dy": 1,
+   "size": 6,
+   "note": "牧之原の茶畑"
+  },
+  {
+   "file": "snow-monkey",
+   "pref": "JP-20",
+   "dx": 4,
+   "dy": 5,
+   "size": 5.5,
+   "note": "地獄谷野猿公苑"
+  },
+  {
+   "file": "torii",
+   "pref": "JP-26",
+   "dx": -1,
+   "dy": -3,
+   "size": 6,
+   "note": "伏見稲荷の千本鳥居"
+  },
+  {
+   "file": "deer",
+   "pref": "JP-29",
+   "dx": 1,
+   "dy": 1,
+   "size": 5,
+   "note": "奈良公園の鹿"
+  },
+  {
+   "file": "castle",
+   "pref": "JP-28",
+   "dx": 1,
+   "dy": -2,
+   "size": 6,
+   "note": "姫路城"
+  },
+  {
+   "file": "sand-dune",
+   "pref": "JP-31",
+   "dx": 2,
+   "dy": 2,
+   "size": 5.5,
+   "note": "鳥取砂丘"
+  },
+  {
+   "file": "sea-torii",
+   "pref": "JP-34",
+   "dx": -2,
+   "dy": -2,
+   "size": 6,
+   "note": "厳島神社の大鳥居"
+  },
+  {
+   "file": "udon",
+   "pref": "JP-37",
+   "dx": 0,
+   "dy": 1,
+   "size": 5,
+   "note": "讃岐うどん"
+  },
+  {
+   "file": "yatai",
+   "pref": "JP-40",
+   "dx": 2,
+   "dy": -2,
+   "size": 5.5,
+   "note": "中洲の屋台"
+  },
+  {
+   "file": "volcano",
+   "pref": "JP-46",
+   "dx": 4,
+   "dy": 1,
+   "size": 6.5,
+   "note": "桜島"
+  },
+  {
+   "file": "shisa",
+   "pref": "JP-47",
+   "dx": 5,
+   "dy": 4,
+   "size": 5.5,
+   "note": "沖縄のシーサー"
+  },
+  {
+   "file": "fishing-boat",
+   "sea": true,
+   "x": 60,
+   "y": 60,
+   "size": 7,
+   "note": "三陸沖の漁船"
+  },
+  {
+   "file": "whale",
+   "sea": true,
+   "x": 8,
+   "y": -60,
+   "size": 8,
+   "note": "高知沖のクジラ"
+  },
+  {
+   "file": "ferry",
+   "sea": true,
+   "x": -50,
+   "y": -30,
+   "size": 7,
+   "note": "瀬戸内のフェリー"
+  },
+  {
+   "file": "seagull",
+   "sea": true,
+   "x": 40,
+   "y": 95,
+   "size": 5,
+   "note": "津軽海峡のカモメ"
+  },
+  {
+   "file": "kokeshi",
+   "pref": "JP-04",
+   "dx": 3,
+   "dy": -2,
+   "size": 5.5,
+   "note": "鳴子こけし"
+  },
+  {
+   "file": "kamakura-castle",
+   "pref": "JP-03",
+   "dx": 3,
+   "dy": 2,
+   "size": 5.5,
+   "note": "盛岡城跡"
+  },
+  {
+   "file": "cherry-terrace",
+   "pref": "JP-06",
+   "dx": -2,
+   "dy": -2,
+   "size": 5.5,
+   "note": "山形のさくらんぼ"
+  },
+  {
+   "file": "nemophila-hill",
+   "pref": "JP-08",
+   "dx": 3,
+   "dy": 1,
+   "size": 5.5,
+   "note": "ひたち海浜公園"
+  },
+  {
+   "file": "carved-gate",
+   "pref": "JP-09",
+   "dx": -1,
+   "dy": 3,
+   "size": 5.5,
+   "note": "日光東照宮"
+  },
+  {
+   "file": "yubatake",
+   "pref": "JP-10",
+   "dx": -3,
+   "dy": 1,
+   "size": 5.5,
+   "note": "草津の湯畑"
+  },
+  {
+   "file": "bell-tower",
+   "pref": "JP-11",
+   "dx": -2,
+   "dy": 1,
+   "size": 5,
+   "note": "川越 時の鐘"
+  },
+  {
+   "file": "great-buddha",
+   "pref": "JP-14",
+   "dx": -1,
+   "dy": -1,
+   "size": 5,
+   "note": "鎌倉大仏"
+  },
+  {
+   "file": "alpine-bus",
+   "pref": "JP-16",
+   "dx": 1,
+   "dy": 3,
+   "size": 5.5,
+   "note": "立山黒部"
+  },
+  {
+   "file": "gold-leaf",
+   "pref": "JP-17",
+   "dx": -1,
+   "dy": 2,
+   "size": 5,
+   "note": "金沢の金箔"
+  },
+  {
+   "file": "dinosaur",
+   "pref": "JP-18",
+   "dx": 1,
+   "dy": 1,
+   "size": 5.5,
+   "note": "福井県立恐竜博物館"
+  },
+  {
+   "file": "grape-vine",
+   "pref": "JP-19",
+   "dx": 2,
+   "dy": -1,
+   "size": 5,
+   "note": "甲州ぶどう"
+  },
+  {
+   "file": "golden-shachi",
+   "pref": "JP-23",
+   "dx": 1,
+   "dy": 1,
+   "size": 5.5,
+   "note": "名古屋城の金鯱"
+  },
+  {
+   "file": "pearl-raft",
+   "pref": "JP-24",
+   "dx": 3,
+   "dy": -2,
+   "size": 5.5,
+   "note": "英虞湾の真珠養殖"
+  },
+  {
+   "file": "lake-torii",
+   "pref": "JP-25",
+   "dx": -2,
+   "dy": 1,
+   "size": 5.5,
+   "note": "白鬚神社"
+  },
+  {
+   "file": "takoyaki",
+   "pref": "JP-27",
+   "dx": 1,
+   "dy": -1,
+   "size": 5,
+   "note": "大阪のたこ焼き"
+  },
+  {
+   "file": "orange-grove",
+   "pref": "JP-30",
+   "dx": 1,
+   "dy": -3,
+   "size": 5.5,
+   "note": "有田みかん"
+  },
+  {
+   "file": "izumo-rope",
+   "pref": "JP-32",
+   "dx": -2,
+   "dy": 1,
+   "size": 5.5,
+   "note": "出雲大社"
+  },
+  {
+   "file": "white-warehouse",
+   "pref": "JP-33",
+   "dx": 1,
+   "dy": -1,
+   "size": 5.5,
+   "note": "倉敷美観地区"
+  },
+  {
+   "file": "fugu",
+   "pref": "JP-35",
+   "dx": -3,
+   "dy": -1,
+   "size": 5,
+   "note": "下関のふぐ"
+  },
+  {
+   "file": "whirlpool",
+   "pref": "JP-36",
+   "dx": 2,
+   "dy": -2,
+   "size": 5.5,
+   "note": "鳴門の渦潮"
+  },
+  {
+   "file": "dogo-bath",
+   "pref": "JP-38",
+   "dx": -1,
+   "dy": 1,
+   "size": 5.5,
+   "note": "道後温泉"
+  },
+  {
+   "file": "chinkabashi",
+   "pref": "JP-39",
+   "dx": -3,
+   "dy": -1,
+   "size": 5.5,
+   "note": "四万十川の沈下橋"
+  },
+  {
+   "file": "porcelain",
+   "pref": "JP-41",
+   "dx": 0,
+   "dy": 1,
+   "size": 5,
+   "note": "有田焼"
+  },
+  {
+   "file": "church",
+   "pref": "JP-42",
+   "dx": 2,
+   "dy": -1,
+   "size": 5,
+   "note": "大浦天主堂"
+  },
+  {
+   "file": "aso-crater",
+   "pref": "JP-43",
+   "dx": 2,
+   "dy": 1,
+   "size": 6,
+   "note": "阿蘇のカルデラ"
+  },
+  {
+   "file": "hell-pond",
+   "pref": "JP-44",
+   "dx": 2,
+   "dy": -1,
+   "size": 5.5,
+   "note": "別府地獄"
+  },
+  {
+   "file": "cave-shrine",
+   "pref": "JP-45",
+   "dx": 1,
+   "dy": -3,
+   "size": 5.5,
+   "note": "鵜戸神宮"
+  },
+  {
+   "file": "sunflower",
+   "pref": "JP-01",
+   "dx": -8,
+   "dy": -6,
+   "size": 6,
+   "note": "北竜町のひまわり"
+  },
+  {
+   "file": "lavender",
+   "pref": "JP-01",
+   "dx": 4,
+   "dy": 6,
+   "size": 6,
+   "note": "富良野のラベンダー"
+  },
+  {
+   "file": "tulip",
+   "pref": "JP-16",
+   "dx": -3,
+   "dy": -2,
+   "size": 5,
+   "note": "となみチューリップ"
+  },
+  {
+   "file": "moss-graves",
+   "pref": "JP-30",
+   "dx": -2,
+   "dy": 2,
+   "size": 5,
+   "note": "高野山奥之院"
+  },
+  {
+   "file": "wooden-arch",
+   "pref": "JP-35",
+   "dx": 2,
+   "dy": 2,
+   "size": 5.5,
+   "note": "錦帯橋"
+  },
+  {
+   "file": "bamboo-grove",
+   "pref": "JP-26",
+   "dx": 2,
+   "dy": 2,
+   "size": 5,
+   "note": "嵐山の竹林"
+  },
+  {
+   "file": "carp-pond",
+   "pref": "JP-17",
+   "dx": 1,
+   "dy": -2,
+   "size": 5,
+   "note": "兼六園"
+  },
+  {
+   "file": "windmill-tulip",
+   "pref": "JP-42",
+   "dx": -2,
+   "dy": 2,
+   "size": 5,
+   "note": "ハウステンボス"
+  }
+ ]
 }

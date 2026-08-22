@@ -1623,3 +1623,44 @@ html[data-phase="dusk"] .credit {
   color: #fff;
 }
 .transit-flow-box { min-height: 120px; }
+
+/* ---- 季節切替ボタン(日本版で追加。時間帯ボタンの上に積む) ---- */
+.season-btn {
+  bottom: 116px;
+}
+@media (max-width: 640px) {
+  .season-btn {
+    bottom: calc(112px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* ---- 天気アイコン(日本版で追加。台湾版は文字だけだった) ---- */
+.weather-icon {
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin: 2px auto 0;
+  object-fit: contain;
+}
+.weather-day .weather-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* ---- モデルコースのバッジ ---- */
+.course {
+  position: relative;
+}
+.course-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  pointer-events: none;
+  opacity: 0.95;
+}
+.course-title {
+  padding-right: 42px;
+}

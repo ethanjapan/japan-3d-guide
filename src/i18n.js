@@ -4,6 +4,11 @@ const CREDIT =
 
 export const STRINGS = {
   zh: {
+    seasonAuto: "季節",
+    seasonSpring: "春",
+    seasonSummer: "夏",
+    seasonAutumn: "秋",
+    seasonWinter: "冬",
     officialSite: "官方網站",
     officialTourism: "觀光官方網站",
     officialGov: "地方政府網站",
@@ -40,6 +45,11 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ja: {
+    seasonAuto: "季節",
+    seasonSpring: "春",
+    seasonSummer: "夏",
+    seasonAutumn: "秋",
+    seasonWinter: "冬",
     officialSite: "公式サイト",
     officialTourism: "観光公式サイト",
     officialGov: "自治体サイト",
@@ -76,6 +86,11 @@ export const STRINGS = {
     credit: CREDIT,
   },
   cn: {
+    seasonAuto: "季节",
+    seasonSpring: "春",
+    seasonSummer: "夏",
+    seasonAutumn: "秋",
+    seasonWinter: "冬",
     officialSite: "官方网站",
     officialTourism: "旅游官方网站",
     officialGov: "地方政府网站",
@@ -112,6 +127,11 @@ export const STRINGS = {
     credit: CREDIT,
   },
   en: {
+    seasonAuto: "Season",
+    seasonSpring: "Spring",
+    seasonSummer: "Summer",
+    seasonAutumn: "Autumn",
+    seasonWinter: "Winter",
     officialSite: "Official sites",
     officialTourism: "Tourism site",
     officialGov: "Prefectural site",
@@ -148,6 +168,11 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ko: {
+    seasonAuto: "계절",
+    seasonSpring: "봄",
+    seasonSummer: "여름",
+    seasonAutumn: "가을",
+    seasonWinter: "겨울",
     officialSite: "공식 사이트",
     officialTourism: "관광 공식 사이트",
     officialGov: "지자체 사이트",

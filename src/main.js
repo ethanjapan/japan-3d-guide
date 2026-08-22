@@ -4,6 +4,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { createScene, PALETTE } from "./scene.js";
 import { createAmbient } from "./ambient.js";
 import { createAtmosphere } from "./atmosphere.js";
+import { createSeason } from "./season.js";
 import { createCourseLayer } from "./courses3d.js";
 import { STRINGS, applyLang, detectLang } from "./i18n.js";
 import prefectures from "../data/prefectures.json";
@@ -14,7 +15,7 @@ import DECORATIONS from "../data/decorations.json";
 import SPOTS from "../data/spots.json";
 import { TRAVEL_INFO, TRANSIT, PROMO_VIDEOS, GENERAL_VIDEOS,
          REGION_VIDEO, PREF_VIDEO, PROMO_CHANNEL } from "./travelinfo.js";
-import { fetchWeather, codeLabel } from "./weather.js";
+import { fetchWeather, codeLabel, codeIcon } from "./weather.js";
 import { rinkaPref, rinkaSpot, RINKA_PROFILE, RINKA_LINKS } from "./rinka.js";
 import PREF_INTRO from "../data/i18n/pref-intro.json";
 import COURSES from "../data/courses.json";
@@ -37,6 +38,18 @@ const mapsUrl = (s) => `https://www.google.com/maps?q=${s.coord[0]},${s.coord[1]
  * 最初から iframe を並べると YouTube のスクリプトが景点の数だけ走って重く、
  * 何も見ていないのに Cookie が入るので、埋め込みは押されてからにする。
  */
+/** 天気アイコン。素材(public/weather/*.webp)が無い間は error で自分を消すので、
+ *  生成の完了を待たずに組み込める(landmarks と同じ方針)。 */
+const weatherIcon = (code) => {
+  const img = document.createElement("img");
+  img.className = "weather-icon";
+  img.src = `${import.meta.env.BASE_URL}weather/${codeIcon(code)}.webp`;
+  img.alt = "";
+  img.loading = "lazy";
+  img.addEventListener("error", () => img.remove());
+  return img;
+};
+
 const promoThumb = (id, title) => {
   const btn = document.createElement("button");
   btn.type = "button";
@@ -137,7 +150,7 @@ const renderPanel = () => {
           const pop = document.createElement("span");
           pop.className = "weather-range";
           pop.textContent = `${STRINGS[lang].pop} ${d.pop}%`;
-          card.append(dt, desc, rng, pop);
+          card.append(dt, weatherIcon(d.code), desc, rng, pop);
           return card;
         }),
       );
@@ -428,6 +441,7 @@ const attachSheet = (panelEl, { snaps = false, onClose } = {}) => {
   handle.addEventListener("pointercancel", finish);
 };
 let updatePhaseButton = null; // start()が差し込む。言語切替時にラベルを追随させる
+let updateSeasonButton = null;
 
 // ---- 旅のしおり(スタンプラリー)。訪問=県市パネルを開いた県市。localStorageで永続 ----
 const stamps = new Set(JSON.parse(localStorage.getItem("stamps") ?? "[]"));
@@ -504,12 +518,14 @@ const addStamp = (iso) => {
     setTimeout(fly, 620);
   }
   updatePhaseButton?.();
+  updateSeasonButton?.();
 };
 
 stampBtn.addEventListener("click", () => {
   stampPanel.hidden = !stampPanel.hidden;
   if (!stampPanel.hidden) renderStampBook();
   updatePhaseButton?.();
+  updateSeasonButton?.();
 });
 document.getElementById("stamp-close").addEventListener("click", () => {
   stampPanel.hidden = true;
@@ -538,6 +554,7 @@ const setLang = (next) => {
   }
   if (!stampPanel.hidden) renderStampBook();
   updatePhaseButton?.();
+  updateSeasonButton?.();
   // バッジの単位語はパネルの状態に関係なく言語に追随させる(ko残留バグ 2026-08-21)
   if (badgePrefId) {
     badgeInner.textContent = `${PREF_LINKS[badgePrefId]?.km2 ?? ""} km²`;
@@ -709,7 +726,7 @@ const renderWeatherOverview = async (host) => {
       const rng = document.createElement("span");
       rng.className = "weather-range";
       rng.textContent = `${d0.min}–${d0.max}°C｜${STRINGS[lang].pop} ${d0.pop}%`;
-      card.append(n, now, desc, rng);
+      card.append(n, weatherIcon(w.now.code), now, desc, rng);
       return card;
     }),
   );
@@ -884,6 +901,14 @@ const renderInfo = () => {
       box.className = "course";
       box.dataset.course = cse.id;
       if (activeCourseId === cse.id) box.dataset.active = "true";
+      // コースの識別バッジ(素材が無ければ error で自分を消す)
+      const badgeImg = document.createElement("img");
+      badgeImg.className = "course-badge";
+      badgeImg.src = `${import.meta.env.BASE_URL}course/${cse.id}.webp`;
+      badgeImg.alt = "";
+      badgeImg.loading = "lazy";
+      badgeImg.addEventListener("error", () => badgeImg.remove());
+      box.appendChild(badgeImg);
       const t = document.createElement("p");
       t.className = "course-title";
       t.textContent = cse.title[lang];
@@ -1337,6 +1362,37 @@ function start() {
     });
     updatePhaseButton = render;
   }
+
+  // 季節切替(日本版だけの軸)。日本は同じ景色が季節で別物になるのが観光の核なので、
+  // 時間帯と対にして常設のボタンにする。既定は日本の実月。
+  const season = createSeason(stage, reduceMotion);
+  {
+    const CYCLE = ["auto", "spring", "summer", "autumn", "winter"];
+    const ICONS = { spring: "sakura-spray", summer: "koinobori", autumn: "maple", winter: "moon" };
+    const btn = document.getElementById("season-btn");
+    const icon = document.getElementById("season-icon");
+    const label = document.getElementById("season-label");
+    const nameOf = (k) => {
+      const T = STRINGS[lang];
+      return { auto: T.seasonAuto, spring: T.seasonSpring, summer: T.seasonSummer,
+               autumn: T.seasonAutumn, winter: T.seasonWinter }[k];
+    };
+    let sel = localStorage.getItem("season") ?? "auto";
+    if (!CYCLE.includes(sel)) sel = "auto";
+    season.setSeason(sel);
+    const render = () => {
+      icon.src = `${import.meta.env.BASE_URL}ui/${ICONS[season.season] ?? "sakura-spray"}.webp`;
+      label.textContent = sel === "auto" ? `${nameOf("auto")}(${nameOf(season.season)})` : nameOf(sel);
+    };
+    render();
+    btn.addEventListener("click", () => {
+      sel = CYCLE[(CYCLE.indexOf(sel) + 1) % CYCLE.length];
+      localStorage.setItem("season", sel);
+      season.setSeason(sel);
+      render();
+    });
+    updateSeasonButton = render;
+  }
   courseLayer = createCourseLayer(scene, prefectures.bounds, groups, reduceMotion);
   if (import.meta.env.DEV) window.__course = courseLayer;
   const badgeAnchor = new THREE.Vector3();
@@ -1413,6 +1469,7 @@ function start() {
 
     ambient.update(time / 1000);
     atmosphere.update(dt);
+    season.update(dt);
     courseLayer.update(dt);
     if (!reduceMotion) stage.updateSea(time / 1000);
     controls.update();

@@ -20,6 +20,26 @@ const CODE_LABEL = [
   [[95, 96, 99], { zh: "雷雨", cn: "雷雨", ja: "雷雨", en: "Thunderstorm", ko: "뇌우" }],
 ];
 
+/** WMO code -> public/weather/<name>.webp。CODE_LABEL と同じ区切りで分ける。
+ *  素材が無い間は <img> の error で消えるので、先に入れておいても壊れない。 */
+const CODE_ICON = [
+  [[0], "clear"],
+  [[1, 2], "partly"],
+  [[3], "cloudy"],
+  [[45, 48], "fog"],
+  [[51, 53, 55, 56, 57], "drizzle"],
+  [[61, 63, 65, 66, 67, 80, 81, 82], "rain"],
+  [[71, 73, 75, 77, 85, 86], "snow"],
+  [[95, 96, 99], "thunder"],
+];
+
+export const codeIcon = (code) => {
+  for (const [codes, name] of CODE_ICON) {
+    if (codes.includes(code)) return name;
+  }
+  return "cloudy";
+};
+
 export const codeLabel = (code, lang) => {
   for (const [codes, label] of CODE_LABEL) {
     if (codes.includes(code)) return label[lang] ?? label.en;
