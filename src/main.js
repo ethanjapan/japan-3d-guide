@@ -7,7 +7,8 @@ import { createAtmosphere } from "./atmosphere.js";
 import { createSeason } from "./season.js";
 import { createEventLayer } from "./events3d.js";
 import { createCourseLayer } from "./courses3d.js";
-import { STRINGS, applyLang, detectLang } from "./i18n.js";
+import { STRINGS, applyLang, detectLang , ABOUT } from "./i18n.js";
+import META from "../data/meta.json";
 import prefectures from "../data/prefectures.json";
 import SPECIALTIES from "../data/specialties.json";
 import PREF_LINKS from "../data/pref-links.json";
@@ -254,6 +255,32 @@ const linkify = (text) => {
   if (!out.length) return [document.createTextNode(text)];
   if (last < text.length) out.push(document.createTextNode(text.slice(last)));
   return out;
+};
+
+/**
+ * 「このサイトについて」の節を作る。
+ * ABOUT の {spots} 等は data/meta.json の実数で埋める。**画面に数字を手で書かない**
+ * (件数は増減するので、書いた瞬間に嘘になる)。
+ * 埋め残しは tools/check_about.py が機械で見つける。
+ */
+const aboutSection = () => {
+  const a = ABOUT[lang] ?? ABOUT.ja;
+  const s = META.sources ?? {};
+  const vals = {
+    spots: s.spots?.count ?? s.attractions?.count,
+    events: s.events?.count,
+    photos: s.photos?.count,
+    commons: s.photos?.commons,
+    updated: s.attractions?.updated,
+    built: META.built,
+  };
+  return {
+    ...a,
+    rows: a.rows.map(([term, desc]) => [
+      term,
+      desc.replace(/\{(\w+)\}/g, (m, k) => (vals[k] ?? m)),
+    ]),
+  };
 };
 
 const buildSection = (sec, open) => {
@@ -1556,6 +1583,7 @@ const renderInfo = () => {
     ...videoNodes,
     ...courseNodes,
     ...info.sections.map((sec, i) => buildSection(sec, i === 0)),
+    buildSection(aboutSection(), false),
     faqBlock(),
   );
   stagger(body);

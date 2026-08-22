@@ -1,0 +1,14 @@
+{
+  "sources": {
+    "spots": {
+      "count": 376
+    },
+    "specialties": {
+      "count": 141
+    },
+    "photos": {
+      "count": 375
+    }
+  },
+  "built": "2026-08-23"
+}

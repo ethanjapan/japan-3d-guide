@@ -4,6 +4,8 @@ const CREDIT =
 
 export const STRINGS = {
   zh: {
+    // 常時見えるところにAI生成を明示する(節を開かないと読めない場所だけに置かない)
+    aiNote: "立體圖示、背景與導遊 RINKA 為 AI 生成；照片與資料為實拍與官方資料",
     events: "活動",
     monthOff: "不顯示",
     monthEvents: "這個月的活動",
@@ -68,6 +70,8 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ja: {
+    // 常時見えるところにAI生成を明示する(節を開かないと読めない場所だけに置かない)
+    aiNote: "立体アイコン・背景とガイドRINKAはAI生成。写真とデータは実物・公式のものです",
     events: "イベント",
     monthOff: "表示しない",
     monthEvents: "この月のイベント",
@@ -132,6 +136,8 @@ export const STRINGS = {
     credit: CREDIT,
   },
   cn: {
+    // 常時見えるところにAI生成を明示する(節を開かないと読めない場所だけに置かない)
+    aiNote: "立体图标、背景与导游 RINKA 为 AI 生成；照片与资料为实拍与官方资料",
     events: "活动",
     monthOff: "不显示",
     monthEvents: "这个月的活动",
@@ -196,6 +202,8 @@ export const STRINGS = {
     credit: CREDIT,
   },
   en: {
+    // 常時見えるところにAI生成を明示する(節を開かないと読めない場所だけに置かない)
+    aiNote: "3D icons, scenery and the guide RINKA are AI-generated. Photographs and data are real and official",
     events: "Events",
     monthOff: "Off",
     monthEvents: "This month",
@@ -260,6 +268,8 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ko: {
+    // 常時見えるところにAI生成を明示する(節を開かないと読めない場所だけに置かない)
+    aiNote: "입체 아이콘・배경과 가이드 RINKA는 AI 생성. 사진과 데이터는 실제·공식 자료입니다",
     events: "이벤트",
     monthOff: "표시 안 함",
     monthEvents: "이번 달 이벤트",
@@ -362,4 +372,80 @@ export const applyLang = (lang) => {
   for (const btn of document.querySelectorAll(".lang")) {
     btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
   }
+};
+
+/**
+ * 「このサイトについて」— 情報の出どころと、AIで作った範囲。
+ *
+ * ★なぜ画面に出すか(2026-08-23):
+ *   AI生成であることを、どこにも書いていなかった。
+ *   2026年、台湾では実在の景観をAIで描いた行政の宣伝物が
+ *   「AIで作った偽の台東」と批判され、県政府が公式に謝罪している。
+ *   台湾では《人工智慧基本法》(2025-12 施行)がAI産出物の表示を求めてもいる。
+ *   後から指摘されるより、**どこがAIでどこが実データかを自分から線引きする**方が強い。
+ *
+ * 表示は TRAVEL_INFO の節と同じ形([見出し語, 説明]の対)にして、描画を使い回す。
+ * {spots} {photos} {built} は data/meta.json の実数で置き換わる(手で書かない)。
+ */
+export const ABOUT = {
+  ja: {
+    id: "about", h: "このサイトについて", gist: "出どころと、AIで作った範囲",
+    rows: [
+      ["観光地・特産", "名称と座標は Wikidata(CC0)。掲載 {spots}件は人が選定"],
+      ["写真", "Wikimedia Commons の実写真 {photos}枚。撮影者とライセンスは写真ごとに表示"],
+      ["天気", "Open-Meteo の実測と予報(CC BY 4.0)"],
+      ["地図の形", "geoBoundaries(OpenStreetMap contributors, ODbL 1.0)"],
+      ["立体アイコン・装飾", "AI生成。実在の建物や景色を題材にしているが、細部は実物と異なる"],
+      ["ガイド RINKA", "AI生成のキャラクター。実在の人物ではない"],
+      ["データ取り込み", "{built}"],
+    ],
+  },
+  zh: {
+    id: "about", h: "關於本站", gist: "資料來源，以及哪些是 AI 生成",
+    rows: [
+      ["景點・特產", "名稱與座標來自 Wikidata(CC0)。刊載的 {spots} 筆由人工挑選"],
+      ["照片", "Wikimedia Commons 的實拍照片 {photos} 張。攝影者與授權標示於每張照片"],
+      ["天氣", "Open-Meteo 的實測與預報(CC BY 4.0)"],
+      ["地圖輪廓", "geoBoundaries(OpenStreetMap contributors, ODbL 1.0)"],
+      ["立體圖示・裝飾", "AI 生成。以實際建築與風景為題材，但細節與實物不同"],
+      ["導遊 RINKA", "AI 生成的角色，並非真實人物"],
+      ["資料匯入日", "{built}"],
+    ],
+  },
+  cn: {
+    id: "about", h: "关于本站", gist: "资料来源，以及哪些是 AI 生成",
+    rows: [
+      ["景点・特产", "名称与坐标来自 Wikidata(CC0)。刊载的 {spots} 条由人工挑选"],
+      ["照片", "Wikimedia Commons 的实拍照片 {photos} 张。摄影者与授权标示于每张照片"],
+      ["天气", "Open-Meteo 的实测与预报(CC BY 4.0)"],
+      ["地图轮廓", "geoBoundaries(OpenStreetMap contributors, ODbL 1.0)"],
+      ["立体图标・装饰", "AI 生成。以实际建筑与风景为题材，但细节与实物不同"],
+      ["导游 RINKA", "AI 生成的角色，并非真实人物"],
+      ["资料导入日", "{built}"],
+    ],
+  },
+  en: {
+    id: "about", h: "About this site", gist: "Where the data comes from, and what is AI-generated",
+    rows: [
+      ["Spots and specialties", "Names and coordinates from Wikidata (CC0). The {spots} entries shown were chosen by hand"],
+      ["Photographs", "{photos} real photographs from Wikimedia Commons. Photographer and licence are shown on each one"],
+      ["Weather", "Live observations and forecasts from Open-Meteo (CC BY 4.0)"],
+      ["Map outlines", "geoBoundaries (OpenStreetMap contributors, ODbL 1.0)"],
+      ["3D icons and scenery", "AI-generated. Based on real buildings and landscapes, but the details differ from the real thing"],
+      ["RINKA, the guide", "An AI-generated character. Not a real person"],
+      ["Data imported", "{built}"],
+    ],
+  },
+  ko: {
+    id: "about", h: "이 사이트에 대하여", gist: "자료 출처와 AI로 만든 범위",
+    rows: [
+      ["관광지・특산품", "명칭과 좌표는 Wikidata(CC0). 게재된 {spots}건은 사람이 선정"],
+      ["사진", "Wikimedia Commons의 실제 사진 {photos}장. 촬영자와 라이선스는 사진마다 표시"],
+      ["날씨", "Open-Meteo의 실측 및 예보(CC BY 4.0)"],
+      ["지도 윤곽", "geoBoundaries(OpenStreetMap contributors, ODbL 1.0)"],
+      ["입체 아이콘・장식", "AI 생성. 실재하는 건물과 풍경을 소재로 하지만 세부는 실물과 다름"],
+      ["가이드 RINKA", "AI로 생성한 캐릭터이며 실존 인물이 아님"],
+      ["자료 반영일", "{built}"],
+    ],
+  },
 };
