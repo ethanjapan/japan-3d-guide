@@ -2998,3 +2998,13 @@ html[data-phase="night"] .tour-item-n {
   }
   .welcome .close { top: 2px; right: 2px; }
 }
+
+/* 第三者ライセンス表示へのリンク(MITの著作権表示はバンドルから剥がれるので別ファイル) */
+.credit-link {
+  margin-left: 10px;
+  color: inherit;
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.credit-link:hover { opacity: 1; }

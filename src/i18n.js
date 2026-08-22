@@ -60,6 +60,7 @@ export const STRINGS = {
     source: "名稱與座標來自 Wikidata，照片來自 Wikimedia Commons",
     guideLabel: "導遊 RINKA｜MV STUDIO",
     welcomeText: "我是 RINKA！點選都道府縣，帶你看看日本好玩的地方。",
+    notices: "開源授權",
     credit: CREDIT,
   },
   ja: {
@@ -119,6 +120,7 @@ export const STRINGS = {
     source: "名称・座標は Wikidata、写真は Wikimedia Commons",
     guideLabel: "案内人 RINKA｜MV STUDIO",
     welcomeText: "RINKAだよ。都道府県をクリックして、日本の楽しいところを案内するね。",
+    notices: "オープンソースライセンス",
     credit: CREDIT,
   },
   cn: {
@@ -178,6 +180,7 @@ export const STRINGS = {
     infoBtn: "实用信息",
     guideLabel: "导游 RINKA｜MV STUDIO",
     welcomeText: "我是 RINKA！点选都道府县，带你看看日本好玩的地方。",
+    notices: "开源授权",
     credit: CREDIT,
   },
   en: {
@@ -237,6 +240,7 @@ export const STRINGS = {
     source: "Names and coordinates from Wikidata; photos from Wikimedia Commons",
     guideLabel: "Your guide RINKA | MV STUDIO",
     welcomeText: "I'm RINKA! Click a prefecture and I'll show you around Japan.",
+    notices: "Open-source licences",
     credit: CREDIT,
   },
   ko: {
@@ -296,6 +300,7 @@ export const STRINGS = {
     infoBtn: "여행 기본 정보",
     guideLabel: "가이드 RINKA | MV STUDIO",
     welcomeText: "나는 RINKA! 도도부현을 클릭하면 일본의 재미있는 곳을 안내할게.",
+    notices: "오픈소스 라이선스",
     credit: CREDIT,
   },
 };
