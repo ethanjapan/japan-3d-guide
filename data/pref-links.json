@@ -1,0 +1,237 @@
+{
+ "JP-01": {
+  "km2": 77984,
+  "tourism": "https://www.visit-hokkaido.jp/",
+  "gov": "http://www.pref.hokkaido.lg.jp"
+ },
+ "JP-02": {
+  "km2": 9646,
+  "tourism": "https://aomori-tourism.com/",
+  "gov": "https://www.pref.aomori.lg.jp/"
+ },
+ "JP-05": {
+  "km2": 11638,
+  "tourism": "https://www.akita-yulala.jp/",
+  "gov": "https://www.pref.akita.lg.jp/"
+ },
+ "JP-03": {
+  "km2": 15275,
+  "tourism": "https://iwatetabi.jp/",
+  "gov": "https://www.pref.iwate.jp/"
+ },
+ "JP-04": {
+  "km2": 7282,
+  "tourism": "https://www.miyagi-kankou.or.jp/",
+  "gov": "https://www.pref.miyagi.jp/"
+ },
+ "JP-06": {
+  "km2": 9323,
+  "tourism": "https://yamagatakanko.com/",
+  "gov": "https://www.pref.yamagata.jp/"
+ },
+ "JP-07": {
+  "km2": 13784,
+  "tourism": "https://www.tif.ne.jp/",
+  "gov": "https://www.pref.fukushima.lg.jp/"
+ },
+ "JP-09": {
+  "km2": 6408,
+  "tourism": "https://www.tochigiji.or.jp/",
+  "gov": "https://www.pref.tochigi.lg.jp/"
+ },
+ "JP-10": {
+  "km2": 6362,
+  "tourism": "https://gunma-dc.net/",
+  "gov": "https://www.pref.gunma.jp/"
+ },
+ "JP-08": {
+  "km2": 6097,
+  "tourism": "https://www.ibarakiguide.jp/",
+  "gov": "https://www.pref.ibaraki.jp/"
+ },
+ "JP-11": {
+  "km2": 3798,
+  "tourism": "https://stib.jp/",
+  "gov": "https://www.pref.saitama.lg.jp/"
+ },
+ "JP-13": {
+  "km2": 2194,
+  "tourism": "https://www.gotokyo.org/jp/",
+  "gov": "https://www.english.metro.tokyo.lg.jp/"
+ },
+ "JP-12": {
+  "km2": 5158,
+  "tourism": "https://maruchiba.jp/",
+  "gov": "http://www.pref.chiba.lg.jp"
+ },
+ "JP-14": {
+  "km2": 2416,
+  "tourism": "https://www.kanagawa-kankou.or.jp/",
+  "gov": "https://www.pref.kanagawa.jp/"
+ },
+ "JP-15": {
+  "km2": 12582,
+  "tourism": "https://niigata-kankou.or.jp/",
+  "gov": "https://www.pref.niigata.lg.jp/"
+ },
+ "JP-17": {
+  "km2": 4185,
+  "tourism": "https://www.hot-ishikawa.jp/",
+  "gov": "https://www.pref.ishikawa.lg.jp/"
+ },
+ "JP-16": {
+  "km2": 4247,
+  "tourism": "https://www.info-toyama.com/",
+  "gov": "https://www.pref.toyama.jp/"
+ },
+ "JP-20": {
+  "km2": 13585,
+  "tourism": "https://www.go-nagano.net/",
+  "gov": "https://www.pref.nagano.lg.jp/"
+ },
+ "JP-21": {
+  "km2": 10621,
+  "tourism": "https://www.kankou-gifu.jp/",
+  "gov": "https://www.pref.gifu.lg.jp/"
+ },
+ "JP-18": {
+  "km2": 4189,
+  "tourism": "https://www.fuku-e.com/",
+  "gov": "https://www.pref.fukui.lg.jp/"
+ },
+ "JP-19": {
+  "km2": 4465,
+  "tourism": "https://www.yamanashi-kankou.jp/",
+  "gov": "https://www.pref.yamanashi.jp/"
+ },
+ "JP-22": {
+  "km2": 7780,
+  "tourism": "https://hellonavi.jp/",
+  "gov": "https://www.pref.shizuoka.jp"
+ },
+ "JP-23": {
+  "km2": 5165,
+  "tourism": "https://aichinow.pref.aichi.jp/",
+  "gov": "http://www.pref.aichi.jp/global/en/"
+ },
+ "JP-26": {
+  "km2": 4612,
+  "tourism": "https://www.kyoto-kankou.or.jp/",
+  "gov": "https://www.pref.kyoto.jp/"
+ },
+ "JP-25": {
+  "km2": 4017,
+  "tourism": "https://www.biwako-visitors.jp/",
+  "gov": "https://www.pref.shiga.lg.jp/"
+ },
+ "JP-28": {
+  "km2": 8401,
+  "tourism": "https://www.hyogo-tourism.jp/",
+  "gov": "https://web.pref.hyogo.lg.jp/"
+ },
+ "JP-27": {
+  "km2": 1905,
+  "tourism": "https://osaka-info.jp/",
+  "gov": "https://www.pref.osaka.lg.jp/"
+ },
+ "JP-24": {
+  "km2": 5777,
+  "tourism": "https://www.kankomie.or.jp/",
+  "gov": "https://www.pref.mie.lg.jp/"
+ },
+ "JP-29": {
+  "km2": 3691,
+  "tourism": "https://yamatoji.nara-kankou.or.jp/",
+  "gov": "http://www.pref.nara.jp"
+ },
+ "JP-30": {
+  "km2": 4726,
+  "tourism": "https://www.wakayama-kanko.or.jp/",
+  "gov": "https://www.pref.wakayama.lg.jp/"
+ },
+ "JP-31": {
+  "km2": 3507,
+  "tourism": "https://www.tottori-guide.jp/",
+  "gov": "https://www.pref.tottori.lg.jp/"
+ },
+ "JP-32": {
+  "km2": 6708,
+  "tourism": "https://www.kankou-shimane.com/",
+  "gov": "https://www.pref.shimane.lg.jp/"
+ },
+ "JP-33": {
+  "km2": 7113,
+  "tourism": "https://www.okayama-kanko.jp/index.html",
+  "gov": "https://www.pref.okayama.jp/"
+ },
+ "JP-34": {
+  "km2": 8477,
+  "tourism": "https://dive-hiroshima.com/",
+  "gov": "https://www.pref.hiroshima.lg.jp/"
+ },
+ "JP-35": {
+  "km2": 6111,
+  "tourism": "https://yamaguchi-tourism.jp/",
+  "gov": "https://www.pref.yamaguchi.lg.jp/"
+ },
+ "JP-37": {
+  "km2": 1862,
+  "tourism": "https://www.my-kagawa.jp/",
+  "gov": "https://www.pref.kagawa.lg.jp/"
+ },
+ "JP-36": {
+  "km2": 4145,
+  "tourism": "https://www.awanavi.jp/",
+  "gov": "https://www.pref.tokushima.lg.jp/"
+ },
+ "JP-38": {
+  "km2": 5676,
+  "tourism": "https://www.iyokannet.jp/",
+  "gov": "https://www.pref.ehime.jp"
+ },
+ "JP-39": {
+  "km2": 7104,
+  "tourism": "https://kochi-tabi.jp/",
+  "gov": "https://www.pref.kochi.lg.jp/"
+ },
+ "JP-40": {
+  "km2": 4971,
+  "tourism": "https://www.crossroadfukuoka.jp/",
+  "gov": "http://www.pref.fukuoka.lg.jp"
+ },
+ "JP-41": {
+  "km2": 2440,
+  "tourism": "https://www.asobo-saga.jp/",
+  "gov": "http://www.pref.saga.lg.jp/"
+ },
+ "JP-44": {
+  "km2": 6341,
+  "tourism": "https://www.visit-oita.jp/",
+  "gov": "https://www.pref.oita.jp/"
+ },
+ "JP-42": {
+  "km2": 4105,
+  "tourism": "https://www.nagasaki-tabinet.com/",
+  "gov": "https://www.pref.nagasaki.jp/"
+ },
+ "JP-43": {
+  "km2": 7404,
+  "tourism": "https://kumamoto.guide/",
+  "gov": "https://www.pref.kumamoto.jp/"
+ },
+ "JP-45": {
+  "km2": 7736,
+  "tourism": "https://www.kanko-miyazaki.jp/",
+  "gov": "https://www.pref.miyazaki.lg.jp/"
+ },
+ "JP-46": {
+  "km2": 9132,
+  "tourism": "https://www.kagoshima-kankou.com/",
+  "gov": "https://www.pref.kagoshima.jp"
+ },
+ "JP-47": {
+  "km2": 2281,
+  "tourism": "https://www.okinawastory.jp/",
+  "gov": "https://www.pref.okinawa.lg.jp/"
+ }
+}

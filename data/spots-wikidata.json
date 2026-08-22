@@ -1,0 +1,3621 @@
+{
+ "JP-01": [
+  {
+   "name_ja": "函館山",
+   "kana": "はこだてやま",
+   "wp": "函館山",
+   "qid": "Q3526214",
+   "en": "Mount Hakodate",
+   "zh": "函館山",
+   "cn": "函館山",
+   "ko": "하코다테산",
+   "coord": [
+    41.75889,
+    140.70444
+   ],
+   "image": "Kanemori Red Brick Warehouse Hakodate Hokkaido pref Japan01n.jpg"
+  },
+  {
+   "name_ja": "小樽運河",
+   "kana": "おたるうんが",
+   "wp": "小樽運河",
+   "qid": "Q10959355",
+   "en": "Otaru Canal",
+   "zh": "小樽運河",
+   "cn": "小樽運河",
+   "ko": "오타루 운하",
+   "coord": [
+    43.19972,
+    141.00167
+   ],
+   "image": "Otaru Hokkaido Japan.jpg"
+  },
+  {
+   "name_ja": "青い池",
+   "kana": "あおいいけ",
+   "wp": "青い池 (美瑛町)",
+   "qid": null,
+   "en": "Blue Pond (Biei)",
+   "zh": "青池",
+   "cn": "青池",
+   "ko": "아오이이케(푸른 연못)",
+   "coord": [
+    43.4966,
+    142.627
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "知床五湖",
+   "kana": "しれとこごこ",
+   "wp": "知床五湖",
+   "qid": "Q11584571",
+   "en": "Shiretoko Goko",
+   "zh": "知床五湖",
+   "cn": "知床五湖",
+   "ko": "시레토코 5호",
+   "coord": [
+    44.12556,
+    145.08111
+   ],
+   "image": "140829 Ichiko of Shiretoko Goko Lakes Hokkaido Japan02s5.jpg"
+  },
+  {
+   "name_ja": "旭山動物園",
+   "kana": "あさひやまどうぶつえん",
+   "wp": "旭川市旭山動物園",
+   "qid": "Q993926",
+   "en": "Asahiyama Zoo",
+   "zh": "旭川市旭山動物園",
+   "cn": "旭川市旭山动物园",
+   "ko": "아사히야마 동물원",
+   "coord": [
+    43.76805,
+    142.47978
+   ],
+   "image": "旭山動物園 - panoramio (4).jpg"
+  }
+ ],
+ "JP-02": [
+  {
+   "name_ja": "弘前城",
+   "kana": "ひろさきじょう",
+   "wp": "弘前城",
+   "qid": "Q328582",
+   "en": "Hirosaki Castle",
+   "zh": "弘前城",
+   "cn": "弘前城",
+   "ko": "히로사키성",
+   "coord": [
+    40.60804,
+    140.46381
+   ],
+   "image": "Hirosaki Castle Keep Tower 20220508.jpg"
+  },
+  {
+   "name_ja": "奥入瀬渓流",
+   "kana": "おいらせけいりゅう",
+   "wp": "奥入瀬渓流",
+   "qid": "Q10942580",
+   "en": "Oirase Steam",
+   "zh": "奧入瀨溪流",
+   "cn": "奧入瀨溪流",
+   "ko": "오이라세 계류",
+   "coord": [
+    40.52528,
+    140.9745
+   ],
+   "image": "Oirase-keiryu.jpg"
+  },
+  {
+   "name_ja": "十和田湖",
+   "kana": "とわだこ",
+   "wp": "十和田湖",
+   "qid": "Q1196132",
+   "en": "Lake Towada",
+   "zh": "十和田湖",
+   "cn": "十和田湖",
+   "ko": "도와다호",
+   "coord": [
+    40.46667,
+    140.86667
+   ],
+   "image": "Lake Towada from Ohanabe 2008.jpg"
+  },
+  {
+   "name_ja": "青森ねぶた祭",
+   "kana": "あおもりねぶたまつり",
+   "wp": "青森ねぶた祭",
+   "qid": "Q862407",
+   "en": "Aomori Nebuta Matsuri",
+   "zh": "青森睡魔祭",
+   "cn": "青森睡魔祭",
+   "ko": "아오모리 네부타 축제",
+   "coord": [
+    40.82234,
+    140.74739
+   ],
+   "image": "Aomori Nebuta Festival Float August 2006.jpg"
+  },
+  {
+   "name_ja": "白神山地",
+   "kana": "しらかみさんち",
+   "wp": "白神山地",
+   "qid": "Q501638",
+   "en": "Shirakami-Sanchi",
+   "zh": "白神山地",
+   "cn": "白神山地",
+   "ko": "시라카미 산지",
+   "coord": [
+    40.47,
+    140.13
+   ],
+   "image": "MG 1642-3s.jpg"
+  }
+ ],
+ "JP-03": [
+  {
+   "name_ja": "中尊寺金色堂",
+   "kana": "ちゅうそんじこんじきどう",
+   "wp": "中尊寺",
+   "qid": "Q2660144",
+   "en": "Chūson-ji Temple",
+   "zh": "中尊寺",
+   "cn": "中尊寺",
+   "ko": "주손지 곤지키도",
+   "coord": [
+    39.00139,
+    141.09972
+   ],
+   "image": "230728 Chusonji Hiraizumi Iwate pref Japan01s3.jpg"
+  },
+  {
+   "name_ja": "毛越寺",
+   "kana": "もうつうじ",
+   "wp": "毛越寺",
+   "qid": "Q975227",
+   "en": "Mōtsū-ji Temple",
+   "zh": "毛越寺",
+   "cn": "毛越寺",
+   "ko": "모쓰지",
+   "coord": [
+    38.98782,
+    141.10802
+   ],
+   "image": "230728 Motsuji Hiraizumi Iwate pref Japan13s3.jpg"
+  },
+  {
+   "name_ja": "龍泉洞",
+   "kana": "りゅうせんどう",
+   "wp": "龍泉洞",
+   "qid": "Q7385643",
+   "en": "Ryusendo Cave",
+   "zh": "龍泉洞",
+   "cn": "龍泉洞",
+   "ko": "류센도 동굴",
+   "coord": [
+    39.86053,
+    141.79728
+   ],
+   "image": "Ryusendo Cave Underground Lake Cap 20201115.jpg"
+  },
+  {
+   "name_ja": "浄土ヶ浜",
+   "kana": "じょうどがはま",
+   "wp": "浄土ヶ浜",
+   "qid": "Q11271084",
+   "en": "Jōdogahama",
+   "zh": "淨土濱",
+   "cn": "淨土濱",
+   "ko": "조도가하마",
+   "coord": [
+    39.64889,
+    141.98167
+   ],
+   "image": "Jyoudogahama.jpg"
+  },
+  {
+   "name_ja": "厳美渓",
+   "kana": "げんびけい",
+   "wp": "厳美渓",
+   "qid": "Q3100364",
+   "en": "Genbikei",
+   "zh": "嚴美溪",
+   "cn": "嚴美溪",
+   "ko": "겐비케이",
+   "coord": [
+    38.9446,
+    141.0457
+   ],
+   "image": "230727 Genbikei Ichinoseki Iwate pref Japan02s3.jpg"
+  }
+ ],
+ "JP-04": [
+  {
+   "name_ja": "松島",
+   "kana": "まつしま",
+   "wp": "松島",
+   "qid": "Q1144855",
+   "en": "Matsushima",
+   "zh": "松島",
+   "cn": "松岛",
+   "ko": "마쓰시마섬",
+   "coord": [
+    38.35556,
+    141.07639
+   ],
+   "image": "Matsushima miyagi z.JPG"
+  },
+  {
+   "name_ja": "瑞巌寺",
+   "kana": "ずいがんじ",
+   "wp": "瑞巌寺",
+   "qid": "Q3140498",
+   "en": "Zuigan-ji Temple",
+   "zh": "瑞巖寺",
+   "cn": "瑞岩寺",
+   "ko": "즈이간지",
+   "coord": [
+    38.37218,
+    141.0596
+   ],
+   "image": "211030 Zuigan-ji Matsushima Miyagi pref Japan09s3.jpg"
+  },
+  {
+   "name_ja": "蔵王のお釜",
+   "kana": "ざおうのおかま",
+   "wp": "蔵王連峰",
+   "qid": "Q167951",
+   "en": "Mount Zaō",
+   "zh": "藏王連峰",
+   "cn": "藏王連峰",
+   "ko": "자오 오카마",
+   "coord": [
+    38.141,
+    140.443
+   ],
+   "image": "Mount Zaō and Sakura 01.jpg"
+  },
+  {
+   "name_ja": "仙台城跡",
+   "kana": "せんだいじょうあと",
+   "wp": "仙台城",
+   "qid": "Q598621",
+   "en": "Sendai Castle",
+   "zh": "仙台城",
+   "cn": "仙台城",
+   "ko": "센다이 성터",
+   "coord": [
+    38.25248,
+    140.85616
+   ],
+   "image": "Waki-yagura of Sendai Castle 20220910b.jpg"
+  },
+  {
+   "name_ja": "鳴子峡",
+   "kana": "なるこきょう",
+   "wp": "鳴子峡",
+   "qid": "Q11675320",
+   "en": "Naruko Canyon",
+   "zh": "鳴子峽",
+   "cn": "鳴子峽",
+   "ko": "나루코 협곡",
+   "coord": [
+    38.73639,
+    140.69222
+   ],
+   "image": null
+  }
+ ],
+ "JP-05": [
+  {
+   "name_ja": "角館武家屋敷",
+   "kana": "かくのだてぶけやしき",
+   "wp": "角館町",
+   "qid": "Q2054493",
+   "en": "Kakunodate",
+   "zh": "角館武家屋敷",
+   "cn": "角馆武家宅邸",
+   "ko": "가쿠노다테 무가저택",
+   "coord": [
+    39.59628,
+    140.56203
+   ],
+   "image": "Kakunodate district Aerial photograph.1975.jpg"
+  },
+  {
+   "name_ja": "田沢湖",
+   "kana": "たざわこ",
+   "wp": "田沢湖",
+   "qid": "Q174309",
+   "en": "Lake Tazawa",
+   "zh": "田澤湖",
+   "cn": "田澤湖",
+   "ko": "다자와호",
+   "coord": [
+    39.725,
+    140.66139
+   ],
+   "image": "Lake Tazawa and Kansa-gū 20210213.jpg"
+  },
+  {
+   "name_ja": "乳頭温泉郷",
+   "kana": "にゅうとうおんせんきょう",
+   "wp": "乳頭温泉郷",
+   "qid": "Q11370596",
+   "en": "Nyuto Spa Resort",
+   "zh": "乳頭溫泉鄉",
+   "cn": "乳頭溫泉鄉",
+   "ko": "뉴토 온천향",
+   "coord": [
+    39.8,
+    140.78
+   ],
+   "image": "Pathway to the Qkamura Nyuto Onsenkyo.jpg"
+  },
+  {
+   "name_ja": "男鹿半島",
+   "kana": "おがはんとう",
+   "wp": "男鹿半島",
+   "qid": "Q1132109",
+   "en": "Oga Peninsula",
+   "zh": "男鹿半島",
+   "cn": "男鹿半岛",
+   "ko": "오가 반도",
+   "coord": [
+    39.91667,
+    139.78333
+   ],
+   "image": "View of the Oga Peninsula from Akita Marina.jpg"
+  },
+  {
+   "name_ja": "秋田竿燈まつり",
+   "kana": "あきたかんとうまつり",
+   "wp": "竿燈",
+   "qid": "Q4701224",
+   "en": "Akita Kantō",
+   "zh": "秋田竿燈祭",
+   "cn": "秋田竿燈祭",
+   "ko": "아키타 간토 마쓰리",
+   "coord": [
+    39.71847,
+    140.11319
+   ],
+   "image": "Akita Kanto Festival 2017.jpg"
+  }
+ ],
+ "JP-06": [
+  {
+   "name_ja": "山寺 立石寺",
+   "kana": "やまでら りっしゃくじ",
+   "wp": "立石寺",
+   "qid": "Q1760419",
+   "en": "Yama-dera Temple",
+   "zh": "立石寺",
+   "cn": "立石寺",
+   "ko": "야마데라 릿샤쿠지",
+   "coord": [
+    38.31256,
+    140.43739
+   ],
+   "image": "211029 Risshaku-ji Yamagata Yamagata pref Japan107s3.jpg"
+  },
+  {
+   "name_ja": "銀山温泉",
+   "kana": "ぎんざんおんせん",
+   "wp": "銀山温泉",
+   "qid": "Q5563313",
+   "en": "Ginzan Onsen",
+   "zh": "銀山溫泉",
+   "cn": "銀山溫泉",
+   "ko": "긴잔 온천",
+   "coord": [
+    38.56972,
+    140.53111
+   ],
+   "image": "Ginzan Onsen in blue hour.jpg"
+  },
+  {
+   "name_ja": "蔵王樹氷",
+   "kana": "ざおうじゅひょう",
+   "wp": "樹氷",
+   "qid": "Q131099",
+   "en": "rime ice",
+   "zh": "霧凇",
+   "cn": "雾凇",
+   "ko": "자오 수빙",
+   "coord": [
+    38.16,
+    140.44
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "最上川舟下り",
+   "kana": "もがみがわふなくだり",
+   "wp": "最上川",
+   "qid": "Q596120",
+   "en": "Mogami River",
+   "zh": "最上川",
+   "cn": "最上川",
+   "ko": "모가미가와 뱃놀이",
+   "coord": [
+    38.92222,
+    139.80917
+   ],
+   "image": "Mogamigawa-kawakudari.jpg"
+  },
+  {
+   "name_ja": "羽黒山五重塔",
+   "kana": "はぐろさんごじゅうのとう",
+   "wp": "出羽三山",
+   "qid": "Q1155726",
+   "en": "Three Mountains of Dewa",
+   "zh": "出羽三山",
+   "cn": "出羽三山",
+   "ko": "하구로산 오층탑",
+   "coord": [
+    38.70028,
+    140.00028
+   ],
+   "image": "View from the top of Mt. Gassan 2006-10-28.jpg"
+  }
+ ],
+ "JP-07": [
+  {
+   "name_ja": "鶴ヶ城",
+   "kana": "つるがじょう",
+   "wp": "若松城",
+   "qid": "Q1365061",
+   "en": "Aizuwakamatsu Castle",
+   "zh": "會津若松城",
+   "cn": "会津若松城",
+   "ko": "와카마쓰성",
+   "coord": [
+    37.48778,
+    139.92972
+   ],
+   "image": "Aizuwakamatsu Castle ac (1).jpg"
+  },
+  {
+   "name_ja": "大内宿",
+   "kana": "おおうちじゅく",
+   "wp": "大内宿",
+   "qid": "Q3594058",
+   "en": "Ōuchi-juku",
+   "zh": "大內宿",
+   "cn": "大內宿",
+   "ko": "오우치주쿠",
+   "coord": [
+    37.33417,
+    139.86078
+   ],
+   "image": "大内宿 - panoramio (7).jpg"
+  },
+  {
+   "name_ja": "五色沼",
+   "kana": "ごしきぬま",
+   "wp": "五色沼 (福島県)",
+   "qid": null,
+   "en": "Goshiki-numa Ponds",
+   "zh": "五色沼",
+   "cn": "五色沼",
+   "ko": "고시키누마",
+   "coord": [
+    37.6483,
+    140.0733
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "三春滝桜",
+   "kana": "みはるたきざくら",
+   "wp": "三春滝桜",
+   "qid": "Q3132219",
+   "en": "Miharu Takizakura",
+   "zh": "三春瀧櫻",
+   "cn": "三春瀧櫻",
+   "ko": "미하루 다키자쿠라",
+   "coord": [
+    37.40778,
+    140.50029
+   ],
+   "image": "Miharu Miharu-Takizakura Front 1.jpg"
+  },
+  {
+   "name_ja": "塔のへつり",
+   "kana": "とうのへつり",
+   "wp": "塔のへつり",
+   "qid": "Q11428345",
+   "en": "Tō-no-Hetsuri",
+   "zh": "塔之岪",
+   "cn": "塔之岪",
+   "ko": "도노헤쓰리",
+   "coord": [
+    37.27369,
+    139.90589
+   ],
+   "image": "塔のへつり - panoramio (7).jpg"
+  }
+ ],
+ "JP-08": [
+  {
+   "name_ja": "国営ひたち海浜公園",
+   "kana": "こくえいひたちかいひんこうえん",
+   "wp": "国営ひたち海浜公園",
+   "qid": "Q10855585",
+   "en": "Hitachi Seaside Park",
+   "zh": "常陆海滨公园",
+   "cn": "常陆海滨公园",
+   "ko": "국영 히타치 해빈공원",
+   "coord": [
+    36.40056,
+    140.59139
+   ],
+   "image": "Nemophila and Ferris Wheel in Hitachi Seaside Park.jpg"
+  },
+  {
+   "name_ja": "偕楽園",
+   "kana": "かいらくえん",
+   "wp": "偕楽園",
+   "qid": "Q71952",
+   "en": "Kairaku-en",
+   "zh": "偕乐园",
+   "cn": "偕乐园",
+   "ko": "가이라쿠엔",
+   "coord": [
+    36.37306,
+    140.45621
+   ],
+   "image": "Kairaku-en, Ibaraki 24.jpg"
+  },
+  {
+   "name_ja": "袋田の滝",
+   "kana": "ふくろだのたき",
+   "wp": "袋田の滝",
+   "qid": "Q37321",
+   "en": "Fukuroda Falls",
+   "zh": "袋田瀑布",
+   "cn": "袋田瀑布",
+   "ko": "후쿠로다 폭포",
+   "coord": [
+    36.76419,
+    140.40736
+   ],
+   "image": "Fukuroda Falls - 袋田の滝(ふくろだのたき).jpg"
+  },
+  {
+   "name_ja": "牛久大仏",
+   "kana": "うしくだいぶつ",
+   "wp": "牛久大仏",
+   "qid": "Q542324",
+   "en": "Ushiku Daibutsu",
+   "zh": "牛久大佛",
+   "cn": "牛久大佛",
+   "ko": "우시쿠 대불",
+   "coord": [
+    35.9825,
+    140.22028
+   ],
+   "image": "Pic kunojyou.jpg"
+  },
+  {
+   "name_ja": "大洗磯前神社",
+   "kana": "おおあらいいそさきじんじゃ",
+   "wp": "大洗磯前神社",
+   "qid": "Q11437230",
+   "en": "Ōarai Isosaki Shrine",
+   "zh": "大洗矶前神社",
+   "cn": "大洗矶前神社",
+   "ko": "오아라이 이소사키 신사",
+   "coord": [
+    36.31591,
+    140.58722
+   ],
+   "image": "Oarai Isosaki Shrine 04.jpg"
+  }
+ ],
+ "JP-09": [
+  {
+   "name_ja": "日光東照宮",
+   "kana": "にっこうとうしょうぐう",
+   "wp": "日光東照宮",
+   "qid": "Q696641",
+   "en": "Nikkō Tōshō-gū",
+   "zh": "日光東照宮",
+   "cn": "日光东照宫",
+   "ko": "닛코 동조궁",
+   "coord": [
+    36.75917,
+    139.59861
+   ],
+   "image": "Nikko toshogu shrine.jpg"
+  },
+  {
+   "name_ja": "華厳滝",
+   "kana": "けごんのたき",
+   "wp": "華厳滝",
+   "qid": "Q37580",
+   "en": "Kegon Falls",
+   "zh": "華嚴瀑布",
+   "cn": "華嚴瀑布",
+   "ko": "게곤 폭포",
+   "coord": [
+    36.73789,
+    139.502
+   ],
+   "image": "紅葉の華厳の滝.jpg"
+  },
+  {
+   "name_ja": "中禅寺湖",
+   "kana": "ちゅうぜんじこ",
+   "wp": "中禅寺湖",
+   "qid": "Q117923",
+   "en": "Lake Chūzenji",
+   "zh": "中禪寺湖",
+   "cn": "中禪寺湖",
+   "ko": "주젠지호",
+   "coord": [
+    36.74056,
+    139.46222
+   ],
+   "image": "Mount nantai and lake chuzenji.jpg"
+  },
+  {
+   "name_ja": "鬼怒川温泉",
+   "kana": "きぬがわおんせん",
+   "wp": "鬼怒川温泉",
+   "qid": "Q5363719",
+   "en": "Kinugawa Onsen",
+   "zh": "鬼怒川溫泉",
+   "cn": "鬼怒川溫泉",
+   "ko": "기누가와 온천",
+   "coord": [
+    36.82472,
+    139.71639
+   ],
+   "image": "Kinugawa Onsen Hotel 2020.jpg"
+  },
+  {
+   "name_ja": "あしかがフラワーパーク",
+   "kana": "あしかがフラワーパーク",
+   "wp": "あしかがフラワーパーク",
+   "qid": "Q11257294",
+   "en": "Ashikaga Flower Park",
+   "zh": "足利花卉公園",
+   "cn": "足利花卉公園",
+   "ko": "아시카가 플라워 파크",
+   "coord": [
+    36.315,
+    139.52203
+   ],
+   "image": "Ashikaga Flower Park Flower Stage In Late Autumn 1.jpg"
+  }
+ ],
+ "JP-10": [
+  {
+   "name_ja": "草津温泉",
+   "kana": "くさつおんせん",
+   "wp": "草津温泉",
+   "qid": "Q3137477",
+   "en": "Kusatsu Onsen",
+   "zh": "草津溫泉",
+   "cn": "草津温泉",
+   "ko": "구사쓰 온천",
+   "coord": [
+    36.62281,
+    138.59664
+   ],
+   "image": "草津温泉の湯畑03.jpg"
+  },
+  {
+   "name_ja": "富岡製糸場",
+   "kana": "とみおかせいしじょう",
+   "wp": "富岡製糸場",
+   "qid": "Q7818931",
+   "en": "Tomioka Silk Mill",
+   "zh": "富岡制紗廠",
+   "cn": "富岡製絲廠",
+   "ko": "도미오카 제사장",
+   "coord": [
+    36.25533,
+    138.88767
+   ],
+   "image": "Tomioka Silk Mill East Cocoon Warehouse05.jpg"
+  },
+  {
+   "name_ja": "伊香保温泉",
+   "kana": "いかほおんせん",
+   "wp": "伊香保温泉",
+   "qid": "Q11381013",
+   "en": "Ikaho Onsen",
+   "zh": "伊香保溫泉",
+   "cn": "伊香保溫泉",
+   "ko": "이카호 온천",
+   "coord": [
+    36.49827,
+    138.93039
+   ],
+   "image": "Ikaho Onsen 01.jpg"
+  },
+  {
+   "name_ja": "吹割の滝",
+   "kana": "ふきわれのたき",
+   "wp": "吹割の滝",
+   "qid": "Q11416484",
+   "en": "Fukiware Falls",
+   "zh": "吹割瀑布",
+   "cn": "吹割瀑布",
+   "ko": "후키와레 폭포",
+   "coord": [
+    36.70217,
+    139.20742
+   ],
+   "image": "Fukiware Falls 01.jpg"
+  },
+  {
+   "name_ja": "尾瀬",
+   "kana": "おぜ",
+   "wp": "尾瀬",
+   "qid": "Q2043091",
+   "en": "Oze",
+   "zh": "尾瀨",
+   "cn": "尾瀨",
+   "ko": "오제",
+   "coord": [
+    36.937,
+    139.25102
+   ],
+   "image": "Mt.Hiuchigatake 11.jpg"
+  }
+ ],
+ "JP-11": [
+  {
+   "name_ja": "川越 蔵造りの町並み",
+   "kana": "かわごえ くらづくりのまちなみ",
+   "wp": "川越市",
+   "qid": "Q319740",
+   "en": "Kawagoe",
+   "zh": "川越市",
+   "cn": "川越市",
+   "ko": "가와고에시",
+   "coord": [
+    35.92514,
+    139.48578
+   ],
+   "image": "Kurazukuri Street in Little Edo.jpg"
+  },
+  {
+   "name_ja": "三峯神社",
+   "kana": "みつみねじんじゃ",
+   "wp": "三峯神社",
+   "qid": "Q11355207",
+   "en": "Mitsumine Shrine",
+   "zh": "三峰神社",
+   "cn": "三峰神社",
+   "ko": "미쓰미네 신사",
+   "coord": [
+    35.92543,
+    138.9304
+   ],
+   "image": "Mitsumine-jinja, Haiden.jpg"
+  },
+  {
+   "name_ja": "長瀞",
+   "kana": "ながとろ",
+   "wp": "長瀞町",
+   "qid": "Q1345299",
+   "en": "Nagatoro",
+   "zh": "長瀞町",
+   "cn": "长瀞町",
+   "ko": "나가토로정",
+   "coord": [
+    36.11481,
+    139.10972
+   ],
+   "image": "Nagatoro Town Office.JPG"
+  },
+  {
+   "name_ja": "鉄道博物館",
+   "kana": "てつどうはくぶつかん",
+   "wp": "鉄道博物館 (さいたま市)",
+   "qid": "Q846106",
+   "en": "Railway Museum",
+   "zh": "鐵道博物館",
+   "cn": "铁道博物馆",
+   "ko": "철도박물관",
+   "coord": [
+    35.92056,
+    139.61833
+   ],
+   "image": "The Railway Museum Park Zone 20071014 (1).jpg"
+  },
+  {
+   "name_ja": "羊山公園 芝桜の丘",
+   "kana": "ひつじやまこうえん",
+   "wp": "羊山公園",
+   "qid": "Q11608637",
+   "en": "Hitsujiyama Park",
+   "zh": "羊山公園 芝櫻之丘",
+   "cn": "羊山公园 芝樱之丘",
+   "ko": "히쓰지야마 공원 꽃잔디 언덕",
+   "coord": [
+    35.98556,
+    139.08875
+   ],
+   "image": "羊山公園の芝桜の丘 (Phlox subulata in Chichibu) 02 May, 2010 - panoramio.jpg"
+  }
+ ],
+ "JP-12": [
+  {
+   "name_ja": "東京ディズニーリゾート",
+   "kana": "とうきょうディズニーリゾート",
+   "wp": "東京ディズニーリゾート",
+   "qid": "Q605492",
+   "en": "Tokyo Disney Resort",
+   "zh": "東京迪士尼度假區",
+   "cn": "东京迪士尼度假区",
+   "ko": "도쿄 디즈니 리조트",
+   "coord": [
+    35.62972,
+    139.88278
+   ],
+   "image": "A8 Tokyo Disneyland.jpg"
+  },
+  {
+   "name_ja": "成田山新勝寺",
+   "kana": "なりたさんしんしょうじ",
+   "wp": "成田山新勝寺",
+   "qid": "Q3083875",
+   "en": "Narita-san",
+   "zh": "成田山新勝寺",
+   "cn": "成田山新胜寺",
+   "ko": "나리타산 신쇼지",
+   "coord": [
+    35.78608,
+    140.31831
+   ],
+   "image": "120803 Narita-san Shinsho-ji Narita Chiba pref Japan01n.jpg"
+  },
+  {
+   "name_ja": "鋸山",
+   "kana": "のこぎりやま",
+   "wp": "鋸山 (千葉県)",
+   "qid": "Q5120896",
+   "en": "Mount Nokogiri",
+   "zh": "鋸山 (千葉縣)",
+   "cn": "鋸山 (千葉縣)",
+   "ko": "노코기리야마",
+   "coord": [
+    35.16028,
+    139.84083
+   ],
+   "image": "Jigoku-nozoki-Mount Nokogiri-11-24.jpg"
+  },
+  {
+   "name_ja": "犬吠埼",
+   "kana": "いぬぼうさき",
+   "wp": "犬吠埼",
+   "qid": "Q2937063",
+   "en": "Cape Inubō",
+   "zh": "犬吠埼",
+   "cn": "犬吠埼",
+   "ko": "이누보사키",
+   "coord": [
+    35.70778,
+    140.86953
+   ],
+   "image": "犬吠埼灯台 (Inubozaki Lighthouse) 07 Aug, 2009 - panoramio.jpg"
+  },
+  {
+   "name_ja": "養老渓谷",
+   "kana": "ようろうけいこく",
+   "wp": "養老渓谷",
+   "qid": "Q8062663",
+   "en": "Yōrō Gorge",
+   "zh": "養老溪谷",
+   "cn": "養老溪谷",
+   "ko": "요로 계곡",
+   "coord": [
+    35.2575,
+    140.16
+   ],
+   "image": "弘文洞跡養老渓谷P1010122.jpg"
+  }
+ ],
+ "JP-13": [
+  {
+   "name_ja": "浅草寺",
+   "kana": "せんそうじ",
+   "wp": "浅草寺",
+   "qid": "Q615183",
+   "en": "Sensō-ji Temple",
+   "zh": "淺草寺",
+   "cn": "浅草寺",
+   "ko": "센소지",
+   "coord": [
+    35.71456,
+    139.79664
+   ],
+   "image": "Sensoji 2023.jpg"
+  },
+  {
+   "name_ja": "東京スカイツリー",
+   "kana": "とうきょうスカイツリー",
+   "wp": "東京スカイツリー",
+   "qid": "Q57965",
+   "en": "Tokyo Skytree",
+   "zh": "東京晴空塔",
+   "cn": "东京晴空塔",
+   "ko": "도쿄 스카이트리",
+   "coord": [
+    35.71006,
+    139.81072
+   ],
+   "image": "Tokyo Skytree 2023.jpg"
+  },
+  {
+   "name_ja": "明治神宮",
+   "kana": "めいじじんぐう",
+   "wp": "明治神宮",
+   "qid": "Q287165",
+   "en": "Meiji Jingū",
+   "zh": "明治神宫",
+   "cn": "明治神宫",
+   "ko": "메이지 신궁",
+   "coord": [
+    35.67611,
+    139.69917
+   ],
+   "image": "Courtyard of Meiji Shrine 20190717.jpg"
+  },
+  {
+   "name_ja": "渋谷スクランブル交差点",
+   "kana": "しぶやスクランブルこうさてん",
+   "wp": "渋谷駅",
+   "qid": "Q428811",
+   "en": "Shibuya Station",
+   "zh": "澀谷站",
+   "cn": "涩谷站",
+   "ko": "시부야역",
+   "coord": [
+    35.65851,
+    139.70133
+   ],
+   "image": "IBA-shibuya-20210325.jpg"
+  },
+  {
+   "name_ja": "上野恩賜公園",
+   "kana": "うえのおんしこうえん",
+   "wp": "上野恩賜公園",
+   "qid": "Q746216",
+   "en": "Ueno Imperial Grant Park",
+   "zh": "上野公園",
+   "cn": "上野公园",
+   "ko": "우에노 공원",
+   "coord": [
+    35.71222,
+    139.77111
+   ],
+   "image": "UenoPark Hanami.jpg"
+  }
+ ],
+ "JP-14": [
+  {
+   "name_ja": "鎌倉大仏 高徳院",
+   "kana": "かまくらだいぶつ こうとくいん",
+   "wp": "高徳院",
+   "qid": "Q672056",
+   "en": "Kōtoku-in Temple",
+   "zh": "高德院",
+   "cn": "高德院",
+   "ko": "고토쿠인",
+   "coord": [
+    35.31694,
+    139.53583
+   ],
+   "image": "230128 Kamakura Daibutsu Japan01s3.jpg"
+  },
+  {
+   "name_ja": "箱根神社",
+   "kana": "はこねじんじゃ",
+   "wp": "箱根神社",
+   "qid": "Q705310",
+   "en": "Hakone Shrine",
+   "zh": "箱根神社",
+   "cn": "箱根神社",
+   "ko": "하코네 신사",
+   "coord": [
+    35.20389,
+    139.02556
+   ],
+   "image": "Hakonejinja -02.jpg"
+  },
+  {
+   "name_ja": "横浜みなとみらい21",
+   "kana": "よこはまみなとみらい",
+   "wp": "みなとみらい21",
+   "qid": "Q1140617",
+   "en": "Minato Mirai 21",
+   "zh": "橫濱港未來21",
+   "cn": "横滨港未来21",
+   "ko": "요코하마 미나토미라이 21",
+   "coord": [
+    35.458,
+    139.632
+   ],
+   "image": "MinatoMirai21.jpg"
+  },
+  {
+   "name_ja": "江の島",
+   "kana": "えのしま",
+   "wp": "江の島",
+   "qid": "Q989803",
+   "en": "Enoshima",
+   "zh": "江之島",
+   "cn": "江之島",
+   "ko": "에노섬",
+   "coord": [
+    35.29933,
+    139.48091
+   ],
+   "image": "Enoshima 06.jpg"
+  },
+  {
+   "name_ja": "大涌谷",
+   "kana": "おおわくだに",
+   "wp": "大涌谷",
+   "qid": "Q1134429",
+   "en": "Ōwakudani",
+   "zh": "大涌谷",
+   "cn": "大涌谷",
+   "ko": "오와쿠다니",
+   "coord": [
+    35.24192,
+    139.02067
+   ],
+   "image": "大涌谷 - panoramio.jpg"
+  }
+ ],
+ "JP-15": [
+  {
+   "name_ja": "佐渡島",
+   "kana": "さどがしま",
+   "wp": "佐渡島",
+   "qid": "Q998623",
+   "en": "Sado Island",
+   "zh": "佐渡岛",
+   "cn": "佐渡岛",
+   "ko": "사도가섬",
+   "coord": [
+    38.0675,
+    138.3975
+   ],
+   "image": "Sadogashima ISS064.jpg"
+  },
+  {
+   "name_ja": "清津峡",
+   "kana": "きよつきょう",
+   "wp": "清津峡",
+   "qid": "Q11561258",
+   "en": "Kiyotsu Gorge",
+   "zh": "清津峽",
+   "cn": "清津峽",
+   "ko": "기요쓰 협곡",
+   "coord": [
+    36.96775,
+    138.75164
+   ],
+   "image": "Kiyotsukyo Summer.jpg"
+  },
+  {
+   "name_ja": "星峠の棚田",
+   "kana": "ほしとうげのたなだ",
+   "wp": null,
+   "qid": null,
+   "en": "Hoshitoge Rice Terraces",
+   "zh": "星峠梯田",
+   "cn": "星峠梯田",
+   "ko": "호시토게 계단식 논",
+   "coord": [
+    37.1372,
+    138.6889
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "彌彦神社",
+   "kana": "やひこじんじゃ",
+   "wp": "彌彦神社",
+   "qid": "Q195684",
+   "en": "Yahiko Shrine",
+   "zh": "彌彥神社",
+   "cn": "弥彦神社",
+   "ko": "이야히코 신사",
+   "coord": [
+    37.7066,
+    138.826
+   ],
+   "image": "Iyahiko-jinja 1.JPG"
+  },
+  {
+   "name_ja": "苗場スキー場",
+   "kana": "なえばスキーじょう",
+   "wp": "苗場スキー場",
+   "qid": "Q3268287",
+   "en": "Naeba Ski Resort",
+   "zh": "苗場滑雪場",
+   "cn": "苗場滑雪場",
+   "ko": "나에바 스키장",
+   "coord": [
+    36.791,
+    138.785
+   ],
+   "image": "平標山から見た苗場スキー場（左下に苗場プリンス）.jpg"
+  }
+ ],
+ "JP-16": [
+  {
+   "name_ja": "立山黒部アルペンルート",
+   "kana": "たてやまくろべアルペンルート",
+   "wp": "立山黒部アルペンルート",
+   "qid": "Q6425988",
+   "en": "Tateyama Kurobe Alpine Route",
+   "zh": "立山黑部阿爾卑斯路線",
+   "cn": "立山黑部阿爾卑斯路線",
+   "ko": "다테야마 구로베 알펜 루트",
+   "coord": [
+    36.56955,
+    137.53196
+   ],
+   "image": "080504 Tateyama otani-road Tateyama Japan01s3.jpg"
+  },
+  {
+   "name_ja": "黒部峡谷",
+   "kana": "くろべきょうこく",
+   "wp": "黒部峡谷",
+   "qid": "Q11179607",
+   "en": "Kurobe Gorge",
+   "zh": "黑部峽谷",
+   "cn": "黑部峽谷",
+   "ko": "구로베 협곡",
+   "coord": [
+    36.64444,
+    137.68333
+   ],
+   "image": "S-ji-kyo in Kurobe Gorge.jpg"
+  },
+  {
+   "name_ja": "五箇山 合掌造り集落",
+   "kana": "ごかやま がっしょうづくりしゅうらく",
+   "wp": "五箇山",
+   "qid": "Q1203890",
+   "en": "Gokayama",
+   "zh": "五箇山",
+   "cn": "五箇山",
+   "ko": "고카야마",
+   "coord": [
+    36.42556,
+    136.93572
+   ],
+   "image": "Gokayama ainokura gassho shuraku 20050504 5.jpg"
+  },
+  {
+   "name_ja": "雨晴海岸",
+   "kana": "あまはらしかいがん",
+   "wp": "雨晴海岸",
+   "qid": "Q11659737",
+   "en": "Amaharashi Coast",
+   "zh": "雨晴海岸",
+   "cn": "雨晴海岸",
+   "ko": "아마하라시 해안",
+   "coord": [
+    36.82797,
+    137.01872
+   ],
+   "image": "Amaharashi Coast 20190429.jpg"
+  },
+  {
+   "name_ja": "富岩運河環水公園",
+   "kana": "ふがんうんがかんすいこうえん",
+   "wp": "富岩運河環水公園",
+   "qid": "Q11456932",
+   "en": "Fugan Canal Kansui Park",
+   "zh": "富岩運河環水公園",
+   "cn": "富岩運河環水公園",
+   "ko": "후간 운하 간스이 공원",
+   "coord": [
+    36.70944,
+    137.21333
+   ],
+   "image": "Fugan-unga Kansui Park 013.jpg"
+  }
+ ],
+ "JP-17": [
+  {
+   "name_ja": "兼六園",
+   "kana": "けんろくえん",
+   "wp": "兼六園",
+   "qid": "Q998239",
+   "en": "Kenroku-en",
+   "zh": "兼六園",
+   "cn": "兼六園",
+   "ko": "겐로쿠엔",
+   "coord": [
+    36.56194,
+    136.6625
+   ],
+   "image": "131109 Kenrokuen Kanazawa Ishikawa pref Japan00s3.jpg"
+  },
+  {
+   "name_ja": "ひがし茶屋街",
+   "kana": "ひがしちゃやがい",
+   "wp": "東山ひがし",
+   "qid": "Q5897562",
+   "en": "Higashiyama-Higashi",
+   "zh": "東山東",
+   "cn": "東山東",
+   "ko": "히가시차야가이",
+   "coord": [
+    36.57245,
+    136.66716
+   ],
+   "image": "Higashiyamahigashi 2015.JPG"
+  },
+  {
+   "name_ja": "金沢21世紀美術館",
+   "kana": "かなざわにじゅういっせいきびじゅつかん",
+   "wp": "金沢21世紀美術館",
+   "qid": "Q3242206",
+   "en": "21st Century Museum of Contemporary Art",
+   "zh": "金澤21世紀美術館",
+   "cn": "金泽21世纪美术馆",
+   "ko": "가나자와 21세기 미술관",
+   "coord": [
+    36.5608,
+    136.658
+   ],
+   "image": "21st Century Museum of Contemporary Art, Kanazawa011.jpg"
+  },
+  {
+   "name_ja": "白米千枚田",
+   "kana": "しろよねせんまいだ",
+   "wp": "白米千枚田",
+   "qid": "Q11580283",
+   "en": "Shiroyone Senmaida",
+   "zh": "白米千枚田",
+   "cn": "白米千枚田",
+   "ko": "시로요네 센마이다",
+   "coord": [
+    37.42544,
+    136.99978
+   ],
+   "image": "Shiroyone Senmaida 200906.jpg"
+  },
+  {
+   "name_ja": "那谷寺",
+   "kana": "なたでら",
+   "wp": "那谷寺",
+   "qid": "Q11642859",
+   "en": "Nata-dera Temple",
+   "zh": "那谷寺",
+   "cn": "那谷寺",
+   "ko": "나타데라",
+   "coord": [
+    36.31341,
+    136.42039
+   ],
+   "image": "260719 Natadera Komatsu Ishikawa pref Japan27s3.jpg"
+  }
+ ],
+ "JP-18": [
+  {
+   "name_ja": "東尋坊",
+   "kana": "とうじんぼう",
+   "wp": "東尋坊",
+   "qid": "Q648937",
+   "en": "Tōjinbō",
+   "zh": "東尋坊",
+   "cn": "東尋坊",
+   "ko": "도진보",
+   "coord": [
+    36.23778,
+    136.12528
+   ],
+   "image": "081101 Tojinbo Sakai Fukui pref Japan01bs11.jpg"
+  },
+  {
+   "name_ja": "永平寺",
+   "kana": "えいへいじ",
+   "wp": "永平寺",
+   "qid": "Q1303633",
+   "en": "Eihei-ji Temple",
+   "zh": "永平寺",
+   "cn": "永平寺",
+   "ko": "에이헤이지",
+   "coord": [
+    36.05659,
+    136.35688
+   ],
+   "image": "Joyomon of Eiheiji in September 2024.jpg"
+  },
+  {
+   "name_ja": "一乗谷朝倉氏遺跡",
+   "kana": "いちじょうだにあさくらしいせき",
+   "wp": "一乗谷朝倉氏遺跡",
+   "qid": "Q2968274",
+   "en": "Ichijōdani Asakura Family Historic Ruins",
+   "zh": "一乘谷朝倉氏遺蹟",
+   "cn": "一乘谷朝倉氏遺蹟",
+   "ko": "이치노다니 아사쿠라씨 유적",
+   "coord": [
+    35.9995,
+    136.296
+   ],
+   "image": "Asakura Yakata of Ichijodani Asakura Family Historic Ruins02s3s4440.jpg"
+  },
+  {
+   "name_ja": "福井県立恐竜博物館",
+   "kana": "ふくいけんりつきょうりゅうはくぶつかん",
+   "wp": "福井県立恐竜博物館",
+   "qid": "Q3247157",
+   "en": "Fukui Prefectural Dinosaur Museum",
+   "zh": "福井縣立恐龍博物館",
+   "cn": "福井縣立恐龍博物館",
+   "ko": "후쿠이 현립 공룡 박물관",
+   "coord": [
+    36.08291,
+    136.50667
+   ],
+   "image": "Fukui Prefectural Dinosaur Museum 20231217.jpg"
+  },
+  {
+   "name_ja": "三方五湖",
+   "kana": "みかたごこ",
+   "wp": "三方五湖",
+   "qid": "Q11355482",
+   "en": "Mikata Five Lakes",
+   "zh": "三方五湖",
+   "cn": "三方五湖",
+   "ko": "미카타 5호",
+   "coord": [
+    35.57219,
+    135.88444
+   ],
+   "image": "Mikata five lakes 20110505 - panoramio.jpg"
+  }
+ ],
+ "JP-19": [
+  {
+   "name_ja": "富士山",
+   "kana": "ふじさん",
+   "wp": "富士山",
+   "qid": "Q39231",
+   "en": "Mount Fuji",
+   "zh": "富士山",
+   "cn": "富士山",
+   "ko": "후지산",
+   "coord": [
+    35.36056,
+    138.7275
+   ],
+   "image": "Kodaki fuji frm shojinko refurb.jpg"
+  },
+  {
+   "name_ja": "新倉山浅間公園",
+   "kana": "あらくらやませんげんこうえん",
+   "wp": "新倉山浅間公園",
+   "qid": "Q21652375",
+   "en": "Arakurayama Sengen Park",
+   "zh": "新倉山淺間公園",
+   "cn": "新仓山浅间公园",
+   "ko": "아라쿠라야마 센겐 공원",
+   "coord": [
+    35.50119,
+    138.80139
+   ],
+   "image": "Arakurayama Sengen Park - Japan.jpg"
+  },
+  {
+   "name_ja": "昇仙峡",
+   "kana": "しょうせんきょう",
+   "wp": "昇仙峡",
+   "qid": "Q9336171",
+   "en": "Shōsenkyō",
+   "zh": "昇仙峽",
+   "cn": "昇仙峽",
+   "ko": "쇼센쿄",
+   "coord": [
+    35.745,
+    138.56639
+   ],
+   "image": "Kakuenpou in autumn.jpg"
+  },
+  {
+   "name_ja": "忍野八海",
+   "kana": "おしのはっかい",
+   "wp": "忍野八海",
+   "qid": "Q11072216",
+   "en": "Oshino Hakkai",
+   "zh": "忍野八海",
+   "cn": "忍野八海",
+   "ko": "오시노핫카이",
+   "coord": [
+    35.46111,
+    138.83333
+   ],
+   "image": "Oshino-Hakkai-Nakaike.jpg"
+  },
+  {
+   "name_ja": "山中湖",
+   "kana": "やまなかこ",
+   "wp": "山中湖",
+   "qid": "Q1203756",
+   "en": "Lake Yamanaka",
+   "zh": "山中湖",
+   "cn": "山中湖",
+   "ko": "야마나카호",
+   "coord": [
+    35.41667,
+    138.875
+   ],
+   "image": "SunsetAtYamanakakoDSC02609.JPG"
+  }
+ ],
+ "JP-20": [
+  {
+   "name_ja": "上高地",
+   "kana": "かみこうち",
+   "wp": "上高地",
+   "qid": "Q1048234",
+   "en": "Kamikōchi",
+   "zh": "上高地",
+   "cn": "上高地",
+   "ko": "가미코치",
+   "coord": [
+    36.24697,
+    137.63333
+   ],
+   "image": "150920 Gakusawa wetlands Kamikochi Japan03s3.jpg"
+  },
+  {
+   "name_ja": "松本城",
+   "kana": "まつもとじょう",
+   "wp": "松本城",
+   "qid": "Q739612",
+   "en": "Matsumoto Castle",
+   "zh": "松本城",
+   "cn": "松本城",
+   "ko": "마쓰모토성",
+   "coord": [
+    36.23889,
+    137.96917
+   ],
+   "image": "Matsumoto Castle05s5s4592.jpg"
+  },
+  {
+   "name_ja": "善光寺",
+   "kana": "ぜんこうじ",
+   "wp": "善光寺",
+   "qid": "Q189640",
+   "en": "Zenkō-ji Temple",
+   "zh": "善光寺",
+   "cn": "善光寺",
+   "ko": "젠코지",
+   "coord": [
+    36.66167,
+    138.18778
+   ],
+   "image": "ZenkojiWP.jpg"
+  },
+  {
+   "name_ja": "地獄谷野猿公苑",
+   "kana": "じごくだにやえんこうえん",
+   "wp": "地獄谷野猿公苑",
+   "qid": "Q5302436",
+   "en": "Jigokudani Monkey Park",
+   "zh": "地狱谷野猿公苑",
+   "cn": "地狱谷野猿公苑",
+   "ko": "지고쿠다니 야생 원숭이 공원",
+   "coord": [
+    36.7328,
+    138.4627
+   ],
+   "image": "Jigokudani hotspring in Nagano Japan 001.jpg"
+  },
+  {
+   "name_ja": "妻籠宿",
+   "kana": "つまごじゅく",
+   "wp": "妻籠宿",
+   "qid": "Q1079904",
+   "en": "Tsumago-juku",
+   "zh": "妻籠宿",
+   "cn": "妻笼宿",
+   "ko": "쓰마고주쿠",
+   "coord": [
+    35.5753,
+    137.5951
+   ],
+   "image": "Tsumago 2009 4.JPG"
+  }
+ ],
+ "JP-21": [
+  {
+   "name_ja": "白川郷",
+   "kana": "しらかわごう",
+   "wp": "白川郷",
+   "qid": "Q1002193",
+   "en": "Shirakawa-gō",
+   "zh": "白川鄉",
+   "cn": "白川乡",
+   "ko": "시라카와고",
+   "coord": [
+    36.25666,
+    136.90504
+   ],
+   "image": "Ogi Shirakawa01n3200.jpg"
+  },
+  {
+   "name_ja": "飛騨高山 古い町並み",
+   "kana": "ひだたかやま ふるいまちなみ",
+   "wp": "高山市",
+   "qid": "Q622594",
+   "en": "Takayama",
+   "zh": "高山市",
+   "cn": "高山市",
+   "ko": "다카야마시",
+   "coord": [
+    36.14603,
+    137.25217
+   ],
+   "image": "Takayama (15485428565).jpg"
+  },
+  {
+   "name_ja": "下呂温泉",
+   "kana": "げろおんせん",
+   "wp": "下呂温泉",
+   "qid": "Q11360701",
+   "en": "Gero Onsen",
+   "zh": "下呂溫泉",
+   "cn": "下呂溫泉",
+   "ko": "게로 온천",
+   "coord": [
+    35.80889,
+    137.24358
+   ],
+   "image": "260125 Gero Onsen Gero Gifu pref Japan01s3.jpg"
+  },
+  {
+   "name_ja": "郡上八幡城",
+   "kana": "ぐじょうはちまんじょう",
+   "wp": "郡上八幡城",
+   "qid": "Q2969384",
+   "en": "Gujō Hachiman Castle",
+   "zh": "郡上八幡城",
+   "cn": "郡上八幡城",
+   "ko": "군조하치만 성",
+   "coord": [
+    35.75333,
+    136.96139
+   ],
+   "image": "Gujo hachiman castle P8117454.jpg"
+  },
+  {
+   "name_ja": "新穂高ロープウェイ",
+   "kana": "しんほたかロープウェイ",
+   "wp": "新穂高ロープウェイ",
+   "qid": "Q7497511",
+   "en": "Shinhotaka Ropeway",
+   "zh": "新穗高空中纜車",
+   "cn": "新穗高空中纜車",
+   "ko": "신호타카 로프웨이",
+   "coord": [
+    36.28278,
+    137.58036
+   ],
+   "image": "Shinhotaka Ropeway and Mount Kasa.jpg"
+  }
+ ],
+ "JP-22": [
+  {
+   "name_ja": "三保松原",
+   "kana": "みほのまつばら",
+   "wp": "三保の松原",
+   "qid": "Q869275",
+   "en": "Miho no Matsubara",
+   "zh": "三保之松原",
+   "cn": "三保之松原",
+   "ko": "미호의 마쓰바라",
+   "coord": [
+    34.995,
+    138.52278
+   ],
+   "image": "Mount Fuji and Miho no Matsubara 20170211-8.jpg"
+  },
+  {
+   "name_ja": "熱海",
+   "kana": "あたみ",
+   "wp": "熱海市",
+   "qid": "Q653364",
+   "en": "Atami",
+   "zh": "熱海市",
+   "cn": "热海市",
+   "ko": "아타미시",
+   "coord": [
+    35.09631,
+    139.07167
+   ],
+   "image": "Atami 20170211-1.jpg"
+  },
+  {
+   "name_ja": "富士山本宮浅間大社",
+   "kana": "ふじさんほんぐうせんげんたいしゃ",
+   "wp": "富士山本宮浅間大社",
+   "qid": "Q653180",
+   "en": "Fujisan Hongū Sengen Taisha",
+   "zh": "富士山本宮淺間大社",
+   "cn": "富士山本宫浅间大社",
+   "ko": "후지산 혼구 센겐타이샤",
+   "coord": [
+    35.2274,
+    138.61017
+   ],
+   "image": "Fujisan Hongū Sengen Taisha 20220724k.jpg"
+  },
+  {
+   "name_ja": "夢の吊橋 寸又峡",
+   "kana": "ゆめのつりばし すまたきょう",
+   "wp": "寸又峡",
+   "qid": "Q11457662",
+   "en": "Sumata-kyō",
+   "zh": "寸又峽",
+   "cn": "寸又峽",
+   "ko": "유메노쓰리바시 스마타쿄",
+   "coord": [
+    35.17879,
+    138.10575
+   ],
+   "image": "Yume-no-Tsuribashi (40896906290).jpg"
+  },
+  {
+   "name_ja": "城ヶ崎海岸",
+   "kana": "じょうがさきかいがん",
+   "wp": "城ヶ崎",
+   "qid": "Q23996942",
+   "en": "Jogasaki Coast",
+   "zh": "城崎海岸",
+   "cn": "城崎海岸",
+   "ko": "조가사키 해안",
+   "coord": [
+    34.8898,
+    139.1372
+   ],
+   "image": null
+  }
+ ],
+ "JP-23": [
+  {
+   "name_ja": "名古屋城",
+   "kana": "なごやじょう",
+   "wp": "名古屋城",
+   "qid": "Q648629",
+   "en": "Nagoya Castle",
+   "zh": "名古屋城",
+   "cn": "名古屋城",
+   "ko": "나고야성",
+   "coord": [
+    35.18556,
+    136.89861
+   ],
+   "image": "Nagoya Castle(Larger).jpg"
+  },
+  {
+   "name_ja": "熱田神宮",
+   "kana": "あつたじんぐう",
+   "wp": "熱田神宮",
+   "qid": "Q482065",
+   "en": "Atsuta Jingū",
+   "zh": "熱田神宮",
+   "cn": "熱田神宮",
+   "ko": "아쓰타 신궁",
+   "coord": [
+    35.12651,
+    136.9087
+   ],
+   "image": "Atsuta Shrine.jpg"
+  },
+  {
+   "name_ja": "犬山城",
+   "kana": "いぬやまじょう",
+   "wp": "犬山城",
+   "qid": "Q1155484",
+   "en": "Inuyama Castle",
+   "zh": "犬山城",
+   "cn": "犬山城",
+   "ko": "이누야마성",
+   "coord": [
+    35.38833,
+    136.93917
+   ],
+   "image": "Inuyama Castle (1), Kitakoken Inuyama Inuyama City 2023.jpg"
+  },
+  {
+   "name_ja": "博物館明治村",
+   "kana": "はくぶつかんめいじむら",
+   "wp": "博物館明治村",
+   "qid": "Q985290",
+   "en": "Museum Meiji-mura",
+   "zh": "明治村博物館",
+   "cn": "明治村博物館",
+   "ko": "박물관 메이지무라",
+   "coord": [
+    35.34191,
+    136.98927
+   ],
+   "image": "Imperial Hotel, Tokyo (1923-1968).jpg"
+  },
+  {
+   "name_ja": "トヨタ産業技術記念館",
+   "kana": "トヨタさんぎょうぎじゅつきねんかん",
+   "wp": "トヨタ産業技術記念館",
+   "qid": "Q7830774",
+   "en": "Toyota Commemorative Museum of Industry and Technology",
+   "zh": "豐田產業技術紀念館",
+   "cn": "豐田產業技術紀念館",
+   "ko": "도요타 산업기술 기념관",
+   "coord": [
+    35.1832,
+    136.876
+   ],
+   "image": "Toyota tecno museum.jpg"
+  }
+ ],
+ "JP-24": [
+  {
+   "name_ja": "伊勢神宮",
+   "kana": "いせじんぐう",
+   "wp": "伊勢神宮",
+   "qid": "Q687168",
+   "en": "Ise Jingū",
+   "zh": "伊勢神宮",
+   "cn": "伊势神宫",
+   "ko": "이세 신궁",
+   "coord": [
+    34.455,
+    136.72583
+   ],
+   "image": "Ise-Shrine Itagaki-minami-gomon.jpg"
+  },
+  {
+   "name_ja": "夫婦岩 二見興玉神社",
+   "kana": "めおといわ ふたみおきたまじんじゃ",
+   "wp": "二見興玉神社",
+   "qid": "Q64969614",
+   "en": "Futami Okitama Shrine",
+   "zh": "夫婦岩 二見興玉神社",
+   "cn": "夫妇岩 二见兴玉神社",
+   "ko": "메오토이와 후타미오키타마 신사",
+   "coord": [
+    34.50895,
+    136.78782
+   ],
+   "image": "Futamiokitama jinja Haiden.jpg"
+  },
+  {
+   "name_ja": "鳥羽水族館",
+   "kana": "とばすいぞくかん",
+   "wp": "鳥羽水族館",
+   "qid": "Q1073067",
+   "en": "Toba Aquarium",
+   "zh": "鳥羽水族館",
+   "cn": "鸟羽水族馆",
+   "ko": "도바 수족관",
+   "coord": [
+    34.4817,
+    136.846
+   ],
+   "image": "Toba Aquarium front view 2019.jpg"
+  },
+  {
+   "name_ja": "熊野古道 伊勢路",
+   "kana": "くまのこどう いせじ",
+   "wp": "熊野古道",
+   "qid": "Q17050475",
+   "en": "Kumano Kodō",
+   "zh": "熊野古道",
+   "cn": "熊野古道",
+   "ko": "구마노 고도 이세지",
+   "coord": [
+    34.45246,
+    136.7213
+   ],
+   "image": "Daimonzaka28-640.jpg"
+  },
+  {
+   "name_ja": "ナガシマスパーランド",
+   "kana": "ナガシマスパーランド",
+   "wp": "ナガシマスパーランド",
+   "qid": "Q2496699",
+   "en": "Nagashima Spa Land",
+   "zh": "長島溫泉樂園",
+   "cn": "長島溫泉樂園",
+   "ko": "나가시마 스파 랜드",
+   "coord": [
+    35.0297,
+    136.73001
+   ],
+   "image": "Nagashima spa land skyview.jpg"
+  }
+ ],
+ "JP-25": [
+  {
+   "name_ja": "琵琶湖",
+   "kana": "びわこ",
+   "wp": "琵琶湖",
+   "qid": "Q200239",
+   "en": "Lake Biwa",
+   "zh": "琵琶湖",
+   "cn": "琵琶湖",
+   "ko": "비와호",
+   "coord": [
+    35.255,
+    136.08
+   ],
+   "image": "Top view of Lake Biwa.jpg"
+  },
+  {
+   "name_ja": "彦根城",
+   "kana": "ひこねじょう",
+   "wp": "彦根城",
+   "qid": "Q1012374",
+   "en": "Hikone Castle",
+   "zh": "彥根城",
+   "cn": "彥根城",
+   "ko": "히코네성",
+   "coord": [
+    35.27639,
+    136.25167
+   ],
+   "image": "Hikone Castle November 2016 -01.jpg"
+  },
+  {
+   "name_ja": "比叡山延暦寺",
+   "kana": "ひえいざんえんりゃくじ",
+   "wp": "延暦寺",
+   "qid": "Q917195",
+   "en": "Enryaku-ji Temple",
+   "zh": "延曆寺",
+   "cn": "延历寺",
+   "ko": "엔랴쿠지",
+   "coord": [
+    35.07056,
+    135.84111
+   ],
+   "image": "Enryakuji Konponchudo02s5s3200.jpg"
+  },
+  {
+   "name_ja": "白鬚神社",
+   "kana": "しらひげじんじゃ",
+   "wp": "白鬚神社",
+   "qid": "Q705303",
+   "en": "Shirahige Shrine",
+   "zh": "白鬚神社",
+   "cn": "白须神社",
+   "ko": "시라히게 신사",
+   "coord": [
+    35.27444,
+    136.01111
+   ],
+   "image": "Shirahige-jinja (Takashima) keidai.JPG"
+  },
+  {
+   "name_ja": "メタセコイア並木",
+   "kana": "メタセコイアなみき",
+   "wp": null,
+   "qid": null,
+   "en": "Metasequoia Avenue",
+   "zh": "水杉林蔭道",
+   "cn": "水杉林荫道",
+   "ko": "메타세쿼이아 가로수길",
+   "coord": [
+    35.4487,
+    136.0508
+   ],
+   "image": null
+  }
+ ],
+ "JP-26": [
+  {
+   "name_ja": "伏見稲荷大社",
+   "kana": "ふしみいなりたいしゃ",
+   "wp": "伏見稲荷大社",
+   "qid": "Q714828",
+   "en": "Fushimi Inari-taisha",
+   "zh": "伏見稻荷大社",
+   "cn": "伏见稻荷大社",
+   "ko": "후시미 이나리 신사",
+   "coord": [
+    34.9672,
+    135.77339
+   ],
+   "image": "Fushimiinari-taisha, naihaiden-1.jpg"
+  },
+  {
+   "name_ja": "清水寺",
+   "kana": "きよみずでら",
+   "wp": "清水寺",
+   "qid": "Q221716",
+   "en": "Kiyomizu-dera Temple",
+   "zh": "清水寺",
+   "cn": "清水寺",
+   "ko": "기요미즈데라",
+   "coord": [
+    34.99483,
+    135.785
+   ],
+   "image": "Kiyomizu-dera, Kyoto, November 2016 -02.jpg"
+  },
+  {
+   "name_ja": "金閣寺 鹿苑寺",
+   "kana": "きんかくじ ろくおんじ",
+   "wp": "鹿苑寺",
+   "qid": "Q270983",
+   "en": "Kinkaku-ji Temple",
+   "zh": "鹿苑寺",
+   "cn": "鹿苑寺",
+   "ko": "로쿠온지",
+   "coord": [
+    35.0395,
+    135.7285
+   ],
+   "image": "Water reflection of Kinkaku-ji Temple a sunny day, Kyoto, Japan.jpg"
+  },
+  {
+   "name_ja": "嵐山 竹林の小径",
+   "kana": "あらしやま ちくりんのこみち",
+   "wp": "嵐山",
+   "qid": "Q2859566",
+   "en": "Arashiyama",
+   "zh": "嵐山",
+   "cn": "嵐山",
+   "ko": "아라시야마",
+   "coord": [
+    35.00958,
+    135.66639
+   ],
+   "image": "Arashiyama (8741759830).jpg"
+  },
+  {
+   "name_ja": "天橋立",
+   "kana": "あまのはしだて",
+   "wp": "天橋立",
+   "qid": "Q259727",
+   "en": "Amanohashidate",
+   "zh": "天橋立",
+   "cn": "天桥立",
+   "ko": "아마노하시다테",
+   "coord": [
+    35.56956,
+    135.19201
+   ],
+   "image": "Amanohashidate view from Mt Moju02s3s4592.jpg"
+  }
+ ],
+ "JP-27": [
+  {
+   "name_ja": "大阪城",
+   "kana": "おおさかじょう",
+   "wp": "大阪城",
+   "qid": "Q321242",
+   "en": "Osaka Castle",
+   "zh": "大阪城",
+   "cn": "大阪城",
+   "ko": "오사카성",
+   "coord": [
+    34.68722,
+    135.52583
+   ],
+   "image": "Osaka Castle 02bs3200.jpg"
+  },
+  {
+   "name_ja": "道頓堀",
+   "kana": "どうとんぼり",
+   "wp": "道頓堀",
+   "qid": "Q964876",
+   "en": "Dōtonbori",
+   "zh": "道頓堀",
+   "cn": "道顿堀",
+   "ko": "도톤보리",
+   "coord": [
+    34.66861,
+    135.50139
+   ],
+   "image": "力を合わせよう日本 2014 大阪 (12206068196).jpg"
+  },
+  {
+   "name_ja": "通天閣",
+   "kana": "つうてんかく",
+   "wp": "通天閣",
+   "qid": "Q1148463",
+   "en": "Tsūtenkaku",
+   "zh": "通天閣",
+   "cn": "通天阁",
+   "ko": "통천각",
+   "coord": [
+    34.65222,
+    135.50611
+   ],
+   "image": "New Tsutenkaku in 201409 003.JPG"
+  },
+  {
+   "name_ja": "ユニバーサル・スタジオ・ジャパン",
+   "kana": "ユニバーサル・スタジオ・ジャパン",
+   "wp": "ユニバーサル・スタジオ・ジャパン",
+   "qid": "Q1375103",
+   "en": "Universal Studios Japan",
+   "zh": "日本環球影城",
+   "cn": "日本环球影城",
+   "ko": "유니버설 스튜디오 재팬",
+   "coord": [
+    34.6647,
+    135.433
+   ],
+   "image": "Harry Potter and the Forbidden Journey USJ.JPG"
+  },
+  {
+   "name_ja": "海遊館",
+   "kana": "かいゆうかん",
+   "wp": "海遊館",
+   "qid": "Q1191885",
+   "en": "Osaka Aquarium Kaiyukan",
+   "zh": "海遊館",
+   "cn": "海游馆",
+   "ko": "해유관",
+   "coord": [
+    34.65447,
+    135.42889
+   ],
+   "image": "Osaka Kaiyukan01s3872.jpg"
+  }
+ ],
+ "JP-28": [
+  {
+   "name_ja": "姫路城",
+   "kana": "ひめじじょう",
+   "wp": "姫路城",
+   "qid": "Q188754",
+   "en": "Himeji Castle",
+   "zh": "姬路城",
+   "cn": "姬路城",
+   "ko": "히메지성",
+   "coord": [
+    34.83944,
+    134.69361
+   ],
+   "image": "Himeji Castle, Hyōgo Prefecture; August 2018 (04).jpg"
+  },
+  {
+   "name_ja": "北野異人館街",
+   "kana": "きたのいじんかんがい",
+   "wp": "北野町山本通",
+   "qid": "Q10855753",
+   "en": "Kitano-chō and Yamamoto-dōri",
+   "zh": "北野町山本通",
+   "cn": "北野町山本通",
+   "ko": "기타노이진칸 거리",
+   "coord": [
+    34.70128,
+    135.18971
+   ],
+   "image": "Kitano Street Kobe02s3s4272.jpg"
+  },
+  {
+   "name_ja": "有馬温泉",
+   "kana": "ありまおんせん",
+   "wp": "有馬温泉",
+   "qid": "Q4790673",
+   "en": "Arima Onsen",
+   "zh": "有馬溫泉",
+   "cn": "有馬溫泉",
+   "ko": "아리마 온천",
+   "coord": [
+    34.79806,
+    135.2475
+   ],
+   "image": "170811 Rokko-Arima Ropeway Kobe Japan00n.jpg"
+  },
+  {
+   "name_ja": "竹田城跡",
+   "kana": "たけだじょうあと",
+   "wp": "竹田城",
+   "qid": "Q8013060",
+   "en": "Takeda Castle",
+   "zh": "竹田城",
+   "cn": "竹田城",
+   "ko": "다케다성",
+   "coord": [
+    35.3005,
+    134.829
+   ],
+   "image": "20130507 takeda castle 10.jpg"
+  },
+  {
+   "name_ja": "城崎温泉",
+   "kana": "きのさきおんせん",
+   "wp": "城崎温泉",
+   "qid": "Q11426141",
+   "en": "Kinosaki Onsen",
+   "zh": "城崎溫泉",
+   "cn": "城崎溫泉",
+   "ko": "기노사키 온천",
+   "coord": [
+    35.62778,
+    134.8
+   ],
+   "image": "Kinosaki onsen02 1920.jpg"
+  }
+ ],
+ "JP-29": [
+  {
+   "name_ja": "東大寺",
+   "kana": "とうだいじ",
+   "wp": "東大寺",
+   "qid": "Q460367",
+   "en": "Tōdai-ji Temple",
+   "zh": "東大寺",
+   "cn": "东大寺",
+   "ko": "도다이지",
+   "coord": [
+    34.68917,
+    135.83972
+   ],
+   "image": "Daibutsu-den in Todaiji Nara02bs3200.jpg"
+  },
+  {
+   "name_ja": "奈良公園",
+   "kana": "ならこうえん",
+   "wp": "奈良公園",
+   "qid": "Q1186358",
+   "en": "Nara Park",
+   "zh": "奈良公園",
+   "cn": "奈良公园",
+   "ko": "나라 공원",
+   "coord": [
+    34.68545,
+    135.84341
+   ],
+   "image": "Five-storied Pagoda, Kofuku-ji - Nara, Japan - DSC07497.jpg"
+  },
+  {
+   "name_ja": "春日大社",
+   "kana": "かすがたいしゃ",
+   "wp": "春日大社",
+   "qid": "Q714559",
+   "en": "Kasuga-taisha",
+   "zh": "春日大社",
+   "cn": "春日大社",
+   "ko": "가스가타이샤",
+   "coord": [
+    34.68134,
+    135.84835
+   ],
+   "image": "Kasuga-taisha, chumon-3.jpg"
+  },
+  {
+   "name_ja": "法隆寺",
+   "kana": "ほうりゅうじ",
+   "wp": "法隆寺",
+   "qid": "Q261932",
+   "en": "Hōryū-ji Temple",
+   "zh": "法隆寺",
+   "cn": "法隆寺",
+   "ko": "호류지",
+   "coord": [
+    34.61444,
+    135.73417
+   ],
+   "image": "Horyu-ji45s2s4500.jpg"
+  },
+  {
+   "name_ja": "吉野山",
+   "kana": "よしのやま",
+   "wp": "吉野山",
+   "qid": "Q1036938",
+   "en": "Mount Yoshino",
+   "zh": "吉野山",
+   "cn": "吉野山",
+   "ko": "요시노산",
+   "coord": [
+    34.35643,
+    135.87062
+   ],
+   "image": "Cherry blossoms at Yoshinoyama 02.jpg"
+  }
+ ],
+ "JP-30": [
+  {
+   "name_ja": "熊野本宮大社",
+   "kana": "くまのほんぐうたいしゃ",
+   "wp": "熊野本宮大社",
+   "qid": "Q705035",
+   "en": "Kumano Hongū Taisha",
+   "zh": "熊野本宮大社",
+   "cn": "熊野本宫大社",
+   "ko": "구마노 혼구타이샤",
+   "coord": [
+    33.8404,
+    135.77355
+   ],
+   "image": "Inside the Kumano Hongu Taisha.jpg"
+  },
+  {
+   "name_ja": "那智の滝",
+   "kana": "なちのたき",
+   "wp": "那智滝",
+   "qid": "Q1365882",
+   "en": "Nachi Falls",
+   "zh": "那智瀑布",
+   "cn": "那智瀑布",
+   "ko": "나치 폭포",
+   "coord": [
+    33.672,
+    135.891
+   ],
+   "image": "Kumano Kodo World heritage Nachi-no-taki 熊野古道 那智大滝10.JPG"
+  },
+  {
+   "name_ja": "高野山",
+   "kana": "こうやさん",
+   "wp": "高野山",
+   "qid": "Q535065",
+   "en": "Mount Kōya",
+   "zh": "高野山",
+   "cn": "高野山",
+   "ko": "고야산",
+   "coord": [
+    34.21778,
+    135.58333
+   ],
+   "image": "Danjogaran Koyasan12n3200.jpg"
+  },
+  {
+   "name_ja": "白良浜",
+   "kana": "しららはま",
+   "wp": "白良浜",
+   "qid": "Q11580327",
+   "en": "Shirarahama",
+   "zh": "白良濱",
+   "cn": "白良濱",
+   "ko": "시라라하마",
+   "coord": [
+    33.68292,
+    135.34375
+   ],
+   "image": "131221 Shirarahama Beach Shirahama Wakayama pref Japan09bs.jpg"
+  },
+  {
+   "name_ja": "アドベンチャーワールド",
+   "kana": "アドベンチャーワールド",
+   "wp": "アドベンチャーワールド",
+   "qid": "Q2587322",
+   "en": "Adventure World",
+   "zh": "冒險大世界",
+   "cn": "冒險大世界",
+   "ko": "어드벤처 월드",
+   "coord": [
+    33.66775,
+    135.3758
+   ],
+   "image": "Panda Adventure World Shirahama.JPG"
+  }
+ ],
+ "JP-31": [
+  {
+   "name_ja": "鳥取砂丘",
+   "kana": "とっとりさきゅう",
+   "wp": "鳥取砂丘",
+   "qid": "Q780905",
+   "en": "Tottori Sand Dunes",
+   "zh": "鳥取砂丘",
+   "cn": "鳥取砂丘",
+   "ko": "돗토리 사구",
+   "coord": [
+    35.54,
+    134.2275
+   ],
+   "image": "Tottori-Sakyu Tottori Japan.JPG"
+  },
+  {
+   "name_ja": "水木しげるロード",
+   "kana": "みずきしげるロード",
+   "wp": "水木しげるロード",
+   "qid": "Q11548750",
+   "en": "Mizuki Shigeru Road",
+   "zh": "水木茂路",
+   "cn": "水木茂路",
+   "ko": "미즈키 시게루 로드",
+   "coord": [
+    35.54644,
+    133.23125
+   ],
+   "image": "Mizuki Shigeru Road -01.jpg"
+  },
+  {
+   "name_ja": "三徳山三佛寺 投入堂",
+   "kana": "みとくさんさんぶつじ なげいれどう",
+   "wp": "三仏寺",
+   "qid": "Q3471689",
+   "en": "Sanbutsu-ji Temple",
+   "zh": "三佛寺",
+   "cn": "三佛寺",
+   "ko": "산부쓰지",
+   "coord": [
+    35.39932,
+    133.95576
+   ],
+   "image": "Sanbutsu-ji, hondou.jpg"
+  },
+  {
+   "name_ja": "大山",
+   "kana": "だいせん",
+   "wp": "大山 (鳥取県)",
+   "qid": "Q715498",
+   "en": "Daisen",
+   "zh": "大山",
+   "cn": "大山",
+   "ko": "다이센",
+   "coord": [
+    35.37111,
+    133.54639
+   ],
+   "image": "Daisen 01.jpg"
+  },
+  {
+   "name_ja": "浦富海岸",
+   "kana": "うらどめかいがん",
+   "wp": "浦富海岸",
+   "qid": "Q7899552",
+   "en": "Uradome Coast",
+   "zh": "浦富海岸",
+   "cn": "浦富海岸",
+   "ko": "우라도메 해안",
+   "coord": [
+    35.5904,
+    134.326
+   ],
+   "image": null
+  }
+ ],
+ "JP-32": [
+  {
+   "name_ja": "出雲大社",
+   "kana": "いずもたいしゃ",
+   "wp": "出雲大社",
+   "qid": "Q696362",
+   "en": "Izumo Taisha",
+   "zh": "出雲大社",
+   "cn": "出云大社",
+   "ko": "이즈모타이샤",
+   "coord": [
+    35.40194,
+    132.68544
+   ],
+   "image": "Izumo-Taisha Haiden.jpg"
+  },
+  {
+   "name_ja": "松江城",
+   "kana": "まつえじょう",
+   "wp": "松江城",
+   "qid": "Q151776",
+   "en": "Matsue Castle",
+   "zh": "松江城",
+   "cn": "松江城",
+   "ko": "마쓰에성",
+   "coord": [
+    35.47498,
+    133.05056
+   ],
+   "image": "Matsue castle01bs4592.jpg"
+  },
+  {
+   "name_ja": "足立美術館",
+   "kana": "あだちびじゅつかん",
+   "wp": "足立美術館",
+   "qid": "Q3329561",
+   "en": "Adachi Museum of Art",
+   "zh": "足立美術館",
+   "cn": "足立美术馆",
+   "ko": "아다치 미술관",
+   "coord": [
+    35.38001,
+    133.19417
+   ],
+   "image": "Adachi Museum of Art10st3200.jpg"
+  },
+  {
+   "name_ja": "石見銀山",
+   "kana": "いわみぎんざん",
+   "wp": "石見銀山",
+   "qid": "Q174139",
+   "en": "Iwami Ginzan Silver Mine",
+   "zh": "石見銀山",
+   "cn": "石見銀山",
+   "ko": "이와미 은광",
+   "coord": [
+    35.10722,
+    132.4375
+   ],
+   "image": "180504 Shimizudani Refinery Ruins of Iwami Ginzan Silver Mine Oda Shimane pref Japan03s.jpg"
+  },
+  {
+   "name_ja": "宍道湖",
+   "kana": "しんじこ",
+   "wp": "宍道湖",
+   "qid": "Q1151248",
+   "en": "Lake Shinji",
+   "zh": "宍道湖",
+   "cn": "宍道湖",
+   "ko": "신지호",
+   "coord": [
+    35.45,
+    132.96667
+   ],
+   "image": "Lake Shinji, Matsue.jpg"
+  }
+ ],
+ "JP-33": [
+  {
+   "name_ja": "岡山後楽園",
+   "kana": "おかやまこうらくえん",
+   "wp": "岡山後楽園",
+   "qid": "Q1377689",
+   "en": "Kōraku-en",
+   "zh": "後樂園",
+   "cn": "后乐园",
+   "ko": "고라쿠엔",
+   "coord": [
+    34.66766,
+    133.93506
+   ],
+   "image": "250505 Korakuen Okayama Japan06s3.jpg"
+  },
+  {
+   "name_ja": "倉敷美観地区",
+   "kana": "くらしきびかんちく",
+   "wp": "倉敷美観地区",
+   "qid": "Q11386772",
+   "en": "Kurashiki Bikan Historical Quarter",
+   "zh": "倉敷美觀地區",
+   "cn": "倉敷美觀地區",
+   "ko": "구라시키 미관지구",
+   "coord": [
+    34.59643,
+    133.77088
+   ],
+   "image": "080727 At Kurashiki Bikan historical quarter Kurashiki Okayama pref Japan01s3.jpg"
+  },
+  {
+   "name_ja": "岡山城",
+   "kana": "おかやまじょう",
+   "wp": "岡山城",
+   "qid": "Q1013448",
+   "en": "Okayama Castle",
+   "zh": "岡山城",
+   "cn": "岡山城",
+   "ko": "오카야마성",
+   "coord": [
+    34.66528,
+    133.93611
+   ],
+   "image": "Okayama Castle 02.jpg"
+  },
+  {
+   "name_ja": "鷲羽山",
+   "kana": "わしゅうざん",
+   "wp": "鷲羽山",
+   "qid": "Q11676287",
+   "en": "Washuzan Hill",
+   "zh": "鷲羽山",
+   "cn": "鹫羽山",
+   "ko": "와슈잔",
+   "coord": [
+    34.43548,
+    133.81245
+   ],
+   "image": "Kurashiki City Kojima town seen from Washuzan skyline.JPG"
+  },
+  {
+   "name_ja": "吹屋ふるさと村",
+   "kana": "ふきやふるさとむら",
+   "wp": "吹屋",
+   "qid": "Q11416500",
+   "en": "Fukiya",
+   "zh": "吹屋故鄉村",
+   "cn": "吹屋故乡村",
+   "ko": "후키야 후루사토무라",
+   "coord": [
+    34.85,
+    133.46667
+   ],
+   "image": "Fukiya01s3200.jpg"
+  }
+ ],
+ "JP-34": [
+  {
+   "name_ja": "厳島神社",
+   "kana": "いつくしまじんじゃ",
+   "wp": "厳島神社",
+   "qid": "Q191763",
+   "en": "Itsukushima Shrine",
+   "zh": "嚴島神社",
+   "cn": "严岛神社",
+   "ko": "이쓰쿠시마 신사",
+   "coord": [
+    34.29577,
+    132.32011
+   ],
+   "image": "Itsukushima Gate.jpg"
+  },
+  {
+   "name_ja": "原爆ドーム",
+   "kana": "げんばくドーム",
+   "wp": "原爆ドーム",
+   "qid": "Q231140",
+   "en": "Hiroshima Peace Memorial",
+   "zh": "原子彈爆炸圓頂屋",
+   "cn": "原子弹爆炸圆顶屋",
+   "ko": "원폭 돔",
+   "coord": [
+    34.39556,
+    132.45361
+   ],
+   "image": "Genbaku Dome04-r.JPG"
+  },
+  {
+   "name_ja": "広島平和記念公園",
+   "kana": "ひろしまへいわきねんこうえん",
+   "wp": "広島平和記念公園",
+   "qid": "Q1207208",
+   "en": "Hiroshima Peace Memorial Park",
+   "zh": "廣島和平紀念公園",
+   "cn": "广岛和平纪念公园",
+   "ko": "히로시마 평화기념공원",
+   "coord": [
+    34.39273,
+    132.45237
+   ],
+   "image": "20181111 Hiroshima Memorial Cenotaph-1.jpg"
+  },
+  {
+   "name_ja": "尾道",
+   "kana": "おのみち",
+   "wp": "尾道市",
+   "qid": "Q696694",
+   "en": "Onomichi",
+   "zh": "尾道市",
+   "cn": "尾道市",
+   "ko": "오노미치시",
+   "coord": [
+    34.40911,
+    133.20544
+   ],
+   "image": "Higashigoshocho, Onomichi, Hiroshima Prefecture 722-0036, Japan - panoramio.jpg"
+  },
+  {
+   "name_ja": "しまなみ海道",
+   "kana": "しまなみかいどう",
+   "wp": "西瀬戸自動車道",
+   "qid": "Q1799184",
+   "en": "Nishi-Seto Expressway",
+   "zh": "西瀨戶自動車道",
+   "cn": "西瀨戶自動車道",
+   "ko": "니시세토 자동차도",
+   "coord": [
+    34.25,
+    133.15
+   ],
+   "image": "Kurushimakaikyou ohashi.jpg"
+  }
+ ],
+ "JP-35": [
+  {
+   "name_ja": "元乃隅神社",
+   "kana": "もとのすみじんじゃ",
+   "wp": "元乃隅神社",
+   "qid": "Q22120637",
+   "en": "Motonosumi Shrine",
+   "zh": "元乃隅神社",
+   "cn": "元乃隅神社",
+   "ko": "모토노스미 신사",
+   "coord": [
+    34.41989,
+    131.06278
+   ],
+   "image": "元乃隅稲成神社 Motonosumi-Inari-jinja 20090504.jpg"
+  },
+  {
+   "name_ja": "錦帯橋",
+   "kana": "きんたいきょう",
+   "wp": "錦帯橋",
+   "qid": "Q1196460",
+   "en": "Kintai Bridge",
+   "zh": "錦帶橋",
+   "cn": "锦带桥",
+   "ko": "긴타이교",
+   "coord": [
+    34.1676,
+    132.17837
+   ],
+   "image": "Iwakuni, ponte kintai-kyo, 05.jpg"
+  },
+  {
+   "name_ja": "秋芳洞",
+   "kana": "あきよしどう",
+   "wp": "秋芳洞",
+   "qid": "Q11595801",
+   "en": "Akiyoshidō",
+   "zh": "秋芳洞",
+   "cn": "秋芳洞",
+   "ko": "아키요시도",
+   "coord": [
+    34.22811,
+    131.30347
+   ],
+   "image": "USMC-090419-M-8097K-001.jpg"
+  },
+  {
+   "name_ja": "角島大橋",
+   "kana": "つのしまおおはし",
+   "wp": "角島大橋",
+   "qid": "Q11630705",
+   "en": "Tsunoshima Bridge",
+   "zh": "角島大橋",
+   "cn": "角岛大橋",
+   "ko": "쓰노시마 대교",
+   "coord": [
+    34.3525,
+    130.88694
+   ],
+   "image": "Tsunoshima Ohashi Bridge.jpg"
+  },
+  {
+   "name_ja": "萩城下町",
+   "kana": "はぎじょうかまち",
+   "wp": "萩市",
+   "qid": "Q378225",
+   "en": "Hagi",
+   "zh": "萩市",
+   "cn": "萩市",
+   "ko": "하기시",
+   "coord": [
+    34.40811,
+    131.39917
+   ],
+   "image": "Hagi old town.jpg"
+  }
+ ],
+ "JP-36": [
+  {
+   "name_ja": "鳴門の渦潮",
+   "kana": "なるとのうずしお",
+   "wp": "鳴門海峡",
+   "qid": "Q545446",
+   "en": "Naruto Strait",
+   "zh": "鳴門海峽",
+   "cn": "鳴門海峽",
+   "ko": "나루토 해협",
+   "coord": [
+    34.23761,
+    134.65267
+   ],
+   "image": "For Shikoku Island - panoramio.jpg"
+  },
+  {
+   "name_ja": "祖谷のかずら橋",
+   "kana": "いやのかずらばし",
+   "wp": "かずら橋",
+   "qid": "Q11263836",
+   "en": "Kazura bridge at the Iya Valley",
+   "zh": "葛橋",
+   "cn": "蔓橋",
+   "ko": "이야 가즈라바시",
+   "coord": [
+    33.87528,
+    133.83528
+   ],
+   "image": "Iya Kazurabashi-4.jpg"
+  },
+  {
+   "name_ja": "阿波おどり",
+   "kana": "あわおどり",
+   "wp": "阿波踊り",
+   "qid": "Q1185363",
+   "en": "Awa Dance Festival",
+   "zh": "阿波舞",
+   "cn": "阿波舞",
+   "ko": "아와오도리",
+   "coord": [
+    34.07,
+    134.554
+   ],
+   "image": "Awa-odori 2008 Tokushima 03.jpg"
+  },
+  {
+   "name_ja": "大歩危",
+   "kana": "おおぼけ",
+   "wp": "大歩危",
+   "qid": "Q11436747",
+   "en": "Ōboke",
+   "zh": "大步危",
+   "cn": "大步危",
+   "ko": "오보케",
+   "coord": [
+    33.88667,
+    133.76056
+   ],
+   "image": "ObokeAndKobokeValleys.JPG"
+  },
+  {
+   "name_ja": "大塚国際美術館",
+   "kana": "おおつかこくさいびじゅつかん",
+   "wp": "大塚国際美術館",
+   "qid": "Q3329659",
+   "en": "Ōtsuka Museum of Art",
+   "zh": "大冢國際美術館",
+   "cn": "大冢国际美术馆",
+   "ko": "오츠카 국제 미술관",
+   "coord": [
+    34.2324,
+    134.638
+   ],
+   "image": "The Otsuka Museum of Art01s3200.jpg"
+  }
+ ],
+ "JP-37": [
+  {
+   "name_ja": "金刀比羅宮",
+   "kana": "ことひらぐう",
+   "wp": "金刀比羅宮",
+   "qid": "Q94760",
+   "en": "Kotohira-gū",
+   "zh": "金刀比羅宮",
+   "cn": "金刀比罗宫",
+   "ko": "고토히라궁",
+   "coord": [
+    34.18426,
+    133.80961
+   ],
+   "image": "Kotohira-gu07n4500.jpg"
+  },
+  {
+   "name_ja": "栗林公園",
+   "kana": "りつりんこうえん",
+   "wp": "栗林公園",
+   "qid": "Q1071520",
+   "en": "Ritsurin Garden",
+   "zh": "栗林公園",
+   "cn": "栗林公园",
+   "ko": "리쓰린 공원",
+   "coord": [
+    34.32958,
+    134.04389
+   ],
+   "image": "Ritsurin.JPG"
+  },
+  {
+   "name_ja": "直島",
+   "kana": "なおしま",
+   "wp": "直島町",
+   "qid": "Q1350060",
+   "en": "Naoshima",
+   "zh": "直島町",
+   "cn": "直岛町",
+   "ko": "나오시마정",
+   "coord": [
+    34.45981,
+    133.99564
+   ],
+   "image": "Naoshima town-office.jpg"
+  },
+  {
+   "name_ja": "父母ヶ浜",
+   "kana": "ちちぶがはま",
+   "wp": null,
+   "qid": null,
+   "en": "Chichibugahama Beach",
+   "zh": "父母濱",
+   "cn": "父母滨",
+   "ko": "지치부가하마 해변",
+   "coord": [
+    34.234,
+    133.662
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "小豆島 エンジェルロード",
+   "kana": "しょうどしま エンジェルロード",
+   "wp": "小豆島",
+   "qid": "Q2166413",
+   "en": "Shōdo Island",
+   "zh": "小豆島",
+   "cn": "小豆岛",
+   "ko": "쇼도섬",
+   "coord": [
+    34.51361,
+    134.28556
+   ],
+   "image": "Syodoshima landsat.jpg"
+  }
+ ],
+ "JP-38": [
+  {
+   "name_ja": "道後温泉本館",
+   "kana": "どうごおんせんほんかん",
+   "wp": "道後温泉",
+   "qid": "Q1037748",
+   "en": "Dōgo Onsen",
+   "zh": "道後溫泉",
+   "cn": "道後溫泉",
+   "ko": "도고 온천",
+   "coord": [
+    33.85194,
+    132.78639
+   ],
+   "image": "Dōgo Onsen.jpg"
+  },
+  {
+   "name_ja": "松山城",
+   "kana": "まつやまじょう",
+   "wp": "松山城 (伊予国)",
+   "qid": "Q981357",
+   "en": "Matsuyama Castle",
+   "zh": "松山城",
+   "cn": "松山城",
+   "ko": "마쓰야마성",
+   "coord": [
+    33.84554,
+    132.76572
+   ],
+   "image": "Marunouchi, Matsuyama, Ehime Prefecture 790-0008, Japan - panoramio (80).jpg"
+  },
+  {
+   "name_ja": "下灘駅",
+   "kana": "しもなだえき",
+   "wp": "下灘駅",
+   "qid": "Q899167",
+   "en": "Shimonada Station",
+   "zh": "下灘站",
+   "cn": "下灘站",
+   "ko": "시모나다역",
+   "coord": [
+    33.6551,
+    132.5892
+   ],
+   "image": "Shimonada Station 201507(1).JPG"
+  },
+  {
+   "name_ja": "佐田岬",
+   "kana": "さだみさき",
+   "wp": "佐田岬",
+   "qid": "Q11383355",
+   "en": "Cape Sada",
+   "zh": "佐田岬",
+   "cn": "佐田岬",
+   "ko": "사다미사키",
+   "coord": [
+    33.344,
+    132.01297
+   ],
+   "image": "Sadamisaki01.jpg"
+  },
+  {
+   "name_ja": "内子町 八日市護国",
+   "kana": "うちこちょう ようかいちごこく",
+   "wp": "内子町",
+   "qid": "Q1018717",
+   "en": "Uchiko-chō",
+   "zh": "內子町",
+   "cn": "内子町",
+   "ko": "우치코정",
+   "coord": [
+    33.53303,
+    132.65828
+   ],
+   "image": "Uchiko town hall.JPG"
+  }
+ ],
+ "JP-39": [
+  {
+   "name_ja": "桂浜",
+   "kana": "かつらはま",
+   "wp": "桂浜",
+   "qid": "Q11536831",
+   "en": "Katsurahama",
+   "zh": "桂濱",
+   "cn": "桂濱",
+   "ko": "가쓰라하마",
+   "coord": [
+    33.49719,
+    133.57503
+   ],
+   "image": "Kochi Katsurahama Daytime 1.JPG"
+  },
+  {
+   "name_ja": "四万十川",
+   "kana": "しまんとがわ",
+   "wp": "四万十川",
+   "qid": "Q124878",
+   "en": "Shimanto River",
+   "zh": "四萬十川",
+   "cn": "四萬十川",
+   "ko": "시만토강",
+   "coord": [
+    32.93327,
+    132.99628
+   ],
+   "image": "Spring in Shimanto River.jpg"
+  },
+  {
+   "name_ja": "高知城",
+   "kana": "こうちじょう",
+   "wp": "高知城",
+   "qid": "Q1012815",
+   "en": "Kōchi Castle",
+   "zh": "高知城",
+   "cn": "高知城",
+   "ko": "고치성",
+   "coord": [
+    33.56111,
+    133.53139
+   ],
+   "image": "Kouchi kouchijou1.jpg"
+  },
+  {
+   "name_ja": "にこ淵",
+   "kana": "にこぶち",
+   "wp": null,
+   "qid": null,
+   "en": "Nikobuchi Pool",
+   "zh": "仁淀藍 仁淀川",
+   "cn": "仁淀蓝 仁淀川",
+   "ko": "니코부치",
+   "coord": [
+    33.6153,
+    133.1917
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "室戸岬",
+   "kana": "むろとみさき",
+   "wp": "室戸岬",
+   "qid": "Q11453014",
+   "en": "Cape Muroto",
+   "zh": "室戶岬",
+   "cn": "室戶岬",
+   "ko": "무로토곶",
+   "coord": [
+    33.24278,
+    134.17639
+   ],
+   "image": "Murotomisaki20220510 4.jpg"
+  }
+ ],
+ "JP-40": [
+  {
+   "name_ja": "太宰府天満宮",
+   "kana": "だざいふてんまんぐう",
+   "wp": "太宰府天満宮",
+   "qid": "Q710786",
+   "en": "Dazaifu Tenmangū",
+   "zh": "太宰府天滿宮",
+   "cn": "太宰府天满宫",
+   "ko": "다자이후텐만구",
+   "coord": [
+    33.52143,
+    130.535
+   ],
+   "image": "20100719 Dazaifu Tenmangu Shrine 3328.jpg"
+  },
+  {
+   "name_ja": "中洲屋台",
+   "kana": "なかすやたい",
+   "wp": "屋台 (日本)",
+   "qid": null,
+   "en": "Nakasu Yatai Food Stalls",
+   "zh": "中洲屋台",
+   "cn": "中洲屋台",
+   "ko": "나카스 포장마차",
+   "coord": [
+    33.593,
+    130.406
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "櫛田神社",
+   "kana": "くしだじんじゃ",
+   "wp": "櫛田神社 (福岡市)",
+   "qid": "Q865839",
+   "en": "Kushida Shrine",
+   "zh": "櫛田神社",
+   "cn": "櫛田神社",
+   "ko": "구시다 신사",
+   "coord": [
+    33.59311,
+    130.41069
+   ],
+   "image": "Kushidajinjafukuoka01.jpg"
+  },
+  {
+   "name_ja": "門司港レトロ",
+   "kana": "もじこうレトロ",
+   "wp": "門司港レトロ",
+   "qid": "Q11654979",
+   "en": "Mojikō Retro",
+   "zh": "門司港懷舊",
+   "cn": "門司港懷舊",
+   "ko": "모지코 레트로",
+   "coord": [
+    33.9463,
+    130.9631
+   ],
+   "image": "140721 Mojiko Retro Kitakyushu Japan01s3.jpg"
+  },
+  {
+   "name_ja": "海の中道",
+   "kana": "うみのなかみち",
+   "wp": "海の中道",
+   "qid": "Q2404998",
+   "en": "Umi no Nakamichi",
+   "zh": "海之中道",
+   "cn": "海之中道",
+   "ko": "우미노나카미치",
+   "coord": [
+    33.6608,
+    130.319
+   ],
+   "image": "20080813UmiNoNakamichiM.jpg"
+  }
+ ],
+ "JP-41": [
+  {
+   "name_ja": "吉野ヶ里遺跡",
+   "kana": "よしのがりいせき",
+   "wp": "吉野ヶ里遺跡",
+   "qid": "Q1049645",
+   "en": "Yoshinogari site",
+   "zh": "吉野里遺址",
+   "cn": "吉野里遗址",
+   "ko": "요시노가리 유적",
+   "coord": [
+    33.325,
+    130.384
+   ],
+   "image": "Yoshinogari-iseki zenkei.JPG"
+  },
+  {
+   "name_ja": "祐徳稲荷神社",
+   "kana": "ゆうとくいなりじんじゃ",
+   "wp": "祐徳稲荷神社",
+   "qid": "Q251682",
+   "en": "Yūtoku Inari Shrine",
+   "zh": "祐德稻荷神社",
+   "cn": "祐德稻荷神社",
+   "ko": "유토쿠 이나리 신사",
+   "coord": [
+    33.07361,
+    130.10833
+   ],
+   "image": "祐徳稲荷神社 楼門.JPG"
+  },
+  {
+   "name_ja": "有田 陶磁の里",
+   "kana": "ありた とうじのさと",
+   "wp": "有田焼",
+   "qid": "Q26273242",
+   "en": "Arita ware",
+   "zh": "有田烧",
+   "cn": "有田烧",
+   "ko": "아리타야키",
+   "coord": [
+    33.206,
+    129.883
+   ],
+   "image": "ImariA.JPG"
+  },
+  {
+   "name_ja": "唐津城",
+   "kana": "からつじょう",
+   "wp": "唐津城",
+   "qid": "Q1073585",
+   "en": "Karatsu Castle",
+   "zh": "唐津城",
+   "cn": "唐津城",
+   "ko": "가라쓰성",
+   "coord": [
+    33.45354,
+    129.97819
+   ],
+   "image": "Karatsujo.jpg"
+  },
+  {
+   "name_ja": "呼子朝市",
+   "kana": "よぶこあさいち",
+   "wp": "呼子町",
+   "qid": "Q8054238",
+   "en": "Yobuko",
+   "zh": "呼子朝市",
+   "cn": "呼子早市",
+   "ko": "요부코정",
+   "coord": [
+    33.54342,
+    129.89317
+   ],
+   "image": null
+  }
+ ],
+ "JP-42": [
+  {
+   "name_ja": "グラバー園",
+   "kana": "グラバーえん",
+   "wp": "グラバー園",
+   "qid": "Q63465",
+   "en": "Glover Garden",
+   "zh": "哥拉巴園",
+   "cn": "哥拉巴園",
+   "ko": "구라바엔",
+   "coord": [
+    32.73444,
+    129.86889
+   ],
+   "image": "Nagasaki-Glover-Garden-5415.jpg"
+  },
+  {
+   "name_ja": "軍艦島 端島",
+   "kana": "ぐんかんじま はしま",
+   "wp": "端島 (長崎県)",
+   "qid": "Q285468",
+   "en": "Hashima Island",
+   "zh": "端島",
+   "cn": "端島",
+   "ko": "하시마섬",
+   "coord": [
+    32.62778,
+    129.73833
+   ],
+   "image": "Nagasaki Hashima 01-1.png"
+  },
+  {
+   "name_ja": "稲佐山",
+   "kana": "いなさやま",
+   "wp": "稲佐山",
+   "qid": "Q3031841",
+   "en": "Mount Inasa",
+   "zh": "稻佐山",
+   "cn": "稻佐山",
+   "ko": "이나사산",
+   "coord": [
+    32.7527,
+    129.8495
+   ],
+   "image": "Mt.Inasa 2010.jpg"
+  },
+  {
+   "name_ja": "ハウステンボス",
+   "kana": "ハウステンボス",
+   "wp": "ハウステンボス",
+   "qid": "Q1191845",
+   "en": "Huis Ten Bosch",
+   "zh": "豪斯登堡",
+   "cn": "豪斯登堡",
+   "ko": "하우스텐보스",
+   "coord": [
+    33.0865,
+    129.78689
+   ],
+   "image": "Huis Ten Bosch - 01.jpg"
+  },
+  {
+   "name_ja": "大浦天主堂",
+   "kana": "おおうらてんしゅどう",
+   "wp": "大浦天主堂",
+   "qid": "Q430626",
+   "en": "Ōura Church",
+   "zh": "大浦天主堂",
+   "cn": "大浦天主堂",
+   "ko": "오우라 천주당",
+   "coord": [
+    32.73417,
+    129.87028
+   ],
+   "image": "Oura Cathedral 20180623.jpg"
+  }
+ ],
+ "JP-43": [
+  {
+   "name_ja": "熊本城",
+   "kana": "くまもとじょう",
+   "wp": "熊本城",
+   "qid": "Q613355",
+   "en": "Kumamoto Castle",
+   "zh": "熊本城",
+   "cn": "熊本城",
+   "ko": "구마모토성",
+   "coord": [
+    32.80606,
+    130.70597
+   ],
+   "image": "Kumamotojo.jpg"
+  },
+  {
+   "name_ja": "阿蘇山",
+   "kana": "あそさん",
+   "wp": "阿蘇山",
+   "qid": "Q733710",
+   "en": "Mount Aso",
+   "zh": "阿蘇山",
+   "cn": "阿蘇山",
+   "ko": "아소산",
+   "coord": [
+    32.885,
+    131.10417
+   ],
+   "image": "Mt.Aso and caldera01.jpg"
+  },
+  {
+   "name_ja": "黒川温泉",
+   "kana": "くろかわおんせん",
+   "wp": "黒川温泉",
+   "qid": "Q11678251",
+   "en": "Kurokawa Onsen",
+   "zh": "黑川溫泉",
+   "cn": "黑川溫泉",
+   "ko": "구로카와 온천",
+   "coord": [
+    33.07839,
+    131.1413
+   ],
+   "image": "Kurokawa Onsen -温泉街.jpg"
+  },
+  {
+   "name_ja": "天草",
+   "kana": "あまくさ",
+   "wp": "天草諸島",
+   "qid": "Q452622",
+   "en": "Amakusa island group",
+   "zh": "天草群島",
+   "cn": "天草群島",
+   "ko": "아마쿠사 제도",
+   "coord": [
+    32.4,
+    130.11667
+   ],
+   "image": "Sunset from AmakusaFiveBridgesNo.4.jpg"
+  },
+  {
+   "name_ja": "鍋ヶ滝",
+   "kana": "なべがたき",
+   "wp": "鍋ヶ滝",
+   "qid": "Q11650601",
+   "en": "Nabe Falls",
+   "zh": "鍋瀑布",
+   "cn": "锅瀑布",
+   "ko": "나베가타키 폭포",
+   "coord": [
+    33.1375,
+    131.03556
+   ],
+   "image": "Nabegataki Falls, Kumamoto, Japan; July 2018 (02).jpg"
+  }
+ ],
+ "JP-44": [
+  {
+   "name_ja": "別府地獄めぐり",
+   "kana": "べっぷじごくめぐり",
+   "wp": "別府地獄めぐり",
+   "qid": "Q5709027",
+   "en": "Hells of Beppu",
+   "zh": "別府地獄之旅",
+   "cn": "別府地獄之旅",
+   "ko": "벳푸 지옥 순례",
+   "coord": [
+    33.31611,
+    131.46889
+   ],
+   "image": "Beppu Umi-jigoku04n4272.jpg"
+  },
+  {
+   "name_ja": "湯布院",
+   "kana": "ゆふいん",
+   "wp": "由布院温泉",
+   "qid": "Q11264855",
+   "en": "Yufuin Onsen",
+   "zh": "由布院溫泉",
+   "cn": "由布院溫泉",
+   "ko": "유후인 온천",
+   "coord": [
+    33.26603,
+    131.36861
+   ],
+   "image": "Yufuin Onsen -Musōen 02.jpg"
+  },
+  {
+   "name_ja": "九重夢大吊橋",
+   "kana": "ここのえゆめおおつりばし",
+   "wp": "九重\"夢\"大吊橋",
+   "qid": "Q11370450",
+   "en": "Kokonoe Yume Suspension Bridge",
+   "zh": "九重\"夢\"大吊橋",
+   "cn": "九重\"夢\"大吊橋",
+   "ko": "고코노에 \"유메\" 오쓰리바시",
+   "coord": [
+    33.17389,
+    131.22667
+   ],
+   "image": "Kokonoe Dream Big Suspension Bridge Oita,JAPAN.jpg"
+  },
+  {
+   "name_ja": "宇佐神宮",
+   "kana": "うさじんぐう",
+   "wp": "宇佐神宮",
+   "qid": "Q715632",
+   "en": "Usa Jingū",
+   "zh": "宇佐神宮",
+   "cn": "宇佐神宫",
+   "ko": "우사 신궁",
+   "coord": [
+    33.52602,
+    131.37463
+   ],
+   "image": "Usa Shrine Nanchu Romon.JPG"
+  },
+  {
+   "name_ja": "原尻の滝",
+   "kana": "はらじりのたき",
+   "wp": "原尻の滝",
+   "qid": "Q3127241",
+   "en": "Harajiri Falls",
+   "zh": "原尻瀑布",
+   "cn": "原尻瀑布",
+   "ko": "하라지리 폭포",
+   "coord": [
+    32.96389,
+    131.45111
+   ],
+   "image": "Bungo ohno harajirinotaki 02.jpg"
+  }
+ ],
+ "JP-45": [
+  {
+   "name_ja": "高千穂峡",
+   "kana": "たかちほきょう",
+   "wp": "高千穂峡",
+   "qid": "Q2027215",
+   "en": "Takachihokyo",
+   "zh": "高千穂峽",
+   "cn": "高千穂峡",
+   "ko": "다카치호 협곡",
+   "coord": [
+    32.70083,
+    131.30056
+   ],
+   "image": "秋色の高千穂峡 (Autumn Colored Takachiho Gorge) 24 Nov, 2012 - panoramio.jpg"
+  },
+  {
+   "name_ja": "鵜戸神宮",
+   "kana": "うどじんぐう",
+   "wp": "鵜戸神宮",
+   "qid": "Q704430",
+   "en": "Udo Jingū",
+   "zh": "鵜戶神宮",
+   "cn": "鹈户神宫",
+   "ko": "우도 신궁",
+   "coord": [
+    31.65028,
+    131.46667
+   ],
+   "image": "Udo-jingu Main hall 001.jpg"
+  },
+  {
+   "name_ja": "青島神社",
+   "kana": "あおしまじんじゃ",
+   "wp": "青島神社",
+   "qid": "Q2857985",
+   "en": "Aoshima Shrine",
+   "zh": "青島神社",
+   "cn": "青島神社",
+   "ko": "아오시마 신사",
+   "coord": [
+    31.80467,
+    131.47486
+   ],
+   "image": "Aoshima jinja, Worship Hall 01.jpg"
+  },
+  {
+   "name_ja": "天岩戸神社",
+   "kana": "あまのいわとじんじゃ",
+   "wp": "天岩戸神社",
+   "qid": "Q2841102",
+   "en": "Amanoiwato Shrine",
+   "zh": "天巖戶神社",
+   "cn": "天岩戶神社",
+   "ko": "아마노이와토 신사",
+   "coord": [
+    32.73444,
+    131.35056
+   ],
+   "image": "Torii at Ama-no-Iwato Shrine, Takachiho, Miyazaki Prefecture.jpg"
+  },
+  {
+   "name_ja": "都井岬",
+   "kana": "といみさき",
+   "wp": "都井岬",
+   "qid": "Q11643472",
+   "en": "Cape Toi",
+   "zh": "都井岬",
+   "cn": "都井岬",
+   "ko": "도이미사키",
+   "coord": [
+    31.36456,
+    131.34739
+   ],
+   "image": "都井岬から見た宮崎方向DSC01613.JPG"
+  }
+ ],
+ "JP-46": [
+  {
+   "name_ja": "桜島",
+   "kana": "さくらじま",
+   "wp": "桜島",
+   "qid": "Q128841",
+   "en": "Sakurajima",
+   "zh": "櫻島",
+   "cn": "樱岛",
+   "ko": "사쿠라지마섬",
+   "coord": [
+    31.58056,
+    130.65806
+   ],
+   "image": "Kagoshima and Sakurajima.jpg"
+  },
+  {
+   "name_ja": "屋久島 縄文杉",
+   "kana": "やくしま じょうもんすぎ",
+   "wp": "縄文杉",
+   "qid": "Q589967",
+   "en": "Jōmon Sugi",
+   "zh": "繩文杉",
+   "cn": "绳文杉",
+   "ko": "조몬 삼나무",
+   "coord": [
+    30.36083,
+    130.53194
+   ],
+   "image": "Jomon Sugi 07.jpg"
+  },
+  {
+   "name_ja": "仙巌園",
+   "kana": "せんがんえん",
+   "wp": "仙巌園",
+   "qid": "Q10884282",
+   "en": "Sengan-en",
+   "zh": "仙巖園",
+   "cn": "仙巖園",
+   "ko": "센간엔",
+   "coord": [
+    31.61722,
+    130.57694
+   ],
+   "image": "Sengan-en2.jpg"
+  },
+  {
+   "name_ja": "指宿 砂むし温泉",
+   "kana": "いぶすき すなむしおんせん",
+   "wp": "指宿温泉",
+   "qid": "Q5984938",
+   "en": "Ibusuki Onsen",
+   "zh": "指宿溫泉",
+   "cn": "指宿溫泉",
+   "ko": "이부스키 모래찜질 온천",
+   "coord": [
+    31.22314,
+    130.65506
+   ],
+   "image": "Ibusuki Onsen-Kaimon.jpg"
+  },
+  {
+   "name_ja": "霧島神宮",
+   "kana": "きりしまじんぐう",
+   "wp": "霧島神宮",
+   "qid": "Q704622",
+   "en": "Kirishima Jingū",
+   "zh": "霧島神宮",
+   "cn": "雾岛神宫",
+   "ko": "기리시마 신궁",
+   "coord": [
+    31.85864,
+    130.87132
+   ],
+   "image": "Kirishima-Jingu Front.jpg"
+  }
+ ],
+ "JP-47": [
+  {
+   "name_ja": "首里城",
+   "kana": "しゅりじょう",
+   "wp": "首里城",
+   "qid": "Q907052",
+   "en": "Shuri Castle",
+   "zh": "首里城",
+   "cn": "首里城",
+   "ko": "슈리성",
+   "coord": [
+    26.21703,
+    127.71948
+   ],
+   "image": "Naha Shuri Castle51s3s4200.jpg"
+  },
+  {
+   "name_ja": "沖縄美ら海水族館",
+   "kana": "おきなわちゅらうみすいぞくかん",
+   "wp": "沖縄美ら海水族館",
+   "qid": "Q1445750",
+   "en": "Okinawa Churaumi Aquarium",
+   "zh": "沖繩美麗海水族館",
+   "cn": "沖繩美麗海水族館",
+   "ko": "추라우미 수족관",
+   "coord": [
+    26.69439,
+    127.87794
+   ],
+   "image": "沖縄美ら海水族館＿大.jpg"
+  },
+  {
+   "name_ja": "万座毛",
+   "kana": "まんざもう",
+   "wp": "万座毛",
+   "qid": "Q11353838",
+   "en": "Cape Manzamo",
+   "zh": "萬座毛",
+   "cn": "萬座毛",
+   "ko": "만자모",
+   "coord": [
+    26.505,
+    127.85028
+   ],
+   "image": "Onna Okinawa Japan Cape-Manzamo-01.jpg"
+  },
+  {
+   "name_ja": "川平湾",
+   "kana": "かびらわん",
+   "wp": "川平湾",
+   "qid": "Q2654598",
+   "en": "Kabira Bay",
+   "zh": "川平灣",
+   "cn": "川平灣",
+   "ko": "가비라만",
+   "coord": [
+    24.45139,
+    124.14444
+   ],
+   "image": "Kabira-Bay-Kabira-park-2019.jpg"
+  },
+  {
+   "name_ja": "竹富島",
+   "kana": "たけとみじま",
+   "wp": "竹富島",
+   "qid": "Q474560",
+   "en": "Taketomi Island",
+   "zh": "竹富島",
+   "cn": "竹富島",
+   "ko": "다케토미섬",
+   "coord": [
+    24.32472,
+    124.08778
+   ],
+   "image": "JP-47 Taketomi Water-buffalo-taxi.jpg"
+  }
+ ]
+}

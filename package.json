@@ -1,0 +1,24 @@
+{
+  "name": "japan-3d-guide",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "build:shapes": "mapshaper data/source/geoBoundaries-JPN-ADM1.geojson -simplify 0.6% keep-shapes -o format=geojson precision=0.0001 force data/source/simplified.geojson && node tools/build-shapes.mjs data/source/simplified.geojson",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs:pdf": "node tools/md2pdf.mjs docs/要件定義.md docs/実装メモ.md --out docs/pdf"
+  },
+  "dependencies": {
+    "three": "^0.185.0"
+  },
+  "devDependencies": {
+    "mapshaper": "^0.7.53",
+    "marked": "^18.0.10",
+    "vite": "^8.0.0"
+  }
+}

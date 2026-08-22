@@ -1,0 +1,1224 @@
+{
+ "JP-01": [
+  {
+   "id": "kaisendon",
+   "ja": "海鮮丼",
+   "zh": "海鮮丼",
+   "cn": "海鲜盖饭",
+   "en": "Seafood rice bowl",
+   "ko": "해산물 덮밥"
+  },
+  {
+   "id": "jingisukan",
+   "ja": "ジンギスカン",
+   "zh": "成吉思汗烤羊肉",
+   "cn": "成吉思汗烤羊肉",
+   "en": "Jingisukan grilled lamb",
+   "ko": "징기스칸(양고기 구이)"
+  },
+  {
+   "id": "soup-curry",
+   "ja": "スープカレー",
+   "zh": "湯咖哩",
+   "cn": "汤咖喱",
+   "en": "Soup curry",
+   "ko": "수프 카레"
+  }
+ ],
+ "JP-02": [
+  {
+   "id": "apple",
+   "ja": "りんご",
+   "zh": "蘋果",
+   "cn": "苹果",
+   "en": "Apples",
+   "ko": "사과"
+  },
+  {
+   "id": "senbei-jiru",
+   "ja": "せんべい汁",
+   "zh": "仙貝湯",
+   "cn": "仙贝汤",
+   "en": "Senbei-jiru cracker soup",
+   "ko": "센베이지루"
+  },
+  {
+   "id": "oma-maguro",
+   "ja": "大間のまぐろ",
+   "zh": "大間鮪魚",
+   "cn": "大间金枪鱼",
+   "en": "Ōma bluefin tuna",
+   "ko": "오마 참치"
+  }
+ ],
+ "JP-03": [
+  {
+   "id": "wanko-soba",
+   "ja": "わんこそば",
+   "zh": "碗子蕎麥麵",
+   "cn": "碗子荞麦面",
+   "en": "Wanko soba",
+   "ko": "완코소바"
+  },
+  {
+   "id": "morioka-reimen",
+   "ja": "盛岡冷麺",
+   "zh": "盛岡冷麵",
+   "cn": "盛冈冷面",
+   "en": "Morioka reimen",
+   "ko": "모리오카 냉면"
+  },
+  {
+   "id": "maekake-gyu",
+   "ja": "前沢牛",
+   "zh": "前澤牛",
+   "cn": "前泽牛",
+   "en": "Maesawa beef",
+   "ko": "마에사와규"
+  }
+ ],
+ "JP-04": [
+  {
+   "id": "gyutan",
+   "ja": "牛タン",
+   "zh": "炭烤牛舌",
+   "cn": "炭烤牛舌",
+   "en": "Grilled beef tongue",
+   "ko": "규탄(소혀 구이)"
+  },
+  {
+   "id": "zunda",
+   "ja": "ずんだ餅",
+   "zh": "毛豆泥麻糬",
+   "cn": "毛豆泥年糕",
+   "en": "Zunda edamame mochi",
+   "ko": "즌다모치"
+  },
+  {
+   "id": "sasa-kamaboko",
+   "ja": "笹かまぼこ",
+   "zh": "笹魚板",
+   "cn": "笹鱼板",
+   "en": "Sasa kamaboko fish cake",
+   "ko": "사사카마보코"
+  }
+ ],
+ "JP-05": [
+  {
+   "id": "kiritanpo",
+   "ja": "きりたんぽ鍋",
+   "zh": "烤米棒鍋",
+   "cn": "烤米棒锅",
+   "en": "Kiritanpo hotpot",
+   "ko": "기리탄포 전골"
+  },
+  {
+   "id": "inaniwa-udon",
+   "ja": "稲庭うどん",
+   "zh": "稻庭烏龍麵",
+   "cn": "稻庭乌冬面",
+   "en": "Inaniwa udon",
+   "ko": "이나니와 우동"
+  },
+  {
+   "id": "hinai-jidori",
+   "ja": "比内地鶏",
+   "zh": "比內地雞",
+   "cn": "比内地鸡",
+   "en": "Hinai-jidori chicken",
+   "ko": "히나이지도리 닭"
+  }
+ ],
+ "JP-06": [
+  {
+   "id": "cherry",
+   "ja": "さくらんぼ",
+   "zh": "櫻桃",
+   "cn": "樱桃",
+   "en": "Cherries",
+   "ko": "체리"
+  },
+  {
+   "id": "yonezawa-gyu",
+   "ja": "米沢牛",
+   "zh": "米澤牛",
+   "cn": "米泽牛",
+   "en": "Yonezawa beef",
+   "ko": "요네자와규"
+  },
+  {
+   "id": "imoni",
+   "ja": "芋煮",
+   "zh": "芋煮鍋",
+   "cn": "芋煮锅",
+   "en": "Imoni taro stew",
+   "ko": "이모니"
+  }
+ ],
+ "JP-07": [
+  {
+   "id": "kitakata-ramen",
+   "ja": "喜多方ラーメン",
+   "zh": "喜多方拉麵",
+   "cn": "喜多方拉面",
+   "en": "Kitakata ramen",
+   "ko": "기타카타 라멘"
+  },
+  {
+   "id": "mamador",
+   "ja": "ままどおる",
+   "zh": "媽媽多爾牛奶餡餅",
+   "cn": "妈妈多尔牛奶馅饼",
+   "en": "Mamador milk cakes",
+   "ko": "마마도루"
+  },
+  {
+   "id": "peach",
+   "ja": "あかつき桃",
+   "zh": "曉桃",
+   "cn": "晓桃",
+   "en": "Akatsuki peaches",
+   "ko": "아카쓰키 복숭아"
+  }
+ ],
+ "JP-08": [
+  {
+   "id": "natto",
+   "ja": "水戸納豆",
+   "zh": "水戶納豆",
+   "cn": "水户纳豆",
+   "en": "Mito nattō",
+   "ko": "미토 낫토"
+  },
+  {
+   "id": "anko",
+   "ja": "あんこう鍋",
+   "zh": "鮟鱇魚鍋",
+   "cn": "鮟鱇鱼锅",
+   "en": "Monkfish hotpot",
+   "ko": "아귀 전골"
+  },
+  {
+   "id": "melon",
+   "ja": "茨城メロン",
+   "zh": "茨城哈密瓜",
+   "cn": "茨城哈密瓜",
+   "en": "Ibaraki melon",
+   "ko": "이바라키 멜론"
+  }
+ ],
+ "JP-09": [
+  {
+   "id": "gyoza",
+   "ja": "宇都宮餃子",
+   "zh": "宇都宮煎餃",
+   "cn": "宇都宫煎饺",
+   "en": "Utsunomiya gyōza",
+   "ko": "우쓰노미야 만두"
+  },
+  {
+   "id": "strawberry",
+   "ja": "とちおとめ",
+   "zh": "栃乙女草莓",
+   "cn": "枥乙女草莓",
+   "en": "Tochiotome strawberries",
+   "ko": "도치오토메 딸기"
+  },
+  {
+   "id": "yuba",
+   "ja": "日光ゆば",
+   "zh": "日光豆皮",
+   "cn": "日光豆皮",
+   "en": "Nikkō yuba tofu skin",
+   "ko": "닛코 유바"
+  }
+ ],
+ "JP-10": [
+  {
+   "id": "yakimanju",
+   "ja": "焼きまんじゅう",
+   "zh": "味噌烤饅頭",
+   "cn": "味噌烤馒头",
+   "en": "Yaki-manjū",
+   "ko": "야키만주"
+  },
+  {
+   "id": "konjac",
+   "ja": "こんにゃく",
+   "zh": "蒟蒻",
+   "cn": "蒟蒻",
+   "en": "Konjac",
+   "ko": "곤약"
+  },
+  {
+   "id": "mizusawa-udon",
+   "ja": "水沢うどん",
+   "zh": "水澤烏龍麵",
+   "cn": "水泽乌冬面",
+   "en": "Mizusawa udon",
+   "ko": "미즈사와 우동"
+  }
+ ],
+ "JP-11": [
+  {
+   "id": "kawagoe-imo",
+   "ja": "川越さつまいも",
+   "zh": "川越地瓜",
+   "cn": "川越红薯",
+   "en": "Kawagoe sweet potato",
+   "ko": "가와고에 고구마"
+  },
+  {
+   "id": "soka-senbei",
+   "ja": "草加せんべい",
+   "zh": "草加仙貝",
+   "cn": "草加仙贝",
+   "en": "Sōka rice crackers",
+   "ko": "소카 센베이"
+  },
+  {
+   "id": "kabayaki",
+   "ja": "うなぎ蒲焼",
+   "zh": "蒲燒鰻魚",
+   "cn": "蒲烧鳗鱼",
+   "en": "Grilled eel",
+   "ko": "장어구이"
+  }
+ ],
+ "JP-12": [
+  {
+   "id": "peanut",
+   "ja": "落花生",
+   "zh": "花生",
+   "cn": "花生",
+   "en": "Peanuts",
+   "ko": "땅콩"
+  },
+  {
+   "id": "namero",
+   "ja": "なめろう",
+   "zh": "剁生魚味噌",
+   "cn": "剁生鱼味噌",
+   "en": "Namerō minced fish",
+   "ko": "나메로"
+  },
+  {
+   "id": "soy-sauce",
+   "ja": "野田醤油",
+   "zh": "野田醬油",
+   "cn": "野田酱油",
+   "en": "Noda soy sauce",
+   "ko": "노다 간장"
+  }
+ ],
+ "JP-13": [
+  {
+   "id": "edomae-sushi",
+   "ja": "江戸前寿司",
+   "zh": "江戶前壽司",
+   "cn": "江户前寿司",
+   "en": "Edomae sushi",
+   "ko": "에도마에 스시"
+  },
+  {
+   "id": "monjayaki",
+   "ja": "もんじゃ焼き",
+   "zh": "文字燒",
+   "cn": "文字烧",
+   "en": "Monjayaki",
+   "ko": "몬자야키"
+  },
+  {
+   "id": "ningyoyaki",
+   "ja": "人形焼",
+   "zh": "人形燒",
+   "cn": "人形烧",
+   "en": "Ningyōyaki cakes",
+   "ko": "닌교야키"
+  }
+ ],
+ "JP-14": [
+  {
+   "id": "shumai",
+   "ja": "崎陽軒のシウマイ",
+   "zh": "崎陽軒燒賣",
+   "cn": "崎阳轩烧卖",
+   "en": "Kiyōken shumai",
+   "ko": "기요켄 슈마이"
+  },
+  {
+   "id": "iekei-ramen",
+   "ja": "家系ラーメン",
+   "zh": "家系拉麵",
+   "cn": "家系拉面",
+   "en": "Iekei ramen",
+   "ko": "이에케이 라멘"
+  },
+  {
+   "id": "shirasu",
+   "ja": "湘南しらす",
+   "zh": "湘南吻仔魚",
+   "cn": "湘南银鱼",
+   "en": "Shōnan whitebait",
+   "ko": "쇼난 시라스"
+  }
+ ],
+ "JP-15": [
+  {
+   "id": "koshihikari",
+   "ja": "魚沼産コシヒカリ",
+   "zh": "魚沼越光米",
+   "cn": "鱼沼越光米",
+   "en": "Uonuma Koshihikari rice",
+   "ko": "우오누마 고시히카리"
+  },
+  {
+   "id": "hegisoba",
+   "ja": "へぎそば",
+   "zh": "布海苔蕎麥麵",
+   "cn": "布海苔荞麦面",
+   "en": "Hegi soba",
+   "ko": "헤기소바"
+  },
+  {
+   "id": "sake",
+   "ja": "新潟の日本酒",
+   "zh": "新潟清酒",
+   "cn": "新潟清酒",
+   "en": "Niigata sake",
+   "ko": "니가타 사케"
+  }
+ ],
+ "JP-16": [
+  {
+   "id": "masuzushi",
+   "ja": "ますのすし",
+   "zh": "鱒魚壽司",
+   "cn": "鳟鱼寿司",
+   "en": "Trout pressed sushi",
+   "ko": "송어 초밥"
+  },
+  {
+   "id": "shiroebi",
+   "ja": "白えび",
+   "zh": "白蝦",
+   "cn": "白虾",
+   "en": "Toyama glass shrimp",
+   "ko": "시로에비"
+  },
+  {
+   "id": "kurobuta",
+   "ja": "氷見うどん",
+   "zh": "冰見烏龍麵",
+   "cn": "冰见乌冬面",
+   "en": "Himi udon",
+   "ko": "히미 우동"
+  }
+ ],
+ "JP-17": [
+  {
+   "id": "kaisen",
+   "ja": "のどぐろ",
+   "zh": "喉黑魚",
+   "cn": "喉黑鱼",
+   "en": "Blackthroat seaperch",
+   "ko": "노도구로"
+  },
+  {
+   "id": "jibuni",
+   "ja": "治部煮",
+   "zh": "治部煮",
+   "cn": "治部煮",
+   "en": "Jibuni duck stew",
+   "ko": "지부니"
+  },
+  {
+   "id": "gold-leaf",
+   "ja": "金箔ソフト",
+   "zh": "金箔霜淇淋",
+   "cn": "金箔冰淇淋",
+   "en": "Gold-leaf soft serve",
+   "ko": "금박 소프트아이스크림"
+  }
+ ],
+ "JP-18": [
+  {
+   "id": "echizen-kani",
+   "ja": "越前がに",
+   "zh": "越前松葉蟹",
+   "cn": "越前松叶蟹",
+   "en": "Echizen snow crab",
+   "ko": "에치젠 게"
+  },
+  {
+   "id": "oroshi-soba",
+   "ja": "おろしそば",
+   "zh": "蘿蔔泥蕎麥麵",
+   "cn": "萝卜泥荞麦面",
+   "en": "Grated-radish soba",
+   "ko": "오로시소바"
+  },
+  {
+   "id": "sauce-katsudon",
+   "ja": "ソースカツ丼",
+   "zh": "醬汁豬排丼",
+   "cn": "酱汁猪排盖饭",
+   "en": "Sauce katsudon",
+   "ko": "소스 가쓰동"
+  }
+ ],
+ "JP-19": [
+  {
+   "id": "houtou",
+   "ja": "ほうとう",
+   "zh": "餺飥味噌麵",
+   "cn": "馎饦味噌面",
+   "en": "Hōtō noodle stew",
+   "ko": "호토"
+  },
+  {
+   "id": "grape",
+   "ja": "甲州ぶどう",
+   "zh": "甲州葡萄",
+   "cn": "甲州葡萄",
+   "en": "Kōshū grapes",
+   "ko": "고슈 포도"
+  },
+  {
+   "id": "wine",
+   "ja": "山梨ワイン",
+   "zh": "山梨葡萄酒",
+   "cn": "山梨葡萄酒",
+   "en": "Yamanashi wine",
+   "ko": "야마나시 와인"
+  }
+ ],
+ "JP-20": [
+  {
+   "id": "soba",
+   "ja": "信州そば",
+   "zh": "信州蕎麥麵",
+   "cn": "信州荞麦面",
+   "en": "Shinshū soba",
+   "ko": "신슈 소바"
+  },
+  {
+   "id": "oyaki",
+   "ja": "おやき",
+   "zh": "野菜餡餅",
+   "cn": "野菜馅饼",
+   "en": "Oyaki stuffed buns",
+   "ko": "오야키"
+  },
+  {
+   "id": "miso",
+   "ja": "信州味噌",
+   "zh": "信州味噌",
+   "cn": "信州味噌",
+   "en": "Shinshū miso",
+   "ko": "신슈 미소"
+  }
+ ],
+ "JP-21": [
+  {
+   "id": "hida-gyu",
+   "ja": "飛騨牛",
+   "zh": "飛驒牛",
+   "cn": "飞驒牛",
+   "en": "Hida beef",
+   "ko": "히다규"
+  },
+  {
+   "id": "keichan",
+   "ja": "鶏ちゃん",
+   "zh": "味噌炒雞",
+   "cn": "味噌炒鸡",
+   "en": "Keichan miso chicken",
+   "ko": "게이짱"
+  },
+  {
+   "id": "gohei-mochi",
+   "ja": "五平餅",
+   "zh": "五平餅",
+   "cn": "五平饼",
+   "en": "Gohei mochi",
+   "ko": "고헤이모치"
+  }
+ ],
+ "JP-22": [
+  {
+   "id": "unagi",
+   "ja": "浜名湖うなぎ",
+   "zh": "濱名湖鰻魚",
+   "cn": "滨名湖鳗鱼",
+   "en": "Hamanako eel",
+   "ko": "하마나코 장어"
+  },
+  {
+   "id": "sakura-ebi",
+   "ja": "桜えび",
+   "zh": "櫻花蝦",
+   "cn": "樱花虾",
+   "en": "Sakura shrimp",
+   "ko": "사쿠라에비"
+  },
+  {
+   "id": "wasabi",
+   "ja": "伊豆わさび",
+   "zh": "伊豆山葵",
+   "cn": "伊豆山葵",
+   "en": "Izu wasabi",
+   "ko": "이즈 와사비"
+  }
+ ],
+ "JP-23": [
+  {
+   "id": "hitsumabushi",
+   "ja": "ひつまぶし",
+   "zh": "鰻魚三吃",
+   "cn": "鳗鱼三吃",
+   "en": "Hitsumabushi eel",
+   "ko": "히쓰마부시"
+  },
+  {
+   "id": "miso-katsu",
+   "ja": "味噌カツ",
+   "zh": "味噌豬排",
+   "cn": "味噌猪排",
+   "en": "Miso katsu",
+   "ko": "미소 가쓰"
+  },
+  {
+   "id": "tebasaki",
+   "ja": "手羽先",
+   "zh": "名古屋雞翅",
+   "cn": "名古屋鸡翅",
+   "en": "Nagoya chicken wings",
+   "ko": "데바사키"
+  }
+ ],
+ "JP-24": [
+  {
+   "id": "matsusaka-gyu",
+   "ja": "松阪牛",
+   "zh": "松阪牛",
+   "cn": "松阪牛",
+   "en": "Matsusaka beef",
+   "ko": "마쓰사카규"
+  },
+  {
+   "id": "ise-udon",
+   "ja": "伊勢うどん",
+   "zh": "伊勢烏龍麵",
+   "cn": "伊势乌冬面",
+   "en": "Ise udon",
+   "ko": "이세 우동"
+  },
+  {
+   "id": "akafuku",
+   "ja": "赤福餅",
+   "zh": "赤福餅",
+   "cn": "赤福饼",
+   "en": "Akafuku mochi",
+   "ko": "아카후쿠모치"
+  }
+ ],
+ "JP-25": [
+  {
+   "id": "omi-gyu",
+   "ja": "近江牛",
+   "zh": "近江牛",
+   "cn": "近江牛",
+   "en": "Ōmi beef",
+   "ko": "오미규"
+  },
+  {
+   "id": "funazushi",
+   "ja": "鮒ずし",
+   "zh": "鮒魚壽司",
+   "cn": "鲫鱼寿司",
+   "en": "Funazushi fermented carp",
+   "ko": "후나즈시"
+  },
+  {
+   "id": "shigaraki",
+   "ja": "信楽焼",
+   "zh": "信樂燒",
+   "cn": "信乐烧",
+   "en": "Shigaraki ware",
+   "ko": "시가라키야키"
+  }
+ ],
+ "JP-26": [
+  {
+   "id": "kaiseki",
+   "ja": "京懐石",
+   "zh": "京懷石",
+   "cn": "京怀石",
+   "en": "Kyoto kaiseki",
+   "ko": "교 가이세키"
+  },
+  {
+   "id": "yudofu",
+   "ja": "湯豆腐",
+   "zh": "湯豆腐",
+   "cn": "汤豆腐",
+   "en": "Yudōfu simmered tofu",
+   "ko": "유도후"
+  },
+  {
+   "id": "matcha-sweets",
+   "ja": "宇治抹茶",
+   "zh": "宇治抹茶",
+   "cn": "宇治抹茶",
+   "en": "Uji matcha",
+   "ko": "우지 말차"
+  }
+ ],
+ "JP-27": [
+  {
+   "id": "takoyaki",
+   "ja": "たこ焼き",
+   "zh": "章魚燒",
+   "cn": "章鱼烧",
+   "en": "Takoyaki",
+   "ko": "다코야키"
+  },
+  {
+   "id": "okonomiyaki",
+   "ja": "お好み焼き",
+   "zh": "大阪燒",
+   "cn": "大阪烧",
+   "en": "Okonomiyaki",
+   "ko": "오코노미야키"
+  },
+  {
+   "id": "kushikatsu",
+   "ja": "串カツ",
+   "zh": "炸串",
+   "cn": "炸串",
+   "en": "Kushikatsu",
+   "ko": "구시카쓰"
+  }
+ ],
+ "JP-28": [
+  {
+   "id": "kobe-beef",
+   "ja": "神戸ビーフ",
+   "zh": "神戶牛",
+   "cn": "神户牛",
+   "en": "Kobe beef",
+   "ko": "고베규"
+  },
+  {
+   "id": "akashiyaki",
+   "ja": "明石焼き",
+   "zh": "明石燒",
+   "cn": "明石烧",
+   "en": "Akashiyaki",
+   "ko": "아카시야키"
+  },
+  {
+   "id": "sobameshi",
+   "ja": "そばめし",
+   "zh": "炒麵飯",
+   "cn": "炒面饭",
+   "en": "Sobameshi",
+   "ko": "소바메시"
+  }
+ ],
+ "JP-29": [
+  {
+   "id": "kakinoha-zushi",
+   "ja": "柿の葉寿司",
+   "zh": "柿葉壽司",
+   "cn": "柿叶寿司",
+   "en": "Persimmon-leaf sushi",
+   "ko": "감잎 초밥"
+  },
+  {
+   "id": "miwa-somen",
+   "ja": "三輪そうめん",
+   "zh": "三輪素麵",
+   "cn": "三轮素面",
+   "en": "Miwa sōmen",
+   "ko": "미와 소면"
+  },
+  {
+   "id": "nara-zuke",
+   "ja": "奈良漬",
+   "zh": "奈良漬",
+   "cn": "奈良渍",
+   "en": "Narazuke pickles",
+   "ko": "나라즈케"
+  }
+ ],
+ "JP-30": [
+  {
+   "id": "wakayama-ramen",
+   "ja": "和歌山ラーメン",
+   "zh": "和歌山拉麵",
+   "cn": "和歌山拉面",
+   "en": "Wakayama ramen",
+   "ko": "와카야마 라멘"
+  },
+  {
+   "id": "mikan",
+   "ja": "有田みかん",
+   "zh": "有田蜜柑",
+   "cn": "有田蜜柑",
+   "en": "Arita mandarins",
+   "ko": "아리타 밀감"
+  },
+  {
+   "id": "nanko-ume",
+   "ja": "南高梅",
+   "zh": "南高梅",
+   "cn": "南高梅",
+   "en": "Nankō plums",
+   "ko": "난코바이 매실"
+  }
+ ],
+ "JP-31": [
+  {
+   "id": "matsuba-gani",
+   "ja": "松葉がに",
+   "zh": "松葉蟹",
+   "cn": "松叶蟹",
+   "en": "Matsuba snow crab",
+   "ko": "마쓰바가니"
+  },
+  {
+   "id": "tottori-gyudon",
+   "ja": "牛骨ラーメン",
+   "zh": "牛骨拉麵",
+   "cn": "牛骨拉面",
+   "en": "Beef-bone ramen",
+   "ko": "소뼈 라멘"
+  },
+  {
+   "id": "nashi",
+   "ja": "二十世紀梨",
+   "zh": "二十世紀梨",
+   "cn": "二十世纪梨",
+   "en": "Nijisseiki pears",
+   "ko": "20세기 배"
+  }
+ ],
+ "JP-32": [
+  {
+   "id": "izumo-soba",
+   "ja": "出雲そば",
+   "zh": "出雲蕎麥麵",
+   "cn": "出云荞麦面",
+   "en": "Izumo soba",
+   "ko": "이즈모 소바"
+  },
+  {
+   "id": "shijimi",
+   "ja": "宍道湖のしじみ",
+   "zh": "宍道湖蜆",
+   "cn": "宍道湖蚬",
+   "en": "Lake Shinji clams",
+   "ko": "신지호 재첩"
+  },
+  {
+   "id": "wagashi",
+   "ja": "松江の和菓子",
+   "zh": "松江和菓子",
+   "cn": "松江和果子",
+   "en": "Matsue wagashi",
+   "ko": "마쓰에 화과자"
+  }
+ ],
+ "JP-33": [
+  {
+   "id": "kibi-dango",
+   "ja": "きびだんご",
+   "zh": "黍糰子",
+   "cn": "黍团子",
+   "en": "Kibi dango",
+   "ko": "기비단고"
+  },
+  {
+   "id": "barazushi",
+   "ja": "岡山ばらずし",
+   "zh": "岡山散壽司",
+   "cn": "冈山散寿司",
+   "en": "Okayama barazushi",
+   "ko": "오카야마 바라즈시"
+  },
+  {
+   "id": "muscat",
+   "ja": "マスカット",
+   "zh": "麝香葡萄",
+   "cn": "麝香葡萄",
+   "en": "Muscat grapes",
+   "ko": "머스캣 포도"
+  }
+ ],
+ "JP-34": [
+  {
+   "id": "okonomiyaki-hiroshima",
+   "ja": "広島お好み焼き",
+   "zh": "廣島燒",
+   "cn": "广岛烧",
+   "en": "Hiroshima okonomiyaki",
+   "ko": "히로시마 오코노미야키"
+  },
+  {
+   "id": "kaki",
+   "ja": "広島かき",
+   "zh": "廣島牡蠣",
+   "cn": "广岛牡蛎",
+   "en": "Hiroshima oysters",
+   "ko": "히로시마 굴"
+  },
+  {
+   "id": "momiji-manju",
+   "ja": "もみじ饅頭",
+   "zh": "楓葉饅頭",
+   "cn": "枫叶馒头",
+   "en": "Momiji manjū",
+   "ko": "모미지만주"
+  }
+ ],
+ "JP-35": [
+  {
+   "id": "fugu",
+   "ja": "下関ふぐ",
+   "zh": "下關河豚",
+   "cn": "下关河豚",
+   "en": "Shimonoseki fugu",
+   "ko": "시모노세키 복어"
+  },
+  {
+   "id": "kawara-soba",
+   "ja": "瓦そば",
+   "zh": "瓦片蕎麥麵",
+   "cn": "瓦片荞麦面",
+   "en": "Kawara soba",
+   "ko": "가와라소바"
+  },
+  {
+   "id": "uni",
+   "ja": "北浦のうに",
+   "zh": "北浦海膽",
+   "cn": "北浦海胆",
+   "en": "Kitaura sea urchin",
+   "ko": "기타우라 성게"
+  }
+ ],
+ "JP-36": [
+  {
+   "id": "tokushima-ramen",
+   "ja": "徳島ラーメン",
+   "zh": "德島拉麵",
+   "cn": "德岛拉面",
+   "en": "Tokushima ramen",
+   "ko": "도쿠시마 라멘"
+  },
+  {
+   "id": "sudachi",
+   "ja": "すだち",
+   "zh": "酢橘",
+   "cn": "酢橘",
+   "en": "Sudachi citrus",
+   "ko": "스다치"
+  },
+  {
+   "id": "awaodori-chicken",
+   "ja": "阿波尾鶏",
+   "zh": "阿波尾雞",
+   "cn": "阿波尾鸡",
+   "en": "Awa-odori chicken",
+   "ko": "아와오도리 닭"
+  }
+ ],
+ "JP-37": [
+  {
+   "id": "sanuki-udon",
+   "ja": "讃岐うどん",
+   "zh": "讚岐烏龍麵",
+   "cn": "赞岐乌冬面",
+   "en": "Sanuki udon",
+   "ko": "사누키 우동"
+  },
+  {
+   "id": "honetsuki-dori",
+   "ja": "骨付鳥",
+   "zh": "帶骨烤雞腿",
+   "cn": "带骨烤鸡腿",
+   "en": "Bone-in roast chicken",
+   "ko": "뼈째 구운 닭"
+  },
+  {
+   "id": "olive",
+   "ja": "小豆島オリーブ",
+   "zh": "小豆島橄欖",
+   "cn": "小豆岛橄榄",
+   "en": "Shōdoshima olives",
+   "ko": "쇼도시마 올리브"
+  }
+ ],
+ "JP-38": [
+  {
+   "id": "taimeshi",
+   "ja": "鯛めし",
+   "zh": "鯛魚飯",
+   "cn": "鲷鱼饭",
+   "en": "Sea bream rice",
+   "ko": "도미밥"
+  },
+  {
+   "id": "mikan",
+   "ja": "愛媛みかん",
+   "zh": "愛媛蜜柑",
+   "cn": "爱媛蜜柑",
+   "en": "Ehime mandarins",
+   "ko": "에히메 밀감"
+  },
+  {
+   "id": "jakoten",
+   "ja": "じゃこ天",
+   "zh": "雜魚天婦羅",
+   "cn": "杂鱼天妇罗",
+   "en": "Jakoten fish cake",
+   "ko": "자코텐"
+  }
+ ],
+ "JP-39": [
+  {
+   "id": "katsuo-tataki",
+   "ja": "かつおのたたき",
+   "zh": "炙燒鰹魚",
+   "cn": "炙烧鲣鱼",
+   "en": "Seared bonito",
+   "ko": "가다랑어 다타키"
+  },
+  {
+   "id": "sawachi",
+   "ja": "皿鉢料理",
+   "zh": "皿缽料理",
+   "cn": "皿钵料理",
+   "en": "Sawachi platter",
+   "ko": "사와치 요리"
+  },
+  {
+   "id": "yuzu",
+   "ja": "高知ゆず",
+   "zh": "高知香橙",
+   "cn": "高知香橙",
+   "en": "Kōchi yuzu",
+   "ko": "고치 유자"
+  }
+ ],
+ "JP-40": [
+  {
+   "id": "tonkotsu-ramen",
+   "ja": "博多ラーメン",
+   "zh": "博多拉麵",
+   "cn": "博多拉面",
+   "en": "Hakata tonkotsu ramen",
+   "ko": "하카타 라멘"
+  },
+  {
+   "id": "motsunabe",
+   "ja": "もつ鍋",
+   "zh": "內臟鍋",
+   "cn": "内脏锅",
+   "en": "Motsunabe offal hotpot",
+   "ko": "모쓰나베"
+  },
+  {
+   "id": "mentaiko",
+   "ja": "辛子明太子",
+   "zh": "辣味明太子",
+   "cn": "辣味明太子",
+   "en": "Spicy mentaiko roe",
+   "ko": "명란젓"
+  }
+ ],
+ "JP-41": [
+  {
+   "id": "saga-gyu",
+   "ja": "佐賀牛",
+   "zh": "佐賀牛",
+   "cn": "佐贺牛",
+   "en": "Saga beef",
+   "ko": "사가규"
+  },
+  {
+   "id": "yobuko-ika",
+   "ja": "呼子のイカ",
+   "zh": "呼子花枝",
+   "cn": "呼子鱿鱼",
+   "en": "Yobuko squid",
+   "ko": "요부코 오징어"
+  },
+  {
+   "id": "ureshino-cha",
+   "ja": "嬉野茶",
+   "zh": "嬉野茶",
+   "cn": "嬉野茶",
+   "en": "Ureshino tea",
+   "ko": "우레시노 차"
+  }
+ ],
+ "JP-42": [
+  {
+   "id": "champon",
+   "ja": "長崎ちゃんぽん",
+   "zh": "長崎強棒麵",
+   "cn": "长崎强棒面",
+   "en": "Nagasaki champon",
+   "ko": "나가사키 짬뽕"
+  },
+  {
+   "id": "castella",
+   "ja": "カステラ",
+   "zh": "蜂蜜蛋糕",
+   "cn": "蜂蜜蛋糕",
+   "en": "Castella sponge cake",
+   "ko": "카스텔라"
+  },
+  {
+   "id": "sara-udon",
+   "ja": "皿うどん",
+   "zh": "什錦炒麵",
+   "cn": "什锦炒面",
+   "en": "Sara udon",
+   "ko": "사라우동"
+  }
+ ],
+ "JP-43": [
+  {
+   "id": "basashi",
+   "ja": "馬刺し",
+   "zh": "馬肉生魚片",
+   "cn": "马肉生鱼片",
+   "en": "Basashi raw horse",
+   "ko": "말고기 육회"
+  },
+  {
+   "id": "karashi-renkon",
+   "ja": "辛子蓮根",
+   "zh": "芥末蓮藕",
+   "cn": "芥末莲藕",
+   "en": "Mustard lotus root",
+   "ko": "가라시렌콘"
+  },
+  {
+   "id": "taipien",
+   "ja": "太平燕",
+   "zh": "太平燕",
+   "cn": "太平燕",
+   "en": "Taipiien noodle soup",
+   "ko": "다이피엔"
+  }
+ ],
+ "JP-44": [
+  {
+   "id": "toriten",
+   "ja": "とり天",
+   "zh": "炸雞天婦羅",
+   "cn": "炸鸡天妇罗",
+   "en": "Toriten chicken tempura",
+   "ko": "도리텐"
+  },
+  {
+   "id": "dango-jiru",
+   "ja": "だんご汁",
+   "zh": "糰子湯",
+   "cn": "团子汤",
+   "en": "Dango-jiru dumpling soup",
+   "ko": "단고지루"
+  },
+  {
+   "id": "kabosu",
+   "ja": "かぼす",
+   "zh": "臭橙",
+   "cn": "臭橙",
+   "en": "Kabosu citrus",
+   "ko": "가보스"
+  }
+ ],
+ "JP-45": [
+  {
+   "id": "chicken-nanban",
+   "ja": "チキン南蛮",
+   "zh": "南蠻炸雞",
+   "cn": "南蛮炸鸡",
+   "en": "Chicken nanban",
+   "ko": "치킨 난반"
+  },
+  {
+   "id": "miyazaki-gyu",
+   "ja": "宮崎牛",
+   "zh": "宮崎牛",
+   "cn": "宫崎牛",
+   "en": "Miyazaki beef",
+   "ko": "미야자키규"
+  },
+  {
+   "id": "mango",
+   "ja": "太陽のタマゴ",
+   "zh": "太陽之蛋芒果",
+   "cn": "太阳之蛋芒果",
+   "en": "Taiyō no Tamago mango",
+   "ko": "다이요노타마고 망고"
+  }
+ ],
+ "JP-46": [
+  {
+   "id": "kurobuta",
+   "ja": "黒豚しゃぶしゃぶ",
+   "zh": "黑豬涮涮鍋",
+   "cn": "黑猪涮锅",
+   "en": "Black pork shabu-shabu",
+   "ko": "흑돼지 샤부샤부"
+  },
+  {
+   "id": "shirokuma",
+   "ja": "白熊かき氷",
+   "zh": "白熊刨冰",
+   "cn": "白熊刨冰",
+   "en": "Shirokuma shaved ice",
+   "ko": "시로쿠마 빙수"
+  },
+  {
+   "id": "shochu",
+   "ja": "芋焼酎",
+   "zh": "地瓜燒酎",
+   "cn": "红薯烧酒",
+   "en": "Sweet potato shōchū",
+   "ko": "고구마 소주"
+  }
+ ],
+ "JP-47": [
+  {
+   "id": "okinawa-soba",
+   "ja": "沖縄そば",
+   "zh": "沖繩麵",
+   "cn": "冲绳面",
+   "en": "Okinawa soba",
+   "ko": "오키나와 소바"
+  },
+  {
+   "id": "goya-champuru",
+   "ja": "ゴーヤチャンプルー",
+   "zh": "苦瓜什錦炒",
+   "cn": "苦瓜什锦炒",
+   "en": "Gōya chanpurū",
+   "ko": "고야 참푸루"
+  },
+  {
+   "id": "sata-andagi",
+   "ja": "サーターアンダギー",
+   "zh": "沖繩甜甜圈",
+   "cn": "冲绳甜甜圈",
+   "en": "Sātā andagī doughnuts",
+   "ko": "사타안다기"
+  }
+ ]
+}

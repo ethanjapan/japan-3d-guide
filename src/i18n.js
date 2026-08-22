@@ -1,0 +1,225 @@
+const CREDIT =
+  "地図データ: geoBoundaries (OpenStreetMap contributors, ODbL 1.0)　" +
+  "名称・座標: Wikidata (CC0)　写真: Wikimedia Commons (各写真のライセンスは詳細画面に表示)";
+
+export const STRINGS = {
+  zh: {
+    officialSite: "官方網站",
+    officialTourism: "觀光官方網站",
+    officialGov: "地方政府網站",
+    phaseAuto: "自動",
+    phaseMorning: "早晨",
+    phaseDay: "白天",
+    phaseDusk: "黃昏",
+    phaseNight: "夜晚",
+    stampBook: "旅行集章冊",
+    stampHint: "點開都道府縣就會蓋上印章！",
+    weatherToday: "今日天氣",
+    pop: "降雨機率",
+    searchPh: "搜尋景點…",
+    title: "日本 3D 旅遊導覽",
+    hint: "拖曳旋轉．滾動縮放．點選都道府縣",
+    hintSelected: "按 Esc 或點擊海面返回",
+    close: "關閉",
+    fallbackTitle: "47 都道府縣一覽",
+    fallbackNote: "您的瀏覽器不支援 WebGL，以清單方式呈現。",
+    panelNote: "景點資料整備中。",
+    spotsLabel: "個景點",
+    gourmet: "在地美食",
+    fullDesc: "官方影片",
+    courses: "推薦行程",
+    courseTip: "點選行程，路線就會畫在地圖上",
+    visitorCenter: "旅遊服務中心",
+    daysUnit: "日",
+    infoBtn: "實用資訊",
+    back: "返回列表",
+    openMap: "在 Google 地圖開啟",
+    source: "名稱與座標來自 Wikidata，照片來自 Wikimedia Commons",
+    guideLabel: "導遊 RINKA｜MV STUDIO",
+    welcomeText: "我是 RINKA！點選都道府縣，帶你看看日本好玩的地方。",
+    credit: CREDIT,
+  },
+  ja: {
+    officialSite: "公式サイト",
+    officialTourism: "観光公式サイト",
+    officialGov: "自治体サイト",
+    phaseAuto: "自動",
+    phaseMorning: "朝",
+    phaseDay: "昼",
+    phaseDusk: "夕方",
+    phaseNight: "夜",
+    stampBook: "旅のしおり",
+    stampHint: "都道府県を開くとスタンプが押されるよ！",
+    weatherToday: "今日の天気",
+    pop: "降水確率",
+    searchPh: "観光地を検索…",
+    title: "日本3D観光ガイド",
+    hint: "ドラッグで回転・スクロールで拡大・都道府県をクリック",
+    hintSelected: "Escキーまたは海面のクリックで戻る",
+    close: "閉じる",
+    fallbackTitle: "47都道府県一覧",
+    fallbackNote: "お使いのブラウザはWebGLに対応していないため、一覧で表示します。",
+    panelNote: "観光地データは準備中です。",
+    spotsLabel: "の観光地",
+    gourmet: "名物グルメ",
+    fullDesc: "公式動画",
+    courses: "おすすめモデルコース",
+    courseTip: "コースを選ぶと地図上にルートが描かれます",
+    visitorCenter: "観光案内所",
+    daysUnit: "日間",
+    infoBtn: "旅の基本情報",
+    back: "一覧に戻る",
+    openMap: "Google Mapsで開く",
+    source: "名称・座標は Wikidata、写真は Wikimedia Commons",
+    guideLabel: "案内人 RINKA｜MV STUDIO",
+    welcomeText: "RINKAだよ。都道府県をクリックして、日本の楽しいところを案内するね。",
+    credit: CREDIT,
+  },
+  cn: {
+    officialSite: "官方网站",
+    officialTourism: "旅游官方网站",
+    officialGov: "地方政府网站",
+    phaseAuto: "自动",
+    phaseMorning: "早晨",
+    phaseDay: "白天",
+    phaseDusk: "黄昏",
+    phaseNight: "夜晚",
+    stampBook: "旅行集章册",
+    stampHint: "点开都道府县就会盖上印章！",
+    weatherToday: "今日天气",
+    pop: "降雨概率",
+    searchPh: "搜索景点…",
+    title: "日本 3D 旅游导览",
+    hint: "拖动旋转．滚动缩放．点选都道府县",
+    hintSelected: "按 Esc 或点击海面返回",
+    close: "关闭",
+    fallbackTitle: "47 都道府县一览",
+    fallbackNote: "您的浏览器不支持 WebGL，以列表方式呈现。",
+    panelNote: "景点数据整备中。",
+    spotsLabel: "个景点",
+    gourmet: "当地美食",
+    fullDesc: "官方影片",
+    courses: "推荐行程",
+    daysUnit: "日",
+    courseTip: "点选行程，路线就会画在地图上",
+    visitorCenter: "旅游服务中心",
+    back: "返回列表",
+    openMap: "在 Google 地图打开",
+    source: "名称与坐标来自 Wikidata，照片来自 Wikimedia Commons",
+    infoBtn: "实用信息",
+    guideLabel: "导游 RINKA｜MV STUDIO",
+    welcomeText: "我是 RINKA！点选都道府县，带你看看日本好玩的地方。",
+    credit: CREDIT,
+  },
+  en: {
+    officialSite: "Official sites",
+    officialTourism: "Tourism site",
+    officialGov: "Prefectural site",
+    phaseAuto: "Auto",
+    phaseMorning: "Morning",
+    phaseDay: "Day",
+    phaseDusk: "Dusk",
+    phaseNight: "Night",
+    stampBook: "Stamp book",
+    stampHint: "Open a prefecture and you'll collect its stamp!",
+    weatherToday: "Today's weather",
+    pop: "Rain",
+    searchPh: "Search attractions…",
+    title: "Japan 3D Travel Guide",
+    hint: "Drag to rotate · scroll to zoom · click a prefecture",
+    hintSelected: "Press Esc or click the sea to go back",
+    close: "Close",
+    fallbackTitle: "All 47 prefectures",
+    fallbackNote: "Your browser doesn't support WebGL, so here's the list view.",
+    panelNote: "Attraction data is being prepared.",
+    spotsLabel: " attractions",
+    gourmet: "Local food",
+    fullDesc: "Official video",
+    courses: "Model itineraries",
+    courseTip: "Pick an itinerary and its route is drawn on the map",
+    visitorCenter: "Tourist information",
+    daysUnit: " days",
+    infoBtn: "Travel basics",
+    back: "Back to list",
+    openMap: "Open in Google Maps",
+    source: "Names and coordinates from Wikidata; photos from Wikimedia Commons",
+    guideLabel: "Your guide RINKA | MV STUDIO",
+    welcomeText: "I'm RINKA! Click a prefecture and I'll show you around Japan.",
+    credit: CREDIT,
+  },
+  ko: {
+    officialSite: "공식 사이트",
+    officialTourism: "관광 공식 사이트",
+    officialGov: "지자체 사이트",
+    phaseAuto: "자동",
+    phaseMorning: "아침",
+    phaseDay: "낮",
+    phaseDusk: "노을",
+    phaseNight: "밤",
+    stampBook: "여행 스탬프북",
+    stampHint: "도도부현을 열면 스탬프가 찍혀!",
+    weatherToday: "오늘의 날씨",
+    pop: "강수확률",
+    searchPh: "관광지 검색…",
+    title: "일본 3D 여행 가이드",
+    hint: "드래그로 회전 · 스크롤로 확대 · 도도부현 클릭",
+    hintSelected: "Esc 키 또는 바다를 클릭하면 돌아갑니다",
+    close: "닫기",
+    fallbackTitle: "47개 도도부현 목록",
+    fallbackNote: "브라우저가 WebGL을 지원하지 않아 목록으로 표시합니다.",
+    panelNote: "관광지 데이터를 준비 중입니다.",
+    spotsLabel: "개 관광지",
+    gourmet: "현지 먹거리",
+    fullDesc: "공식 영상",
+    courses: "추천 코스",
+    daysUnit: "일",
+    courseTip: "코스를 고르면 지도 위에 경로가 그려집니다",
+    visitorCenter: "관광 안내소",
+    back: "목록으로",
+    openMap: "Google 지도에서 열기",
+    source: "명칭·좌표는 Wikidata, 사진은 Wikimedia Commons",
+    infoBtn: "여행 기본 정보",
+    guideLabel: "가이드 RINKA | MV STUDIO",
+    welcomeText: "나는 RINKA! 도도부현을 클릭하면 일본의 재미있는 곳을 안내할게.",
+    credit: CREDIT,
+  },
+};
+
+const normalize = (raw) => {
+  if (!raw) return null;
+  const r = raw.toLowerCase();
+  if (r.startsWith("ja")) return "ja";
+  if (r.startsWith("ko")) return "ko";
+  if (r.startsWith("en")) return "en";
+  if (r === "cn" || r.startsWith("zh-cn") || r.startsWith("zh-hans") || r.startsWith("zh-sg")) return "cn";
+  if (r.startsWith("zh")) return "zh";
+  return null;
+};
+
+/** URLの ?lang= → localStorage → ブラウザ既定 の順に強い。 */
+export const detectLang = () => {
+  const url = normalize(new URLSearchParams(location.search).get("lang"));
+  if (url) return url;
+
+  const saved = localStorage.getItem("lang");
+  if (saved in STRINGS) return saved;
+
+  return normalize(navigator.language) ?? "zh";
+};
+
+export const applyLang = (lang) => {
+  const dict = STRINGS[lang];
+  document.documentElement.lang = lang === "zh" ? "zh-Hant" : lang === "cn" ? "zh-Hans" : lang;
+
+  for (const el of document.querySelectorAll("[data-i18n]")) {
+    const key = el.dataset.i18n;
+    if (dict[key]) el.textContent = dict[key];
+  }
+  for (const el of document.querySelectorAll("[data-i18n-aria]")) {
+    const key = el.dataset.i18nAria;
+    if (dict[key]) el.setAttribute("aria-label", dict[key]);
+  }
+  for (const btn of document.querySelectorAll(".lang")) {
+    btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
+  }
+};

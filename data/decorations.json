@@ -1,0 +1,29 @@
+{
+  "_comment": "地面デコ・動物の配置。pref指定=都道府県グループの子(選択で一緒に隆起)。sea:true=海上(scene直下)。dx/dyは都道府県中心からのオフセット(データ座標)。根拠は実在の名所・産地・生息地。台湾版(22県市)よりポリゴンが小さいので、オフセットとsizeは台湾版の半分程度に取る。",
+  "items": [
+    { "file": "crane", "pref": "JP-01", "dx": 14, "dy": -6, "size": 7, "note": "釧路湿原=タンチョウ" },
+    { "file": "apple", "pref": "JP-02", "dx": -3, "dy": 3, "size": 5.5, "note": "青森=りんご生産量全国一" },
+    { "file": "sakura", "pref": "JP-02", "dx": 3, "dy": -2, "size": 6, "note": "弘前城の桜" },
+    { "file": "kamakura-snow", "pref": "JP-05", "dx": 2, "dy": 2, "size": 5.5, "note": "横手のかまくら" },
+    { "file": "thatched-house", "pref": "JP-07", "dx": -3, "dy": -2, "size": 5.5, "note": "大内宿の茅葺き" },
+    { "file": "lighthouse", "pref": "JP-12", "dx": 5, "dy": 1, "size": 5.5, "note": "犬吠埼灯台" },
+    { "file": "tower", "pref": "JP-13", "dx": 2, "dy": 1.5, "size": 6.5, "note": "東京スカイツリー" },
+    { "file": "rice-terrace", "pref": "JP-15", "dx": -3, "dy": -3, "size": 6, "note": "星峠の棚田" },
+    { "file": "gassho", "pref": "JP-21", "dx": -4, "dy": 4, "size": 6, "note": "白川郷の合掌造り" },
+    { "file": "tea-field", "pref": "JP-22", "dx": -3, "dy": 1, "size": 6, "note": "牧之原の茶畑" },
+    { "file": "snow-monkey", "pref": "JP-20", "dx": 4, "dy": 5, "size": 5.5, "note": "地獄谷野猿公苑" },
+    { "file": "torii", "pref": "JP-26", "dx": -1, "dy": -3, "size": 6, "note": "伏見稲荷の千本鳥居" },
+    { "file": "deer", "pref": "JP-29", "dx": 1, "dy": 1, "size": 5, "note": "奈良公園の鹿" },
+    { "file": "castle", "pref": "JP-28", "dx": 1, "dy": -2, "size": 6, "note": "姫路城" },
+    { "file": "sand-dune", "pref": "JP-31", "dx": 2, "dy": 2, "size": 5.5, "note": "鳥取砂丘" },
+    { "file": "sea-torii", "pref": "JP-34", "dx": -2, "dy": -2, "size": 6, "note": "厳島神社の大鳥居" },
+    { "file": "udon", "pref": "JP-37", "dx": 0, "dy": 1, "size": 5, "note": "讃岐うどん" },
+    { "file": "yatai", "pref": "JP-40", "dx": 2, "dy": -2, "size": 5.5, "note": "中洲の屋台" },
+    { "file": "volcano", "pref": "JP-46", "dx": 4, "dy": 1, "size": 6.5, "note": "桜島" },
+    { "file": "shisa", "pref": "JP-47", "dx": 5, "dy": 4, "size": 5.5, "note": "沖縄のシーサー" },
+    { "file": "fishing-boat", "sea": true, "x": 60, "y": 60, "size": 7, "note": "三陸沖の漁船" },
+    { "file": "whale", "sea": true, "x": 8, "y": -60, "size": 8, "note": "高知沖のクジラ" },
+    { "file": "ferry", "sea": true, "x": -50, "y": -30, "size": 7, "note": "瀬戸内のフェリー" },
+    { "file": "seagull", "sea": true, "x": 40, "y": 95, "size": 5, "note": "津軽海峡のカモメ" }
+  ]
+}
