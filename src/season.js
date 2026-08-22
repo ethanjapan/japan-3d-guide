@@ -23,12 +23,14 @@ const japanMonth = () =>
 export const seasonOf = (m) =>
   m >= 3 && m <= 5 ? "spring" : m >= 6 && m <= 8 ? "summer" : m >= 9 && m <= 11 ? "autumn" : "winter";
 
+// size は地図のワールド単位。地図は約250単位なので、花火を22にしたら島より大きくなった(実測)。
+// 舞うものは「地図の邪魔をしない大きさ」が上限。多すぎても地形が読めなくなる。
 const CONF = {
-  spring: { file: "season-sakura", n: 26, size: 6.5, fall: 3.2, drift: 5.0, spin: 0.9, opacity: 0.95 },
-  autumn: { file: "season-momiji", n: 24, size: 7.0, fall: 3.6, drift: 4.2, spin: 1.4, opacity: 0.95 },
-  winter: { file: "season-snow", n: 34, size: 5.0, fall: 2.4, drift: 2.2, spin: 0.2, opacity: 0.9 },
+  spring: { file: "season-sakura", n: 22, size: 5.5, fall: 3.2, drift: 5.0, spin: 0.9, opacity: 0.9 },
+  autumn: { file: "season-momiji", n: 20, size: 6.0, fall: 3.6, drift: 4.2, spin: 1.4, opacity: 0.9 },
+  winter: { file: "season-snow", n: 30, size: 4.5, fall: 2.4, drift: 2.2, spin: 0.2, opacity: 0.85 },
   // 花火は落ちない。決まった位置で膨らんで消えるので、専用の更新をする
-  summer: { file: "season-hanabi", n: 7, size: 22, fall: 0, drift: 0, spin: 0, opacity: 0.9 },
+  summer: { file: "season-hanabi", n: 5, size: 13, fall: 0, drift: 0, spin: 0, opacity: 0.85 },
 };
 
 export const createSeason = (stage, reduceMotion) => {
@@ -73,7 +75,8 @@ export const createSeason = (stage, reduceMotion) => {
       sp.scale.setScalar(c.size * (0.7 + Math.random() * 0.6));
       const x = (Math.random() - 0.5) * span * 1.15;
       const z = (Math.random() - 0.5) * span * 1.1;
-      const y = s === "summer" ? span * 0.22 + Math.random() * span * 0.16
+      // 花火は空の高いところに。低いと陸に刺さって見える
+      const y = s === "summer" ? span * 0.30 + Math.random() * span * 0.18
                                : Math.random() * span * 0.42;
       sp.position.set(x, y, z);
       group.add(sp);

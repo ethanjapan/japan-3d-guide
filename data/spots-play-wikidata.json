@@ -1,0 +1,2211 @@
+{
+ "JP-01": [
+  {
+   "name_ja": "おたる水族館",
+   "kana": "おたるすいぞくかん",
+   "wp": "おたる水族館",
+   "qid": "Q11261729",
+   "en": "Otaru Aquarium",
+   "zh": "小樽水族館",
+   "cn": "小樽水族馆",
+   "ko": "오타루 수족관",
+   "coord": [
+    43.23681,
+    141.01125
+   ],
+   "image": "Otaruaquarium 01.jpg"
+  },
+  {
+   "name_ja": "ルスツリゾート",
+   "kana": "ルスツリゾート",
+   "wp": "ルスツリゾート",
+   "qid": "Q7382688",
+   "en": "Rusutsu Resort",
+   "zh": "留壽都度假村",
+   "cn": "留寿都度假村",
+   "ko": "루스쓰 리조트",
+   "coord": [
+    42.74968,
+    140.90329
+   ],
+   "image": "Rusutsu WestMt(200703).jpg"
+  },
+  {
+   "name_ja": "藻岩山",
+   "kana": "もいわやま",
+   "wp": "藻岩山",
+   "qid": null,
+   "en": "Mount Moiwa",
+   "zh": "藻岩山",
+   "cn": "藻岩山",
+   "ko": "모이와산",
+   "coord": [
+    43.03,
+    141.323
+   ],
+   "image": null
+  }
+ ],
+ "JP-02": [
+  {
+   "name_ja": "浅虫水族館",
+   "kana": "あさむしすいぞくかん",
+   "wp": "浅虫水族館",
+   "qid": "Q4803495",
+   "en": "Asamushi Aquarium",
+   "zh": "淺蟲水族館",
+   "cn": "浅虫水族馆",
+   "ko": "아사무시 수족관",
+   "coord": [
+    40.89758,
+    140.86278
+   ],
+   "image": "Asamushi Aquarium Aomori Japan03n.jpg"
+  },
+  {
+   "name_ja": "八甲田山",
+   "kana": "はっこうださん",
+   "wp": "八甲田山",
+   "qid": "Q3047571",
+   "en": "Hakkōda Mountains",
+   "zh": "八甲田山",
+   "cn": "八甲田山",
+   "ko": "핫코다산",
+   "coord": [
+    40.65889,
+    140.87722
+   ],
+   "image": "Suiren Pond and the Hakkōda Mountains late autumn.jpg"
+  },
+  {
+   "name_ja": "種差海岸",
+   "kana": "たねさしかいがん",
+   "wp": "種差海岸",
+   "qid": "Q7682565",
+   "en": "Tanesashi Coast",
+   "zh": "種差海岸",
+   "cn": "种差海岸",
+   "ko": "다네사시 해안",
+   "coord": [
+    40.5173,
+    141.602
+   ],
+   "image": "葦毛崎展望台 - panoramio (1).jpg"
+  }
+ ],
+ "JP-03": [
+  {
+   "name_ja": "小岩井農場まきば園",
+   "kana": "こいわいのうじょうまきばえん",
+   "wp": "小岩井農場",
+   "qid": "Q11460030",
+   "en": "Koiwai Farm",
+   "zh": "小岩井農場",
+   "cn": "小岩井农场",
+   "ko": "고이와이 농장",
+   "coord": [
+    39.7505,
+    141.01708
+   ],
+   "image": "Sheep pusture in Koiwai Farm.jpg"
+  },
+  {
+   "name_ja": "安比高原",
+   "kana": "あっぴこうげん",
+   "wp": "安比高原",
+   "qid": "Q11450901",
+   "en": "Appi Kogen Ski Resort",
+   "zh": "安比高原滑雪場",
+   "cn": "安比高原滑雪场",
+   "ko": "아피 고원",
+   "coord": [
+    39.99444,
+    140.96417
+   ],
+   "image": "Appigondola.jpg"
+  },
+  {
+   "name_ja": "宮沢賢治童話村",
+   "kana": "みやざわけんじどうわむら",
+   "wp": "宮沢賢治童話村",
+   "qid": null,
+   "en": "Miyazawa Kenji Fairy Tale Village",
+   "zh": "宮澤賢治童話村",
+   "cn": "宫泽贤治童话村",
+   "ko": "미야자와 겐지 동화마을",
+   "coord": [
+    39.391,
+    141.136
+   ],
+   "image": null
+  }
+ ],
+ "JP-04": [
+  {
+   "name_ja": "仙台うみの杜水族館",
+   "kana": "せんだいうみのもりすいぞくかん",
+   "wp": "仙台うみの杜水族館",
+   "qid": "Q17222417",
+   "en": "Sendai Umino-Mori Aquarium",
+   "zh": "仙台海之杜水族館",
+   "cn": "仙台海之杜水族馆",
+   "ko": "센다이 우미노모리 수족관",
+   "coord": [
+    38.27108,
+    140.98067
+   ],
+   "image": "Sendai Umino-Mori Aquarium.JPG"
+  },
+  {
+   "name_ja": "八木山ベニーランド",
+   "kana": "やぎやまベニーランド",
+   "wp": "八木山ベニーランド",
+   "qid": "Q11391333",
+   "en": "Benyland",
+   "zh": "八木山Benny Land",
+   "cn": "八木山Benny Land",
+   "ko": "야기야마 베니랜드",
+   "coord": [
+    38.24667,
+    140.84861
+   ],
+   "image": "Yagiyama BenyLand 2022.jpg"
+  },
+  {
+   "name_ja": "秋保大滝",
+   "kana": "あきうおおたき",
+   "wp": "秋保大滝",
+   "qid": "Q4701257",
+   "en": "Akiu Great Falls",
+   "zh": "秋保大瀑布",
+   "cn": "秋保大瀑布",
+   "ko": "아키우 대폭포",
+   "coord": [
+    38.27492,
+    140.60292
+   ],
+   "image": "Akiu Falls Valley 2008.jpg"
+  }
+ ],
+ "JP-05": [
+  {
+   "name_ja": "男鹿水族館GAO",
+   "kana": "おがすいぞくかんガオ",
+   "wp": "男鹿水族館GAO",
+   "qid": "Q11595485",
+   "en": "Oga Aquarium Gao",
+   "zh": "秋田縣立男鹿水族館",
+   "cn": "秋田县立男鹿水族馆",
+   "ko": "오가 수족관 GAO",
+   "coord": [
+    39.94217,
+    139.70458
+   ],
+   "image": "Oga Aquarium 20210618.jpg"
+  },
+  {
+   "name_ja": "たざわ湖スキー場",
+   "kana": "たざわこスキーじょう",
+   "wp": "たざわ湖スキー場",
+   "qid": "Q11270976",
+   "en": "Tazawako Ski Area",
+   "zh": "田澤湖滑雪場",
+   "cn": "田泽湖滑雪场",
+   "ko": "다자와코 스키장",
+   "coord": [
+    39.76111,
+    140.76667
+   ],
+   "image": "たざわ湖スキー場から田沢湖 - panoramio.jpg"
+  },
+  {
+   "name_ja": "大森山動物園",
+   "kana": "おおもりやまどうぶつえん",
+   "wp": "秋田市大森山動物園",
+   "qid": "Q11595312",
+   "en": "Akita City Ōmoriyama Zoo",
+   "zh": "大森山動物園",
+   "cn": "大森山动物园",
+   "ko": "오모리야마 동물원",
+   "coord": [
+    39.67215,
+    140.07738
+   ],
+   "image": "Entrance gate of the Akita Omoriyama Zoo 20260628a.jpg"
+  }
+ ],
+ "JP-06": [
+  {
+   "name_ja": "鶴岡市立加茂水族館",
+   "kana": "つるおかしりつかもすいぞくかん",
+   "wp": "鶴岡市立加茂水族館",
+   "qid": "Q11675955",
+   "en": "Kamo Aquarium",
+   "zh": "鶴岡市立加茂水族館",
+   "cn": "鹤冈市立加茂水族馆",
+   "ko": "쓰루오카시립 가모 수족관",
+   "coord": [
+    38.76222,
+    139.72497
+   ],
+   "image": "Kamo Aquarium 20160505.jpg"
+  },
+  {
+   "name_ja": "蔵王温泉スキー場",
+   "kana": "ざおうおんせんスキーじょう",
+   "wp": "蔵王温泉スキー場",
+   "qid": "Q8047625",
+   "en": "Yamagata Zao Onsen Ski Resort",
+   "zh": "山形藏王溫泉滑雪場",
+   "cn": "山形藏王温泉滑雪场",
+   "ko": "자오 온천 스키장",
+   "coord": [
+    38.1673,
+    140.394
+   ],
+   "image": "Zao onsen ski area (51843582704).jpg"
+  },
+  {
+   "name_ja": "上山城",
+   "kana": "かみのやまじょう",
+   "wp": "上山城",
+   "qid": "Q847251",
+   "en": "Kaminoyama Castle",
+   "zh": "上山城",
+   "cn": "上山城",
+   "ko": "가미노야마성",
+   "coord": [
+    38.1575,
+    140.27611
+   ],
+   "image": "Kaminoyama Castle 20230806b.jpg"
+  }
+ ],
+ "JP-07": [
+  {
+   "name_ja": "スパリゾートハワイアンズ",
+   "kana": "スパリゾートハワイアンズ",
+   "wp": "スパリゾートハワイアンズ",
+   "qid": "Q7572157",
+   "en": "Spa Resort Hawaiians",
+   "zh": "夏威夷渡假村",
+   "cn": "夏威夷渡假村",
+   "ko": "스파 리조트 하와이언스",
+   "coord": [
+    36.99363,
+    140.81652
+   ],
+   "image": "Spa Resort Hawaiians appearance.Jan.2014.JPG"
+  },
+  {
+   "name_ja": "アクアマリンふくしま",
+   "kana": "アクアマリンふくしま",
+   "wp": "アクアマリンふくしま",
+   "qid": "Q4782699",
+   "en": "Aquamarine Fukushima",
+   "zh": "磐城水族馆",
+   "cn": "磐城水族馆",
+   "ko": "아쿠아마린 후쿠시마",
+   "coord": [
+    36.94275,
+    140.9015
+   ],
+   "image": "Aquamarine Fukushima 20100124.JPG"
+  },
+  {
+   "name_ja": "磐梯山",
+   "kana": "ばんだいさん",
+   "wp": "磐梯山",
+   "qid": "Q714605",
+   "en": "Mount Bandai",
+   "zh": "磐梯山",
+   "cn": "磐梯山",
+   "ko": "반다이산",
+   "coord": [
+    37.60083,
+    140.07222
+   ],
+   "image": "Mt.Bandai 10.jpg"
+  }
+ ],
+ "JP-08": [
+  {
+   "name_ja": "アクアワールド大洗",
+   "kana": "アクアワールドおおあらい",
+   "wp": "アクアワールド茨城県大洗水族館",
+   "qid": "Q4782624",
+   "en": "Aqua World",
+   "zh": "大洗水族館",
+   "cn": "大洗水族馆",
+   "ko": "아쿠아월드 오아라이",
+   "coord": [
+    36.33333,
+    140.59389
+   ],
+   "image": "Aqua World.jpg"
+  },
+  {
+   "name_ja": "筑波山",
+   "kana": "つくばさん",
+   "wp": "筑波山",
+   "qid": "Q1754619",
+   "en": "Mount Tsukuba",
+   "zh": "筑波山",
+   "cn": "筑波山",
+   "ko": "쓰쿠바산",
+   "coord": [
+    36.22581,
+    140.105
+   ],
+   "image": "Mount Tsukuba seen from the WSW (2006).jpg"
+  },
+  {
+   "name_ja": "竜神大吊橋",
+   "kana": "りゅうじんおおつりばし",
+   "wp": "竜神大吊橋",
+   "qid": "Q11598381",
+   "en": "Ryūjin kyō",
+   "zh": "龍神大吊橋",
+   "cn": "龙神大吊桥",
+   "ko": "류진 대현수교",
+   "coord": [
+    36.68417,
+    140.46722
+   ],
+   "image": null
+  }
+ ],
+ "JP-09": [
+  {
+   "name_ja": "那須ハイランドパーク",
+   "kana": "なすハイランドパーク",
+   "wp": "那須ハイランドパーク",
+   "qid": "Q11642890",
+   "en": "Nasu Highland Park",
+   "zh": "那須高原樂園",
+   "cn": "那须高原乐园",
+   "ko": "나스 하이랜드 파크",
+   "coord": [
+    37.06397,
+    139.96478
+   ],
+   "image": "那須ハイランドパーク全景.jpg"
+  },
+  {
+   "name_ja": "那須どうぶつ王国",
+   "kana": "なすどうぶつおうこく",
+   "wp": "那須どうぶつ王国",
+   "qid": "Q11642887",
+   "en": "Nasu Animal Kingdom",
+   "zh": "那須動物王國",
+   "cn": "那须动物王国",
+   "ko": "나스 동물왕국",
+   "coord": [
+    37.12889,
+    140.03694
+   ],
+   "image": "Nasu Animal Kingdom 20091101 0906.jpg"
+  },
+  {
+   "name_ja": "大谷資料館",
+   "kana": "おおやしりょうかん",
+   "wp": "大谷石",
+   "qid": "Q8081802",
+   "en": "Ōya Stone",
+   "zh": "大谷資料館",
+   "cn": "大谷资料馆",
+   "ko": "오야 자료관",
+   "coord": [
+    36.586,
+    139.83
+   ],
+   "image": "Ooyaishi.jpg"
+  }
+ ],
+ "JP-10": [
+  {
+   "name_ja": "谷川岳ロープウェイ",
+   "kana": "たにがわだけロープウェイ",
+   "wp": "谷川岳",
+   "qid": "Q1109030",
+   "en": "Mount Tanigawa",
+   "zh": "谷川岳",
+   "cn": "谷川岳",
+   "ko": "타니가와산",
+   "coord": [
+    36.83722,
+    138.92972
+   ],
+   "image": "Tanigawa-dake, October 2007.jpg"
+  },
+  {
+   "name_ja": "群馬サファリパーク",
+   "kana": "ぐんまサファリパーク",
+   "wp": "群馬サファリパーク",
+   "qid": "Q11609531",
+   "en": "Gunma Safari Park",
+   "zh": "群馬野生動物園",
+   "cn": "群马野生动物园",
+   "ko": "군마 사파리 파크",
+   "coord": [
+    36.22575,
+    138.88519
+   ],
+   "image": "White tiger2.jpg"
+  },
+  {
+   "name_ja": "赤城山",
+   "kana": "あかぎやま",
+   "wp": "赤城山",
+   "qid": "Q415251",
+   "en": "Mount Akagi",
+   "zh": "赤城山",
+   "cn": "赤城山",
+   "ko": "아카기산",
+   "coord": [
+    36.56083,
+    139.19361
+   ],
+   "image": "MountAkagi.jpg"
+  }
+ ],
+ "JP-11": [
+  {
+   "name_ja": "西武園ゆうえんち",
+   "kana": "せいぶえんゆうえんち",
+   "wp": "西武園ゆうえんち",
+   "qid": "Q11628910",
+   "en": "Seibu-en",
+   "zh": "西武園遊園地",
+   "cn": "西武园游园地",
+   "ko": "세이부엔 유원지",
+   "coord": [
+    35.76831,
+    139.44219
+   ],
+   "image": "5D3K0201 (11152952796).jpg"
+  },
+  {
+   "name_ja": "東武動物公園",
+   "kana": "とうぶどうぶつこうえん",
+   "wp": "東武動物公園",
+   "qid": "Q11527526",
+   "en": "Tobu Zoo",
+   "zh": "东武动物园",
+   "cn": "东武动物园",
+   "ko": "도부동물공원",
+   "coord": [
+    36.02008,
+    139.71972
+   ],
+   "image": "Ferris wheel in Tobu Zoo Park 001.jpg"
+  },
+  {
+   "name_ja": "国営武蔵丘陵森林公園",
+   "kana": "こくえいむさしきゅうりょうしんりんこうえん",
+   "wp": "国営武蔵丘陵森林公園",
+   "qid": "Q11420638",
+   "en": "Musashi Kyūryō National Government Park",
+   "zh": "國營武藏丘陵森林公園",
+   "cn": "国营武藏丘陵森林公园",
+   "ko": "국영 무사시큐료 삼림공원",
+   "coord": [
+    36.0863,
+    139.37
+   ],
+   "image": "Musashi Kyuryo Nationnal Government Park South Gate 1.JPG"
+  }
+ ],
+ "JP-12": [
+  {
+   "name_ja": "鴨川シーワールド",
+   "kana": "かもがわシーワールド",
+   "wp": "鴨川シーワールド",
+   "qid": "Q553044",
+   "en": "Kamogawa Sea World",
+   "zh": "鴨川海洋世界",
+   "cn": "鸭川海洋世界",
+   "ko": "가모가와 시월드",
+   "coord": [
+    35.11614,
+    140.12058
+   ],
+   "image": "南総 2013122110350000.jpg"
+  },
+  {
+   "name_ja": "マザー牧場",
+   "kana": "マザーぼくじょう",
+   "wp": "マザー牧場",
+   "qid": "Q575499",
+   "en": "Mother Farm",
+   "zh": "母親牧場",
+   "cn": "母亲牧场",
+   "ko": "마더 목장",
+   "coord": [
+    35.24603,
+    139.93483
+   ],
+   "image": "Motherfarm.jpg"
+  },
+  {
+   "name_ja": "東京ドイツ村",
+   "kana": "とうきょうドイツむら",
+   "wp": "東京ドイツ村",
+   "qid": "Q11235188",
+   "en": "Country Farm Tokyo German Village",
+   "zh": "東京德國村",
+   "cn": "东京德国村",
+   "ko": "도쿄 도이쓰무라",
+   "coord": [
+    35.40556,
+    140.05944
+   ],
+   "image": "ドイツ村イルミ.jpg"
+  }
+ ],
+ "JP-13": [
+  {
+   "name_ja": "東京タワー",
+   "kana": "とうきょうタワー",
+   "wp": "東京タワー",
+   "qid": "Q183536",
+   "en": "Tokyo Tower",
+   "zh": "東京鐵塔",
+   "cn": "东京铁塔",
+   "ko": "도쿄 타워",
+   "coord": [
+    35.65861,
+    139.74556
+   ],
+   "image": "Tokyo Tower 2023.jpg"
+  },
+  {
+   "name_ja": "すみだ水族館",
+   "kana": "すみだすいぞくかん",
+   "wp": "すみだ水族館",
+   "qid": "Q8134074",
+   "en": "Sumida Aquarium",
+   "zh": "墨田水族館",
+   "cn": "墨田水族馆",
+   "ko": "스미다 수족관",
+   "coord": [
+    35.70989,
+    139.80986
+   ],
+   "image": "Tokyo Soramachi 2012.JPG"
+  },
+  {
+   "name_ja": "豊洲市場",
+   "kana": "とよすしじょう",
+   "wp": "豊洲市場",
+   "qid": "Q11633916",
+   "en": "Toyosu market",
+   "zh": "丰洲市场",
+   "cn": "丰洲市场",
+   "ko": "도요스 시장",
+   "coord": [
+    35.64417,
+    139.78361
+   ],
+   "image": "Toyosu fish market-4b.jpg"
+  }
+ ],
+ "JP-14": [
+  {
+   "name_ja": "横浜・八景島シーパラダイス",
+   "kana": "よこはまはっけいじまシーパラダイス",
+   "wp": "横浜・八景島シーパラダイス",
+   "qid": "Q863153",
+   "en": "Yokohama Hakkeijima Sea Paradise",
+   "zh": "橫濱八景島海洋公園",
+   "cn": "横滨八景岛海洋公园",
+   "ko": "요코하마 핫케이지마 시 파라다이스",
+   "coord": [
+    35.33744,
+    139.64733
+   ],
+   "image": "Yokohama Hakkeijima Sea Paradise.jpg"
+  },
+  {
+   "name_ja": "新江ノ島水族館",
+   "kana": "しんえのしますいぞくかん",
+   "wp": "新江ノ島水族館",
+   "qid": "Q11502657",
+   "en": "Enoshima Aquarium",
+   "zh": "新江之島水族館",
+   "cn": "新江之岛水族馆",
+   "ko": "신에노시마 수족관",
+   "coord": [
+    35.30967,
+    139.47989
+   ],
+   "image": "New Enoshima Aquarium.JPG"
+  },
+  {
+   "name_ja": "よこはまコスモワールド",
+   "kana": "よこはまコスモワールド",
+   "wp": "よこはまコスモワールド",
+   "qid": "Q11262875",
+   "en": "Yokohama Cosmo World",
+   "zh": "橫濱宇宙樂園",
+   "cn": "横滨宇宙乐园",
+   "ko": "요코하마 코스모월드",
+   "coord": [
+    35.4552,
+    139.63668
+   ],
+   "image": "Yokohama-Japon112.JPG"
+  }
+ ],
+ "JP-15": [
+  {
+   "name_ja": "マリンピア日本海",
+   "kana": "マリンピアにほんかい",
+   "wp": "新潟市水族館マリンピア日本海",
+   "qid": null,
+   "en": "Marinepia Nihonkai Aquarium",
+   "zh": "新潟市水族館",
+   "cn": "新潟市水族馆",
+   "ko": "마린피아 니혼카이",
+   "coord": [
+    37.935,
+    139.033
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "GALA湯沢スキー場",
+   "kana": "ガーラゆざわスキーじょう",
+   "wp": "ガーラ湯沢スキー場",
+   "qid": "Q11296546",
+   "en": "Gala Yuzawa",
+   "zh": "GALA湯澤滑雪場",
+   "cn": "GALA汤泽滑雪场",
+   "ko": "갈라유자와역 스키장",
+   "coord": [
+    36.95139,
+    138.77861
+   ],
+   "image": "Gala Yuzawa 03.jpg"
+  },
+  {
+   "name_ja": "笹川流れ",
+   "kana": "ささがわながれ",
+   "wp": "笹川流れ",
+   "qid": "Q11602577",
+   "en": "Sasagawa Nagare",
+   "zh": "笹川水流",
+   "cn": "笹川水流",
+   "ko": "사사가와나가레",
+   "coord": [
+    38.57,
+    139.464
+   ],
+   "image": "Maoroshi, Murakami, Niigata Prefecture 958-0001, Japan - panoramio (1).jpg"
+  }
+ ],
+ "JP-16": [
+  {
+   "name_ja": "富山市ファミリーパーク",
+   "kana": "とやましファミリーパーク",
+   "wp": "富山市ファミリーパーク",
+   "qid": "Q11456382",
+   "en": "Toyama Municipal Family Park Zoo",
+   "zh": "富山市家庭公園",
+   "cn": "富山市家庭公园",
+   "ko": "도야마시 패밀리파크",
+   "coord": [
+    36.69086,
+    137.14822
+   ],
+   "image": "DPP 0480 convert 20130705221201.jpg"
+  },
+  {
+   "name_ja": "宇奈月温泉",
+   "kana": "うなづきおんせん",
+   "wp": "宇奈月温泉",
+   "qid": "Q11449258",
+   "en": "Unazuki Onsen",
+   "zh": "宇奈月溫泉",
+   "cn": "宇奈月温泉",
+   "ko": "우나즈키 온천",
+   "coord": [
+    36.81708,
+    137.58153
+   ],
+   "image": "Unaduki Onsens.jpg"
+  },
+  {
+   "name_ja": "八尾おわら風の盆の町並み",
+   "kana": "やつおのまちなみ",
+   "wp": "越中八尾",
+   "qid": "Q8050284",
+   "en": "Yatsuo",
+   "zh": "八尾町",
+   "cn": "八尾町",
+   "ko": "야쓰오정",
+   "coord": [
+    36.58547,
+    137.14003
+   ],
+   "image": "Yatsuo district Toyama city Aerial photograph.1975.jpg"
+  }
+ ],
+ "JP-17": [
+  {
+   "name_ja": "のとじま水族館",
+   "kana": "のとじますいぞくかん",
+   "wp": "のとじま臨海公園水族館",
+   "qid": "Q11275197",
+   "en": "Notojima Aquarium",
+   "zh": "能登島臨海公園水族館",
+   "cn": "能登岛临海公园水族馆",
+   "ko": "노토지마 수족관",
+   "coord": [
+    37.14917,
+    136.98222
+   ],
+   "image": "Notojima Suizokukan.jpg"
+  },
+  {
+   "name_ja": "獅子吼高原",
+   "kana": "ししくこうげん",
+   "wp": "獅子吼高原",
+   "qid": "Q11572197",
+   "en": "Shishiku Plateau",
+   "zh": "獅子吼高原",
+   "cn": "狮子吼高原",
+   "ko": "시시쿠 고원",
+   "coord": [
+    36.456,
+    136.606
+   ],
+   "image": "Shishiku Plateau.jpg"
+  },
+  {
+   "name_ja": "山中温泉 鶴仙渓",
+   "kana": "やまなかおんせん かくせんけい",
+   "wp": "山中温泉",
+   "qid": "Q3571451",
+   "en": "Yamanaka Onsen",
+   "zh": "山中溫泉",
+   "cn": "山中温泉",
+   "ko": "야마나카 온천 가쿠센케이",
+   "coord": [
+    36.24712,
+    136.3728
+   ],
+   "image": "260606 Kikuno-yu Yamanaka Onsen Kaga Ishikawa pref Japan01s3.jpg"
+  }
+ ],
+ "JP-18": [
+  {
+   "name_ja": "越前松島水族館",
+   "kana": "えちぜんまつしますいぞくかん",
+   "wp": "越前松島水族館",
+   "qid": "Q11636428",
+   "en": "Echizen Matsushima Aquarium",
+   "zh": "越前松島水族館",
+   "cn": "越前松岛水族馆",
+   "ko": "에치젠 마쓰시마 수족관",
+   "coord": [
+    36.25306,
+    136.14719
+   ],
+   "image": "Matsushima Aquarium2.JPG"
+  },
+  {
+   "name_ja": "芝政ワールド",
+   "kana": "しばまさワールド",
+   "wp": "芝政ワールド",
+   "qid": "Q11614659",
+   "en": "Shibamasa World",
+   "zh": "芝政世界",
+   "cn": "芝政世界",
+   "ko": "시바마사 월드",
+   "coord": [
+    36.25076,
+    136.17616
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "レインボーライン山頂公園",
+   "kana": "レインボーラインさんちょうこうえん",
+   "wp": "三方五湖",
+   "qid": "Q11355482",
+   "en": "Mikata Five Lakes",
+   "zh": "三方五湖",
+   "cn": "三方五湖",
+   "ko": "레인보 라인 산정공원",
+   "coord": [
+    35.57219,
+    135.88444
+   ],
+   "image": "Mikata five lakes 20110505 - panoramio.jpg"
+  }
+ ],
+ "JP-19": [
+  {
+   "name_ja": "富士急ハイランド",
+   "kana": "ふじきゅうハイランド",
+   "wp": "富士急ハイランド",
+   "qid": "Q1192174",
+   "en": "Fuji-Q Highland",
+   "zh": "富士急高原樂園",
+   "cn": "富士急高原乐园",
+   "ko": "후지큐 하이랜드",
+   "coord": [
+    35.48749,
+    138.78019
+   ],
+   "image": "170505 Views of Fujikyu Highland from Tenjoyama Park Fujikawaguchiko Yamanashi pref Japan01s3.jpg"
+  },
+  {
+   "name_ja": "清里高原",
+   "kana": "きよさとこうげん",
+   "wp": "清里高原",
+   "qid": "Q11561414",
+   "en": "Kiyosato Plateau",
+   "zh": "清里高原",
+   "cn": "清里高原",
+   "ko": "기요사토 고원",
+   "coord": [
+    35.93187,
+    138.42087
+   ],
+   "image": "150719 KEEP Hokuto Yamanashi pref Japan16n.jpg"
+  },
+  {
+   "name_ja": "笛吹川フルーツ公園",
+   "kana": "ふえふきがわフルーツこうえん",
+   "wp": "山梨県笛吹川フルーツ公園",
+   "qid": "Q15506069",
+   "en": "Yamanashi Fuefukigawa Fruit Park",
+   "zh": "山梨縣笛吹川水果公園",
+   "cn": "山梨县笛吹川水果公园",
+   "ko": "후에후키가와 후르츠 공원",
+   "coord": [
+    35.70222,
+    138.66528
+   ],
+   "image": "笛吹市フルーツ公園 - panoramio.jpg"
+  }
+ ],
+ "JP-20": [
+  {
+   "name_ja": "白馬八方尾根スキー場",
+   "kana": "はくばはっぽうおねスキーじょう",
+   "wp": "白馬八方尾根スキー場",
+   "qid": "Q4251293",
+   "en": "Hakuba Happoone Winter Resort",
+   "zh": "八方尾根滑雪場",
+   "cn": "八方尾根滑雪场",
+   "ko": "하쿠바 핫포네 스키장",
+   "coord": [
+    36.70208,
+    137.83713
+   ],
+   "image": "Hakuba Happo-one Winter Resort.JPG"
+  },
+  {
+   "name_ja": "志賀高原",
+   "kana": "しがこうげん",
+   "wp": "志賀高原",
+   "qid": "Q1532916",
+   "en": "Shiga Highlands",
+   "zh": "志賀高原",
+   "cn": "志贺高原",
+   "ko": "시가 고원",
+   "coord": [
+    36.7,
+    138.49167
+   ],
+   "image": "Shiga Kogen (30610822195).jpg"
+  },
+  {
+   "name_ja": "軽井沢",
+   "kana": "かるいざわ",
+   "wp": "軽井沢",
+   "qid": "Q8194546",
+   "en": "Karuizawa",
+   "zh": "輕井澤",
+   "cn": "轻井泽",
+   "ko": "가루이자와",
+   "coord": [
+    36.34829,
+    138.597
+   ],
+   "image": "Mikasa-Dori2.jpg"
+  }
+ ],
+ "JP-21": [
+  {
+   "name_ja": "アクア・トトぎふ",
+   "kana": "アクア・トトぎふ",
+   "wp": "世界淡水魚園水族館",
+   "qid": "Q11282869",
+   "en": "Aquatotto Gifu",
+   "zh": "世界淡水魚園水族館",
+   "cn": "世界淡水鱼园水族馆",
+   "ko": "아쿠아 토토 기후",
+   "coord": [
+    35.37172,
+    136.81047
+   ],
+   "image": "アクア・トトぎふ 外観.jpg"
+  },
+  {
+   "name_ja": "奥飛騨温泉郷",
+   "kana": "おくひだおんせんごう",
+   "wp": "奥飛騨温泉郷",
+   "qid": "Q5371109",
+   "en": "Oku-Hida Onsen Villages",
+   "zh": "奧飛驒溫泉鄉",
+   "cn": "奥飞驒温泉乡",
+   "ko": "오쿠히다 온천마을",
+   "coord": [
+    36.238,
+    137.526
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "馬籠宿",
+   "kana": "まごめじゅく",
+   "wp": "馬籠宿",
+   "qid": "Q1433284",
+   "en": "Magome-juku",
+   "zh": "馬籠宿",
+   "cn": "马笼宿",
+   "ko": "마고메주쿠",
+   "coord": [
+    35.52472,
+    137.55833
+   ],
+   "image": "Magome 2009 5.JPG"
+  }
+ ],
+ "JP-22": [
+  {
+   "name_ja": "富士サファリパーク",
+   "kana": "ふじサファリパーク",
+   "wp": "富士サファリパーク",
+   "qid": "Q11455860",
+   "en": "Fuji Safari Park",
+   "zh": "富士生態公園",
+   "cn": "富士生态公园",
+   "ko": "후지 사파리 파크",
+   "coord": [
+    35.25997,
+    138.81061
+   ],
+   "image": "富士サファリパーク ライオン2 Fuji-safari-park-Lion2.jpg"
+  },
+  {
+   "name_ja": "下田海中水族館",
+   "kana": "しもだかいちゅうすいぞくかん",
+   "wp": "下田海中水族館",
+   "qid": "Q11361202",
+   "en": "Shimoda Aquarium",
+   "zh": "下田海中水族館",
+   "cn": "下田海中水族馆",
+   "ko": "시모다 해중 수족관",
+   "coord": [
+    34.66606,
+    138.94597
+   ],
+   "image": "Shimoda-Kaichu-Suizokukan.JPG"
+  },
+  {
+   "name_ja": "日本平",
+   "kana": "にほんだいら",
+   "wp": "日本平",
+   "qid": "Q4026928",
+   "en": "Nihondaira",
+   "zh": "日本平",
+   "cn": "日本平",
+   "ko": "니혼다이라",
+   "coord": [
+    34.97556,
+    138.46694
+   ],
+   "image": "Nihondaira and Abe River.JPG"
+  }
+ ],
+ "JP-23": [
+  {
+   "name_ja": "名古屋港水族館",
+   "kana": "なごやこうすいぞくかん",
+   "wp": "名古屋港水族館",
+   "qid": "Q7231211",
+   "en": "Port of Nagoya Public Aquarium",
+   "zh": "名古屋港水族館",
+   "cn": "名古屋港水族馆",
+   "ko": "나고야항 수족관",
+   "coord": [
+    35.0906,
+    136.8782
+   ],
+   "image": "Port of Nagoya Public Aquarium Exterior (1), Minato-machi Minato Ward Nagoya 2022.jpg"
+  },
+  {
+   "name_ja": "ラグーナテンボス",
+   "kana": "ラグーナテンボス",
+   "wp": "ラグーナテンボス",
+   "qid": "Q11346723",
+   "en": "LAGUNA TEN BOSCH",
+   "zh": "拉古娜蒲郡",
+   "cn": "拉古娜蒲郡",
+   "ko": "라구나 텐보스",
+   "coord": [
+    34.80772,
+    137.27583
+   ],
+   "image": "LAGUNA TEN BOSCH.jpg"
+  },
+  {
+   "name_ja": "レゴランド・ジャパン",
+   "kana": "レゴランド・ジャパン",
+   "wp": "レゴランド・ジャパン",
+   "qid": "Q29168099",
+   "en": "Legoland Japan Resort",
+   "zh": "日本樂高樂園",
+   "cn": "日本乐高乐园",
+   "ko": "레고랜드 재팬",
+   "coord": [
+    35.0505,
+    136.84361
+   ],
+   "image": "Legoland japan.jpg"
+  }
+ ],
+ "JP-24": [
+  {
+   "name_ja": "志摩スペイン村",
+   "kana": "しまスペインむら",
+   "wp": "志摩スペイン村",
+   "qid": "Q16669013",
+   "en": "Parque España-Shima Spain Village",
+   "zh": "志摩西班牙村",
+   "cn": "志摩西班牙村",
+   "ko": "시마 스페인무라",
+   "coord": [
+    34.36181,
+    136.84428
+   ],
+   "image": "La Villa Española de Shima, Parque España - Plaza de Mayor.jpg"
+  },
+  {
+   "name_ja": "なばなの里",
+   "kana": "なばなのさと",
+   "wp": "なばなの里",
+   "qid": "Q17229517",
+   "en": "Nabana no Sato",
+   "zh": "名花之里",
+   "cn": "名花之里",
+   "ko": "나바나노사토",
+   "coord": [
+    35.08111,
+    136.70356
+   ],
+   "image": "なばなの里 三重県桑名市長島町 (4038094192).jpg"
+  },
+  {
+   "name_ja": "御在所ロープウエイ",
+   "kana": "ございしょロープウエイ",
+   "wp": "御在所岳",
+   "qid": "Q6920956",
+   "en": "Mount Gozaisho",
+   "zh": "御在所岳纜車",
+   "cn": "御在所岳缆车",
+   "ko": "고자이쇼 로프웨이",
+   "coord": [
+    35.02027,
+    136.41945
+   ],
+   "image": "Gozaishodake from Nakamichi 2009-10-11.jpg"
+  }
+ ],
+ "JP-25": [
+  {
+   "name_ja": "びわ湖バレイ",
+   "kana": "びわこバレイ",
+   "wp": "びわ湖バレイ",
+   "qid": "Q11276859",
+   "en": "Biwako Valley",
+   "zh": "琵琶湖山谷",
+   "cn": "琵琶湖山谷",
+   "ko": "비와코 밸리",
+   "coord": [
+    35.20294,
+    135.90706
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "滋賀県立琵琶湖博物館",
+   "kana": "しがけんりつびわこはくぶつかん",
+   "wp": "滋賀県立琵琶湖博物館",
+   "qid": "Q11564667",
+   "en": "Lake Biwa Museum",
+   "zh": "滋賀縣立琵琶湖博物館",
+   "cn": "滋贺县立琵琶湖博物馆",
+   "ko": "시가현립 비와코 박물관",
+   "coord": [
+    35.07414,
+    135.93492
+   ],
+   "image": "滋賀県立琵琶湖博物館外観.jpg"
+  },
+  {
+   "name_ja": "ラ コリーナ近江八幡",
+   "kana": "ラ コリーナおうみはちまん",
+   "wp": null,
+   "qid": null,
+   "en": "La Collina Omihachiman",
+   "zh": "La Collina 近江八幡",
+   "cn": "La Collina 近江八幡",
+   "ko": "라 콜리나 오미하치만",
+   "coord": [
+    35.129,
+    136.123
+   ],
+   "image": null
+  }
+ ],
+ "JP-26": [
+  {
+   "name_ja": "京都水族館",
+   "kana": "きょうとすいぞくかん",
+   "wp": "京都水族館",
+   "qid": "Q11375621",
+   "en": "Kyoto Aquarium",
+   "zh": "京都水族館",
+   "cn": "京都水族馆",
+   "ko": "교토 수족관",
+   "coord": [
+    34.98756,
+    135.74761
+   ],
+   "image": "Kyoto Aquarium in 2013-5-2 No,27.JPG"
+  },
+  {
+   "name_ja": "東映太秦映画村",
+   "kana": "とうえいうずまさえいがむら",
+   "wp": "東映太秦映画村",
+   "qid": "Q11103541",
+   "en": "Toei Kyoto Studio Park",
+   "zh": "東映太秦映畫村",
+   "cn": "东映太秦映画村",
+   "ko": "도에이 우즈마사 영화촌",
+   "coord": [
+    35.01639,
+    135.70833
+   ],
+   "image": "Toei Kyoto Studio Park from above.jpg"
+  },
+  {
+   "name_ja": "鴨川の納涼床",
+   "kana": "かもがわのりょうかゆか",
+   "wp": "鴨川 (淀川水系)",
+   "qid": "Q31476",
+   "en": "Kamogawa",
+   "zh": "鴨川",
+   "cn": "鸭川",
+   "ko": "가모가와",
+   "coord": [
+    35.006,
+    135.771
+   ],
+   "image": null
+  }
+ ],
+ "JP-27": [
+  {
+   "name_ja": "ひらかたパーク",
+   "kana": "ひらかたパーク",
+   "wp": "ひらかたパーク",
+   "qid": "Q302897",
+   "en": "Hirakata Park",
+   "zh": "枚方公園",
+   "cn": "枚方公园",
+   "ko": "히라카타 파크",
+   "coord": [
+    34.80578,
+    135.63813
+   ],
+   "image": "Hirakata Park.jpg"
+  },
+  {
+   "name_ja": "あべのハルカス",
+   "kana": "あべのハルカス",
+   "wp": "あべのハルカス",
+   "qid": "Q16318627",
+   "en": "Abeno Harukas",
+   "zh": "阿倍野Harukas",
+   "cn": "阿倍野Harukas",
+   "ko": "아베노하루카스",
+   "coord": [
+    34.64595,
+    135.51427
+   ],
+   "image": "Abeno Harukas Osaka Japan01-r.jpg"
+  },
+  {
+   "name_ja": "万博記念公園",
+   "kana": "ばんぱくきねんこうえん",
+   "wp": "万博記念公園",
+   "qid": "Q4817249",
+   "en": "Expo '70 Commemorative Park",
+   "zh": "大阪世界博覽會紀念公園",
+   "cn": "大阪世界博览会纪念公园",
+   "ko": "반파쿠 기념공원",
+   "coord": [
+    34.81012,
+    135.5276
+   ],
+   "image": null
+  }
+ ],
+ "JP-28": [
+  {
+   "name_ja": "神戸どうぶつ王国",
+   "kana": "こうべどうぶつおうこく",
+   "wp": "神戸どうぶつ王国",
+   "qid": "Q6424313",
+   "en": "Kobe Animal Kingdom",
+   "zh": "神戶動物王國",
+   "cn": "神户动物王国",
+   "ko": "고베 동물왕국",
+   "coord": [
+    34.65417,
+    135.22306
+   ],
+   "image": "Kobe-kacyoen4333.JPG"
+  },
+  {
+   "name_ja": "摩耶山 掬星台",
+   "kana": "まやさん きくせいだい",
+   "wp": "摩耶山",
+   "qid": "Q6922072",
+   "en": "Mount Maya",
+   "zh": "摩耶山",
+   "cn": "摩耶山",
+   "ko": "마야산 기쿠세이다이",
+   "coord": [
+    34.71667,
+    135.2
+   ],
+   "image": "Maya005.jpg"
+  },
+  {
+   "name_ja": "淡路島",
+   "kana": "あわじしま",
+   "wp": "淡路島",
+   "qid": "Q504373",
+   "en": "Awaji Island",
+   "zh": "淡路島",
+   "cn": "淡路岛",
+   "ko": "아와지섬",
+   "coord": [
+    34.38333,
+    134.83333
+   ],
+   "image": "Awaji-island 1.png"
+  }
+ ],
+ "JP-29": [
+  {
+   "name_ja": "生駒山上遊園地",
+   "kana": "いこまさんじょうゆうえんち",
+   "wp": "生駒山上遊園地",
+   "qid": "Q11574916",
+   "en": "Ikoma Sanjō Amusement Park",
+   "zh": "生駒山上遊樂場",
+   "cn": "生驹山上游乐场",
+   "ko": "이코마산조 유원지",
+   "coord": [
+    34.67956,
+    135.67886
+   ],
+   "image": "Ikoma Hikoutou01.jpg"
+  },
+  {
+   "name_ja": "みたらい渓谷",
+   "kana": "みたらいけいこく",
+   "wp": "みたらい渓谷",
+   "qid": "Q21654796",
+   "en": "Mitarai Valley",
+   "zh": "御手洗溪谷",
+   "cn": "御手洗溪谷",
+   "ko": "미타라이 계곡",
+   "coord": [
+    34.34,
+    135.893
+   ],
+   "image": "みたらい渓谷白倉トンネル付近.jpg"
+  },
+  {
+   "name_ja": "曽爾高原",
+   "kana": "そにこうげん",
+   "wp": "曽爾高原",
+   "qid": "Q11515365",
+   "en": "Soni Highlands",
+   "zh": "曾爾高原",
+   "cn": "曾尔高原",
+   "ko": "소니 고원",
+   "coord": [
+    34.517,
+    136.13
+   ],
+   "image": "Soni highlands Nara02n4592.jpg"
+  }
+ ],
+ "JP-30": [
+  {
+   "name_ja": "円月島",
+   "kana": "えんげつとう",
+   "wp": "円月島",
+   "qid": "Q5377606",
+   "en": "Engetsu Island",
+   "zh": "高島",
+   "cn": "高岛",
+   "ko": "엔게쓰토",
+   "coord": [
+    33.68998,
+    135.33643
+   ],
+   "image": "131222 Engetsu Island Shirahama Wakayama pref Japan01bs.jpg"
+  },
+  {
+   "name_ja": "友ヶ島",
+   "kana": "ともがしま",
+   "wp": "友ヶ島",
+   "qid": "Q7820112",
+   "en": "Tomogashima",
+   "zh": "友島",
+   "cn": "友岛",
+   "ko": "도모가시마",
+   "coord": [
+    34.29472,
+    135.02361
+   ],
+   "image": "友が島・紀淡海峡PA071003.jpg"
+  },
+  {
+   "name_ja": "和歌山マリーナシティ",
+   "kana": "わかやまマリーナシティ",
+   "wp": "和歌山マリーナシティ",
+   "qid": "Q11417294",
+   "en": "Wakayama Marina City",
+   "zh": "和歌山海洋城",
+   "cn": "和歌山海洋城",
+   "ko": "와카야마 마리나시티",
+   "coord": [
+    34.15389,
+    135.17727
+   ],
+   "image": "Porto Europe - Entrance2.jpg"
+  }
+ ],
+ "JP-31": [
+  {
+   "name_ja": "とっとり花回廊",
+   "kana": "とっとりはなかいろう",
+   "wp": "とっとり花回廊",
+   "qid": "Q11273221",
+   "en": "Tottori Hanakairo-Flower Park",
+   "zh": "鳥取花迴廊",
+   "cn": "鸟取花回廊",
+   "ko": "돗토리 하나카이로",
+   "coord": [
+    35.34806,
+    133.42347
+   ],
+   "image": "遥か臨む大山 (Tottori Hanakairo Flower Park in summer) 15 Jul, 2012 - panoramio.jpg"
+  },
+  {
+   "name_ja": "大山まきばみるくの里",
+   "kana": "だいせんまきばみるくのさと",
+   "wp": null,
+   "qid": null,
+   "en": "Daisen Makiba Milk no Sato",
+   "zh": "大山牧場牛奶之鄉",
+   "cn": "大山牧场牛奶之乡",
+   "ko": "다이센 마키바 밀크노사토",
+   "coord": [
+    35.373,
+    133.548
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "鳥取砂丘こどもの国",
+   "kana": "とっとりさきゅうこどものくに",
+   "wp": null,
+   "qid": null,
+   "en": "Tottori Sakyu Children's Land",
+   "zh": "鳥取砂丘兒童王國",
+   "cn": "鸟取砂丘儿童王国",
+   "ko": "돗토리 사구 어린이 나라",
+   "coord": [
+    35.52,
+    134.213
+   ],
+   "image": null
+  }
+ ],
+ "JP-32": [
+  {
+   "name_ja": "しまね海洋館アクアス",
+   "kana": "しまねかいようかんアクアス",
+   "wp": "島根県立しまね海洋館",
+   "qid": "Q11476470",
+   "en": "Shimane Aquarium Aquas",
+   "zh": "島根海洋館AQUAS",
+   "cn": "岛根海洋馆AQUAS",
+   "ko": "시마네 해양관 아쿠아스",
+   "coord": [
+    34.95944,
+    132.14458
+   ],
+   "image": "Public aquariums in Aquas.JPG"
+  },
+  {
+   "name_ja": "玉造温泉",
+   "kana": "たまつくりおんせん",
+   "wp": "玉造温泉",
+   "qid": "Q3514711",
+   "en": "Tamatsukuri Onsen",
+   "zh": "玉造溫泉",
+   "cn": "玉造温泉",
+   "ko": "다마쓰쿠리 온천",
+   "coord": [
+    35.4163,
+    133.01
+   ],
+   "image": "140427 Chorakuen Tamatsukuri Onsen Matsue Shimane pref Japan15s3.jpg"
+  },
+  {
+   "name_ja": "江島大橋",
+   "kana": "えしまおおはし",
+   "wp": "江島大橋",
+   "qid": "Q11550847",
+   "en": "Eshima Ohashi Bridge",
+   "zh": "江島大橋",
+   "cn": "江岛大桥",
+   "ko": "에시마 대교",
+   "coord": [
+    35.51917,
+    133.2
+   ],
+   "image": "江島大橋.JPG"
+  }
+ ],
+ "JP-33": [
+  {
+   "name_ja": "渋川マリン水族館",
+   "kana": "しぶかわマリンすいぞくかん",
+   "wp": "玉野海洋博物館",
+   "qid": "Q11572836",
+   "en": "Tamano Marine Museum",
+   "zh": "澀川海洋水族館",
+   "cn": "涩川海洋水族馆",
+   "ko": "시부카와 마린 수족관",
+   "coord": [
+    34.45488,
+    133.90548
+   ],
+   "image": "Shibukawa Marine Aquarium.jpg"
+  },
+  {
+   "name_ja": "おもちゃ王国",
+   "kana": "おもちゃおうこく",
+   "wp": "おもちゃ王国",
+   "qid": "Q11262523",
+   "en": "Toy Kingdom",
+   "zh": "玩具王國",
+   "cn": "玩具王国",
+   "ko": "장난감 왕국",
+   "coord": [
+    34.525,
+    133.926
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "備中松山城",
+   "kana": "びっちゅうまつやまじょう",
+   "wp": "備中松山城",
+   "qid": "Q577273",
+   "en": "Bitchū Matsuyama Castle",
+   "zh": "松山城",
+   "cn": "松山城",
+   "ko": "마쓰야마성",
+   "coord": [
+    34.80909,
+    133.62232
+   ],
+   "image": "Bitchu Matsuyama Castle 1.JPG"
+  }
+ ],
+ "JP-34": [
+  {
+   "name_ja": "宮島水族館",
+   "kana": "みやじますいぞくかん",
+   "wp": "宮島水族館",
+   "qid": "Q6764196",
+   "en": "Miyajima Public Aquarium",
+   "zh": "宫岛水族馆",
+   "cn": "宫岛水族馆",
+   "ko": "미야지마 수족관",
+   "coord": [
+    34.29539,
+    132.31536
+   ],
+   "image": "Miyajima Public Aquarium 20170310.jpg"
+  },
+  {
+   "name_ja": "三段峡",
+   "kana": "さんだんきょう",
+   "wp": "三段峡",
+   "qid": "Q3137717",
+   "en": "Sandan-kyō",
+   "zh": "三段峽",
+   "cn": "三段峡",
+   "ko": "산단쿄",
+   "coord": [
+    34.6,
+    132.20778
+   ],
+   "image": "Sandankyo Hiroshima Japan 021026.JPG"
+  },
+  {
+   "name_ja": "大久野島",
+   "kana": "おおくのしま",
+   "wp": "大久野島",
+   "qid": "Q385313",
+   "en": "Ōkunoshima",
+   "zh": "大久野島",
+   "cn": "大久野岛",
+   "ko": "오쿠노시마섬",
+   "coord": [
+    34.30917,
+    132.99333
+   ],
+   "image": "Okunoshima 2.JPG"
+  }
+ ],
+ "JP-35": [
+  {
+   "name_ja": "海響館",
+   "kana": "かいきょうかん",
+   "wp": "下関市立しものせき水族館",
+   "qid": "Q11361443",
+   "en": "Shimonoseki Marine Science Museum Kaikyōkan",
+   "zh": "下關水族館",
+   "cn": "下关水族馆",
+   "ko": "가이쿄칸(시모노세키 수족관)",
+   "coord": [
+    33.95447,
+    130.94242
+   ],
+   "image": "Shimonoseki Aquarium 20170811-1.jpg"
+  },
+  {
+   "name_ja": "秋吉台",
+   "kana": "あきよしだい",
+   "wp": "秋吉台",
+   "qid": "Q1765187",
+   "en": "Akiyoshidai",
+   "zh": "秋吉台",
+   "cn": "秋吉台",
+   "ko": "아키요시다이",
+   "coord": [
+    34.24222,
+    131.29833
+   ],
+   "image": "Akiyoshidai Yamaguchi Japan.jpg"
+  },
+  {
+   "name_ja": "別府弁天池",
+   "kana": "べっぷべんてんいけ",
+   "wp": "別府弁天池",
+   "qid": "Q11396721",
+   "en": "Beppu Benten Pond",
+   "zh": "別府弁天池",
+   "cn": "别府弁天池",
+   "ko": "벳푸 벤텐이케",
+   "coord": [
+    34.25514,
+    131.24489
+   ],
+   "image": "Beppu benten pond.JPG"
+  }
+ ],
+ "JP-36": [
+  {
+   "name_ja": "渦の道",
+   "kana": "うずのみち",
+   "wp": "大鳴門橋遊歩道渦の道",
+   "qid": null,
+   "en": "Uzu no Michi Walkway",
+   "zh": "渦之道",
+   "cn": "涡之道",
+   "ko": "우즈노미치",
+   "coord": [
+    34.24,
+    134.647
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "とくしま動物園",
+   "kana": "とくしまどうぶつえん",
+   "wp": "とくしま動物園",
+   "qid": "Q11273093",
+   "en": "Tokushima Zoo",
+   "zh": "德島動物園",
+   "cn": "德岛动物园",
+   "ko": "도쿠시마 동물원",
+   "coord": [
+    34.01408,
+    134.52211
+   ],
+   "image": "Tokushima Zoo Main Entrance.JPG"
+  },
+  {
+   "name_ja": "眉山",
+   "kana": "びざん",
+   "wp": "眉山 (徳島県)",
+   "qid": "Q8189109",
+   "en": "Mount Bizan",
+   "zh": "眉山",
+   "cn": "眉山",
+   "ko": "비잔",
+   "coord": [
+    34.06083,
+    134.51694
+   ],
+   "image": "Mount Bizan from Shimmachi River 20200607.jpg"
+  }
+ ],
+ "JP-37": [
+  {
+   "name_ja": "四国水族館",
+   "kana": "しこくすいぞくかん",
+   "wp": "四国水族館",
+   "qid": "Q66432954",
+   "en": "Shikoku Aquarium",
+   "zh": "四国水族館",
+   "cn": "四国水族馆",
+   "ko": "시코쿠 수족관",
+   "coord": [
+    34.31278,
+    133.80806
+   ],
+   "image": "Shikoku Aquarium2.jpg"
+  },
+  {
+   "name_ja": "ニューレオマワールド",
+   "kana": "ニューレオマワールド",
+   "wp": "レオマワールド",
+   "qid": "Q11324991",
+   "en": "NEW REOMA WORLD",
+   "zh": "新雷歐瑪世界",
+   "cn": "新雷欧玛世界",
+   "ko": "뉴 레오마 월드",
+   "coord": [
+    34.21198,
+    133.87843
+   ],
+   "image": "Reoma World 1.jpg"
+  },
+  {
+   "name_ja": "屋島",
+   "kana": "やしま",
+   "wp": "屋島",
+   "qid": "Q11465681",
+   "en": "Yashima",
+   "zh": "屋島",
+   "cn": "屋岛",
+   "ko": "야시마",
+   "coord": [
+    34.35583,
+    134.10472
+   ],
+   "image": "海上からの屋島.JPG"
+  }
+ ],
+ "JP-38": [
+  {
+   "name_ja": "とべ動物園",
+   "kana": "とべどうぶつえん",
+   "wp": "愛媛県立とべ動物園",
+   "qid": "Q11493586",
+   "en": "Tobe Zoological Park",
+   "zh": "爱媛县立砥部动物园",
+   "cn": "爱媛县立砥部动物园",
+   "ko": "도베 동물원",
+   "coord": [
+    33.76239,
+    132.79275
+   ],
+   "image": "Tobe zoo とべ動物園.jpg"
+  },
+  {
+   "name_ja": "面河渓",
+   "kana": "おもごけい",
+   "wp": "面河渓",
+   "qid": "Q11663794",
+   "en": "Omogo-kei",
+   "zh": "面河溪",
+   "cn": "面河溪",
+   "ko": "오모고케이",
+   "coord": [
+    33.73624,
+    133.11496
+   ],
+   "image": "Omogokeikoku.jpg"
+  },
+  {
+   "name_ja": "マイントピア別子",
+   "kana": "マイントピアべっし",
+   "wp": "別子銅山",
+   "qid": "Q994193",
+   "en": "Besshi copper mine",
+   "zh": "別子銅山",
+   "cn": "别子铜山",
+   "ko": "마인토피아 벳시",
+   "coord": [
+    33.86,
+    133.29
+   ],
+   "image": "Besshi copper mine.JPG"
+  }
+ ],
+ "JP-39": [
+  {
+   "name_ja": "桂浜水族館",
+   "kana": "かつらはますいぞくかん",
+   "wp": "桂浜水族館",
+   "qid": "Q11536832",
+   "en": "Katsurahama Aquarium",
+   "zh": "桂濱水族館",
+   "cn": "桂滨水族馆",
+   "ko": "가쓰라하마 수족관",
+   "coord": [
+    33.49694,
+    133.57356
+   ],
+   "image": "Katsurahama Aquarium 01.jpg"
+  },
+  {
+   "name_ja": "アンパンマンミュージアム",
+   "kana": "アンパンマンミュージアム",
+   "wp": "香美市立やなせたかし記念館",
+   "qid": "Q2496737",
+   "en": "Yanase Takashi Memorial Hall",
+   "zh": "香美市立柳瀨嵩紀念館",
+   "cn": "香美市立柳濑嵩纪念馆",
+   "ko": "가미시립 야나세 다카시 기념관",
+   "coord": [
+    33.64769,
+    133.78375
+   ],
+   "image": "Kami Kochi Yanase Takashi Memorial Hall.jpg"
+  },
+  {
+   "name_ja": "龍河洞",
+   "kana": "りゅうがどう",
+   "wp": "龍河洞",
+   "qid": "Q11180557",
+   "en": "Ryūga Cave",
+   "zh": "龍河洞",
+   "cn": "龙河洞",
+   "ko": "류가도",
+   "coord": [
+    33.60316,
+    133.74518
+   ],
+   "image": "Ryuga-do, entrance.jpg"
+  }
+ ],
+ "JP-40": [
+  {
+   "name_ja": "マリンワールド海の中道",
+   "kana": "マリンワールドうみのなかみち",
+   "wp": "マリンワールド海の中道",
+   "qid": "Q6764266",
+   "en": "Marine World Uminonakamichi",
+   "zh": "海之中道海洋世界",
+   "cn": "海之中道海洋世界",
+   "ko": "마린월드 우미노나카미치",
+   "coord": [
+    33.66083,
+    130.36333
+   ],
+   "image": "Grampus griseus by OpenCage.jpg"
+  },
+  {
+   "name_ja": "福岡タワー",
+   "kana": "ふくおかタワー",
+   "wp": "福岡タワー",
+   "qid": "Q847033",
+   "en": "Fukuoka Tower",
+   "zh": "福岡塔",
+   "cn": "福冈塔",
+   "ko": "후쿠오카 타워",
+   "coord": [
+    33.59331,
+    130.3515
+   ],
+   "image": "Fukuoka Tower October 2011 01.jpg"
+  },
+  {
+   "name_ja": "糸島",
+   "kana": "いとしま",
+   "wp": "糸島市",
+   "qid": "Q1011145",
+   "en": "Itoshima",
+   "zh": "糸島市",
+   "cn": "糸岛市",
+   "ko": "이토시마시",
+   "coord": [
+    33.55731,
+    130.1955
+   ],
+   "image": "Sakurai Futamigaura.jpg"
+  }
+ ],
+ "JP-41": [
+  {
+   "name_ja": "佐賀県立宇宙科学館",
+   "kana": "さがけんりつうちゅうかがくかん",
+   "wp": "佐賀県立宇宙科学館",
+   "qid": "Q11384745",
+   "en": "Saga Prefectural Space and Science Museum",
+   "zh": "佐賀縣立宇宙科學館",
+   "cn": "佐贺县立宇宙科学馆",
+   "ko": "사가현립 우주과학관",
+   "coord": [
+    33.17917,
+    130.03528
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "御船山楽園",
+   "kana": "みふねやまらくえん",
+   "wp": "御船山楽園",
+   "qid": "Q30096249",
+   "en": "Mifuneyama Rakuen",
+   "zh": "御船山樂園",
+   "cn": "御船山乐园",
+   "ko": "미후네야마 라쿠엔",
+   "coord": [
+    33.18139,
+    130.01722
+   ],
+   "image": "Azalea Valley in Mifuneyama Garden and Mount Mifuneyama 3.jpg"
+  },
+  {
+   "name_ja": "浜野浦の棚田",
+   "kana": "はまのうらのたなだ",
+   "wp": "浜野浦の棚田",
+   "qid": null,
+   "en": "Hamanoura Rice Terraces",
+   "zh": "濱野浦梯田",
+   "cn": "滨野浦梯田",
+   "ko": "하마노우라 계단식 논",
+   "coord": [
+    33.411,
+    129.808
+   ],
+   "image": null
+  }
+ ],
+ "JP-42": [
+  {
+   "name_ja": "九十九島水族館海きらら",
+   "kana": "くじゅうくしますいぞくかんうみきらら",
+   "wp": "九十九島水族館海きらら",
+   "qid": null,
+   "en": "Kujukushima Aquarium Umikirara",
+   "zh": "九十九島水族館海KIRARA",
+   "cn": "九十九岛水族馆海KIRARA",
+   "ko": "구주쿠시마 수족관 우미키라라",
+   "coord": [
+    33.177,
+    129.679
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "雲仙地獄",
+   "kana": "うんぜんじごく",
+   "wp": "雲仙温泉",
+   "qid": "Q11660005",
+   "en": "Unzen Onsen",
+   "zh": "雲仙溫泉",
+   "cn": "云仙温泉",
+   "ko": "운젠 지옥",
+   "coord": [
+    32.74244,
+    130.25994
+   ],
+   "image": "140322 Unzen Onsen Nagasaki pref Japan01s3.jpg"
+  },
+  {
+   "name_ja": "伊王島",
+   "kana": "いおうじま",
+   "wp": "伊王島",
+   "qid": "Q20681784",
+   "en": "Iō Island",
+   "zh": "伊王島",
+   "cn": "伊王岛",
+   "ko": "이오지마",
+   "coord": [
+    32.70857,
+    129.76516
+   ],
+   "image": null
+  }
+ ],
+ "JP-43": [
+  {
+   "name_ja": "グリーンランド",
+   "kana": "グリーンランド",
+   "wp": "三井グリーンランド",
+   "qid": "Q10855658",
+   "en": "Greenland",
+   "zh": "綠地島遊樂園",
+   "cn": "绿地岛游乐园",
+   "ko": "그린랜드",
+   "coord": [
+    32.9875,
+    130.46444
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "御船町恐竜博物館",
+   "kana": "みふねまちきょうりゅうはくぶつかん",
+   "wp": "御船町恐竜博物館",
+   "qid": "Q17214624",
+   "en": "Mifune Dinosaur Museum",
+   "zh": "御船町恐龍博物館",
+   "cn": "御船町恐龙博物馆",
+   "ko": "미후네마치 공룡박물관",
+   "coord": [
+    32.71456,
+    130.80117
+   ],
+   "image": "Mifune Dinosaur Museum 2.JPG"
+  },
+  {
+   "name_ja": "菊池渓谷",
+   "kana": "きくちけいこく",
+   "wp": "菊池渓谷",
+   "qid": "Q11619820",
+   "en": "Kikuchi Valley",
+   "zh": "菊池溪谷",
+   "cn": "菊池溪谷",
+   "ko": "기쿠치 계곡",
+   "coord": [
+    33.005,
+    130.94094
+   ],
+   "image": "Tengu fall in the Kikuchi River 001.jpg"
+  }
+ ],
+ "JP-44": [
+  {
+   "name_ja": "うみたまご",
+   "kana": "うみたまご",
+   "wp": "大分マリーンパレス水族館",
+   "qid": "Q11432633",
+   "en": "Oita Marine Palace Aquarium",
+   "zh": "大分海洋宮殿水族館",
+   "cn": "大分海洋宫殿水族馆",
+   "ko": "오이타 마린팰리스 수족관",
+   "coord": [
+    33.25878,
+    131.53556
+   ],
+   "image": "Umitamago1.JPG"
+  },
+  {
+   "name_ja": "アフリカンサファリ",
+   "kana": "アフリカンサファリ",
+   "wp": "アフリカンサファリ",
+   "qid": "Q11370332",
+   "en": "Kyushu African Safari",
+   "zh": "九州自然動物公園非洲野生",
+   "cn": "九州自然动物公园非洲野生",
+   "ko": "규슈 자연동물공원 아프리칸 사파리",
+   "coord": [
+    33.354,
+    131.41153
+   ],
+   "image": "九州自然動物公園アフリカンサファリ1.jpg"
+  },
+  {
+   "name_ja": "城島高原パーク",
+   "kana": "きじまこうげんパーク",
+   "wp": "城島高原パーク",
+   "qid": "Q3196520",
+   "en": "Kijima Kōgen Park",
+   "zh": "城岛高原公园",
+   "cn": "城岛高原公园",
+   "ko": "기지마 고원 파크",
+   "coord": [
+    33.2644,
+    131.427
+   ],
+   "image": "Jupiter roller coaster at Kijima Kogen.jpg"
+  }
+ ],
+ "JP-45": [
+  {
+   "name_ja": "シーガイア",
+   "kana": "シーガイア",
+   "wp": "シーガイア",
+   "qid": "Q2441288",
+   "en": "Phoenix Seagaia Resort",
+   "zh": "喜凱亞",
+   "cn": "喜凯亚",
+   "ko": "시가이아",
+   "coord": [
+    31.9551,
+    131.4696
+   ],
+   "image": "シーガイア2011.8.jpg"
+  },
+  {
+   "name_ja": "宮崎市フェニックス自然動物園",
+   "kana": "フェニックスしぜんどうぶつえん",
+   "wp": "宮崎市フェニックス自然動物園",
+   "qid": "Q11454261",
+   "en": "Miyazaki City Phoenix Zoo",
+   "zh": "宮崎市鳳凰自然動物園",
+   "cn": "宫崎市凤凰自然动物园",
+   "ko": "미야자키시 피닉스 자연동물원",
+   "coord": [
+    31.9825,
+    131.47883
+   ],
+   "image": null
+  },
+  {
+   "name_ja": "綾の照葉大吊橋",
+   "kana": "あやのてるはおおつりばし",
+   "wp": "綾の照葉大吊橋",
+   "qid": "Q11567787",
+   "en": "Aya Teruha Suspension Bridge",
+   "zh": "綾之照葉大吊橋",
+   "cn": "绫之照叶大吊桥",
+   "ko": "아야 데루하 대현수교",
+   "coord": [
+    32.02984,
+    131.19427
+   ],
+   "image": "綾の照葉大吊橋 20150924 - panoramio.jpg"
+  }
+ ],
+ "JP-46": [
+  {
+   "name_ja": "いおワールド かごしま水族館",
+   "kana": "いおワールド かごしますいぞくかん",
+   "wp": "かごしま水族館",
+   "qid": "Q11259022",
+   "en": "Kagoshima City Aquarium",
+   "zh": "鹿兒島水族館",
+   "cn": "鹿儿岛水族馆",
+   "ko": "가고시마 수족관",
+   "coord": [
+    31.59597,
+    130.56444
+   ],
+   "image": "Kagoshima Aquarium 2013-08A.JPG"
+  },
+  {
+   "name_ja": "知覧武家屋敷",
+   "kana": "ちらんぶけやしき",
+   "wp": "知覧町",
+   "qid": "Q994450",
+   "en": "Chiran",
+   "zh": "知覽町",
+   "cn": "知览町",
+   "ko": "지란정",
+   "coord": [
+    31.37825,
+    130.44161
+   ],
+   "image": "Chiran Fumoto 01.JPG"
+  },
+  {
+   "name_ja": "曽木の滝",
+   "kana": "そぎのたき",
+   "wp": "曽木の滝",
+   "qid": "Q11515310",
+   "en": "Sogi Falls",
+   "zh": "曾木瀑布",
+   "cn": "曾木瀑布",
+   "ko": "소기 폭포",
+   "coord": [
+    32.01149,
+    130.57722
+   ],
+   "image": "曽木の滝(The fall Sogi).jpg"
+  }
+ ],
+ "JP-47": [
+  {
+   "name_ja": "古宇利島",
+   "kana": "こうりじま",
+   "wp": "古宇利島",
+   "qid": "Q4518163",
+   "en": "Kouri Island",
+   "zh": "古宇利島",
+   "cn": "古宇利岛",
+   "ko": "고우리지마",
+   "coord": [
+    26.70611,
+    128.01778
+   ],
+   "image": "Kouri Island gsi-20180219.jpg"
+  },
+  {
+   "name_ja": "青の洞窟 真栄田岬",
+   "kana": "あおのどうくつ まえだみさき",
+   "wp": "真栄田岬",
+   "qid": "Q85882631",
+   "en": "Cape Maeda",
+   "zh": "青之洞窟 真榮田岬",
+   "cn": "青之洞窟 真荣田岬",
+   "ko": "푸른 동굴 마에다미사키",
+   "coord": [
+    26.44544,
+    127.77139
+   ],
+   "image": "Cape Maeda.jpg"
+  },
+  {
+   "name_ja": "おきなわワールド",
+   "kana": "おきなわワールド",
+   "wp": "おきなわワールド",
+   "qid": "Q11408656",
+   "en": "Nanto",
+   "zh": "沖繩世界",
+   "cn": "冲绳世界",
+   "ko": "오키나와 월드",
+   "coord": [
+    26.142,
+    127.757
+   ],
+   "image": "Gyokusendo Nanjo Okinawa Japan03s3104.jpg"
+  }
+ ]
+}

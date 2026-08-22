@@ -4,169 +4,241 @@
    "range": "28℃〜",
    "ja": {
     "t": "真夏",
-    "o": "半袖・ワンピース",
     "tip": "湿度が高いので汗をかく。屋内は冷房が強いので薄手の羽織を1枚。日傘か帽子と、こまめな水分を。"
    },
    "zh": {
     "t": "盛夏",
-    "o": "短袖・連身裙",
     "tip": "濕度高很容易流汗。室內冷氣強，帶一件薄外套。記得遮陽帽或陽傘，隨時補水。"
    },
    "cn": {
     "t": "盛夏",
-    "o": "短袖・连衣裙",
     "tip": "湿度高很容易出汗。室内空调强，带一件薄外套。记得遮阳帽或阳伞，随时补水。"
    },
    "en": {
     "t": "Midsummer",
-    "o": "Short sleeves, a dress",
     "tip": "It's humid and you will sweat. Indoor air-con runs cold, so carry a light layer. Bring a hat or parasol and drink often."
    },
    "ko": {
     "t": "한여름",
-    "o": "반팔·원피스",
     "tip": "습도가 높아 땀이 많이 난다. 실내 냉방이 세니 얇은 겉옷을 하나. 모자나 양산과 수분 보충은 필수."
-   }
+   },
+   "variants": [
+    {
+     "img": "hot-a",
+     "wear": {
+      "ja": "半袖・ワンピース",
+      "zh": "短袖・連身裙",
+      "cn": "短袖・连衣裙",
+      "en": "Short sleeves, a dress",
+      "ko": "반팔·원피스"
+     }
+    },
+    {
+     "img": "hot-b",
+     "wear": {
+      "ja": "浴衣で夏祭りへ",
+      "zh": "穿浴衣去夏日祭",
+      "cn": "穿浴衣去夏日祭",
+      "en": "A yukata for the summer festival",
+      "ko": "유카타로 여름 축제에"
+     }
+    }
+   ]
   },
   "warm": {
    "range": "23〜27℃",
    "ja": {
     "t": "夏",
-    "o": "半袖+薄手の羽織",
     "tip": "歩くと暑いが朝晩は下がる。カーディガンを1枚。寺社は靴を脱ぐ場面があるので、脱ぎ履きしやすい靴が楽。"
    },
    "zh": {
     "t": "夏",
-    "o": "短袖+薄外套",
     "tip": "走路會熱但早晚偏涼，帶件開襟衫。參拜寺社常需脫鞋，穿好穿脫的鞋比較方便。"
    },
    "cn": {
     "t": "夏",
-    "o": "短袖+薄外套",
     "tip": "走路会热但早晚偏凉，带件开衫。参拜寺社常需脱鞋，穿好穿脱的鞋比较方便。"
    },
    "en": {
     "t": "Summer",
-    "o": "Short sleeves plus a light layer",
     "tip": "Warm while walking, cooler morning and night — pack a cardigan. You'll take your shoes off at temples, so slip-ons help."
    },
    "ko": {
     "t": "여름",
-    "o": "반팔+얇은 겉옷",
     "tip": "걸으면 덥지만 아침저녁은 선선하다. 가디건 하나. 절과 신사에선 신을 벗는 일이 많아 신고 벗기 편한 신발이 좋다."
-   }
+   },
+   "variants": [
+    {
+     "img": "warm-a",
+     "wear": {
+      "ja": "半袖+薄手の羽織",
+      "zh": "短袖+薄外套",
+      "cn": "短袖+薄外套",
+      "en": "Short sleeves plus a light layer",
+      "ko": "반팔+얇은 겉옷"
+     }
+    },
+    {
+     "img": "warm-b",
+     "wear": {
+      "ja": "薄手のワンピース",
+      "zh": "輕薄連身裙",
+      "cn": "轻薄连衣裙",
+      "en": "A light dress",
+      "ko": "얇은 원피스"
+     }
+    }
+   ]
   },
   "mild": {
    "range": "18〜22℃",
    "ja": {
     "t": "過ごしやすい",
-    "o": "長袖シャツ・薄手ニット",
     "tip": "一年で最も歩きやすい気温。日中と夜で5℃ほど違うので、薄手の上着があると安心。"
    },
    "zh": {
     "t": "舒適",
-    "o": "長袖襯衫・薄針織",
     "tip": "一年中最好走的溫度。日夜溫差約5度，帶件薄外套比較保險。"
    },
    "cn": {
     "t": "舒适",
-    "o": "长袖衬衫・薄针织",
     "tip": "一年中最好走的温度。日夜温差约5度，带件薄外套比较保险。"
    },
    "en": {
     "t": "Comfortable",
-    "o": "Long sleeves or a light knit",
     "tip": "The easiest walking weather of the year. Day and night differ by about 5°C, so a thin jacket is worth carrying."
    },
    "ko": {
     "t": "쾌적",
-    "o": "긴팔 셔츠·얇은 니트",
     "tip": "일 년 중 가장 걷기 좋은 온도. 낮과 밤이 5도쯤 차이 나니 얇은 겉옷이 있으면 안심."
-   }
+   },
+   "variants": [
+    {
+     "img": "mild-a",
+     "wear": {
+      "ja": "長袖シャツ・薄手ニット",
+      "zh": "長袖襯衫・薄針織",
+      "cn": "长袖衬衫・薄针织",
+      "en": "Long sleeves or a light knit",
+      "ko": "긴팔 셔츠·얇은 니트"
+     }
+    }
+   ]
   },
   "cool": {
    "range": "13〜17℃",
    "ja": {
     "t": "肌寒い",
-    "o": "ジャケット・デニムジャケット",
     "tip": "風が出ると体感はもっと低い。中に一枚足せる重ね着にすると、屋内でも脱げて楽。"
    },
    "zh": {
     "t": "微涼",
-    "o": "外套・牛仔外套",
     "tip": "起風時體感更低。採洋蔥式穿法，進室內好脫。"
    },
    "cn": {
     "t": "微凉",
-    "o": "外套・牛仔外套",
     "tip": "起风时体感更低。采洋葱式穿法，进室内好脱。"
    },
    "en": {
     "t": "Cool",
-    "o": "A jacket or denim jacket",
     "tip": "It feels colder when the wind picks up. Layer so you can add or shed one piece indoors."
    },
    "ko": {
     "t": "쌀쌀함",
-    "o": "재킷·데님 재킷",
     "tip": "바람이 불면 체감은 더 낮다. 레이어드로 입으면 실내에서 벗기 편하다."
-   }
+   },
+   "variants": [
+    {
+     "img": "cool-a",
+     "wear": {
+      "ja": "ジャケット・デニムジャケット",
+      "zh": "外套・牛仔外套",
+      "cn": "外套・牛仔外套",
+      "en": "A jacket or denim jacket",
+      "ko": "재킷·데님 재킷"
+     }
+    }
+   ]
   },
   "chilly": {
    "range": "8〜12℃",
    "ja": {
     "t": "冬の入口",
-    "o": "厚手ニット+アウター",
     "tip": "石畳や砂利道が冷える。歩きやすく底の厚い靴を。屋内は暖房が効くので脱げる格好に。"
    },
    "zh": {
     "t": "入冬",
-    "o": "厚針織+外套",
     "tip": "石板路與碎石路很凍腳，穿好走、鞋底厚一點的鞋。室內暖氣強，選好脫的穿法。"
    },
    "cn": {
     "t": "入冬",
-    "o": "厚针织+外套",
     "tip": "石板路与碎石路很冻脚，穿好走、鞋底厚一点的鞋。室内暖气强，选好脱的穿法。"
    },
    "en": {
     "t": "Early winter",
-    "o": "A heavy knit under a coat",
     "tip": "Stone paths and gravel get cold underfoot — wear thick-soled shoes. Heating indoors is strong, so dress to peel off."
    },
    "ko": {
     "t": "초겨울",
-    "o": "두꺼운 니트+아우터",
     "tip": "돌길과 자갈길이 발밑부터 시리다. 밑창 두꺼운 신발을. 실내는 난방이 세니 벗기 좋은 차림으로."
-   }
+   },
+   "variants": [
+    {
+     "img": "chilly-a",
+     "wear": {
+      "ja": "厚手ニット+アウター",
+      "zh": "厚針織+外套",
+      "cn": "厚针织+外套",
+      "en": "A heavy knit under a coat",
+      "ko": "두꺼운 니트+아우터"
+     }
+    }
+   ]
   },
   "cold": {
    "range": "〜7℃",
    "ja": {
     "t": "真冬",
-    "o": "コート+マフラー・手袋",
     "tip": "雪国では足元が最重要。滑りにくい靴とインナーの防寒を。北海道や日本海側はさらに一枚厚く。"
    },
    "zh": {
     "t": "嚴冬",
-    "o": "大衣+圍巾・手套",
     "tip": "雪國最重要的是腳下。防滑的鞋和保暖內衣。北海道與日本海側請再加一件。"
    },
    "cn": {
     "t": "严冬",
-    "o": "大衣+围巾・手套",
     "tip": "雪国最重要的是脚下。防滑的鞋和保暖内衣。北海道与日本海侧请再加一件。"
    },
    "en": {
     "t": "Deep winter",
-    "o": "A coat with scarf and gloves",
     "tip": "In snow country your feet matter most — non-slip shoes and thermal base layers. Add another layer for Hokkaido and the Japan Sea side."
    },
    "ko": {
     "t": "한겨울",
-    "o": "코트+머플러·장갑",
     "tip": "설국에선 발밑이 가장 중요하다. 미끄럼 방지 신발과 내복. 홋카이도와 동해 쪽은 한 겹 더."
-   }
+   },
+   "variants": [
+    {
+     "img": "cold-a",
+     "wear": {
+      "ja": "コート+マフラー・手袋",
+      "zh": "大衣+圍巾・手套",
+      "cn": "大衣+围巾・手套",
+      "en": "A coat with scarf and gloves",
+      "ko": "코트+머플러·장갑"
+     }
+    },
+    {
+     "img": "cold-b",
+     "wear": {
+      "ja": "冬の和装で初詣",
+      "zh": "穿和服去新年參拜",
+      "cn": "穿和服去新年参拜",
+      "en": "Kimono for the New Year shrine visit",
+      "ko": "겨울 기모노로 신년 참배"
+     }
+    }
+   ]
   }
  },
  "humid": {
@@ -175,5 +247,28 @@
   "cn": "湿度偏高，体感会比实际气温更闷热。",
   "en": "Humidity is high, so it will feel muggier than the number suggests.",
   "ko": "습도가 높아 실제 기온보다 후덥지근하게 느껴진다."
+ },
+ "weather": {
+  "rain": {
+   "ja": "雨。折りたたみ傘と、濡れても重くならない靴を。コンビニで500円ほどで買える。",
+   "zh": "下雨。帶折傘，鞋子選濕了也不會變重的。便利商店約五百日圓就有。",
+   "cn": "下雨。带折伞，鞋子选湿了也不会变重的。便利店约五百日元就有。",
+   "en": "Rain. Bring a folding umbrella and shoes that don't get heavy when wet — about ¥500 at any convenience store.",
+   "ko": "비. 접이식 우산과 젖어도 무거워지지 않는 신발을. 편의점에서 500엔쯤이면 산다."
+  },
+  "snow": {
+   "ja": "雪。滑りにくい靴が最優先。都市部でも歩道が凍る。",
+   "zh": "下雪。防滑鞋最優先，市區的人行道也會結冰。",
+   "cn": "下雪。防滑鞋最优先，市区的人行道也会结冰。",
+   "en": "Snow. Non-slip shoes come first — even city pavements ice over.",
+   "ko": "눈. 미끄럼 방지 신발이 최우선. 도심 인도도 언다."
+  },
+  "hotday": {
+   "ja": "日差しが強い。帽子と日焼け止め、そして水を切らさないこと。",
+   "zh": "陽光很強。帽子、防曬，還有別讓水斷了。",
+   "cn": "阳光很强。帽子、防晒，还有别让水断了。",
+   "en": "Strong sun. Hat, sunscreen, and never let your water run out.",
+   "ko": "햇살이 강하다. 모자와 자외선 차단제, 그리고 물을 끊지 말 것."
+  }
  }
 }
