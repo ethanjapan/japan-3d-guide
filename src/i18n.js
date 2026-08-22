@@ -4,6 +4,7 @@ const CREDIT =
 
 export const STRINGS = {
   zh: {
+    festival: "祭典與活動",
     seasonAuto: "季節",
     seasonSpring: "春",
     seasonSummer: "夏",
@@ -45,6 +46,7 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ja: {
+    festival: "祭り・行事",
     seasonAuto: "季節",
     seasonSpring: "春",
     seasonSummer: "夏",
@@ -86,6 +88,7 @@ export const STRINGS = {
     credit: CREDIT,
   },
   cn: {
+    festival: "祭典与活动",
     seasonAuto: "季节",
     seasonSpring: "春",
     seasonSummer: "夏",
@@ -127,6 +130,7 @@ export const STRINGS = {
     credit: CREDIT,
   },
   en: {
+    festival: "Festivals",
     seasonAuto: "Season",
     seasonSpring: "Spring",
     seasonSummer: "Summer",
@@ -168,6 +172,7 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ko: {
+    festival: "축제·행사",
     seasonAuto: "계절",
     seasonSpring: "봄",
     seasonSummer: "여름",

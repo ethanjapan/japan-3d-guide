@@ -18,6 +18,7 @@ import { TRAVEL_INFO, TRANSIT, PROMO_VIDEOS, GENERAL_VIDEOS,
 import { fetchWeather, codeLabel, codeIcon } from "./weather.js";
 import { rinkaPref, rinkaSpot, RINKA_PROFILE, RINKA_LINKS } from "./rinka.js";
 import PREF_INTRO from "../data/i18n/pref-intro.json";
+import FESTIVALS from "../data/i18n/festivals.json";
 import COURSES from "../data/courses.json";
 
 
@@ -188,6 +189,34 @@ const renderPanel = () => {
       });
       gour.append(gh, row);
     }
+    // 祭り・行事(日本版だけの軸)。日本は「いつ行くか」で中身が変わるので時期も出す。
+    const fest = document.createElement("div");
+    {
+      const f = FESTIVALS[pref.id];
+      if (f) {
+        const fh = document.createElement("p");
+        fh.className = "gourmet-title";
+        fh.textContent = T.festival;
+        const row = document.createElement("div");
+        row.className = "festival-row";
+        const img = document.createElement("img");
+        img.src = `${import.meta.env.BASE_URL}festival/${pref.id}.webp`;
+        img.alt = "";
+        img.loading = "lazy";
+        img.addEventListener("error", () => img.remove());
+        const txt = document.createElement("div");
+        txt.className = "festival-text";
+        const nm = document.createElement("span");
+        nm.className = "festival-name";
+        nm.textContent = f.name[lang] ?? f.name.ja;
+        const wh = document.createElement("span");
+        wh.className = "festival-when";
+        wh.textContent = f.when[lang] ?? f.when.ja;
+        txt.append(nm, wh);
+        row.append(img, txt);
+        fest.append(fh, row);
+      }
+    }
     const ul = document.createElement("ul");
     ul.className = "spot-list";
     for (const s of spots) {
@@ -233,7 +262,7 @@ const renderPanel = () => {
     wstrip.className = "weather-strip";
     wstrip.id = "weather-strip";
     panelBody.dataset.view = "list";
-    panelBody.replaceChildren(rk, wstrip, intro, gour, ul);
+    panelBody.replaceChildren(rk, wstrip, intro, gour, fest, ul);
     stagger(panelBody);
     if (IS_MOBILE() && !panel.dataset.sheet) panel.dataset.sheet = "half";
     // 地方のJNTO公式動画(その県が属する地方の回)。click-to-play で埋め込みは押されてから作る

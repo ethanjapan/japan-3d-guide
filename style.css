@@ -1664,3 +1664,34 @@ html[data-phase="dusk"] .credit {
 .course-title {
   padding-right: 42px;
 }
+
+/* ---- 祭り・行事の帯(日本版で追加) ---- */
+.festival-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(224, 104, 95, 0.07);
+  border-radius: 12px;
+  padding: 8px 12px;
+}
+.festival-row img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+.festival-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.festival-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #2f4552;
+}
+.festival-when {
+  font-size: 11.5px;
+  color: #7b8a93;
+}
