@@ -984,7 +984,7 @@ body {
   .promo-grid { grid-template-columns: 1fr; }
 }
 
-/* ---- GPT生成オーナメント(2026-08-21 ユーザー指示で多用OK) ---- */
+/* ---- GPT生成オーナメント(日本版: 桜・提灯ガーランド・木の看板) ---- */
 .title-compass {
   width: 26px;
   height: 26px;
@@ -994,10 +994,10 @@ body {
 
 .panel-garland {
   position: absolute;
-  top: -14px;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 78%;
+  width: 72%;
   pointer-events: none;
   z-index: 1;
 }
@@ -1006,12 +1006,13 @@ body {
   overflow: visible;
 }
 
+/* 台湾版はハイビスカス。日本版は桜の枝(クラス名は互換のため据え置き) */
 .welcome-hibiscus {
   position: absolute;
-  top: -26px;
-  right: -18px;
-  width: 84px;
-  transform: rotate(8deg);
+  top: -30px;
+  right: -22px;
+  width: 92px;
+  transform: rotate(-6deg);
   pointer-events: none;
 }
 

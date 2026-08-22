@@ -1036,7 +1036,10 @@ function start() {
     const xs = pts.map(([x]) => x);
     const ys = pts.map(([, y]) => y);
     const extent = Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys));
-    return THREE.MathUtils.clamp(extent * 0.7, 24, 46);
+    // 台湾版は clamp(extent*0.7, 24, 46)。日本は同じ画面に47個並ぶうえ、
+    // 本州の県は差し渡し10〜20ワールド単位しかないので、そのままだと隣県のアイコンと重なる。
+    // 上限も下げないと北海道だけ他県の2倍になって浮く(実測: 北海道46 vs 香川24)。
+    return THREE.MathUtils.clamp(extent * 0.5, 12, 26);
   };
 
   const makeSprite = (url, size, position, group) => {
