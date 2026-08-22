@@ -5,6 +5,7 @@ import { createScene, PALETTE } from "./scene.js";
 import { createAmbient } from "./ambient.js";
 import { createAtmosphere } from "./atmosphere.js";
 import { createSeason } from "./season.js";
+import { createEventLayer } from "./events3d.js";
 import { createCourseLayer } from "./courses3d.js";
 import { STRINGS, applyLang, detectLang } from "./i18n.js";
 import prefectures from "../data/prefectures.json";
@@ -21,6 +22,7 @@ import { rinkaPref, rinkaSpot, RINKA_PROFILE, RINKA_LINKS } from "./rinka.js";
 import PREF_INTRO from "../data/i18n/pref-intro.json";
 import FESTIVALS from "../data/i18n/festivals.json";
 import OUTFIT from "../data/i18n/outfit.json";
+import EVENTS from "../data/events.json";
 import COURSES from "../data/courses.json";
 
 
@@ -302,6 +304,38 @@ const renderPanel = () => {
         fest.append(fh, row);
       }
     }
+    // 季節イベント。月バーが出ていればその月のものだけ、出ていなければ全部。
+    const evbox = document.createElement("div");
+    {
+      const all = EVENTS[pref.id] ?? [];
+      const list = activeMonth ? all.filter((e) => e.m.includes(activeMonth)) : all;
+      if (list.length) {
+        const eh = document.createElement("p");
+        eh.className = "gourmet-title";
+        eh.textContent = activeMonth ? `${T.monthEvents}（${activeMonth}）` : T.allEvents;
+        const ul = document.createElement("div");
+        ul.className = "event-list";
+        for (const e of list) {
+          const row = document.createElement("div");
+          row.className = "event-row";
+          const ic = document.createElement("img");
+          ic.className = "event-icon";
+          ic.src = `${import.meta.env.BASE_URL}event/${e.cat}.webp`;
+          ic.alt = "";
+          ic.loading = "lazy";
+          ic.addEventListener("error", () => ic.remove());
+          const nm = document.createElement("span");
+          nm.className = "event-name";
+          nm.textContent = e.name[lang] ?? e.name.ja;
+          const wh = document.createElement("span");
+          wh.className = "event-when";
+          wh.textContent = e.peak[lang] ?? e.peak.ja;
+          row.append(ic, nm, wh);
+          ul.appendChild(row);
+        }
+        evbox.append(eh, ul);
+      }
+    }
     const ul = document.createElement("ul");
     ul.className = "spot-list";
     for (const s of spots) {
@@ -349,7 +383,7 @@ const renderPanel = () => {
     const oslot = document.createElement("div");
     oslot.id = "outfit-slot";
     panelBody.dataset.view = "list";
-    panelBody.replaceChildren(rk, wstrip, oslot, intro, gour, fest, ul);
+    panelBody.replaceChildren(rk, wstrip, oslot, intro, gour, fest, evbox, ul);
     stagger(panelBody);
     if (IS_MOBILE() && !panel.dataset.sheet) panel.dataset.sheet = "half";
     // 地方のJNTO公式動画(その県が属する地方の回)。click-to-play で埋め込みは押されてから作る
@@ -558,6 +592,8 @@ const attachSheet = (panelEl, { snaps = false, onClose } = {}) => {
 };
 let updatePhaseButton = null; // start()が差し込む。言語切替時にラベルを追随させる
 let updateSeasonButton = null;
+let updateMonthBar = null;
+let activeMonth = 0;   // 0=イベント表示なし
 
 // ---- 旅のしおり(スタンプラリー)。訪問=県市パネルを開いた県市。localStorageで永続 ----
 const stamps = new Set(JSON.parse(localStorage.getItem("stamps") ?? "[]"));
@@ -635,6 +671,7 @@ const addStamp = (iso) => {
   }
   updatePhaseButton?.();
   updateSeasonButton?.();
+  updateMonthBar?.();
 };
 
 stampBtn.addEventListener("click", () => {
@@ -642,6 +679,7 @@ stampBtn.addEventListener("click", () => {
   if (!stampPanel.hidden) renderStampBook();
   updatePhaseButton?.();
   updateSeasonButton?.();
+  updateMonthBar?.();
 });
 document.getElementById("stamp-close").addEventListener("click", () => {
   stampPanel.hidden = true;
@@ -671,6 +709,7 @@ const setLang = (next) => {
   if (!stampPanel.hidden) renderStampBook();
   updatePhaseButton?.();
   updateSeasonButton?.();
+  updateMonthBar?.();
   // バッジの単位語はパネルの状態に関係なく言語に追随させる(ko残留バグ 2026-08-21)
   if (badgePrefId) {
     badgeInner.textContent = `${PREF_LINKS[badgePrefId]?.km2 ?? ""} km²`;
@@ -1358,6 +1397,15 @@ function start() {
     pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
     pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
     raycaster.setFromCamera(pointer, camera);
+    // イベントのピンを先に見る。地形より手前に浮いているので、ピンを狙ったのに
+    // 下の県が取れる(あるいは海に外れる)と操作が噛み合わない
+    if (activeMonth) {
+      const ph = raycaster.intersectObjects(eventLayer.pins, false);
+      if (ph.length) {
+        const iso = ph[0].object.userData.pref;
+        return groups.find((g) => g.userData.pref.id === iso) ?? null;
+      }
+    }
     const hits = raycaster.intersectObjects(groups, true);
     if (hits.length === 0) return null;
     let node = hits[0].object;
@@ -1497,6 +1545,59 @@ function start() {
     });
     updateSeasonButton = render;
   }
+  // ---- 季節イベントの月バー(日本版だけの軸) ----
+  // 日本の観光は「どこへ行くか」より先に「いつ行くか」で中身が変わる。
+  // 月を動かすと、その月にイベントがある県にピンが立ち、桜前線と紅葉前線が南北に流れて見える。
+  const eventLayer = createEventLayer(stage, EVENTS, prefectures.prefectures, reduceMotion);
+  {
+    const bar = document.getElementById("month-bar");
+    const btns = document.getElementById("month-btns");
+    const off = document.getElementById("month-off");
+    const eBtn = document.getElementById("event-btn");
+    const eLabel = document.getElementById("event-label");
+
+    const jpMonth = Number(new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Tokyo", month: "numeric" }).format(new Date()));
+
+    const render = () => {
+      const T = STRINGS[lang];
+      eLabel.textContent = activeMonth ? `${T.events} ${activeMonth}` : T.events;
+      eBtn.dataset.on = activeMonth ? "true" : "false";
+      off.textContent = T.monthOff;
+      for (const b of btns.children) {
+        b.dataset.on = Number(b.dataset.m) === activeMonth ? "true" : "false";
+      }
+    };
+
+    const apply = (m) => {
+      activeMonth = m;
+      eventLayer.setMonth(m);
+      bar.hidden = m === 0 && bar.dataset.forced !== "1";
+      render();
+      // パネルが開いていれば、その月のイベントに差し替える
+      if (!panel.hidden && panel.dataset.pref) renderPanel();
+    };
+
+    for (let m = 1; m <= 12; m += 1) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "month-btn";
+      b.dataset.m = String(m);
+      b.textContent = String(m);
+      b.addEventListener("click", () => apply(m === activeMonth ? 0 : m));
+      btns.appendChild(b);
+    }
+    off.addEventListener("click", () => { bar.dataset.forced = "0"; apply(0); });
+    eBtn.addEventListener("click", () => {
+      if (activeMonth) { bar.dataset.forced = "0"; apply(0); return; }
+      bar.dataset.forced = "1";
+      bar.hidden = false;
+      apply(jpMonth);            // 開いたら今月から
+    });
+    updateMonthBar = render;
+    render();
+  }
+
   courseLayer = createCourseLayer(scene, prefectures.bounds, groups, reduceMotion);
   if (import.meta.env.DEV) window.__course = courseLayer;
   const badgeAnchor = new THREE.Vector3();
@@ -1574,6 +1675,7 @@ function start() {
     ambient.update(time / 1000);
     atmosphere.update(dt);
     season.update(dt);
+    eventLayer.update(dt);
     courseLayer.update(dt);
     if (!reduceMotion) stage.updateSea(time / 1000);
     controls.update();

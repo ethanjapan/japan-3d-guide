@@ -4,6 +4,10 @@ const CREDIT =
 
 export const STRINGS = {
   zh: {
+    events: "活動",
+    monthOff: "不顯示",
+    monthEvents: "這個月的活動",
+    allEvents: "季節活動",
     outfit: "穿搭建議",
     festival: "祭典與活動",
     seasonAuto: "季節",
@@ -47,6 +51,10 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ja: {
+    events: "イベント",
+    monthOff: "表示しない",
+    monthEvents: "この月のイベント",
+    allEvents: "季節のイベント",
     outfit: "服装の目安",
     festival: "祭り・行事",
     seasonAuto: "季節",
@@ -90,6 +98,10 @@ export const STRINGS = {
     credit: CREDIT,
   },
   cn: {
+    events: "活动",
+    monthOff: "不显示",
+    monthEvents: "这个月的活动",
+    allEvents: "季节活动",
     outfit: "穿搭建议",
     festival: "祭典与活动",
     seasonAuto: "季节",
@@ -133,6 +145,10 @@ export const STRINGS = {
     credit: CREDIT,
   },
   en: {
+    events: "Events",
+    monthOff: "Off",
+    monthEvents: "This month",
+    allEvents: "Seasonal events",
     outfit: "What to wear",
     festival: "Festivals",
     seasonAuto: "Season",
@@ -176,6 +192,10 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ko: {
+    events: "이벤트",
+    monthOff: "표시 안 함",
+    monthEvents: "이번 달 이벤트",
+    allEvents: "계절 이벤트",
     outfit: "옷차림 가이드",
     festival: "축제·행사",
     seasonAuto: "계절",

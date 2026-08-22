@@ -266,7 +266,7 @@ export const createScene = (canvas, prefectures, bounds) => {
   scene.add(key);
 
   return {
-    renderer, scene, camera, world, groups, sea, span, updateSea,
+    renderer, scene, camera, world, groups, sea, span, updateSea, bounds,
     frameWidth: spanX, frameHeight: spanY,
     extrude: EXTRUDE, lift: LIFT,
   };
