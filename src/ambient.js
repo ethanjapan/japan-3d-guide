@@ -2,8 +2,8 @@ import * as THREE from "three";
 
 /**
  * アイドル時のアンビエント演出。雲が流れ、船が海を行き、飛行機が旋回し、
- * 台東の空に熱気球が浮かぶ。素材(public/ambient/*.webp)が無い間は
- * 読み込み失敗を握りつぶして何も出さない=生成完了前でも安全に組み込める。
+ * 佐賀の空に熱気球が浮かぶ(佐賀インターナショナルバルーンフェスタ)。
+ * 素材(public/ambient/*.webp)が無い間は読み込み失敗を握りつぶして何も出さない。
  */
 export const createAmbient = (scene, bounds, reduceMotion) => {
   const loader = new THREE.TextureLoader();
@@ -37,7 +37,7 @@ export const createAmbient = (scene, bounds, reduceMotion) => {
   const plane = make("plane", 13);
   const balloon = make("balloon", 10);
 
-  const [bx, bz] = W(6, -52); // 台東の上空
+  const [bx, bz] = W(-78, -33); // 佐賀の上空(バルーンフェスタ)
 
   // 船の航路半径: 島の最遠頂点(実測~150)より外側を回す。内側だと陸に乗り上げる。
   const seaR = span * 0.63;
