@@ -4,7 +4,7 @@
    "id": "kaisendon",
    "ja": "海鮮丼",
    "zh": "海鮮丼",
-   "cn": "海鲜盖饭",
+   "cn": "海鲜丼",
    "en": "Seafood rice bowl",
    "ko": "해산물 덮밥"
   },
@@ -20,7 +20,7 @@
    "id": "soup-curry",
    "ja": "スープカレー",
    "zh": "湯咖哩",
-   "cn": "汤咖喱",
+   "cn": "汤咖哩",
    "en": "Soup curry",
    "ko": "수프 카레"
   }
@@ -46,7 +46,7 @@
    "id": "oma-maguro",
    "ja": "大間のまぐろ",
    "zh": "大間鮪魚",
-   "cn": "大间金枪鱼",
+   "cn": "大间鲔鱼",
    "en": "Ōma bluefin tuna",
    "ko": "오마 참치"
   }
@@ -90,7 +90,7 @@
    "id": "zunda",
    "ja": "ずんだ餅",
    "zh": "毛豆泥麻糬",
-   "cn": "毛豆泥年糕",
+   "cn": "毛豆泥麻糬",
    "en": "Zunda edamame mochi",
    "ko": "즌다모치"
   },
@@ -116,7 +116,7 @@
    "id": "inaniwa-udon",
    "ja": "稲庭うどん",
    "zh": "稻庭烏龍麵",
-   "cn": "稻庭乌冬面",
+   "cn": "稻庭乌龙面",
    "en": "Inaniwa udon",
    "ko": "이나니와 우동"
   },
@@ -194,7 +194,7 @@
    "id": "anko",
    "ja": "あんこう鍋",
    "zh": "鮟鱇魚鍋",
-   "cn": "鮟鱇鱼锅",
+   "cn": "𩽾𩾌鱼锅",
    "en": "Monkfish hotpot",
    "ko": "아귀 전골"
   },
@@ -220,7 +220,7 @@
    "id": "strawberry",
    "ja": "とちおとめ",
    "zh": "栃乙女草莓",
-   "cn": "枥乙女草莓",
+   "cn": "栃乙女草莓",
    "en": "Tochiotome strawberries",
    "ko": "도치오토메 딸기"
   },
@@ -254,7 +254,7 @@
    "id": "mizusawa-udon",
    "ja": "水沢うどん",
    "zh": "水澤烏龍麵",
-   "cn": "水泽乌冬面",
+   "cn": "水泽乌龙面",
    "en": "Mizusawa udon",
    "ko": "미즈사와 우동"
   }
@@ -264,7 +264,7 @@
    "id": "kawagoe-imo",
    "ja": "川越さつまいも",
    "zh": "川越地瓜",
-   "cn": "川越红薯",
+   "cn": "川越地瓜",
    "en": "Kawagoe sweet potato",
    "ko": "가와고에 고구마"
   },
@@ -358,7 +358,7 @@
    "id": "shirasu",
    "ja": "湘南しらす",
    "zh": "湘南吻仔魚",
-   "cn": "湘南银鱼",
+   "cn": "湘南吻仔鱼",
    "en": "Shōnan whitebait",
    "ko": "쇼난 시라스"
   }
@@ -410,7 +410,7 @@
    "id": "kurobuta",
    "ja": "氷見うどん",
    "zh": "冰見烏龍麵",
-   "cn": "冰见乌冬面",
+   "cn": "冰见乌龙面",
    "en": "Himi udon",
    "ko": "히미 우동"
   }
@@ -436,7 +436,7 @@
    "id": "gold-leaf",
    "ja": "金箔ソフト",
    "zh": "金箔霜淇淋",
-   "cn": "金箔冰淇淋",
+   "cn": "金箔霜淇淋",
    "en": "Gold-leaf soft serve",
    "ko": "금박 소프트아이스크림"
   }
@@ -462,7 +462,7 @@
    "id": "sauce-katsudon",
    "ja": "ソースカツ丼",
    "zh": "醬汁豬排丼",
-   "cn": "酱汁猪排盖饭",
+   "cn": "酱汁猪排丼",
    "en": "Sauce katsudon",
    "ko": "소스 가쓰동"
   }
@@ -610,7 +610,7 @@
    "id": "ise-udon",
    "ja": "伊勢うどん",
    "zh": "伊勢烏龍麵",
-   "cn": "伊势乌冬面",
+   "cn": "伊势乌龙面",
    "en": "Ise udon",
    "ko": "이세 우동"
   },
@@ -636,7 +636,7 @@
    "id": "funazushi",
    "ja": "鮒ずし",
    "zh": "鮒魚壽司",
-   "cn": "鲫鱼寿司",
+   "cn": "鲋鱼寿司",
    "en": "Funazushi fermented carp",
    "ko": "후나즈시"
   },
@@ -826,7 +826,7 @@
    "id": "wagashi",
    "ja": "松江の和菓子",
    "zh": "松江和菓子",
-   "cn": "松江和果子",
+   "cn": "松江和菓子",
    "en": "Matsue wagashi",
    "ko": "마쓰에 화과자"
   }
@@ -940,7 +940,7 @@
    "id": "sanuki-udon",
    "ja": "讃岐うどん",
    "zh": "讚岐烏龍麵",
-   "cn": "赞岐乌冬面",
+   "cn": "赞岐乌龙面",
    "en": "Sanuki udon",
    "ko": "사누키 우동"
   },
@@ -1052,7 +1052,7 @@
    "id": "yobuko-ika",
    "ja": "呼子のイカ",
    "zh": "呼子花枝",
-   "cn": "呼子鱿鱼",
+   "cn": "呼子花枝",
    "en": "Yobuko squid",
    "ko": "요부코 오징어"
   },
@@ -1174,7 +1174,7 @@
    "id": "kurobuta",
    "ja": "黒豚しゃぶしゃぶ",
    "zh": "黑豬涮涮鍋",
-   "cn": "黑猪涮锅",
+   "cn": "黑猪涮涮锅",
    "en": "Black pork shabu-shabu",
    "ko": "흑돼지 샤부샤부"
   },
@@ -1190,7 +1190,7 @@
    "id": "shochu",
    "ja": "芋焼酎",
    "zh": "地瓜燒酎",
-   "cn": "红薯烧酒",
+   "cn": "地瓜烧酎",
    "en": "Sweet potato shōchū",
    "ko": "고구마 소주"
   }
