@@ -25,6 +25,7 @@ import OUTFIT from "../data/i18n/outfit.json";
 import EVENTS from "../data/events.json";
 import FAQ from "../data/i18n/faq.json";
 import TIMING from "../data/timing.json";
+import { createTour } from "./tour.js";
 import COURSES from "../data/courses.json";
 
 
@@ -864,6 +865,7 @@ const attachSheet = (panelEl, { snaps = false, onClose } = {}) => {
 let updatePhaseButton = null; // start()が差し込む。言語切替時にラベルを追随させる
 let updateSeasonButton = null;
 let updateMonthBar = null;
+let updateTourMenu = null;
 let activeMonth = 0;   // 0=イベント表示なし
 // 地図のイベントピンを押したときだけ入る {pref, cat, key}。
 // パネル側で「押したのはこれ」を示すために使う(押していない間は null)
@@ -968,6 +970,7 @@ const addStamp = (iso) => {
   updatePhaseButton?.();
   updateSeasonButton?.();
   updateMonthBar?.();
+  updateTourMenu?.();
 };
 
 stampBtn.addEventListener("click", () => {
@@ -976,6 +979,7 @@ stampBtn.addEventListener("click", () => {
   updatePhaseButton?.();
   updateSeasonButton?.();
   updateMonthBar?.();
+  updateTourMenu?.();
 });
 document.getElementById("stamp-close").addEventListener("click", () => {
   stampPanel.hidden = true;
@@ -1006,6 +1010,7 @@ const setLang = (next) => {
   updatePhaseButton?.();
   updateSeasonButton?.();
   updateMonthBar?.();
+  updateTourMenu?.();
   // バッジの単位語はパネルの状態に関係なく言語に追随させる(ko残留バグ 2026-08-21)
   if (badgePrefId) {
     badgeInner.textContent = `${PREF_LINKS[badgePrefId]?.km2 ?? ""} km²`;
@@ -1805,6 +1810,7 @@ function start() {
   const atmosphere = createAtmosphere(stage, reduceMotion);
 
   getPhase = () => atmosphere.phase;   // auto でも必ず解決済みの値が返る
+  let applyMonth = null;
 
   // 時間帯切替ボタン(ユーザー要望 2026-08-21「切り替えの操作がわからない」)
   {
@@ -1921,7 +1927,53 @@ function start() {
       apply(jpMonth);            // 開いたら今月から
     });
     updateMonthBar = render;
+    applyMonth = apply;      // 説明モードが「イベントを出した状態」を作るのに使う
     render();
+  }
+
+  // ---- 説明モード ----
+  // ★案内は「当て先の要素が実際にある」状態を作ってから出す。
+  //   パネルを開いていない・その月にイベントが無い、で枠が空振りするため。
+  {
+    const byIso = (iso) => groups.find((g) => g.userData.pref.id === iso);
+    const openAndWait = (group) => {
+      if (!group) return;
+      select(group);
+      panel.hidden = false;
+    };
+    updateTourMenu = createTour({
+      lang: () => lang,
+      openPref: () => openAndWait(byIso("JP-26") ?? groups[0]),   // 京都(見どころが揃っている)
+      openInfo: () => {
+        renderInfo();
+        infoPanel.hidden = false;
+      },
+      eventsOn: () => {
+        if (!activeMonth) {
+          document.getElementById("month-bar").dataset.forced = "1";
+          document.getElementById("month-bar").hidden = false;
+          applyMonth?.(Number(new Intl.DateTimeFormat("en-US", {
+            timeZone: "Asia/Tokyo", month: "numeric" }).format(new Date())));
+        }
+      },
+      /** その月にイベントがある県を、ピンを押したのと同じ形で開く */
+      openEventPref: () => {
+        const iso = Object.keys(EVENTS.pref).find((k) =>
+          (EVENTS.pref[k] ?? []).some((e) => e.m.includes(activeMonth)));
+        if (!iso) return;
+        const ev = EVENTS.pref[iso].find((e) => e.m.includes(activeMonth));
+        pickedEvent = { pref: iso, cat: ev.cat, key: ev.name.ja };
+        eventLayer.select(iso);
+        openAndWait(byIso(iso));
+      },
+      /** 「いま行くなら」が出る県を探して開く。月と時間帯によって在り処が変わる */
+      openSeasonPref: () => {
+        const hit = groups.find((g) =>
+          (SPOTS[g.userData.pref.id] ?? []).some((sp) => timingOf(sp.id)));
+        pickedEvent = null;
+        openAndWait(hit ?? byIso("JP-26"));
+      },
+    }).render;
   }
 
   courseLayer = createCourseLayer(scene, prefectures.bounds, groups, reduceMotion);

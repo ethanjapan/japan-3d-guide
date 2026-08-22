@@ -38,6 +38,7 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="21" y2="21"/></svg>
         </button>
         <button type="button" class="lang info-btn" id="info-btn" data-i18n="infoBtn"></button>
+        <button type="button" class="lang help-btn" id="help-btn" aria-label="help">?</button>
         <button type="button" class="lang" data-lang="zh" lang="ja">繁中</button>
         <button type="button" class="lang" data-lang="cn" lang="zh-Hans">简中</button>
         <button type="button" class="lang" data-lang="ja" lang="ja">日本語</button>
@@ -87,6 +88,13 @@
         </div>
       </div>
       <button type="button" class="close" id="welcome-close" data-i18n-aria="close" aria-label="關閉">×</button>
+    </aside>
+
+    <aside class="tour-menu" id="tour-menu" hidden>
+      <button type="button" class="close" id="tour-close" aria-label="close">×</button>
+      <p class="tour-title" id="tour-title"></p>
+      <p class="tour-lead" id="tour-lead"></p>
+      <div class="tour-list" id="tour-list"></div>
     </aside>
 
     <div class="month-bar" id="month-bar" hidden>
