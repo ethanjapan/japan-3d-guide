@@ -2044,3 +2044,241 @@ html[data-phase="night"] .img-missing {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.04));
   border-color: rgba(255, 255, 255, 0.14);
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   旅の基本情報を「畳める+走査できる」形へ (2026-08-22 ユーザー指摘「文字だらけ」)
+
+   裏取り(WebSearch 2026-08-22):
+   - 密な情報は progressive disclosure。ただし畳んだ中身は走査できないので、
+     見出しに「中に何があるか」の1行(gist)を必ず出す
+   - native <details>/<summary> はキーボード操作と読み上げが ARIA 無しで付く
+   - モバイルのタップ標的は 44px 以上
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.info-sec {
+  border-radius: 14px;
+  background: var(--tile);
+  border: 1px solid var(--tile-line);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  margin: 0 0 8px;
+  overflow: hidden;
+}
+
+.info-sum {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;          /* タップ標的 44px 以上 */
+  padding: 8px 12px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.info-sum::-webkit-details-marker { display: none; }
+
+/* 開閉の三角は自前で描く。marker のスタイルはブラウザ差が大きい */
+.info-sum::after {
+  content: "";
+  margin-left: auto;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid rgba(23, 58, 78, 0.4);
+  border-bottom: 2px solid rgba(23, 58, 78, 0.4);
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform 0.18s ease;
+  flex: 0 0 auto;
+}
+.info-sec[open] .info-sum::after {
+  transform: rotate(-135deg) translate(-2px, -2px);
+}
+
+.info-sec-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+.info-sum-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.info-sum-h {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--ink-glass);
+}
+.info-sum-gist {
+  font-size: 0.66rem;
+  line-height: 1.4;
+  color: var(--ink-glass-soft);
+}
+.info-sum:hover { background: rgba(255, 255, 255, 0.35); }
+.info-sum:focus-visible { outline: 2px solid #2f7fa0; outline-offset: -2px; }
+
+.info-sec-body {
+  padding: 2px 12px 12px;
+}
+
+/* 見出し語 + 説明。長い一文を並べず、語で拾えるようにする */
+.info-rows {
+  margin: 0;
+}
+.info-rows dt {
+  margin: 8px 0 1px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #1f5f74;
+}
+.info-rows dd {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.7;
+  color: var(--ink-glass-soft);
+}
+
+/* ---- ICカードの比較(カードの積み重ね) ----
+   4列の表はパネル幅160px級で1文字ずつ折り返して読めなくなった。狭い面ではカードが強い。 */
+.ic-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 4px 0 2px;
+}
+.ic-card {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid var(--tile-line);
+}
+.ic-name {
+  margin: 0 0 4px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--ink-glass);
+}
+.ic-kv {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 8px;
+  margin: 0;
+}
+.ic-kv > * { min-width: 0; }
+.ic-kv dt {
+  font-size: 0.6rem;
+  color: var(--ink-glass-soft);
+  white-space: nowrap;
+}
+.ic-kv dd {
+  margin: 0;
+  font-size: 0.64rem;
+  line-height: 1.5;
+  color: var(--ink-glass);
+}
+
+/* ---- 12か月の帯 ---- */
+.month-strip {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3px;
+  margin: 6px 0 2px;
+}
+.month-strip > * { min-width: 0; }
+.month-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.month-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+}
+.month-no {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--ink-glass);
+  font-variant-numeric: tabular-nums;
+}
+.month-word {
+  font-size: 0.5rem;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--ink-glass-soft);
+  overflow-wrap: anywhere;
+}
+.month-cell[data-best="true"] .month-no::after {
+  content: "◎";
+  display: block;
+  font-size: 0.55rem;
+  color: #d2694f;
+  line-height: 1;
+}
+.month-note {
+  margin: 4px 0 0;
+  font-size: 0.62rem;
+  color: var(--ink-glass-soft);
+}
+
+/* ---- 緊急番号のカード ---- */
+.sos-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 6px;
+  margin: 6px 0 2px;
+}
+.sos-row > * { min-width: 0; }
+.sos-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 8px 10px;
+  min-height: 46px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(224, 104, 95, 0.12));
+  border: 1px solid rgba(224, 104, 95, 0.2);
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+}
+.sos-card:active { transform: scale(0.98); }
+.sos-num {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #b8443a;
+  font-variant-numeric: tabular-nums;
+}
+.sos-label {
+  font-size: 0.6rem;
+  line-height: 1.4;
+  color: var(--ink-glass-soft);
+}
+html[data-phase="night"] .sos-num { color: #ff9d8f; }
+html[data-phase="night"] .info-rows dt { color: #8fd0e4; }
+html[data-phase="night"] .info-sum::after {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 旅の基本情報は中身が密なので、他のパネルより広く取る */
+.info-panel {
+  width: min(392px, calc(100vw - 32px));
+}
+@media (max-width: 640px) {
+  .info-panel { width: 100%; }
+}
+
+/* 緊急番号: 110/119 は2列、ホットラインは番号が長いので1行使う */
+.sos-row {
+  grid-template-columns: 1fr 1fr;
+}
+.sos-card:last-child {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.sos-card:last-child .sos-num { white-space: nowrap; }
+.sos-card:last-child .sos-label { flex: 1; }

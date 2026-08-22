@@ -11,220 +11,216 @@
  * 断定が要る数字(JRパス額など)は「時点」を添えるか公式サイトへ誘導する方針。
  */
 
+/**
+ * 旅の基本情報。**畳める構造**にしてある(ユーザー指摘 2026-08-22「文字だらけで読む気にならない」)。
+ *
+ * 裏取り(WebSearch 2026-08-22):
+ *  - 密な情報は progressive disclosure が効く。ただし**畳んだ中身は走査できない**ので、
+ *    見出しに「中に何があるか」を1行(gist)で書く。これが無いと結局全部開くことになる
+ *  - 実装は native <details>/<summary>。キーボード操作と読み上げが ARIA 無しで付いてくる。
+ *    summary の中に別の操作要素(リンク・ボタン)を入れないこと
+ *  - モバイルのタップ標的は 44px 以上
+ *
+ * rows は [見出し語, 説明] の対。1行を長い文にせず、語で拾えるようにする。
+ * kind は特別扱いの描画:
+ *   "ic"      … ICカード3種の比較表を足す(元は箇条書き4行で読み比べられなかった)
+ *   "climate" … 12か月の帯を足す(旅程を決めるのに文章より速い)
+ *   "sos"     … 緊急番号を tel: の押せるカードにする
+ */
 export const TRAVEL_INFO = {
   ja: {
     title: "日本 旅の基本情報",
     sections: [
-      { h: "鉄道", lines: [
-        "新幹線: 北海道から鹿児島まで。東京—大阪は最速2時間21分、東京—博多は約5時間。",
-        "ジャパンレールパス: 訪日外国人向けの全国乗り放題券。7日間普通車で5万円台(2026年8月時点・海外購入は10月から改定)。",
-        "在来線と私鉄: 都市部は数分間隔。地方は1〜2時間に1本のこともあるので時刻表を先に見る。",
-        "指定席: 繁忙期(GW・お盆・年末年始)は早めに押さえる。自由席は混雑覚悟。",
-      ]},
-      { h: "交通ICカード", lines: [
-        "Suica・PASMO・ICOCAなど10種が全国で相互利用でき、1枚あれば大都市はほぼ移動できる。",
-        "Welcome Suica: 訪日者向け。デポジット不要・有効28日。成田/羽田のJR EAST Travel Service Centerなどで買える。",
-        "Welcome Suica Mobile: iPhone専用(iOS 17.2以降)で有効180日。窓口に並ばずアプリで発行できる。",
-        "Tourist PASMO: 2026年5月20日開始。成田・羽田で購入可能。",
-        "コンビニ・自販機・多くの店舗の支払いにも使える。",
-      ]},
-      { h: "お金", lines: [
-        "通貨は円(JPY)。都市部はキャッシュレスが進んだが、屋台・小さな寺社・地方バスは現金のみが残る。",
-        "空港・主要駅・コンビニATMで海外カードから引き出せる(セブン銀行・ゆうちょが対応幅広い)。",
-        "チップの習慣はない。置いていくとむしろ困らせてしまう。",
-      ]},
-      { h: "通信", lines: [
-        "空港でプリペイドSIM/eSIMが買える。eSIM対応端末なら出発前にオンライン購入が早い。",
-        "駅・コンビニ・カフェの無料Wi-Fiは多いが、移動中も使うならモバイルルーターかSIMが安心。",
-      ]},
-      { h: "気候と季節", lines: [
-        "3〜5月は桜と過ごしやすさ。6〜7月は梅雨(北海道はほぼ無い)。7〜9月は高温多湿で台風。",
-        "10〜11月は紅葉で一年で最も旅行しやすい。12〜2月は日本海側が豪雪、太平洋側は晴天で乾燥。",
-        "南北3000km。同じ日に沖縄が25度、北海道が氷点下ということが普通に起きる。",
-      ]},
-      { h: "マナーと緊急", lines: [
-        "警察110／消防・救急119。ジャパン・ビジターズ・ホットライン(24時間・多言語) 050-3816-2787。",
-        "電車内の通話は控える。ゴミ箱が少ないので持ち帰る前提で。",
-        "温泉は体を洗ってから湯船へ。タオルは湯に入れない。",
-        "電圧100V・プラグはAタイプ(平行2本)。",
-      ]},
-      { h: "公式サイト(最新情報)", lines: [
-        "日本政府観光局(JNTO) japan.travel／ジャパンレールパス japanrailpass.net",
-        "成田空港 narita-airport.jp／羽田空港 tokyo-haneda.com／関西空港 kansai-airport.or.jp",
-        "気象庁 jma.go.jp(警報・台風情報)",
-      ]},
+      { id: "rail", h: "鉄道", gist: "新幹線とJRパス。地方は本数が少ない", rows: [
+        ["新幹線", "北海道から鹿児島まで。東京—大阪は最速2時間21分、東京—博多は約5時間。"],
+        ["ジャパンレールパス", "訪日外国人向けの全国乗り放題券。7日間普通車で5万円台(2026年8月時点・海外購入は10月から改定)。"],
+        ["在来線と私鉄", "都市部は数分間隔。地方は1〜2時間に1本のこともあるので時刻表を先に見る。"],
+        ["指定席", "繁忙期(GW・お盆・年末年始)は早めに押さえる。自由席は混雑覚悟。"],
+      ] },
+      { id: "ic", h: "交通ICカード", gist: "1枚で電車・バス・買い物。訪日者向けは3種", kind: "ic", rows: [
+        ["相互利用", "Suica・PASMO・ICOCAなど10種が全国で相互利用でき、1枚あれば大都市はほぼ移動できる。"],
+        ["使えるところ", "改札とバスはタッチするだけ。コンビニ・自販機・多くの店舗の支払いにも使える。"],
+      ] },
+      { id: "money", h: "お金", gist: "現金も要る。チップは無い", rows: [
+        ["通貨", "円(JPY)。都市部はキャッシュレスが進んだが、屋台・小さな寺社・地方バスは現金のみが残る。"],
+        ["ATM", "空港・主要駅・コンビニATMで海外カードから引き出せる(セブン銀行・ゆうちょが対応幅広い)。"],
+        ["チップ", "習慣がない。置いていくとむしろ困らせてしまう。"],
+      ] },
+      { id: "net", h: "通信", gist: "eSIMは出発前に買うのが早い", rows: [
+        ["SIM・eSIM", "空港でプリペイドが買える。eSIM対応端末なら出発前にオンライン購入が早い。"],
+        ["Wi-Fi", "駅・コンビニ・カフェの無料Wi-Fiは多いが、移動中も使うならSIMかモバイルルーター。"],
+      ] },
+      { id: "climate", h: "気候と季節", gist: "10〜11月が最も旅行しやすい", kind: "climate", rows: [
+        ["南北3000km", "同じ日に沖縄が25度、北海道が氷点下ということが普通に起きる。行き先ごとに確認する。"],
+        ["梅雨と台風", "6〜7月は梅雨(北海道はほぼ無い)。7〜9月は台風の進路を毎日見る。"],
+      ] },
+      { id: "manner", h: "マナーと緊急", gist: "困ったら多言語ホットラインへ", kind: "sos", rows: [
+        ["電車内", "通話は控える。ゴミ箱が少ないので持ち帰る前提で。"],
+        ["温泉", "体を洗ってから湯船へ。タオルは湯に入れない。"],
+        ["電源", "電圧100V・プラグはAタイプ(平行2本)。"],
+      ] },
+      { id: "links", h: "公式サイト", gist: "最新はここで確かめる", rows: [
+        ["日本政府観光局(JNTO)", "japan.travel"],
+        ["ジャパンレールパス", "japanrailpass.net"],
+        ["空港", "narita-airport.jp / tokyo-haneda.com / kansai-airport.or.jp"],
+        ["気象庁", "jma.go.jp(警報・台風情報)"],
+      ] },
     ],
   },
   zh: {
     title: "日本旅遊實用資訊",
     sections: [
-      { h: "鐵路", lines: [
-        "新幹線: 從北海道通到鹿兒島。東京—大阪最快2小時21分，東京—博多約5小時。",
-        "JR Pass: 給外國旅客的全國無限搭乘券，7日普通車約5萬日圓級(2026年8月時點，10月起海外購買調價)。",
-        "在來線與私鐵: 都市每隔幾分鐘一班；鄉下可能1〜2小時才一班，務必先查時刻表。",
-        "對號座: 黃金週、盂蘭盆、年末年初請提早訂位，自由座要有站著的心理準備。",
-      ]},
-      { h: "交通IC卡", lines: [
-        "Suica、PASMO、ICOCA等十種卡片全國互通，一張走遍主要都市。",
-        "Welcome Suica: 訪日旅客專用，免押金、效期28天，可在成田/羽田的JR EAST Travel Service Center購買。",
-        "Welcome Suica Mobile: 限iPhone(iOS 17.2以上)，效期180天，用App發行免排隊。",
-        "Tourist PASMO: 2026年5月20日開賣，成田與羽田都買得到。",
-        "便利商店、自動販賣機與許多店家也能刷。",
-      ]},
-      { h: "金錢", lines: [
-        "貨幣為日圓(JPY)。都市無現金化已普及，但屋台、小神社、鄉下巴士仍只收現金。",
-        "機場、主要車站與便利商店ATM可用海外卡提領(7-11銀行與郵局適用範圍最廣)。",
-        "沒有小費習慣，硬要給反而會造成困擾。",
-      ]},
-      { h: "通訊", lines: [
-        "機場可買預付SIM/eSIM。手機支援eSIM的話，出發前線上買最快。",
-        "車站、便利商店、咖啡廳多有免費Wi-Fi，但移動中要上網還是建議SIM或分享器。",
-      ]},
-      { h: "氣候與季節", lines: [
-        "3〜5月櫻花與舒適氣溫；6〜7月梅雨(北海道幾乎沒有)；7〜9月高溫潮濕並有颱風。",
-        "10〜11月紅葉，是一年中最好旅行的時候；12〜2月日本海側豪雪，太平洋側晴朗乾燥。",
-        "南北長達三千公里，同一天沖繩25度、北海道零下是很正常的事。",
-      ]},
-      { h: "禮儀與緊急", lines: [
-        "報警110／消防救護119。Japan Visitor Hotline(24小時多語) 050-3816-2787。",
-        "車廂內請勿講電話。街上垃圾桶很少，請做好自行帶走的準備。",
-        "泡溫泉要先洗淨身體再入池，毛巾不可放進湯裡。",
-        "電壓100V，插座為A型(兩支平行扁腳)。",
-      ]},
-      { h: "官方網站(最新資訊)", lines: [
-        "日本政府觀光局(JNTO) japan.travel／JR Pass japanrailpass.net",
-        "成田機場 narita-airport.jp／羽田機場 tokyo-haneda.com／關西機場 kansai-airport.or.jp",
-        "氣象廳 jma.go.jp(警報與颱風資訊)",
-      ]},
+      { id: "rail", h: "鐵路", gist: "新幹線與JR Pass。鄉下班次少", rows: [
+        ["新幹線", "從北海道通到鹿兒島。東京—大阪最快2小時21分，東京—博多約5小時。"],
+        ["JR Pass", "給外國旅客的全國無限搭乘券，7日普通車約5萬日圓級(2026年8月時點，10月起海外購買調價)。"],
+        ["在來線與私鐵", "都市每隔幾分鐘一班；鄉下可能1〜2小時才一班，務必先查時刻表。"],
+        ["對號座", "黃金週、盂蘭盆、年末年初請提早訂位，自由座要有站著的心理準備。"],
+      ] },
+      { id: "ic", h: "交通IC卡", gist: "一張搭車又能購物。訪日專用有3種", kind: "ic", rows: [
+        ["全國互通", "Suica、PASMO、ICOCA等十種卡片全國互通，一張走遍主要都市。"],
+        ["能用的地方", "進出站與搭巴士只要感應。便利商店、自動販賣機與許多店家也能刷。"],
+      ] },
+      { id: "money", h: "金錢", gist: "仍需現金。沒有小費", rows: [
+        ["貨幣", "日圓(JPY)。都市無現金化已普及，但屋台、小神社、鄉下巴士仍只收現金。"],
+        ["ATM", "機場、主要車站與便利商店ATM可用海外卡提領(7-11銀行與郵局適用最廣)。"],
+        ["小費", "沒有這個習慣，硬要給反而造成困擾。"],
+      ] },
+      { id: "net", h: "通訊", gist: "eSIM出發前線上買最快", rows: [
+        ["SIM・eSIM", "機場可買預付卡。手機支援eSIM的話，出發前線上買最快。"],
+        ["Wi-Fi", "車站、便利商店、咖啡廳多有免費Wi-Fi，移動中要上網仍建議SIM或分享器。"],
+      ] },
+      { id: "climate", h: "氣候與季節", gist: "10〜11月最好旅行", kind: "climate", rows: [
+        ["南北三千公里", "同一天沖繩25度、北海道零下是常態。請按目的地個別確認。"],
+        ["梅雨與颱風", "6〜7月梅雨(北海道幾乎沒有)。7〜9月每天要看颱風路徑。"],
+      ] },
+      { id: "manner", h: "禮儀與緊急", gist: "有困難就打多語熱線", kind: "sos", rows: [
+        ["車廂內", "請勿講電話。街上垃圾桶很少，請自行帶走。"],
+        ["溫泉", "先洗淨身體再入池，毛巾不可放進湯裡。"],
+        ["電源", "電壓100V，插座為A型(兩支平行扁腳)。"],
+      ] },
+      { id: "links", h: "官方網站", gist: "最新資訊在這裡確認", rows: [
+        ["日本政府觀光局(JNTO)", "japan.travel"],
+        ["JR Pass", "japanrailpass.net"],
+        ["機場", "narita-airport.jp / tokyo-haneda.com / kansai-airport.or.jp"],
+        ["氣象廳", "jma.go.jp(警報與颱風資訊)"],
+      ] },
     ],
   },
   cn: {
     title: "日本旅游实用信息",
     sections: [
-      { h: "铁路", lines: [
-        "新干线: 从北海道通到鹿儿岛。东京—大阪最快2小时21分，东京—博多约5小时。",
-        "JR Pass: 面向外国旅客的全国通用券，7日普通车约5万日元级(2026年8月时点，10月起海外购买调价)。",
-        "在来线与私铁: 城市每隔几分钟一班；乡下可能1〜2小时才一班，务必先查时刻表。",
-        "对号座: 黄金周、盂兰盆、年末年初请提早订位，自由座要做好站着的准备。",
-      ]},
-      { h: "交通IC卡", lines: [
-        "Suica、PASMO、ICOCA等十种卡片全国互通，一张走遍主要城市。",
-        "Welcome Suica: 访日旅客专用，免押金、有效28天，可在成田/羽田的JR EAST Travel Service Center购买。",
-        "Welcome Suica Mobile: 仅限iPhone(iOS 17.2以上)，有效180天，用App发行免排队。",
-        "Tourist PASMO: 2026年5月20日开售，成田与羽田都能买到。",
-        "便利店、自动售货机与许多店铺也能刷。",
-      ]},
-      { h: "金钱", lines: [
-        "货币为日元(JPY)。城市无现金化已普及，但路边摊、小神社、乡下巴士仍只收现金。",
-        "机场、主要车站与便利店ATM可用海外卡取现(7-11银行与邮政适用范围最广)。",
-        "没有小费习惯，硬要给反而会造成困扰。",
-      ]},
-      { h: "通讯", lines: [
-        "机场可买预付SIM/eSIM。手机支持eSIM的话，出发前在线购买最快。",
-        "车站、便利店、咖啡厅多有免费Wi-Fi，但移动中要上网还是建议SIM或随身路由。",
-      ]},
-      { h: "气候与季节", lines: [
-        "3〜5月樱花与舒适气温；6〜7月梅雨(北海道几乎没有)；7〜9月高温潮湿并有台风。",
-        "10〜11月红叶，是一年中最好旅行的时候；12〜2月日本海侧豪雪，太平洋侧晴朗干燥。",
-        "南北长达三千公里，同一天冲绳25度、北海道零下是很正常的事。",
-      ]},
-      { h: "礼仪与紧急", lines: [
-        "报警110／消防救护119。Japan Visitor Hotline(24小时多语) 050-3816-2787。",
-        "车厢内请勿通话。街上垃圾桶很少，请做好自行带走的准备。",
-        "泡温泉要先洗净身体再入池，毛巾不可放进汤里。",
-        "电压100V，插座为A型(两支平行扁脚)。",
-      ]},
-      { h: "官方网站(最新信息)", lines: [
-        "日本政府观光局(JNTO) japan.travel／JR Pass japanrailpass.net",
-        "成田机场 narita-airport.jp／羽田机场 tokyo-haneda.com／关西机场 kansai-airport.or.jp",
-        "气象厅 jma.go.jp(警报与台风信息)",
-      ]},
+      { id: "rail", h: "铁路", gist: "新干线与JR Pass。乡下班次少", rows: [
+        ["新干线", "从北海道通到鹿儿岛。东京—大阪最快2小时21分，东京—博多约5小时。"],
+        ["JR Pass", "面向外国旅客的全国通用券，7日普通车约5万日元级(2026年8月时点，10月起海外购买调价)。"],
+        ["在来线与私铁", "城市每隔几分钟一班；乡下可能1〜2小时才一班，务必先查时刻表。"],
+        ["对号座", "黄金周、盂兰盆、年末年初请提早订位，自由座要做好站着的准备。"],
+      ] },
+      { id: "ic", h: "交通IC卡", gist: "一张搭车又能购物。访日专用有3种", kind: "ic", rows: [
+        ["全国互通", "Suica、PASMO、ICOCA等十种卡片全国互通，一张走遍主要城市。"],
+        ["能用的地方", "进出站与搭巴士只要感应。便利店、自动售货机与许多店铺也能刷。"],
+      ] },
+      { id: "money", h: "金钱", gist: "仍需现金。没有小费", rows: [
+        ["货币", "日元(JPY)。城市无现金化已普及，但路边摊、小神社、乡下巴士仍只收现金。"],
+        ["ATM", "机场、主要车站与便利店ATM可用海外卡取现(7-11银行与邮政适用最广)。"],
+        ["小费", "没有这个习惯，硬要给反而造成困扰。"],
+      ] },
+      { id: "net", h: "通讯", gist: "eSIM出发前在线买最快", rows: [
+        ["SIM・eSIM", "机场可买预付卡。手机支持eSIM的话，出发前在线买最快。"],
+        ["Wi-Fi", "车站、便利店、咖啡厅多有免费Wi-Fi，移动中要上网仍建议SIM或随身路由。"],
+      ] },
+      { id: "climate", h: "气候与季节", gist: "10〜11月最好旅行", kind: "climate", rows: [
+        ["南北三千公里", "同一天冲绳25度、北海道零下是常态。请按目的地分别确认。"],
+        ["梅雨与台风", "6〜7月梅雨(北海道几乎没有)。7〜9月每天要看台风路径。"],
+      ] },
+      { id: "manner", h: "礼仪与紧急", gist: "有困难就打多语热线", kind: "sos", rows: [
+        ["车厢内", "请勿通话。街上垃圾桶很少，请自行带走。"],
+        ["温泉", "先洗净身体再入池，毛巾不可放进汤里。"],
+        ["电源", "电压100V，插座为A型(两支平行扁脚)。"],
+      ] },
+      { id: "links", h: "官方网站", gist: "最新信息在这里确认", rows: [
+        ["日本政府观光局(JNTO)", "japan.travel"],
+        ["JR Pass", "japanrailpass.net"],
+        ["机场", "narita-airport.jp / tokyo-haneda.com / kansai-airport.or.jp"],
+        ["气象厅", "jma.go.jp(警报与台风信息)"],
+      ] },
     ],
   },
   en: {
     title: "Japan travel basics",
     sections: [
-      { h: "Rail", lines: [
-        "Shinkansen runs from Hokkaido to Kagoshima. Tokyo–Osaka in 2h21m at best, Tokyo–Hakata about 5 hours.",
-        "Japan Rail Pass: nationwide unlimited travel for foreign visitors, around ¥50,000 for 7 days ordinary class (as of Aug 2026; overseas prices rise in October).",
-        "Local and private lines: minutes apart in cities, but sometimes one train every one to two hours in the countryside. Check timetables first.",
-        "Reserve seats early for Golden Week, Obon and New Year. Unreserved cars get very full.",
-      ]},
-      { h: "IC transit cards", lines: [
-        "Suica, PASMO, ICOCA and seven others are mutually accepted nationwide — one card covers most cities.",
-        "Welcome Suica: for visitors, no deposit, valid 28 days, sold at JR EAST Travel Service Centers at Narita and Haneda.",
-        "Welcome Suica Mobile: iPhone only (iOS 17.2+), valid 180 days, issued in the app with no queue.",
-        "Tourist PASMO: launched 20 May 2026, available at Narita and Haneda.",
-        "They also work at convenience stores, vending machines and many shops.",
-      ]},
-      { h: "Money", lines: [
-        "The currency is the yen (JPY). Cities are largely cashless, but food stalls, small shrines and rural buses still take cash only.",
-        "Foreign cards work at airport, station and convenience store ATMs — Seven Bank and Japan Post accept the widest range.",
-        "There is no tipping. Leaving money behind causes confusion rather than pleasure.",
-      ]},
-      { h: "Connectivity", lines: [
-        "Prepaid SIMs and eSIMs are sold at airports; if your phone takes an eSIM, buying online before departure is fastest.",
-        "Free Wi-Fi is common at stations, convenience stores and cafés, but a SIM or pocket router is safer on the move.",
-      ]},
-      { h: "Climate and seasons", lines: [
-        "March to May brings blossom and mild air. June–July is the rainy season (barely felt in Hokkaido). July–September is hot, humid and typhoon-prone.",
-        "October–November is autumn colour and the easiest travel of the year. December–February means heavy snow on the Japan Sea side, dry sunshine on the Pacific side.",
-        "The country runs 3,000 km north to south — Okinawa at 25°C and Hokkaido below freezing on the same day is normal.",
-      ]},
-      { h: "Etiquette and emergencies", lines: [
-        "Police 110, fire and ambulance 119. Japan Visitor Hotline (24h, multilingual): 050-3816-2787.",
-        "Don't take calls on trains. Public bins are scarce, so plan to carry rubbish with you.",
-        "At an onsen, wash before entering the bath and keep your towel out of the water.",
-        "Power is 100V with type A plugs (two flat parallel pins).",
-      ]},
-      { h: "Official sites (live info)", lines: [
-        "Japan National Tourism Organization: japan.travel / Japan Rail Pass: japanrailpass.net",
-        "Narita: narita-airport.jp / Haneda: tokyo-haneda.com / Kansai: kansai-airport.or.jp",
-        "Japan Meteorological Agency: jma.go.jp (warnings and typhoon tracking)",
-      ]},
+      { id: "rail", h: "Rail", gist: "Shinkansen and the JR Pass; rural lines are sparse", rows: [
+        ["Shinkansen", "Hokkaido to Kagoshima. Tokyo–Osaka in 2h21m at best, Tokyo–Hakata about 5 hours."],
+        ["Japan Rail Pass", "Nationwide unlimited travel for foreign visitors, around ¥50,000 for 7 days ordinary class (Aug 2026; overseas prices rise in October)."],
+        ["Local and private lines", "Minutes apart in cities, but sometimes one train every one to two hours in the countryside. Check timetables first."],
+        ["Reserved seats", "Book early for Golden Week, Obon and New Year. Unreserved cars get very full."],
+      ] },
+      { id: "ic", h: "IC transit cards", gist: "One card for trains, buses and shops; three visitor options", kind: "ic", rows: [
+        ["Nationwide", "Suica, PASMO, ICOCA and seven others are mutually accepted — one card covers most cities."],
+        ["Where it works", "Just tap at the gate or on the bus. They also pay at convenience stores, vending machines and many shops."],
+      ] },
+      { id: "money", h: "Money", gist: "Carry cash. No tipping", rows: [
+        ["Currency", "The yen (JPY). Cities are largely cashless, but food stalls, small shrines and rural buses still take cash only."],
+        ["ATMs", "Foreign cards work at airport, station and convenience store ATMs — Seven Bank and Japan Post accept the widest range."],
+        ["Tipping", "There is none. Leaving money behind causes confusion rather than pleasure."],
+      ] },
+      { id: "net", h: "Connectivity", gist: "Buying an eSIM before you fly is fastest", rows: [
+        ["SIM and eSIM", "Prepaid SIMs are sold at airports; if your phone takes an eSIM, buy online before departure."],
+        ["Wi-Fi", "Free Wi-Fi is common at stations, convenience stores and cafés, but a SIM or pocket router is safer on the move."],
+      ] },
+      { id: "climate", h: "Climate and seasons", gist: "October and November are the easiest months", kind: "climate", rows: [
+        ["3,000 km north to south", "Okinawa at 25°C and Hokkaido below freezing on the same day is normal. Check your destination, not the country."],
+        ["Rainy season and typhoons", "June–July is the rainy season (barely felt in Hokkaido). July–September, watch typhoon tracks daily."],
+      ] },
+      { id: "manner", h: "Etiquette and emergencies", gist: "A multilingual hotline runs 24 hours", kind: "sos", rows: [
+        ["On trains", "Don't take calls. Public bins are scarce, so plan to carry rubbish with you."],
+        ["Onsen", "Wash before entering the bath and keep your towel out of the water."],
+        ["Power", "100V with type A plugs (two flat parallel pins)."],
+      ] },
+      { id: "links", h: "Official sites", gist: "Check the live details here", rows: [
+        ["Japan National Tourism Organization", "japan.travel"],
+        ["Japan Rail Pass", "japanrailpass.net"],
+        ["Airports", "narita-airport.jp / tokyo-haneda.com / kansai-airport.or.jp"],
+        ["Meteorological Agency", "jma.go.jp (warnings and typhoon tracking)"],
+      ] },
     ],
   },
   ko: {
     title: "일본 여행 기본 정보",
     sections: [
-      { h: "철도", lines: [
-        "신칸센은 홋카이도에서 가고시마까지. 도쿄–오사카 최속 2시간 21분, 도쿄–하카타 약 5시간.",
-        "재팬 레일 패스: 외국인 전용 전국 무제한 승차권. 7일 보통차 5만 엔대(2026년 8월 시점, 10월부터 해외 구매가 인상).",
-        "재래선과 사철: 도시는 몇 분 간격이지만 지방은 1~2시간에 한 대일 수도 있으니 시각표를 먼저 확인.",
-        "지정석은 골든위크·오본·연말연시에 일찍 예약. 자유석은 혼잡을 각오해야 한다.",
-      ]},
-      { h: "교통 IC카드", lines: [
-        "Suica·PASMO·ICOCA 등 10종이 전국에서 호환되어 한 장이면 대도시는 거의 다닐 수 있다.",
-        "Welcome Suica: 방일객 전용. 보증금 없음, 유효기간 28일. 나리타/하네다 JR EAST Travel Service Center에서 구매.",
-        "Welcome Suica Mobile: 아이폰 전용(iOS 17.2 이상), 유효기간 180일. 앱에서 발급해 줄을 설 필요가 없다.",
-        "Tourist PASMO: 2026년 5월 20일 시작. 나리타와 하네다에서 살 수 있다.",
-        "편의점, 자판기, 많은 상점 결제에도 쓸 수 있다.",
-      ]},
-      { h: "돈", lines: [
-        "통화는 엔(JPY). 도시는 캐시리스가 진행됐지만 포장마차, 작은 신사, 지방 버스는 현금만 받는 곳이 남아 있다.",
-        "공항·주요역·편의점 ATM에서 해외 카드로 인출 가능(세븐은행과 유초은행이 가장 폭넓다).",
-        "팁 문화는 없다. 두고 가면 오히려 곤란하게 만든다.",
-      ]},
-      { h: "통신", lines: [
-        "공항에서 선불 SIM/eSIM을 살 수 있다. eSIM 지원 단말이면 출발 전 온라인 구매가 가장 빠르다.",
-        "역·편의점·카페의 무료 와이파이는 많지만, 이동 중에도 쓰려면 SIM이나 포켓 와이파이가 안심이다.",
-      ]},
-      { h: "기후와 계절", lines: [
-        "3~5월은 벚꽃과 쾌적함. 6~7월은 장마(홋카이도는 거의 없다). 7~9월은 고온다습에 태풍.",
-        "10~11월은 단풍으로 일 년 중 가장 여행하기 좋다. 12~2월은 동해 쪽 폭설, 태평양 쪽은 맑고 건조.",
-        "남북 3000킬로미터. 같은 날 오키나와가 25도, 홋카이도가 영하인 일이 흔하다.",
-      ]},
-      { h: "매너와 긴급", lines: [
-        "경찰 110 / 소방·구급 119. 재팬 비지터 핫라인(24시간 다국어) 050-3816-2787.",
-        "전철 안에서 통화는 삼가고, 쓰레기통이 적으니 되가져갈 생각으로 다닌다.",
-        "온천은 몸을 씻고 탕에 들어가며, 수건은 물에 넣지 않는다.",
-        "전압 100V, 플러그는 A타입(평행 2핀).",
-      ]},
-      { h: "공식 사이트(최신 정보)", lines: [
-        "일본정부관광국(JNTO) japan.travel / 재팬 레일 패스 japanrailpass.net",
-        "나리타공항 narita-airport.jp / 하네다공항 tokyo-haneda.com / 간사이공항 kansai-airport.or.jp",
-        "기상청 jma.go.jp(경보·태풍 정보)",
-      ]},
+      { id: "rail", h: "철도", gist: "신칸센과 JR 패스. 지방은 배차가 드물다", rows: [
+        ["신칸센", "홋카이도에서 가고시마까지. 도쿄–오사카 최속 2시간 21분, 도쿄–하카타 약 5시간."],
+        ["재팬 레일 패스", "외국인 전용 전국 무제한 승차권. 7일 보통차 5만 엔대(2026년 8월 시점, 10월부터 해외 구매가 인상)."],
+        ["재래선과 사철", "도시는 몇 분 간격이지만 지방은 1~2시간에 한 대일 수도 있으니 시각표를 먼저 확인."],
+        ["지정석", "골든위크·오본·연말연시에 일찍 예약. 자유석은 혼잡을 각오해야 한다."],
+      ] },
+      { id: "ic", h: "교통 IC카드", gist: "한 장으로 전철·버스·쇼핑. 방일객용은 3종", kind: "ic", rows: [
+        ["전국 호환", "Suica·PASMO·ICOCA 등 10종이 전국에서 호환되어 한 장이면 대도시는 거의 다닐 수 있다."],
+        ["쓸 수 있는 곳", "개찰구와 버스는 터치만. 편의점, 자판기, 많은 상점 결제에도 쓸 수 있다."],
+      ] },
+      { id: "money", h: "돈", gist: "현금도 필요. 팁은 없다", rows: [
+        ["통화", "엔(JPY). 도시는 캐시리스가 진행됐지만 포장마차, 작은 신사, 지방 버스는 현금만 받는 곳이 남아 있다."],
+        ["ATM", "공항·주요역·편의점 ATM에서 해외 카드로 인출 가능(세븐은행과 유초은행이 가장 폭넓다)."],
+        ["팁", "문화가 없다. 두고 가면 오히려 곤란하게 만든다."],
+      ] },
+      { id: "net", h: "통신", gist: "eSIM은 출발 전 온라인 구매가 가장 빠르다", rows: [
+        ["SIM·eSIM", "공항에서 선불 SIM을 살 수 있다. eSIM 지원 단말이면 출발 전 온라인 구매가 빠르다."],
+        ["와이파이", "역·편의점·카페의 무료 와이파이는 많지만, 이동 중에도 쓰려면 SIM이나 포켓 와이파이가 안심."],
+      ] },
+      { id: "climate", h: "기후와 계절", gist: "10~11월이 가장 여행하기 좋다", kind: "climate", rows: [
+        ["남북 3000킬로미터", "같은 날 오키나와가 25도, 홋카이도가 영하인 일이 흔하다. 나라가 아니라 목적지를 확인할 것."],
+        ["장마와 태풍", "6~7월은 장마(홋카이도는 거의 없다). 7~9월은 태풍 경로를 매일 확인."],
+      ] },
+      { id: "manner", h: "매너와 긴급", gist: "곤란하면 다국어 핫라인으로", kind: "sos", rows: [
+        ["전철에서", "통화는 삼가고, 쓰레기통이 적으니 되가져갈 생각으로 다닌다."],
+        ["온천", "몸을 씻고 탕에 들어가며, 수건은 물에 넣지 않는다."],
+        ["전원", "전압 100V, 플러그는 A타입(평행 2핀)."],
+      ] },
+      { id: "links", h: "공식 사이트", gist: "최신 정보는 여기서 확인", rows: [
+        ["일본정부관광국(JNTO)", "japan.travel"],
+        ["재팬 레일 패스", "japanrailpass.net"],
+        ["공항", "narita-airport.jp / tokyo-haneda.com / kansai-airport.or.jp"],
+        ["기상청", "jma.go.jp(경보·태풍 정보)"],
+      ] },
     ],
   },
 };
@@ -537,3 +533,41 @@ export const PROMO_VIDEOS = {
 };
 
 export const PROMO_CHANNEL = "https://www.youtube.com/@visitjapan";
+
+/** ICカード3種の比較。元は箇条書き4行で、どれを買えばいいのか読み比べられなかった。 */
+export const IC_TABLE = {
+  ja: { head: ["カード", "有効期間", "入手先", "条件"], rows: [["Welcome Suica", "28日", "成田/羽田のJR EAST Travel Service Center等", "デポジット不要"], ["Welcome Suica Mobile", "180日", "iPhoneのアプリで発行", "iOS 17.2以降・iPhone専用"], ["Tourist PASMO", "28日", "成田・羽田", "2026年5月20日開始"]] },
+  zh: { head: ["卡片", "效期", "購買地", "條件"], rows: [["Welcome Suica", "28天", "成田/羽田的JR EAST Travel Service Center等", "免押金"], ["Welcome Suica Mobile", "180天", "用iPhone App發行", "iOS 17.2以上・限iPhone"], ["Tourist PASMO", "28天", "成田・羽田", "2026年5月20日開賣"]] },
+  cn: { head: ["卡片", "有效期", "购买地", "条件"], rows: [["Welcome Suica", "28天", "成田/羽田的JR EAST Travel Service Center等", "免押金"], ["Welcome Suica Mobile", "180天", "用iPhone App发行", "iOS 17.2以上・仅iPhone"], ["Tourist PASMO", "28天", "成田・羽田", "2026年5月20日开售"]] },
+  en: { head: ["Card", "Valid", "Where", "Notes"], rows: [["Welcome Suica", "28 days", "JR EAST Travel Service Centers, Narita/Haneda", "No deposit"], ["Welcome Suica Mobile", "180 days", "Issued in the iPhone app", "iOS 17.2+, iPhone only"], ["Tourist PASMO", "28 days", "Narita and Haneda", "Launched 20 May 2026"]] },
+  ko: { head: ["카드", "유효기간", "구입처", "조건"], rows: [["Welcome Suica", "28일", "나리타/하네다 JR EAST Travel Service Center 등", "보증금 없음"], ["Welcome Suica Mobile", "180일", "아이폰 앱에서 발급", "iOS 17.2 이상·아이폰 전용"], ["Tourist PASMO", "28일", "나리타·하네다", "2026년 5월 20일 시작"]] },
+};
+
+/** 12か月の帯。色は寒色→暖色→寒色。best は「旅行しやすい」月(0始まり)。 */
+export const MONTHS = {
+  colors: ["#7fa8d8", "#7fa8d8", "#a8cfa0", "#f0a8c0", "#a8d99a", "#9fc4b0", "#f2c46a", "#f0a05a", "#c9b48a", "#e08a58", "#d97a5a", "#8fb4dc"],
+  best: [3, 4, 9, 10],
+  word: {
+    ja: ["真冬", "真冬", "早春", "桜", "新緑", "梅雨", "盛夏", "盛夏", "台風", "紅葉", "紅葉", "初冬"],
+    zh: ["嚴冬", "嚴冬", "早春", "櫻花", "新綠", "梅雨", "盛夏", "盛夏", "颱風", "紅葉", "紅葉", "初冬"],
+    cn: ["严冬", "严冬", "早春", "樱花", "新绿", "梅雨", "盛夏", "盛夏", "台风", "红叶", "红叶", "初冬"],
+    en: ["Cold", "Cold", "Early spring", "Blossom", "Fresh green", "Rainy", "Hot", "Hot", "Typhoon", "Autumn colour", "Autumn colour", "Early winter"],
+    ko: ["한겨울", "한겨울", "이른 봄", "벚꽃", "신록", "장마", "한여름", "한여름", "태풍", "단풍", "단풍", "초겨울"],
+  },
+  bestLabel: {
+    ja: "旅行しやすい",
+    zh: "最好旅行",
+    cn: "最好旅行",
+    en: "Best months",
+    ko: "여행하기 좋음",
+  },
+};
+
+/** 緊急番号。tel: の押せるカードにする(文字で書いても電話をかけられない)。 */
+export const SOS = {
+  ja: [["110", "警察"], ["119", "消防・救急"], ["050-3816-2787", "ジャパン・ビジターズ・ホットライン(24時間・多言語)"]],
+  zh: [["110", "報警"], ["119", "消防・救護"], ["050-3816-2787", "Japan Visitor Hotline(24小時・多語)"]],
+  cn: [["110", "报警"], ["119", "消防・救护"], ["050-3816-2787", "Japan Visitor Hotline(24小时・多语)"]],
+  en: [["110", "Police"], ["119", "Fire and ambulance"], ["050-3816-2787", "Japan Visitor Hotline (24h, multilingual)"]],
+  ko: [["110", "경찰"], ["119", "소방·구급"], ["050-3816-2787", "재팬 비지터 핫라인(24시간·다국어)"]],
+};
