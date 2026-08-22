@@ -1271,9 +1271,14 @@ function start() {
       framed = true;
       // 島の長軸を画面の対角に少し寝かせて面積を稼ぐ。ただし振りすぎると
       // 日本列島のシルエットが横倒しになって形が分からなくなるので、北はおおむね上に保つ。
-      // 日本列島の長軸は南西→北東(ワールドでは概ね45度)。カメラの方位をその法線に
-      //  合わせる(x と z を等しく取る)と列島が画面の横方向に寝て、余白が最小になる。
-      const dir = new THREE.Vector3(0.74, 1.02, 0.74).normalize();
+      // 日本列島の長軸は南西→北東(ワールドでは概ね45度)。
+      //  横長画面: カメラ方位を長軸の法線に合わせる(x と z を等しく取る)と列島が
+      //    画面の横方向に寝て、左右いっぱいに広がる。
+      //  縦長画面: 同じ方位だと列島が横に寝たまま上下が丸ごと空く(実機375x812で実測)。
+      //    北を上に近づけて、地図帳と同じ「縦に長い日本」の向きに戻すと縦画面が埋まる。
+      const dir = camera.aspect < 1
+        ? new THREE.Vector3(0.24, 1.05, 0.94).normalize()
+        : new THREE.Vector3(0.74, 1.02, 0.74).normalize();
       const dist = frame(dir);
       camera.position.copy(dir.clone().multiplyScalar(dist));
       controls.target.set(0, 0, 0);

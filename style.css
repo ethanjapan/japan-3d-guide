@@ -1162,25 +1162,27 @@ body {
 }
 
 /* ガーランドは文字に被せない: 小さめにして、その分の余白をパネル上部に確保 */
+/* 提灯ガーランドは台湾版の三角旗より縦横比が高い(0.506 対 0.38)ので、
+   同じ幅だと下に伸びて見出しに被る。幅を詰め、その分パネル上部の余白を足す。 */
 .panel-garland {
-  width: 56%;
+  width: 42%;
   top: -12px;
 }
 
 .panel,
 .info-panel {
-  padding-top: 58px;
+  padding-top: 78px;
 }
 
 @media (max-width: 640px) {
   .panel-garland {
-    width: 46%;
+    width: 36%;
     top: -10px;
   }
 
   .panel,
   .info-panel {
-    padding-top: 52px;
+    padding-top: 68px;
   }
 }
 
