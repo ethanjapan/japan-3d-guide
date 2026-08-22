@@ -2418,3 +2418,152 @@ body:has(.month-bar:not([hidden])) .hint {
     bottom: calc(160px + env(safe-area-inset-bottom, 0px));
   }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   よくある旅行QA
+   31問あるので、分類チップと検索で削れないと読まれない。
+   ★<summary> の中に別の操作要素を置かない(summary 自体がトグルなので壊れる)。
+   ★閉じている質問も検索対象。絞り込みは hidden の付け外しで、DOMは作り直さない
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.faq {
+  margin-top: 18px;
+}
+
+.faq-search {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0 8px;
+  padding: 9px 12px;
+  border: 1px solid var(--tile-line);
+  border-radius: 999px;
+  background: var(--tile);
+  color: var(--ink-glass);
+  font-size: 0.78rem;
+  font-family: inherit;
+}
+.faq-search::placeholder { color: var(--ink-glass-soft); }
+.faq-search:focus-visible {
+  outline: 2px solid #2f7fa0;
+  outline-offset: 1px;
+}
+/* iOS Safari の検索欄は既定の丸角と装飾が付くので消す */
+.faq-search::-webkit-search-decoration,
+.faq-search::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+.faq-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.faq-cat {
+  border: 1px solid rgba(30, 60, 80, 0.16);
+  background: #fff;
+  color: #33454f;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 11.5px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background 0.16s ease, color 0.16s ease, transform 0.12s ease;
+}
+.faq-cat:hover { background: #eef6fa; }
+.faq-cat:active { transform: scale(0.97); }
+.faq-cat[data-on="true"] {
+  background: #33566b;
+  border-color: #33566b;
+  color: #fff;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.faq-item {
+  border-radius: 12px;
+  background: var(--tile);
+  border: 1px solid var(--tile-line);
+  overflow: hidden;
+}
+.faq-item[hidden] { display: none; }
+
+.faq-q {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;          /* タップ標的 */
+  padding: 9px 12px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--ink-glass);
+  user-select: none;
+}
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q::before {
+  content: "Q";
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(47, 127, 160, 0.16);
+  color: #2f7fa0;
+  font-size: 10px;
+  font-weight: 800;
+}
+.faq-q::after {
+  content: "";
+  margin-left: auto;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid rgba(23, 58, 78, 0.4);
+  border-bottom: 2px solid rgba(23, 58, 78, 0.4);
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform 0.18s ease;
+  flex: 0 0 auto;
+}
+.faq-item[open] .faq-q::after {
+  transform: rotate(-135deg) translate(-2px, -2px);
+}
+.faq-q:hover { background: rgba(255, 255, 255, 0.35); }
+.faq-q:focus-visible { outline: 2px solid #2f7fa0; outline-offset: -2px; }
+
+.faq-a {
+  margin: 0;
+  padding: 0 12px 12px 38px;
+  font-size: 0.72rem;
+  line-height: 1.72;
+  color: var(--ink-glass-soft);
+}
+
+.faq-none {
+  margin: 10px 0 0;
+  font-size: 0.72rem;
+  color: var(--ink-glass-soft);
+  text-align: center;
+}
+
+html[data-phase="night"] .faq-cat {
+  background: rgba(24, 46, 66, 0.5);
+  color: #eaf3fa;
+  border-color: rgba(255, 255, 255, 0.14);
+}
+html[data-phase="night"] .faq-cat[data-on="true"] {
+  background: #6fb6d4;
+  border-color: #6fb6d4;
+  color: #10293b;
+}
+html[data-phase="night"] .faq-q::before {
+  background: rgba(143, 208, 228, 0.18);
+  color: #8fd0e4;
+}
+html[data-phase="night"] .faq-q::after,
+html[data-phase="night"] .faq-q:hover { border-color: rgba(234, 243, 250, 0.45); }
+html[data-phase="night"] .faq-q:hover { background: rgba(255, 255, 255, 0.07); }
