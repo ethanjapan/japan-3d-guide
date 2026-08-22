@@ -80,7 +80,9 @@ export const createCourseLayer = (scene, bounds, groups, reduceMotion) => {
     // 伸びる演出は index の drawRange(チューブは進行方向にセグメント順で生成される)。
     const curvePath = new THREE.CatmullRomCurve3(pts, false, "catmullrom", 0.0);
     const tubular = pts.length * 2;
-    const geo = new THREE.TubeGeometry(curvePath, tubular, 0.85, 6, false);
+    // 半径は台湾版0.85から拡大。日本は列島が斜めに長く既定のカメラが引き気味で、
+    // 0.85だと画面上2〜3pxにしかならず経路が見えない(実測 800px幅で確認)。
+    const geo = new THREE.TubeGeometry(curvePath, tubular, 1.45, 6, false);
     const line = new THREE.Mesh(
       geo,
       new THREE.MeshBasicMaterial({ color: ACCENT, transparent: true, opacity: 0.92 }),
