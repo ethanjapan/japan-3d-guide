@@ -1468,7 +1468,8 @@ function start() {
 
   // 季節切替(日本版だけの軸)。日本は同じ景色が季節で別物になるのが観光の核なので、
   // 時間帯と対にして常設のボタンにする。既定は日本の実月。
-  const season = createSeason(stage, reduceMotion);
+  // 時間帯を渡す。花火は夕方・夜だけに出す(昼に出すと地図の上で明滅する)
+  const season = createSeason(stage, reduceMotion, () => atmosphere.phase);
   {
     const CYCLE = ["auto", "spring", "summer", "autumn", "winter"];
     const ICONS = { spring: "sakura-spray", summer: "koinobori", autumn: "maple", winter: "moon" };
