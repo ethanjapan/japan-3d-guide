@@ -1586,3 +1586,32 @@ html[data-phase="night"] .credit {
     animation: none !important;
   }
 }
+
+/* ---- 空港の切り替えタブ(日本版で追加) ----
+   台湾版は空港が桃園1つでフローが固定だった。日本は成田・羽田・関西・新千歳と
+   入口が4つあり到着都市も別なので、タブで選ばせる。 */
+.airport-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 10px;
+}
+.airport-tab {
+  border: 1px solid rgba(30, 60, 80, 0.16);
+  background: #fff;
+  color: #33454f;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background 0.16s ease, color 0.16s ease, transform 0.12s ease;
+}
+.airport-tab:hover { background: #eef6fa; }
+.airport-tab:active { transform: scale(0.97); }
+.airport-tab[data-on="true"] {
+  background: #33566b;
+  border-color: #33566b;
+  color: #fff;
+}
+.transit-flow-box { min-height: 120px; }

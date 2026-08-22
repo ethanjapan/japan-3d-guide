@@ -741,57 +741,77 @@ const renderInfo = () => {
     const h = document.createElement("h3");
     h.className = "info-h";
     h.textContent = tr.h;
-    transitNodes.push(h);
+    const pick = document.createElement("p");
+    pick.className = "course-tip";
+    pick.textContent = tr.pick;
+    transitNodes.push(h, pick);
 
-    const flow = document.createElement("div");
-    flow.className = "transit-flow";
     const node = (label, cls) => {
       const el = document.createElement("div");
       el.className = `transit-node ${cls}`;
       el.textContent = label;
       return el;
     };
-    flow.appendChild(node(tr.airport, "is-airport"));
-    const routes = document.createElement("div");
-    routes.className = "transit-routes";
-    for (const r of tr.routes) {
-      const card = document.createElement("div");
-      card.className = "transit-route";
-      if (r.best) card.dataset.best = "true";
-      const nm = document.createElement("span");
-      nm.className = "transit-route-name";
-      nm.textContent = r.name;
-      const tm = document.createElement("span");
-      tm.className = "transit-route-time";
-      tm.textContent = r.time;
-      const nt = document.createElement("span");
-      nt.className = "transit-route-note";
-      nt.textContent = r.note;
-      card.append(nm, tm, nt);
-      routes.appendChild(card);
-    }
-    flow.appendChild(routes);
-    flow.appendChild(node(tr.taipei, "is-city"));
-    const onward = document.createElement("div");
-    onward.className = "transit-onward";
-    for (const o of tr.onward) {
-      const chip = document.createElement("span");
-      chip.className = "transit-chip";
-      chip.textContent = o;
-      onward.appendChild(chip);
-    }
-    flow.appendChild(onward);
-    transitNodes.push(flow);
 
-    const south = document.createElement("div");
-    south.className = "transit-south";
-    south.append(
-      node(tr.airport, "is-airport is-mini"),
-      Object.assign(document.createElement("span"), { className: "transit-via", textContent: tr.southRoute.via }),
-      node(tr.hsr, "is-city is-mini"),
-      Object.assign(document.createElement("span"), { className: "transit-via", textContent: tr.southRoute.to }),
-    );
-    transitNodes.push(south);
+    // 台湾版は空港が桃園1つだったので固定のフロー1本だった。
+    // 日本は成田・羽田・関西・新千歳と入口が4つあり、都市も別なので「空港を選ぶ」タブにする。
+    const tabs = document.createElement("div");
+    tabs.className = "airport-tabs";
+    const flowBox = document.createElement("div");
+    flowBox.className = "transit-flow-box";
+
+    const drawFlow = (ap) => {
+      const flow = document.createElement("div");
+      flow.className = "transit-flow";
+      flow.appendChild(node(ap.name, "is-airport"));
+      const routes = document.createElement("div");
+      routes.className = "transit-routes";
+      for (const r of ap.routes) {
+        const card = document.createElement("div");
+        card.className = "transit-route";
+        if (r.best) card.dataset.best = "true";
+        const nm = document.createElement("span");
+        nm.className = "transit-route-name";
+        nm.textContent = r.name;
+        const tm = document.createElement("span");
+        tm.className = "transit-route-time";
+        tm.textContent = r.time;
+        const nt = document.createElement("span");
+        nt.className = "transit-route-note";
+        nt.textContent = r.note;
+        card.append(nm, tm, nt);
+        routes.appendChild(card);
+      }
+      flow.appendChild(routes);
+      flow.appendChild(node(ap.city, "is-city"));
+      const onward = document.createElement("div");
+      onward.className = "transit-onward";
+      for (const o of ap.onward) {
+        const chip = document.createElement("span");
+        chip.className = "transit-chip";
+        chip.textContent = o;
+        onward.appendChild(chip);
+      }
+      flow.appendChild(onward);
+      flowBox.replaceChildren(flow);
+      stagger(flowBox);
+    };
+
+    tr.airports.forEach((ap, i) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "airport-tab";
+      b.textContent = ap.name;
+      if (i === 0) b.dataset.on = "true";
+      b.addEventListener("click", () => {
+        for (const other of tabs.children) delete other.dataset.on;
+        b.dataset.on = "true";
+        drawFlow(ap);
+      });
+      tabs.appendChild(b);
+    });
+    transitNodes.push(tabs, flowBox);
+    drawFlow(tr.airports[0]);
 
     const ch = document.createElement("h3");
     ch.className = "info-h";
