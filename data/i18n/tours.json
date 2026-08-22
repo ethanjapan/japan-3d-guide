@@ -75,7 +75,7 @@
      "act": null
     },
     {
-     "el": ".langs",
+     "el": ".langs #lang-btn|.langs",
      "side": "bottom",
      "h": {
       "ja": "4. 5言語で読める",
