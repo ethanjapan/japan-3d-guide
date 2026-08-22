@@ -580,3 +580,24 @@ export const SOS = {
   en: [["110", "Police"], ["119", "Fire and ambulance"], ["050-3816-2787", "Japan Visitor Hotline (24h, multilingual)"]],
   ko: [["110", "경찰"], ["119", "소방·구급"], ["050-3816-2787", "재팬 비지터 핫라인(24시간·다국어)"]],
 };
+
+/**
+ * 表示は短いドメインのまま、飛び先だけ**実際に開けたURL**を持つ表。
+ *
+ * ★裸のドメインをそのまま href にしてはいけない(2026-08-23 実測):
+ *   www 無しでは応答しないサイト(japan.travel / narita-airport.jp / jma.go.jp)と、
+ *   逆に www 付きが応答しないサイト(japanrailpass.net)が混在している。
+ *   どちらに転ぶかは実測しないと分からないので、全部測してここに置く。
+ *
+ * 値は文字列、または言語別の入口を持つ場合だけ { _: 既定, <lang>: 入口 }。
+ */
+export const SITE_URL = {
+  // 天気の出典表示(CC BY 4.0)。文字だけでは出典として弱いのでリンクにする
+  "open-meteo.com": "https://open-meteo.com/",
+  "japan.travel": "https://www.japan.travel/",
+  "japanrailpass.net": "https://japanrailpass.net/",
+  "narita-airport.jp": "https://www.narita-airport.jp/",
+  "tokyo-haneda.com": "https://tokyo-haneda.com/",
+  "kansai-airport.or.jp": "https://www.kansai-airport.or.jp/",
+  "jma.go.jp": "https://www.jma.go.jp/",
+};
