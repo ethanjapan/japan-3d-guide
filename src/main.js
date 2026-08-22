@@ -307,7 +307,7 @@ const monthStrip = () => {
     cell.className = "month-cell";
     if (MONTHS.best.includes(m)) cell.dataset.best = "true";
     const bar = document.createElement("span");
-    bar.className = "month-bar";
+    bar.className = "month-hue";   // ★画面下の #month-bar と別物。同名にすると高さを奪い合う
     bar.style.background = MONTHS.colors[m];
     const no = document.createElement("span");
     no.className = "month-no";
@@ -586,7 +586,9 @@ const renderPanel = () => {
       btn.className = "spot-row";
       if (PHOTO_CREDITS[s.id]) {
         const img = document.createElement("img");
-        img.src = `${import.meta.env.BASE_URL}photos/${s.id}.webp`;
+        // ★一覧は 52x40 で出す。原寸(900px)を読むと必要の約17倍で、
+        //   1県開くたびに約1MBがモバイル回線に乗る(2026-08-22 実測)。詳細だけ原寸を使う
+        img.src = `${import.meta.env.BASE_URL}thumbs/${s.id}.webp`;
         img.alt = "";
         img.loading = "lazy";
         btn.appendChild(img);
@@ -866,6 +868,7 @@ let updatePhaseButton = null; // start()が差し込む。言語切替時にラ�
 let updateSeasonButton = null;
 let updateMonthBar = null;
 let updateTourMenu = null;
+let updateLangToggle = null;
 let activeMonth = 0;   // 0=イベント表示なし
 // 地図のイベントピンを押したときだけ入る {pref, cat, key}。
 // パネル側で「押したのはこれ」を示すために使う(押していない間は null)
@@ -971,6 +974,7 @@ const addStamp = (iso) => {
   updateSeasonButton?.();
   updateMonthBar?.();
   updateTourMenu?.();
+  updateLangToggle?.();
 };
 
 stampBtn.addEventListener("click", () => {
@@ -980,6 +984,7 @@ stampBtn.addEventListener("click", () => {
   updateSeasonButton?.();
   updateMonthBar?.();
   updateTourMenu?.();
+  updateLangToggle?.();
 });
 document.getElementById("stamp-close").addEventListener("click", () => {
   stampPanel.hidden = true;
@@ -1011,6 +1016,7 @@ const setLang = (next) => {
   updateSeasonButton?.();
   updateMonthBar?.();
   updateTourMenu?.();
+  updateLangToggle?.();
   // バッジの単位語はパネルの状態に関係なく言語に追随させる(ko残留バグ 2026-08-21)
   if (badgePrefId) {
     badgeInner.textContent = `${PREF_LINKS[badgePrefId]?.km2 ?? ""} km²`;
@@ -1050,7 +1056,7 @@ const runSearch = () => {
       btn.type = "button";
       if (e.photo) {
         const img = document.createElement("img");
-        img.src = `${import.meta.env.BASE_URL}photos/${e.photo}.webp`;
+        img.src = `${import.meta.env.BASE_URL}thumbs/${e.photo}.webp`;
         img.alt = "";
         btn.appendChild(img);
       }
@@ -1080,8 +1086,36 @@ document.addEventListener("click", (e) => {
   if (!document.getElementById("search").contains(e.target)) searchResults.hidden = true;
 });
 
-for (const btn of document.querySelectorAll(".lang[data-lang]")) {
-  btn.addEventListener("click", () => setLang(btn.dataset.lang));
+// 言語切替。スマホではヘッダに5つ並べられないので1つに畳み、押したときだけ開く
+{
+  const nav = document.querySelector(".langs");
+  const toggle = document.getElementById("lang-btn");
+  const labelOf = (lg) =>
+    document.querySelector(`.lang[data-lang="${lg}"]`)?.textContent ?? lg;
+  const closeLangs = () => {
+    nav.dataset.open = "false";
+    toggle.setAttribute("aria-expanded", "false");
+  };
+  updateLangToggle = () => {
+    toggle.textContent = labelOf(lang);
+    toggle.setAttribute("aria-label", labelOf(lang));
+  };
+  updateLangToggle();
+  toggle.addEventListener("click", () => {
+    const open = nav.dataset.open !== "true";
+    nav.dataset.open = String(open);
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+  for (const btn of document.querySelectorAll(".lang[data-lang]")) {
+    btn.addEventListener("click", () => {
+      setLang(btn.dataset.lang);
+      closeLangs();
+    });
+  }
+  // 外を押したら閉じる(開いたまま地図を触ると、次のタップが吸われる)
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target)) closeLangs();
+  });
 }
 
 // ---- 日本全体の旅行実用情報パネル ----
@@ -1125,7 +1159,7 @@ const renderCoursePanel = (cse) => {
     row.className = "spot-row course-step";
     if (st.photo) {
       const img = document.createElement("img");
-      img.src = `${import.meta.env.BASE_URL}photos/${st.photo}.webp`;
+      img.src = `${import.meta.env.BASE_URL}thumbs/${st.photo}.webp`;
       img.alt = "";
       img.loading = "lazy";
       row.appendChild(img);
@@ -1823,7 +1857,10 @@ function start() {
       const T = STRINGS[lang];
       const name = { auto: T.phaseAuto, morning: T.phaseMorning, day: T.phaseDay,
                      dusk: T.phaseDusk, night: T.phaseNight }[sel];
-      return sel === "auto" ? `${name}(${{ morning: T.phaseMorning, day: T.phaseDay, dusk: T.phaseDusk, night: T.phaseNight }[atmosphere.phase]})` : name;
+      const now = { morning: T.phaseMorning, day: T.phaseDay,
+                    dusk: T.phaseDusk, night: T.phaseNight }[atmosphere.phase];
+      if (IS_MOBILE()) return sel === "auto" ? now : name;
+      return sel === "auto" ? `${name}(${now})` : name;
     };
     let sel = localStorage.getItem("phase") ?? "auto";
     if (!CYCLE.includes(sel)) sel = "auto";
@@ -1863,7 +1900,10 @@ function start() {
     season.setSeason(sel);
     const render = () => {
       icon.src = `${import.meta.env.BASE_URL}ui/${ICONS[season.season] ?? "sakura-spray"}.webp`;
-      label.textContent = sel === "auto" ? `${nameOf("auto")}(${nameOf(season.season)})` : nameOf(sel);
+      // ★スマホの下辺は4つ横並びで1つ83px。「季節(夏)」は入りきらず「季節(…」になる(実測)
+      label.textContent = IS_MOBILE()
+        ? nameOf(sel === "auto" ? season.season : sel)
+        : sel === "auto" ? `${nameOf("auto")}(${nameOf(season.season)})` : nameOf(sel);
     };
     render();
     btn.addEventListener("click", () => {
@@ -1890,7 +1930,9 @@ function start() {
 
     const render = () => {
       const T = STRINGS[lang];
-      eLabel.textContent = activeMonth ? `${T.events} ${activeMonth}` : T.events;
+      eLabel.textContent = activeMonth
+        ? (IS_MOBILE() ? MONTHS.name[lang][activeMonth - 1] : `${T.events} ${activeMonth}`)
+        : T.events;
       eBtn.dataset.on = activeMonth ? "true" : "false";
       off.textContent = T.monthOff;
       for (const b of btns.children) {
@@ -1905,6 +1947,8 @@ function start() {
       if (wasOn !== (m > 0)) refreshBundles();   // ランドマークの出し入れ
       if (!m) { pickedEvent = null; eventLayer.select(null); }
       bar.hidden = m === 0 && bar.dataset.forced !== "1";
+      // スマホでは月バーが出ると下の段が1つ増える。ウェルカムカードをその分だけ上げる
+      document.documentElement.dataset.monthbar = String(!bar.hidden);
       render();
       // パネルが開いていれば、その月のイベントに差し替える
       if (!panel.hidden && panel.dataset.pref) renderPanel();
@@ -1924,6 +1968,7 @@ function start() {
       if (activeMonth) { bar.dataset.forced = "0"; apply(0); return; }
       bar.dataset.forced = "1";
       bar.hidden = false;
+      document.documentElement.dataset.monthbar = "true";
       apply(jpMonth);            // 開いたら今月から
     });
     updateMonthBar = render;
@@ -1981,6 +2026,31 @@ function start() {
   const badgeAnchor = new THREE.Vector3();
 
   let prevTime = 0;
+  // ---- 端末に合わせて描画解像度を落とす ----
+  // ★1フレームだけ遅い(タブ復帰・GC)で落とさない。20msを30フレーム続けて超えたときだけ。
+  //   戻すのは 12ms を90フレーム続けたときだけにする(境目で上下に振動させない)。
+  //   スプライトが325個・ユニークテクスチャ305枚あるので、低スペック端末では
+  //   pixelRatio がそのまま効く(2026-08-22 実測: draw call 416)。
+  const PR_STEPS = [Math.min(devicePixelRatio, 2), 1.5, 1];
+  let prIndex = 0;
+  let slow = 0;
+  let fast = 0;
+  const adaptQuality = (dt) => {
+    const ms = dt * 1000;
+    if (ms > 20) { slow += 1; fast = 0; } else if (ms < 12) { fast += 1; slow = 0; }
+    if (slow >= 30 && prIndex < PR_STEPS.length - 1) {
+      prIndex += 1;
+      slow = 0;
+      renderer.setPixelRatio(PR_STEPS[prIndex]);
+      resize();
+    } else if (fast >= 90 && prIndex > 0) {
+      prIndex -= 1;
+      fast = 0;
+      renderer.setPixelRatio(PR_STEPS[prIndex]);
+      resize();
+    }
+  };
+
   renderer.setAnimationLoop((time) => {
     const dt = Math.min((time - prevTime) / 1000, 0.1);
     prevTime = time;
@@ -2058,6 +2128,7 @@ function start() {
     if (!reduceMotion) stage.updateSea(time / 1000);
     controls.update();
     renderer.render(scene, camera);
+    adaptQuality(dt);
   });
 
 
