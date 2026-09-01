@@ -111,11 +111,14 @@ const outfitCard = (w, prefId) => {
   const v = vs[hashCode(prefId) % Math.max(1, vs.length)];
   const box = document.createElement("div");
   box.className = "outfit-card";
-  const img = document.createElement("img");
-  img.className = "outfit-photo";
-  img.src = `${import.meta.env.BASE_URL}outfit/${v ? v.img : band}.webp`;
-  img.alt = "";
-  img.loading = "lazy";
+  // 動くルックブック(2026-09-01)。posterに従来タイルを敷き、動画が来るまで見た目を保つ
+  const tile = v ? v.img : band;
+  const img = livingVideo(`outfit-${tile}.mp4`, "outfit-photo");
+  const posterUrl = `${import.meta.env.BASE_URL}outfit/${tile}.webp`;
+  img.poster = posterUrl;
+  // クリックで大きく見る(ユーザー要望 2026-09-01)
+  img.style.cursor = "zoom-in";
+  img.addEventListener("click", () => openLivingLightbox(`outfit-${tile}.mp4`, posterUrl));
   const txt = document.createElement("div");
   txt.className = "outfit-text";
   const head = document.createElement("span");
@@ -478,13 +481,13 @@ const livingVideo = (file, cls) => {
   return v;
 };
 
-const openRinkaPhoto = () => {
+/** 動くクリップを全画面で見せる(プロフィール/服装 共用)。クリックかEscで閉じる */
+const openLivingLightbox = (file, poster) => {
   const box = document.createElement("div");
   box.className = "photo-lightbox";
   box.tabIndex = -1;
-  // 動くポートレート(2026-09-01)。posterに静止画を敷く
-  const img = livingVideo("profile.mp4", "");
-  img.poster = `${import.meta.env.BASE_URL}guide/rinka-guide.webp`;
+  const v = livingVideo(file, "");
+  v.poster = poster;
   const close = () => {
     box.remove();
     document.removeEventListener("keydown", onKey);
@@ -492,10 +495,13 @@ const openRinkaPhoto = () => {
   const onKey = (e) => { if (e.key === "Escape") close(); };
   box.addEventListener("click", close);
   document.addEventListener("keydown", onKey);
-  box.appendChild(img);
+  box.appendChild(v);
   document.body.appendChild(box);
   box.focus();
 };
+
+const openRinkaPhoto = () => openLivingLightbox(
+  "profile.mp4", `${import.meta.env.BASE_URL}guide/rinka-guide.webp`);
 
 const toggleRinkaProfile = () => {
   const old = document.getElementById("rinka-profile");
