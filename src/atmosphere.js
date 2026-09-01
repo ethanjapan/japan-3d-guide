@@ -27,11 +27,18 @@ export const PHASES = ["morning", "day", "dusk", "night"];
 //   (2026-08-22 実測: dusk の sea=#F6D8C2 で海が #4F6B5F 相当に沈んだ)。
 //   時間帯の空気は「ライトの色と量」で作り、海に掛ける色はほぼ白のまま触らない。
 //   夜だけは例外で、青を深くしたいので寒色を掛ける。
+// ★sea は「乗算色」から「頂点色を作り直す2色(近/沖)」へ(台湾版2026-09-01の手法を移植)。
+//   色彩批評の原則: 大面積は低彩度・夕焼けの橙は霧と光源に限定・夜は紺青+明るめの霧。
+//   日本の海は台湾の青緑より深い青(PALETTE.sea 0x5aa8cf)基調
 const PRESETS = {
-  morning: { hemi: 1.38, hemiSky: 0xfff2dc, key: 0xffe9cb, keyI: 1.95, sea: 0xfffaf3, body: "#f3efe2" },
-  day: { hemi: 1.5, hemiSky: 0xffffff, key: 0xfff4e2, keyI: 2.1, sea: 0xffffff, body: "" },
-  dusk: { hemi: 1.34, hemiSky: 0xffe6d0, key: 0xffc79c, keyI: 2.05, sea: 0xfff4ea, body: "#f2e0d2" },
-  night: { hemi: 0.7, hemiSky: 0xc3d6f4, key: 0xaec4ec, keyI: 1.1, sea: 0x9fbcdc, body: "#22344a" },
+  morning: { hemi: 1.38, hemiSky: 0xfff2dc, key: 0xffe9cb, keyI: 1.95,
+             seaNear: 0x6fb0cf, seaFar: 0xa4b4bd, fog: 0xefe4cf },
+  day:     { hemi: 1.5, hemiSky: 0xffffff, key: 0xfff4e2, keyI: 2.1,
+             seaNear: 0x5aa8cf, seaFar: 0x527ea0, fog: 0xd4e8ef },
+  dusk:    { hemi: 1.34, hemiSky: 0xffe6d0, key: 0xffc79c, keyI: 2.05,
+             seaNear: 0x5b8dad, seaFar: 0x7b7e8d, fog: 0xd7aa91 },
+  night:   { hemi: 0.7, hemiSky: 0xc3d6f4, key: 0x91aac8, keyI: 1.1,
+             seaNear: 0x2c4a66, seaFar: 0x24384f, fog: 0x394d5d },
 };
 
 const loadSprite = (name, scale) => {
@@ -90,11 +97,11 @@ export const createAtmosphere = (stage, reduceMotion) => {
       key.intensity = p.keyI;
       key.color.set(p.key);
     }
-    stage.sea.traverse?.((o) => {
-      if (o.isMesh && o.material?.vertexColors) o.material.color.set(p.sea);
-    });
-    document.body.style.background = p.body || "";
-    document.documentElement.dataset.phase = p2; // CSS側の文字色切替に使う
+    stage.tintSea?.(p.seaNear, p.seaFar);
+    if (stage.scene.fog) stage.scene.fog.color.set(p.fog);
+    // ★背景はCSSの html[data-phase] グラデーションに移管(台湾版と同じ)。
+    //   インラインの単色指定が残っているとCSSより強く、グラデーションが一生効かない
+    document.documentElement.dataset.phase = p2; // CSS側の空グラデ・文字色切替に使う
 
     clearPhaseProps();
     // 太陽/月(空の右奥にゆっくり浮かぶ)
