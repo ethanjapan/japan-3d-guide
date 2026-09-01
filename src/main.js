@@ -12,6 +12,7 @@ import META from "../data/meta.json";
 import prefectures from "../data/prefectures.json";
 import SPECIALTIES from "../data/specialties.json";
 import PREF_LINKS from "../data/pref-links.json";
+import COUNTY_VIDEOS from "../data/county-videos.json";
 import PHOTO_CREDITS from "../data/photo-credits.json";
 import DECORATIONS from "../data/decorations.json";
 import SPOTS from "../data/spots.json";
@@ -794,10 +795,28 @@ const renderPanel = () => {
     );
     stagger(panelBody);
     if (IS_MOBILE() && !panel.dataset.sheet) panel.dataset.sheet = "half";
-    // 地方のJNTO公式動画(その県が属する地方の回)。click-to-play で埋め込みは押されてから作る
+    // 都道府県の公式観光動画(県庁/観光連盟のYouTube・click-to-play)。
+    // 載せるのは tools/check_videos.py がチャンネル名まで検証したものだけ(台湾版と同作法)
+    {
+      const cv = COUNTY_VIDEOS[pref.id];
+      if (cv) {
+        const vh = document.createElement("p");
+        vh.className = "gourmet-title";
+        vh.textContent = T.countyVideo;
+        const box = document.createElement("div");
+        box.className = "promo-video pref-video";
+        box.append(promoThumb(cv.id, cv.title));
+        const cap = document.createElement("p");
+        cap.className = "promo-title";
+        cap.textContent = `${cv.title}｜${T.videoBy} ${cv.channel}`;
+        box.appendChild(cap);
+        panelBody.append(vh, box);
+      }
+    }
+    // 地方のJNTO公式動画(県公式が無い場合の予備)。click-to-play で埋め込みは押されてから作る
     {
       const key = PREF_VIDEO[pref.id];
-      const vid = key && REGION_VIDEO[key];
+      const vid = key && !COUNTY_VIDEOS[pref.id] && REGION_VIDEO[key];
       if (vid) {
         const pv = PROMO_VIDEOS[lang];
         const vh = document.createElement("p");

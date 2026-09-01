@@ -1,0 +1,284 @@
+{
+ "JP-01": {
+  "id": "lipmTpSZGGM",
+  "title": "Seasons in Hokkaido,Japan（全道２分版）",
+  "channel": "Hokkaido Love !",
+  "year": "2026"
+ },
+ "JP-02": {
+  "id": "YR5CDmyegLo",
+  "title": "【#表青森 #裏青森】青森の\"青\"",
+  "channel": "AOMORI JAPAN",
+  "year": "2022"
+ },
+ "JP-03": {
+  "id": "9ft7mVe4YoU",
+  "title": "いわての旅　４つの地域をめぐる",
+  "channel": "iwatetabi",
+  "year": "2016"
+ },
+ "JP-04": {
+  "id": "wkxsBf0i06o",
+  "title": "光に出会う旅　宮城県",
+  "channel": "Miyagi Tourism",
+  "year": "2017"
+ },
+ "JP-05": {
+  "id": "RlA0SKiQAj8",
+  "title": "秋田の四季[アキタファンムービィー]",
+  "channel": "アキタファン",
+  "year": "2021"
+ },
+ "JP-06": {
+  "id": "io08yARMT_I",
+  "title": "山形ものがたり",
+  "channel": "【県公式】やまがたChannel",
+  "year": "2020"
+ },
+ "JP-07": {
+  "id": "5MqKYe6QqXU",
+  "title": "『ふくふくの地図』ブランドムービー",
+  "channel": "PrefFukushima",
+  "year": "2026"
+ },
+ "JP-08": {
+  "id": "FVqnu27tvno",
+  "title": "VISIT IBARAKI, JAPAN 総集編",
+  "channel": "いばキラTV - IBAKIRA TV -",
+  "year": "2015"
+ },
+ "JP-09": {
+  "id": "bSUVnNsFTb4",
+  "title": "旅で出会う、本物の栃木旅",
+  "channel": "15Tube〜栃木県公式〜",
+  "year": "2019"
+ },
+ "JP-10": {
+  "id": "ktKr8iYLqWw",
+  "title": "Journey to Japan -Culture and History in Gunma-",
+  "channel": "Visit Gunma",
+  "year": "2022"
+ },
+ "JP-11": {
+  "id": "61qSijTSWKo",
+  "title": "SEE YOU IN SAITAMA",
+  "channel": "ちょこたび埼玉公式チャンネル",
+  "year": "2022"
+ },
+ "JP-12": {
+  "id": "WZ_sMjNVNNY",
+  "title": "千葉県イメージアップ動画",
+  "channel": "千葉県公式PRチャンネル",
+  "year": "2017"
+ },
+ "JP-13": {
+  "id": "pyA1cuWfUQQ",
+  "title": "東京の観光PR映像",
+  "channel": "東京都 Tokyo Metropolitan Government",
+  "year": "2022"
+ },
+ "JP-14": {
+  "id": "EpnX9NeWj0A",
+  "title": "神奈川県観光プロモーション映像",
+  "channel": "かなチャンTV（神奈川県公式）",
+  "year": "2019"
+ },
+ "JP-15": {
+  "id": "_CsDABXlDj4",
+  "title": "つなぐ、にいがた。",
+  "channel": "公益社団法人 新潟県観光協会",
+  "year": "2020"
+ },
+ "JP-16": {
+  "id": "3SP24D8104Q",
+  "title": "富山県PR動画『海と山』",
+  "channel": "富山県公式チャンネル",
+  "year": "2024"
+ },
+ "JP-17": {
+  "id": "P30mcO5CXaA",
+  "title": "本物に出会う石川県へ",
+  "channel": "【公式】ほっと石川旅ねっとYouTube チャンネル",
+  "year": "2021"
+ },
+ "JP-18": {
+  "id": "65e11tTjvlA",
+  "title": "颯爽と、福井へ。",
+  "channel": "ふくいこチャンネル",
+  "year": "2023"
+ },
+ "JP-19": {
+  "id": "OcLSaTysZmg",
+  "title": "Yamanashi Tourism Promotion Movie",
+  "channel": "富士の国やまなしch.",
+  "year": "2022"
+ },
+ "JP-20": {
+  "id": "YZspWCENX2U",
+  "title": "五感で味わう、長野の大地と物語。",
+  "channel": "Go NAGANO Official Channel",
+  "year": "2026"
+ },
+ "JP-21": {
+  "id": "qIWL3Ydy-PU",
+  "title": "NEXT GIFU HERITAGE～岐阜未来遺産～",
+  "channel": "岐阜の旅ガイド【岐阜県観光連盟】",
+  "year": "2024"
+ },
+ "JP-22": {
+  "id": "YBEzzfAK0Ss",
+  "title": "ふじのくに静岡県",
+  "channel": "静岡県観光振興課",
+  "year": "2015"
+ },
+ "JP-23": {
+  "id": "bGEk8jwZwRo",
+  "title": "風になって、遊ぼう。～ジブリパークのある愛知～",
+  "channel": "Aichi Tourism Bureau",
+  "year": "2022"
+ },
+ "JP-24": {
+  "id": "C04rfiHpSVU",
+  "title": "とこしえの祈りを込めて～「持続可能な観光地」三重～",
+  "channel": "【公式】観光三重",
+  "year": "2024"
+ },
+ "JP-25": {
+  "id": "kDzmVWZsUGY",
+  "title": "いこうぜ♪滋賀・びわ湖",
+  "channel": "滋賀観光・グルメガイド【公式】",
+  "year": "2024"
+ },
+ "JP-26": {
+  "id": "2tkJjGO6nKE",
+  "title": "もうひとつの京都",
+  "channel": "KyotofuKankouRenmei",
+  "year": "2020"
+ },
+ "JP-27": {
+  "id": "78yBPiH55sg",
+  "title": "The Four Seasons in Osaka",
+  "channel": "OSAKA INFO（大阪観光局）",
+  "year": "2019"
+ },
+ "JP-28": {
+  "id": "Zf9jL_zGI9M",
+  "title": "HYOGO JAPAN Compilation",
+  "channel": "ひょうご観光本部",
+  "year": "2025"
+ },
+ "JP-29": {
+  "id": "-CQXI5ieQcs",
+  "title": "旅するなら",
+  "channel": "奈良県観光プロモーション",
+  "year": "2026"
+ },
+ "JP-30": {
+  "id": "8xMlJ46cVyg",
+  "title": "和歌山県観光PR動画",
+  "channel": "和歌山県公式チャンネル",
+  "year": "2021"
+ },
+ "JP-31": {
+  "id": "B9kG2pLORRY",
+  "title": "空から見た鳥取の観光地",
+  "channel": "とっとり旅【公式】（鳥取県観光連盟）",
+  "year": "2021"
+ },
+ "JP-32": {
+  "id": "5k8YUnHoYvs",
+  "title": "笑顔・旅・しまね",
+  "channel": "島根県観光振興課公式チャンネル",
+  "year": "2020"
+ },
+ "JP-33": {
+  "id": "Z0obBJN1fQI",
+  "title": "こころ晴ればれおかやまの旅",
+  "channel": "おかやまハレ旅:岡山県観光連盟",
+  "year": "2023"
+ },
+ "JP-34": {
+  "id": "dnEgkavSCUk",
+  "title": "LOVE HIROSHIMA",
+  "channel": "観光連盟広島県",
+  "year": "2016"
+ },
+ "JP-35": {
+  "id": "1bpVV_yxSmU",
+  "title": "山口県観光PR動画",
+  "channel": "おいでませ山口へ 山口県観光連盟",
+  "year": "2019"
+ },
+ "JP-36": {
+  "id": "J_dxdC6hoBI",
+  "title": "TOKUSHIMA JAPAN",
+  "channel": "徳島県観光情報サイト阿波ナビ",
+  "year": ""
+ },
+ "JP-37": {
+  "id": "W_AIZgOM9jc",
+  "title": "うどん県×ヤドン 観光PR動画",
+  "channel": "うどん県",
+  "year": "2020"
+ },
+ "JP-38": {
+  "id": "pP8rpEFCRNA",
+  "title": "疲れたら、行きたい！愛媛の絶景",
+  "channel": "愛媛県公式チャンネル",
+  "year": "2026"
+ },
+ "JP-39": {
+  "id": "QbEBbUi3qRo",
+  "title": "リョーマの休日",
+  "channel": "高知観光Official",
+  "year": "2019"
+ },
+ "JP-40": {
+  "id": "v_buPy1CmhY",
+  "title": "Happy Trip in Fukuoka",
+  "channel": "クロスロードふくおか　福岡県観光連盟【公式】",
+  "year": "2026"
+ },
+ "JP-41": {
+  "id": "qA2-ykU-VeA",
+  "title": "Timeless SAGA",
+  "channel": "SagaKouhouMovie",
+  "year": "2025"
+ },
+ "JP-42": {
+  "id": "809ytcJMpfM",
+  "title": "The colorful story of NAGASAKI",
+  "channel": "長崎県観光連盟公式チャンネル",
+  "year": "2017"
+ },
+ "JP-43": {
+  "id": "kIdEdZsgtJM",
+  "title": "出会いがいっぱい！熊本旅",
+  "channel": "【公式】もっと、もーっと!くまもっと。熊本県観光チャンネル",
+  "year": "2026"
+ },
+ "JP-44": {
+  "id": "696lOt9nrLw",
+  "title": "おんせん県おおいた観光動画",
+  "channel": "ツーリズムおおいた",
+  "year": "2021"
+ },
+ "JP-45": {
+  "id": "1g32xYfmrag",
+  "title": "日本のひなた宮崎県 PR動画",
+  "channel": "miyazakiken allmiyazaki",
+  "year": "2023"
+ },
+ "JP-46": {
+  "id": "94K0NK8ivcI",
+  "title": "BREATHTAKING KAGOSHIMA",
+  "channel": "南の宝箱 鹿児島チャンネル",
+  "year": "2021"
+ },
+ "JP-47": {
+  "id": "EuGk1s_low4",
+  "title": "Alluring Okinawa",
+  "channel": "VISIT OKINAWA JAPAN",
+  "year": "2022"
+ }
+}
