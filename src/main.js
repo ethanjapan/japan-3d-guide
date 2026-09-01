@@ -482,9 +482,9 @@ const openRinkaPhoto = () => {
   const box = document.createElement("div");
   box.className = "photo-lightbox";
   box.tabIndex = -1;
-  const img = document.createElement("img");
-  img.src = `${import.meta.env.BASE_URL}guide/rinka-guide.webp`;
-  img.alt = "RINKA";
+  // 動くポートレート(2026-09-01)。posterに静止画を敷く
+  const img = livingVideo("profile.mp4", "");
+  img.poster = `${import.meta.env.BASE_URL}guide/rinka-guide.webp`;
   const close = () => {
     box.remove();
     document.removeEventListener("keydown", onKey);
@@ -941,6 +941,9 @@ const planHas = (id) => plan.some((x) => x.s === id);
 const savePlan = () => {
   store.set(PLAN_KEY, JSON.stringify(plan));
   updatePlanChip();
+
+// ウェルカムの動くポートレート(autoplay属性だけだと始まらない環境向け)
+document.querySelector("video.welcome-photo")?.play().catch(() => { /* posterのまま */ });
 };
 const planSpots = () => plan
   .map(({ c, s: sid }) => {
