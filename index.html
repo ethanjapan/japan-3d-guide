@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="日本3D観光" />
+    <meta name="theme-color" content="#cdefe9" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
     <title>日本3D観光ガイド</title>
     <meta name="description" content="47都道府県と235景点を3D地図で巡る観光ガイド。日本語/繁中/简中/English/한국어。天気・グルメ・モデルコース・RINKAの案内つき" />
     <link rel="icon" type="image/png" href="/favicon.png" />
@@ -120,7 +127,20 @@
 
     <!-- スマホでは縦積みだと月バー・ウェルカムカードと場所を奪い合うので、
          下辺に1列で並べる。デスクトップは display:contents で今までどおり個別配置 -->
+    <button type="button" class="locate-btn" id="locate-btn" data-i18n-aria="locate">
+      <span aria-hidden="true">◉</span>
+    </button>
+    <button type="button" class="move-btn" id="move-btn" aria-pressed="false"
+            data-i18n-aria="moveMode">
+      <span class="move-ico" aria-hidden="true">✥</span>
+    </button>
+
     <div class="dock" id="dock">
+      <button type="button" class="plan-fab" id="plan-btn">
+        <span class="plan-fab-ico" aria-hidden="true">✦</span>
+        <span data-i18n="planChip"></span>
+        <span class="plan-fab-count" id="plan-count" hidden>0</span>
+      </button>
       <button type="button" class="stamp-btn event-btn" id="event-btn">
         <img id="event-icon" src="/event/sakura.webp" alt="" />
         <span id="event-label"></span>
@@ -141,6 +161,21 @@
         <span id="stamp-count">0/47</span>
       </button>
     </div>
+
+    <aside class="panel stamp-panel" id="plan-panel" hidden>
+      <div class="sheet-handle" data-sheet-handle></div>
+      <img class="panel-garland" src="/ui/garland.webp" alt="" />
+      <h2 class="info-title" id="plan-title"></h2>
+      <p class="course-tip" id="plan-hint"></p>
+      <div id="plan-list"></div>
+      <div class="plan-actions">
+        <button type="button" class="plan-action" id="plan-copy"></button>
+        <div id="plan-routes" class="plan-routes"></div>
+        <button type="button" class="plan-action" id="plan-kml"></button>
+        <button type="button" class="plan-action plan-clear" id="plan-clear"></button>
+      </div>
+      <button type="button" class="close" id="plan-close" aria-label="close">×</button>
+    </aside>
 
     <aside class="panel stamp-panel" id="stamp-panel" hidden>
       <div class="sheet-handle" data-sheet-handle></div>

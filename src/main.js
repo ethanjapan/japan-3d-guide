@@ -59,6 +59,14 @@ const panelBody = document.getElementById("panel-body");
 const panelState = { prefId: null, spotId: null };
 
 // 座標は data/spots.json の coord=[lat, lon](Wikidata P625 由来)
+
+/** localStorage の安全な読み書き。拒否環境(private mode等)ではthrowするので必ずここを通す。
+    台湾版のGPTデバッグで判明した起動死の対策(2026-09-01)を移植 */
+const store = {
+  get: (k) => { try { return localStorage.getItem(k); } catch { return null; } },
+  set: (k, v) => { try { localStorage.setItem(k, v); } catch { /* 保存できなくてもUIは進める */ } },
+};
+
 const mapsUrl = (s) => `https://www.google.com/maps?q=${s.coord[0]},${s.coord[1]}`;
 
 /**
@@ -849,6 +857,29 @@ const renderPanel = () => {
     link.target = "_blank";
     link.rel = "noreferrer";
     link.textContent = T.openMap;
+    // 旅の計画に追加(台湾版から移植)
+    const padd = document.createElement("button");
+    padd.type = "button";
+    padd.className = "plan-add";
+    const paint = () => {
+      padd.textContent = planHas(s.id) ? `✓ ${T.planAdded}` : `+ ${T.planAdd}`;
+      padd.dataset.on = String(planHas(s.id));
+    };
+    paint();
+    padd.addEventListener("click", () => {
+      if (planHas(s.id)) plan = plan.filter((x) => x.s !== s.id);
+      else plan.push({ c: pref.id, s: s.id });
+      savePlan();
+      paint();
+    });
+    // 経路(乗換)。名称渡し=正しいPOIに解決される(台湾版で実測)
+    const route = document.createElement("a");
+    route.className = "spot-map spot-route";
+    route.href = "https://www.google.com/maps/dir/?api=1&destination=" +
+      encodeURIComponent(`${s.name.ja} ${pref.name.ja}`) + "&travelmode=transit";
+    route.target = "_blank";
+    route.rel = "noreferrer";
+    route.textContent = T.route;
     const src = document.createElement("p");
     src.className = "spot-source";
     // CC BY / CC BY-SA は撮影者とライセンスの明示が再配布の条件なので、写真がある限り必ず出す
@@ -865,7 +896,7 @@ const renderPanel = () => {
     }
     frag.push(h, town, sum);
     if (details) frag.push(details);
-    frag.push(link, src);
+    frag.push(padd, link, route, src);
     panelBody.dataset.view = "detail";
     panelBody.dataset.view = "list";
   panelBody.replaceChildren(...frag);
@@ -873,6 +904,197 @@ const renderPanel = () => {
     stagger(panelBody);
   }
 };
+
+/* ---- 旅の計画(台湾版から移植 2026-09-01) ----
+   行きたい観光地を集めて、(1) 自分のChatGPTに貼る旅程相談プロンプト
+   (2) Googleマイマップ用KML (3) Google Mapsへの複数経由地ルート を書き出す。
+   サイト側でAIを呼ばない=APIキー不要・運用費ゼロ */
+const PLAN_KEY = "plan";
+const loadPlan = () => {
+  try {
+    const a = JSON.parse(store.get(PLAN_KEY) ?? "[]");
+    if (!Array.isArray(a)) return [];
+    return a.filter((x) => x && typeof x.c === "string" && typeof x.s === "string"
+      && (SPOTS[x.c] ?? []).some((sp) => sp.id === x.s));
+  } catch { return []; }
+};
+let plan = loadPlan();
+const planHas = (id) => plan.some((x) => x.s === id);
+const savePlan = () => {
+  store.set(PLAN_KEY, JSON.stringify(plan));
+  updatePlanChip();
+};
+const planSpots = () => plan
+  .map(({ c, s: sid }) => {
+    const pref = prefectures.prefectures.find((x) => x.id === c);
+    const sp = (SPOTS[c] ?? []).find((x) => x.id === sid);
+    return pref && sp ? { pref, sp } : null;
+  })
+  .filter(Boolean);
+
+const buildPlanPrompt = () => {
+  const rows = planSpots().map(({ pref, sp }, i) => {
+    const nm = sp.name[lang] ?? sp.name.ja;
+    return `${i + 1}. ${nm}（${sp.name.ja}｜${pref.name[lang] ?? pref.name.ja}｜${sp.coord[0].toFixed(4)},${sp.coord[1].toFixed(4)}）`;
+  });
+  const ask = {
+    zh: "我想去日本旅行。以下是我想去的景點(名稱｜都道府縣｜座標)。請幫我:\n1. 依地理位置分組並排出合理的行程順序(哪幾個排同一天)\n2. 每天的移動方式(新幹線/JR/巴士/租車)與大約時間、是否值得買JR Pass\n3. 各景點的建議停留時間與最佳時段\n4. 順路的在地美食\n先確認我的旅行天數與出發地再開始。",
+    cn: "我想去日本旅行。以下是我想去的景点(名称｜都道府县｜坐标)。请帮我:\n1. 按地理位置分组并排出合理的行程顺序(哪几个排同一天)\n2. 每天的移动方式(新干线/JR/巴士/租车)与大约时间、是否值得买JR Pass\n3. 各景点的建议停留时间与最佳时段\n4. 顺路的当地美食\n请先确认我的旅行天数与出发地再开始。",
+    ja: "日本国内の旅行を計画しています。以下が行きたい観光地です(名称｜都道府県｜座標)。次をお願いします:\n1. 地理的に無理のない回り順(どれを同じ日にまとめるか)\n2. 日ごとの移動手段(新幹線/在来線/バス/レンタカー)と所要時間の目安\n3. 各地の滞在時間と行くべき時間帯\n4. 道中のおすすめグルメ\nまず旅行日数と出発地を私に確認してから始めてください。",
+    en: "I am planning a trip to Japan. Below are the spots I want to visit (name | prefecture | coordinates). Please:\n1. Group them geographically into a sensible route (which ones fit the same day)\n2. Suggest transport for each day (Shinkansen / JR / bus / rental car), and whether a JR Pass pays off\n3. Recommend how long to stay at each spot and the best time of day\n4. Add local food worth stopping for along the way\nAsk me for my trip length and starting point before you begin.",
+    ko: "\uC77C\uBCF8 \uC5EC\uD589\uC744 \uACC4\uD68D \uC911\uC785\uB2C8\uB2E4. \uC544\uB798\uB294 \uAC00\uACE0 \uC2F6\uC740 \uBA85\uC18C\uC785\uB2C8\uB2E4(\uC774\uB984\uFF5C\uB3C4\uB3C4\uBD80\uD604\uFF5C\uC88C\uD45C). \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4:\\n1. \uC9C0\uB9AC\uC801\uC73C\uB85C \uBB34\uB9AC \uC5C6\uB294 \uB3D9\uC120\\n2. \uC77C\uC790\uBCC4 \uC774\uB3D9\uC218\uB2E8(\uC2E0\uCE78\uC13C/JR/\uBC84\uC2A4/\uB80C\uD130\uCE74)\uACFC \uC18C\uC694\uC2DC\uAC04, JR \uD328\uC2A4 \uAC00\uC131\uBE44\\n3. \uAC01 \uBA85\uC18C\uC758 \uCCB4\uB958 \uC2DC\uAC04\uACFC \uAC00\uAE30 \uC88B\uC740 \uC2DC\uAC04\uB300\\n4. \uAC00\uB294 \uAE38\uC758 \uD604\uC9C0 \uC74C\uC2DD \uCD94\uCC9C\\n\uC2DC\uC791 \uC804\uC5D0 \uC5EC\uD589 \uC77C\uC218\uC640 \uCD9C\uBC1C\uC9C0\uB97C \uBA3C\uC800 \uBB3C\uC5B4\uBD10 \uC8FC\uC138\uC694.",
+  }[lang];
+  return `${ask}\n\n${rows.join("\n")}\n\n(from: 日本3D観光ガイド https://ethanjapan.github.io/japan-3d-guide/ )`;
+};
+
+const buildRouteLegs = () => {
+  const items = planSpots();
+  if (!items.length) return [];
+  const rest = items.slice();
+  const ordered = [rest.shift()];
+  while (rest.length) {
+    const last = ordered[ordered.length - 1].sp;
+    let bi = 0;
+    let bd = Infinity;
+    rest.forEach(({ sp }, i) => {
+      const d = (sp.coord[0] - last.coord[0]) ** 2 + (sp.coord[1] - last.coord[1]) ** 2;
+      if (d < bd) { bd = d; bi = i; }
+    });
+    ordered.push(rest.splice(bi, 1)[0]);
+  }
+  // 名称渡し(座標は最寄り建物に吸着する。台湾版で実測)。日本語の正式名称+都道府県名
+  const P = ({ pref, sp }) => encodeURIComponent(`${sp.name.ja} ${pref.name.ja}`);
+  const legs = [];
+  for (let i = 0; i < ordered.length; i += 4) {
+    const chunk = ordered.slice(i, i + 4);
+    const dest = chunk[chunk.length - 1];
+    const way = chunk.slice(0, -1).map(P);
+    const origin = i === 0 ? null : ordered[i - 1];
+    let url = `https://www.google.com/maps/dir/?api=1&destination=${P(dest)}&travelmode=driving`;
+    if (way.length) url += `&waypoints=${way.join("%7C")}`;
+    if (origin) url += `&origin=${P(origin)}`;
+    legs.push({ url, names: chunk.map(({ sp }) => sp.name[lang] ?? sp.name.ja) });
+  }
+  return legs;
+};
+
+const buildPlanKml = () => {
+  const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const marks = planSpots().map(({ pref, sp }) => {
+    const nm = sp.name[lang] ?? sp.name.ja;
+    const desc = `${pref.name.ja}｜${sp.sum?.[lang] ?? sp.sum?.ja ?? ""}`;
+    return `  <Placemark><name>${esc(nm)}</name><description>${esc(desc)}</description>` +
+           `<Point><coordinates>${sp.coord[1]},${sp.coord[0]},0</coordinates></Point></Placemark>`;
+  });
+  return `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Japan Trip Plan</name>\n` +
+    `${marks.join("\n")}\n</Document></kml>`;
+};
+
+const planBtnEl = document.getElementById("plan-btn");
+const planPanelEl = document.getElementById("plan-panel");
+const updatePlanChip = () => {
+  const c = document.getElementById("plan-count");
+  c.textContent = String(plan.length);
+  c.hidden = plan.length === 0;
+};
+const renderPlanPanel = () => {
+  const T = STRINGS[lang];
+  document.getElementById("plan-title").textContent = T.planTitle;
+  document.getElementById("plan-hint").textContent = plan.length ? T.planHint : T.planEmpty;
+  document.getElementById("plan-copy").textContent = T.planCopy;
+  document.getElementById("plan-kml").textContent = T.planKml;
+  document.getElementById("plan-clear").textContent = T.planClear;
+  const list = document.getElementById("plan-list");
+  list.replaceChildren(...planSpots().map(({ pref, sp }) => {
+    const row = document.createElement("div");
+    row.className = "plan-row";
+    const nm = document.createElement("span");
+    nm.className = "plan-name";
+    nm.textContent = sp.name[lang] ?? sp.name.ja;
+    const where = document.createElement("span");
+    where.className = "plan-where";
+    where.textContent = pref.name[lang] ?? pref.name.ja;
+    const rm = document.createElement("button");
+    rm.type = "button";
+    rm.className = "plan-remove";
+    rm.textContent = "×";
+    rm.addEventListener("click", () => {
+      plan = plan.filter((x) => x.s !== sp.id);
+      savePlan();
+      renderPlanPanel();
+    });
+    row.append(nm, where, rm);
+    return row;
+  }));
+  const routeBox = document.getElementById("plan-routes");
+  const legs = buildRouteLegs();
+  routeBox.replaceChildren(...legs.map((leg, i) => {
+    const a = document.createElement("a");
+    a.className = "plan-action plan-route";
+    a.href = leg.url;
+    a.target = "_blank";
+    a.rel = "noreferrer";
+    const label = legs.length === 1 ? T.planRoute : `${T.planRouteLeg}${i + 1}`;
+    const names = leg.names.join(" → ");
+    a.textContent = `${label}（${names.length > 26 ? names.slice(0, 25) + "…" : names}）`;
+    return a;
+  }));
+  const has = plan.length > 0;
+  document.getElementById("plan-copy").disabled = !has;
+  document.getElementById("plan-kml").disabled = !has;
+  document.getElementById("plan-clear").disabled = !has;
+};
+planBtnEl.addEventListener("click", () => {
+  planPanelEl.hidden = !planPanelEl.hidden;
+  if (!planPanelEl.hidden) renderPlanPanel();
+});
+document.getElementById("plan-close").addEventListener("click", () => {
+  planPanelEl.hidden = true;
+  updatePlanChip();
+});
+document.getElementById("plan-copy").addEventListener("click", async (e) => {
+  try {
+    await navigator.clipboard.writeText(buildPlanPrompt());
+  } catch {
+    const ta = document.createElement("textarea");
+    ta.value = buildPlanPrompt();
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand("copy");
+    ta.remove();
+    if (!ok) { window.prompt("Copy:", buildPlanPrompt()); return; }
+  }
+  e.target.textContent = STRINGS[lang].planCopied;
+  setTimeout(() => { e.target.textContent = STRINGS[lang].planCopy; }, 2600);
+});
+document.getElementById("plan-kml").addEventListener("click", () => {
+  const blob = new Blob([buildPlanKml()], { type: "application/vnd.google-earth.kml+xml" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "japan-trip-plan.kml";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+});
+document.getElementById("plan-clear").addEventListener("click", () => {
+  plan = [];
+  savePlan();
+  renderPlanPanel();
+});
+updatePlanChip();
+
+/* ---- シート開閉をbodyへ伝える(台湾版から移植) ---- */
+{
+  const sheets = ["panel", "info-panel", "stamp-panel", "plan-panel"]
+    .map((id) => document.getElementById(id)).filter(Boolean);
+  const sync = () => {
+    document.body.dataset.sheetOpen = sheets.some((el) => !el.hidden) ? "1" : "";
+  };
+  const mo = new MutationObserver(sync);
+  for (const el of sheets) mo.observe(el, { attributes: true, attributeFilter: ["hidden"] });
+  sync();
+}
+
 const hint = document.getElementById("hint");
 
 /**
@@ -1019,7 +1241,10 @@ const timingOf = (spotId) => {
 };
 
 // ---- 旅のしおり(スタンプラリー)。訪問=県市パネルを開いた県市。localStorageで永続 ----
-const stamps = new Set(JSON.parse(localStorage.getItem("stamps") ?? "[]"));
+const stamps = new Set((() => {
+  try { const a = JSON.parse(store.get("stamps") ?? "[]"); return Array.isArray(a) ? a : []; }
+  catch { return []; }
+})());
 const stampBtn = document.getElementById("stamp-btn");
 const stampPanel = document.getElementById("stamp-panel");
 const stampCountEl = document.getElementById("stamp-count");
@@ -1088,7 +1313,7 @@ const renderStampBook = () => {
 const addStamp = (iso) => {
   if (stamps.has(iso)) return;
   stamps.add(iso);
-  localStorage.setItem("stamps", JSON.stringify([...stamps]));
+  store.set("stamps", JSON.stringify([...stamps]));
   updateStampCount();
   stampBtn.dataset.pop = "true";
   setTimeout(() => delete stampBtn.dataset.pop, 700);
@@ -1141,7 +1366,8 @@ document.getElementById("stamp-close").addEventListener("click", () => {
 
 const setLang = (next) => {
   lang = next;
-  localStorage.setItem("lang", next);
+  store.set("lang", next);
+  if (!document.getElementById("plan-panel").hidden) renderPlanPanel();
   applyLang(next);
   searchInput.placeholder = STRINGS[next].searchPh;
   if (!fallback.hidden) showFallback();
@@ -1624,6 +1850,72 @@ function start() {
   controls.maxPolarAngle = Math.PI * 0.46;
   controls.enablePan = false;
 
+  // ---- 操作モード(台湾版から移植): 既定=回転 / 移動=1本指パン・2本指ズーム ----
+  const applyMoveMode = (on) => {
+    controls.enablePan = on;
+    controls.screenSpacePanning = false;
+    controls.touches.ONE = on ? THREE.TOUCH.PAN : THREE.TOUCH.ROTATE;
+    controls.touches.TWO = THREE.TOUCH.DOLLY_ROTATE;
+    controls.mouseButtons.LEFT = on ? THREE.MOUSE.PAN : THREE.MOUSE.ROTATE;
+    document.getElementById("move-btn")?.setAttribute("aria-pressed", String(on));
+    store.set("moveMode", on ? "1" : "");
+  };
+  let moveMode = store.get("moveMode") === "1";
+  applyMoveMode(moveMode);
+  document.getElementById("move-btn")?.addEventListener("click", () => {
+    moveMode = !moveMode;
+    applyMoveMode(moveMode);
+  });
+  controls.addEventListener("change", () => {
+    const L = stage.span * 0.9;
+    const t = controls.target;
+    t.x = THREE.MathUtils.clamp(t.x, -L, L);
+    t.z = THREE.MathUtils.clamp(t.z, -L, L);
+    t.y = 0;
+  });
+
+  // ---- 現在地(GPS・台湾版から移植)。投影は build-shapes.mjs と同一(ORIGIN 137/36.5・SCALE 14) ----
+  {
+    const GPS_ORIGIN = { lon: 137.0, lat: 36.5 };
+    const GPS_SCALE = 14;
+    const GPS_COS = Math.cos((GPS_ORIGIN.lat * Math.PI) / 180);
+    const cx = (stage.bounds.minX + stage.bounds.maxX) / 2;
+    const cy = (stage.bounds.minY + stage.bounds.maxY) / 2;
+    let marker = null;
+    const dotSprite = () => {
+      const cv = document.createElement("canvas");
+      cv.width = cv.height = 96;
+      const g = cv.getContext("2d");
+      g.fillStyle = "rgba(56, 128, 255, 0.25)";
+      g.beginPath(); g.arc(48, 48, 44, 0, Math.PI * 2); g.fill();
+      g.fillStyle = "#fff";
+      g.beginPath(); g.arc(48, 48, 20, 0, Math.PI * 2); g.fill();
+      g.fillStyle = "#2f7bea";
+      g.beginPath(); g.arc(48, 48, 15, 0, Math.PI * 2); g.fill();
+      const sp = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: new THREE.CanvasTexture(cv), transparent: true, depthWrite: false }));
+      sp.scale.setScalar(stage.span * 0.05);
+      return sp;
+    };
+    document.getElementById("locate-btn")?.addEventListener("click", () => {
+      if (!navigator.geolocation) { showHint(STRINGS[lang].gpsFail); return; }
+      navigator.geolocation.getCurrentPosition((pos) => {
+        const { latitude: la, longitude: lo } = pos.coords;
+        // 日本の範囲(沖縄〜北海道・小笠原まで)。外なら置かない
+        if (!(24.0 <= la && la <= 45.8 && 122.5 <= lo && lo <= 146.2)) {
+          showHint(STRINGS[lang].gpsOutside);
+          return;
+        }
+        const px = (lo - GPS_ORIGIN.lon) * GPS_COS * GPS_SCALE;
+        const py = (la - GPS_ORIGIN.lat) * GPS_SCALE;
+        marker?.removeFromParent();
+        marker = dotSprite();
+        marker.position.set(px - cx, stage.extrude + stage.span * 0.03, -(py - cy));
+        stage.scene.add(marker);
+      }, () => showHint(STRINGS[lang].gpsFail), { enableHighAccuracy: false, timeout: 12000, maximumAge: 120000 });
+    });
+  }
+
   // 日本列島は南西から北東へ斜めに走り、しかも斜め俯瞰なので奥行きが圧縮される。
   // 画角から机上で距離を出すと必ずどこかが切れるか小さすぎるので、
   // 実際に地図の外接箱を投影して画面に収まる距離を求める。
@@ -1992,6 +2284,7 @@ function start() {
   attachSheet(panel, { snaps: true, onClose: () => select(null) });
   attachSheet(infoPanel, {});
   attachSheet(stampPanel, {});
+  attachSheet(document.getElementById("plan-panel"), {});
 
   jumpToSpot = (iso, spotId) => {
     const g = groups.find((x) => x.userData.pref.id === iso);
@@ -2025,7 +2318,7 @@ function start() {
       if (IS_MOBILE()) return sel === "auto" ? now : name;
       return sel === "auto" ? `${name}(${now})` : name;
     };
-    let sel = localStorage.getItem("phase") ?? "auto";
+    let sel = store.get("phase") ?? "auto";
     if (!CYCLE.includes(sel)) sel = "auto";
     const render = () => {
       icon.src = `${import.meta.env.BASE_URL}ui/${ICONS[atmosphere.phase] ?? "sun"}.webp`;
@@ -2034,7 +2327,7 @@ function start() {
     render();
     btn.addEventListener("click", () => {
       sel = CYCLE[(CYCLE.indexOf(sel) + 1) % CYCLE.length];
-      localStorage.setItem("phase", sel);
+      store.set("phase", sel);
       atmosphere.setPhase(sel);
       render();
       // 時間帯で景点の並びが変わるので、開いていれば作り直す
@@ -2058,7 +2351,7 @@ function start() {
       return { auto: T.seasonAuto, spring: T.seasonSpring, summer: T.seasonSummer,
                autumn: T.seasonAutumn, winter: T.seasonWinter }[k];
     };
-    let sel = localStorage.getItem("season") ?? "auto";
+    let sel = store.get("season") ?? "auto";
     if (!CYCLE.includes(sel)) sel = "auto";
     season.setSeason(sel);
     const render = () => {
@@ -2071,7 +2364,7 @@ function start() {
     render();
     btn.addEventListener("click", () => {
       sel = CYCLE[(CYCLE.indexOf(sel) + 1) % CYCLE.length];
-      localStorage.setItem("season", sel);
+      store.set("season", sel);
       season.setSeason(sel);
       render();
     });
