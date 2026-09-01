@@ -9,7 +9,6 @@ import { createEventLayer } from "./events3d.js";
 import { createCourseLayer } from "./courses3d.js";
 import { STRINGS, applyLang, detectLang , ABOUT } from "./i18n.js";
 import META from "../data/meta.json";
-import RINKA_CLIPS from "../data/rinka-clips.json";
 import prefectures from "../data/prefectures.json";
 import SPECIALTIES from "../data/specialties.json";
 import PREF_LINKS from "../data/pref-links.json";
@@ -520,18 +519,7 @@ const toggleRinkaProfile = () => {
     a.textContent = label;
     links.appendChild(a);
   }
-  const album = document.createElement("div");
-  album.className = "rinka-album";
-  for (const c of RINKA_CLIPS) {
-    const cell = document.createElement("figure");
-    cell.className = "rinka-album-cell";
-    cell.appendChild(livingVideo(c.file, "rinka-album-video"));
-    const cap = document.createElement("figcaption");
-    cap.textContent = c.t[lang] ?? c.t.ja;
-    cell.appendChild(cap);
-    album.appendChild(cell);
-  }
-  card.append(intro, album, links);
+  card.append(intro, links);
   document.querySelector(".guide-row").after(card);
 };
 document.querySelector(".guide-row")?.addEventListener("click", toggleRinkaProfile);
@@ -857,10 +845,6 @@ const renderPanel = () => {
       renderPanel();
     });
     const frag = [back, rinkaBubble(rinkaSpot(s, lang))];
-    const clip = RINKA_CLIPS.find((c) => c.spot === s.id);
-    if (clip) {
-      frag.push(livingVideo(clip.file, "spot-photo spot-living"));
-    }
     if (PHOTO_CREDITS[s.id]) {
       const img = document.createElement("img");
       img.className = "spot-photo";
