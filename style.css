@@ -3628,3 +3628,37 @@ html[data-phase="night"] .info-panel {
   .lang, .stamp-btn, .close, .credit-link { transition: none; }
   .lang:hover, .stamp-btn:hover { transform: none; }
 }
+
+/* 現在地からの「いまから行ける近く」カード */
+.nearby-card {
+  position: fixed;
+  left: 50%;
+  bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  z-index: 5;
+  width: min(340px, calc(100vw - 24px));
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+}
+.nearby-title { margin: 0 22px 8px 0; font-size: 0.74rem; font-weight: 700; }
+.nearby-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 4px;
+  border: 0;
+  border-top: 1px solid rgba(35, 66, 60, 0.1);
+  background: none;
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+  text-align: left;
+}
+.nearby-km { color: var(--ink-soft); white-space: nowrap; }
+html[data-phase="night"] .nearby-card { background: rgba(24, 38, 58, 0.9); color: #eaf3fa; }
+html[data-phase="night"] .nearby-row { border-top-color: rgba(200, 220, 245, 0.15); color: #eaf3fa; }

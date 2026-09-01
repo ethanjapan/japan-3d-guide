@@ -943,6 +943,23 @@ const loadPlan = () => {
   } catch { return []; }
 };
 let plan = loadPlan();
+{
+  const shared = new URLSearchParams(location.search).get("plan");
+  if (shared) {
+    const wanted = new Set(shared.split(","));
+    const found = [];
+    for (const [c, arr] of Object.entries(SPOTS)) {
+      for (const sp of arr) if (wanted.has(sp.id)) found.push({ c, s: sp.id });
+    }
+    if (found.length) {
+      plan = found;
+      store.set(PLAN_KEY, JSON.stringify(plan));
+    }
+    const u = new URL(location.href);
+    u.searchParams.delete("plan");
+    history.replaceState(null, "", u);
+  }
+}
 const planHas = (id) => plan.some((x) => x.s === id);
 const savePlan = () => {
   store.set(PLAN_KEY, JSON.stringify(plan));
@@ -1069,6 +1086,8 @@ const renderPlanPanel = () => {
   }));
   const has = plan.length > 0;
   document.getElementById("plan-copy").disabled = !has;
+  document.getElementById("plan-share").textContent = T.planShare;
+  document.getElementById("plan-share").disabled = !has;
   document.getElementById("plan-kml").disabled = !has;
   document.getElementById("plan-clear").disabled = !has;
 };
@@ -1094,6 +1113,17 @@ document.getElementById("plan-copy").addEventListener("click", async (e) => {
   }
   e.target.textContent = STRINGS[lang].planCopied;
   setTimeout(() => { e.target.textContent = STRINGS[lang].planCopy; }, 2600);
+});
+document.getElementById("plan-share").addEventListener("click", async (e) => {
+  const u = new URL(location.origin + location.pathname);
+  u.searchParams.set("plan", plan.map((x) => x.s).join(","));
+  const url = u.toString();
+  if (navigator.share) {
+    try { await navigator.share({ url }); return; } catch { /* キャンセル */ }
+  }
+  try { await navigator.clipboard.writeText(url); } catch { window.prompt("URL:", url); return; }
+  e.target.textContent = STRINGS[lang].planShared;
+  setTimeout(() => { e.target.textContent = STRINGS[lang].planShare; }, 2600);
 });
 document.getElementById("plan-kml").addEventListener("click", () => {
   const blob = new Blob([buildPlanKml()], { type: "application/vnd.google-earth.kml+xml" });
@@ -1924,6 +1954,59 @@ function start() {
       sp.scale.setScalar(stage.span * 0.05);
       return sp;
     };
+    /** 現在地から近い順に観光地3件。雨(天気コード>=51)なら屋内語を持つものを優先 */
+    const INDOOR = /博物館|美術館|水族館|記念館|資料館|神宮|神社|寺|城|タワー|温泉/;
+    const showNearby = async (la, lo) => {
+      const all = [];
+      for (const [c, arr] of Object.entries(SPOTS)) {
+        for (const sp of arr) {
+          const km = Math.hypot((sp.coord[0] - la) * 111, (sp.coord[1] - lo) * 91);
+          all.push({ c, sp, km });
+        }
+      }
+      all.sort((a, b) => a.km - b.km);
+      let raining = false;
+      try {
+        const w = await fetchWeather(all[0].c);
+        raining = (w?.now?.code ?? 0) >= 51;
+      } catch { /* 天気が取れなくても出す */ }
+      let picks = all.slice(0, 12);
+      if (raining) picks.sort((a, b) =>
+        (INDOOR.test(b.sp.name.ja) ? 1 : 0) - (INDOOR.test(a.sp.name.ja) ? 1 : 0) || a.km - b.km);
+      picks = picks.slice(0, 3);
+      document.getElementById("nearby-card")?.remove();
+      const card = document.createElement("div");
+      card.id = "nearby-card";
+      card.className = "nearby-card";
+      const h = document.createElement("p");
+      h.className = "nearby-title";
+      h.textContent = STRINGS[lang].nearbyTitle + (raining ? STRINGS[lang].nearbyRain : "");
+      card.appendChild(h);
+      for (const { c, sp, km } of picks) {
+        const row = document.createElement("button");
+        row.type = "button";
+        row.className = "nearby-row";
+        const nm = document.createElement("span");
+        nm.textContent = sp.name[lang] ?? sp.name.ja;
+        const d = document.createElement("span");
+        d.className = "nearby-km";
+        d.textContent = `${km < 10 ? km.toFixed(1) : Math.round(km)}${STRINGS[lang].nearbyKm}`;
+        row.append(nm, d);
+        row.addEventListener("click", () => {
+          card.remove();
+          jumpToSpot?.(c, sp.id);
+        });
+        card.appendChild(row);
+      }
+      const x = document.createElement("button");
+      x.type = "button";
+      x.className = "close";
+      x.textContent = "×";
+      x.addEventListener("click", () => card.remove());
+      document.body.appendChild(card);
+      card.appendChild(x);
+    };
+
     document.getElementById("locate-btn")?.addEventListener("click", () => {
       if (!navigator.geolocation) { showHint(STRINGS[lang].gpsFail); return; }
       navigator.geolocation.getCurrentPosition((pos) => {
@@ -1939,6 +2022,7 @@ function start() {
         marker = dotSprite();
         marker.position.set(px - cx, stage.extrude + stage.span * 0.03, -(py - cy));
         stage.scene.add(marker);
+        showNearby(la, lo);
       }, () => showHint(STRINGS[lang].gpsFail), { enableHighAccuracy: false, timeout: 12000, maximumAge: 120000 });
     });
   }

@@ -4,6 +4,11 @@ const CREDIT =
 
 export const STRINGS = {
   zh: {
+    planShare: "分享給同行者",
+    planShared: "已複製連結。傳給同行者就能看到同一份計畫",
+    nearbyTitle: "附近可以去的景點",
+    nearbyRain: "（下雨了，優先室內景點）",
+    nearbyKm: "公里",
     planChip: "AI 行程",
     moveMode: "移動",
     locate: "顯示目前位置",
@@ -87,6 +92,11 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ja: {
+    planShare: "同行者に共有",
+    planShared: "リンクをコピーしました。同行者に送ると同じ計画が開きます",
+    nearbyTitle: "いまから行ける近くの観光地",
+    nearbyRain: "（雨なので屋内を優先）",
+    nearbyKm: "km",
     planChip: "AI旅程",
     moveMode: "移動",
     locate: "現在地を表示",
@@ -170,6 +180,11 @@ export const STRINGS = {
     credit: CREDIT,
   },
   cn: {
+    planShare: "分享给同行者",
+    planShared: "已复制链接。发给同行者就能看到同一份计划",
+    nearbyTitle: "附近可以去的景点",
+    nearbyRain: "（下雨了，优先室内景点）",
+    nearbyKm: "公里",
     planChip: "AI 行程",
     moveMode: "移动",
     locate: "显示当前位置",
@@ -253,6 +268,11 @@ export const STRINGS = {
     credit: CREDIT,
   },
   en: {
+    planShare: "Share with companions",
+    planShared: "Link copied. Send it and they see the same plan",
+    nearbyTitle: "Spots near you right now",
+    nearbyRain: "(raining — indoor spots first)",
+    nearbyKm: "km",
     planChip: "AI trip",
     moveMode: "Pan",
     locate: "Show my location",
@@ -336,6 +356,11 @@ export const STRINGS = {
     credit: CREDIT,
   },
   ko: {
+    planShare: "동행자와 공유",
+    planShared: "링크를 복사했습니다. 보내면 같은 계획이 열립니다",
+    nearbyTitle: "지금 갈 수 있는 근처 명소",
+    nearbyRain: "(비가 와서 실내 우선)",
+    nearbyKm: "km",
     planChip: "AI 일정",
     moveMode: "이동",
     locate: "현재 위치 표시",
